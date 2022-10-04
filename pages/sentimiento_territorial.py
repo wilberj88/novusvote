@@ -11,7 +11,7 @@ st.header("Análisis de Sentimiento Territorial")
 st.write("Selecciona el territorio a analizar:")
 
 df = pd.DataFrame(
-    [7.4, -73.8],
+    np.random.randn(1000, 2) / [50, 50] + [7.4, -73.8],
     columns=['lat', 'lon'])
 
 st.map(df)
