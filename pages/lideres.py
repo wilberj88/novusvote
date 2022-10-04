@@ -11,7 +11,7 @@ picture = st.camera_input("1. Identifique su rostro")
 
 if picture:
     st.image(picture)
-    st.write('Analizaremos el sentimiento de estas imagenes y te informaremos')
+    st.write('Analizaremos sus antecedentes penales')
 
     
 a = st.text_input('1. Número de Cédula')
