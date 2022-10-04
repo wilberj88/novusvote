@@ -7,7 +7,7 @@ st.write("Formulario de Registro👋")
 
 
 
-picture = st.camera_input("Take a picture")
+picture = st.camera_input("1. Identifique su rostro")
 
 if picture:
     st.image(picture)
