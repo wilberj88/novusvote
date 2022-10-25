@@ -16,7 +16,13 @@ st.markdown(
   - 🔎 _    Diagnóstico de Necesidades y Sentimientos territoriales
   - 🛒 _    Recomendación de Propuestas y Mensajes territoriales
   - ✍️ _     Propuesta Inteligente de Contrato
-  
+  Construye tu inteligencia electoral con 4 sistemas complementarios:
+
+Sistema Político: control electoral mediante monitor de votaciones, líderes, testigos, avanzadas y competencia
+Sistema Programático: coyuntura local en necesidades y sentimientos, propuestas y discurso
+Sistema Comunicaciones: monitor de noticias, creación y difusión de contenido
+Sistema Administrativo: Tesorería, Logística, Jurídica y Auditoría
+
   Todo lo anterior basado en:
   - Tecnología para Escucha Social Digital
   - Tecnología para Análisis de Sentimiento
