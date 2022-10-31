@@ -12,9 +12,6 @@ st.set_page_config(layout="wide", page_title="Novus Vote - Diagnóstico", page_i
 st.title('Diagnóstico de Requerimientos')
 st.header("Diligencia y visualiza tus necesidades de Campaña y Candidato")
 
-st.radio('Indica la categoría de campaña', options=['Gobernación', 'Alcaldía', 'Consejo', 'Diputación', 'Edil'], 
-          horizontal=True)
-
 col1, col2 = st.columns(2)
 
 with col1:
