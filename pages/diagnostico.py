@@ -10,8 +10,10 @@ import altair as alt
 st.set_page_config(layout="wide", page_title="Novus Mando", page_icon="⚙️")
 
 st.title('Diagnóstico de Requerimientos de Campaña')
-st.header("Establece tipo de elección e indica datos del candidato")
+st.header("Diligencia y visualiza tus necesidades")
 
+st.radio('Indica la categoría de campaña', options=['Gobernación', 'Alcaldía', 'Consejo', 'Diputación', 'Edil'], 
+          horizontal=True)
 
 chart_data = pd.DataFrame(np.random.randn(20, 3), columns=["a", "b", "c"])
 st.area_chart(chart_data)
