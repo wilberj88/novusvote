@@ -19,31 +19,33 @@ with col1:
         "Indica el Territorio",
         ("Bogotá", "Medellín", "Cali", "Bucaramanga"),
     )
-    st.radio(
+    categoria = st.radio(
         "Indica la categoría de campaña👇 ",
         options=['Gobernación', 'Alcaldía', 'Consejo', 'Diputación', 'Edil'],
     )
 
 with col2:
-    option = st.selectbox(
+    redsocial = st.selectbox(
         "Cuál red del candidato desea analizar?",
         ("Facebook", "Instagram", "Twitter", "Google"),
     )
-    txt = st.text_area('Ingresa el link del perfil', '''
+    perfil = st.text_input('Ingresa el link del perfil', '''
     ''')
 
-st.header("Requerimientos de Campaña")
+if territorio & categoria & redsocial & perfil:  
+    st.header("Requerimientos de Campaña")
+    chart_data = pd.DataFrame(np.random.randn(20, 3), columns=["a", "b", "c"])
+    st.area_chart(chart_data)
 
-st.header("Requerimientos de Candidato")
-    
-chart_data = pd.DataFrame(np.random.randn(20, 3), columns=["a", "b", "c"])
-st.area_chart(chart_data)
 
-chart_data = pd.DataFrame(
+    st.header("Requerimientos de Candidato")
+    chart_data = pd.DataFrame(
     np.random.randn(50, 3),
     columns=["a", "b", "c"])
+    st.bar_chart(chart_data)
 
-st.bar_chart(chart_data)
+    
+
 
 # Add histogram data
 x1 = np.random.randn(200) - 2
