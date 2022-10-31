@@ -26,7 +26,6 @@ with col2:
         ("Facebook", "Instagram", "Twitter", "Google"),
     )
     txt = st.text_area('Ingresa el link del perfil', '''
-    , (...)
     ''')
 
 chart_data = pd.DataFrame(np.random.randn(20, 3), columns=["a", "b", "c"])
