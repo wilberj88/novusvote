@@ -9,8 +9,8 @@ import altair as alt
 # SETTING PAGE CONFIG TO WIDE MODE AND ADDING A TITLE AND FAVICON
 st.set_page_config(layout="wide", page_title="Novus Vote - Diagnóstico", page_icon="🗳️")
 
-st.title('Diagnóstico de Requerimientos')
-st.header("Diligencia y visualiza tus necesidades de Campaña y Candidato")
+st.title('Diagnóstico de Campaña y Candidato')
+st.header("Diligencia y visualiza tus necesidades")
 
 col1, col2 = st.columns(2)
 
@@ -28,6 +28,10 @@ with col2:
     txt = st.text_area('Ingresa el link del perfil', '''
     ''')
 
+st.header("Requerimientos de Campaña")
+
+st.header("Requerimientos de Candidato")
+    
 chart_data = pd.DataFrame(np.random.randn(20, 3), columns=["a", "b", "c"])
 st.area_chart(chart_data)
 
