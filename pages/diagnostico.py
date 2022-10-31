@@ -7,13 +7,35 @@ import altair as alt
 
 
 # SETTING PAGE CONFIG TO WIDE MODE AND ADDING A TITLE AND FAVICON
-st.set_page_config(layout="wide", page_title="Novus Mando", page_icon="⚙️")
+st.set_page_config(layout="wide", page_title="Novus Vote - Diagnóstico", page_icon="🗳️")
 
-st.title('Diagnóstico de Requerimientos de Campaña')
-st.header("Diligencia y visualiza tus necesidades")
+st.title('Diagnóstico de Requerimientos')
+st.header("Diligencia y visualiza tus necesidades de Campaña y Candidato")
 
 st.radio('Indica la categoría de campaña', options=['Gobernación', 'Alcaldía', 'Consejo', 'Diputación', 'Edil'], 
           horizontal=True)
+
+if "visibility" not in st.session_state:
+    st.session_state.visibility = "visible"
+    st.session_state.disabled = False
+
+col1, col2 = st.columns(2)
+
+with col1:
+    st.checkbox("Disable selectbox widget", key="disabled")
+    st.radio(
+        "Set selectbox label visibility 👉",
+        key="visibility",
+        options=["visible", "hidden", "collapsed"],
+    )
+
+with col2:
+    option = st.selectbox(
+        "How would you like to be contacted?",
+        ("Email", "Home phone", "Mobile phone"),
+        label_visibility=st.session_state.visibility,
+        disabled=st.session_state.disabled,
+    )
 
 chart_data = pd.DataFrame(np.random.randn(20, 3), columns=["a", "b", "c"])
 st.area_chart(chart_data)
@@ -94,3 +116,12 @@ st.write("""
 - Software build by `Novus Wilber` with `Registraduría General de la Nación` data
 """)
 st.write('---')
+
+
+hide_default_format = """
+       <style>
+       #MainMenu {visibility: hidden; }
+       footer {visibility: hidden;}
+       </style>
+       """
+st.markdown(hide_default_format, unsafe_allow_html=True)
