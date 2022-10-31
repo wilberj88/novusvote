@@ -9,7 +9,13 @@ import altair as alt
 # SETTING PAGE CONFIG TO WIDE MODE AND ADDING A TITLE AND FAVICON
 st.set_page_config(layout="wide", page_title="Novus Mando", page_icon="⚙️")
 
-st.title('Diagnóstico')
+st.title('Diagnóstico de Requerimientos de Campaña')
+st.header("Establece tipo de elección e indica datos del candidato")
+st.write("""
+**Credits**
+- App build by `Novus Wilber` with `Yahoo Finance` data
+""")
+st.write('---')
 
 chart_data = pd.DataFrame(np.random.randn(20, 3), columns=["a", "b", "c"])
 st.area_chart(chart_data)
