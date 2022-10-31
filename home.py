@@ -18,6 +18,6 @@ st.markdown(
   - 📢 _     Sistema Comunicaciones: monitor de noticias, creación y difusión de contenido
   - 🏢 _    Sistema Administrativo: Tesorería, Logística, Jurídica y Auditoría
   
-  EMPIEZA TU CAMPAÑA ELECTORAL AHORA 🕰
+  EMPIEZA TU CAMPAÑA ELECTORAL AHORA 🕰 CON NUESTRO DIAGNÓSTICO GRATUITO
   """
 )
