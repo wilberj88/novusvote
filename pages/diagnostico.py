@@ -15,26 +15,18 @@ st.header("Diligencia y visualiza tus necesidades de Campaña y Candidato")
 st.radio('Indica la categoría de campaña', options=['Gobernación', 'Alcaldía', 'Consejo', 'Diputación', 'Edil'], 
           horizontal=True)
 
-if "visibility" not in st.session_state:
-    st.session_state.visibility = "visible"
-    st.session_state.disabled = False
-
 col1, col2 = st.columns(2)
 
 with col1:
-    st.checkbox("Disable selectbox widget", key="disabled")
     st.radio(
-        "Set selectbox label visibility 👉",
-        key="visibility",
-        options=["visible", "hidden", "collapsed"],
+        "Indica la categoría de campaña👉",
+        options=['Gobernación', 'Alcaldía', 'Consejo', 'Diputación', 'Edil'],
     )
 
 with col2:
     option = st.selectbox(
-        "How would you like to be contacted?",
-        ("Email", "Home phone", "Mobile phone"),
-        label_visibility=st.session_state.visibility,
-        disabled=st.session_state.disabled,
+        "Cuál red del candidato desea analizar?",
+        ("Facebook", "Instagram", "Twitter", "Google"),
     )
 
 chart_data = pd.DataFrame(np.random.randn(20, 3), columns=["a", "b", "c"])
