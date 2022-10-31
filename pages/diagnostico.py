@@ -19,7 +19,7 @@ col1, col2 = st.columns(2)
 
 with col1:
     st.radio(
-        "Indica la categoría de campaña👉",
+        "Indica la categoría de campaña👇 ",
         options=['Gobernación', 'Alcaldía', 'Consejo', 'Diputación', 'Edil'],
     )
 
