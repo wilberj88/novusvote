@@ -11,11 +11,7 @@ st.set_page_config(layout="wide", page_title="Novus Mando", page_icon="⚙️")
 
 st.title('Diagnóstico de Requerimientos de Campaña')
 st.header("Establece tipo de elección e indica datos del candidato")
-st.write("""
-**Credits**
-- Software build by `Novus Wilber` with `Registraduría General de la Nación` data
-""")
-st.write('---')
+
 
 chart_data = pd.DataFrame(np.random.randn(20, 3), columns=["a", "b", "c"])
 st.area_chart(chart_data)
@@ -88,3 +84,11 @@ fig = px.line_polar(df, r='rating', theta='category', color='Hotelid', line_clos
                     )
 # fig.update_traces(fill='toself')
 fig.show()
+
+
+
+st.write("""
+**Credits**
+- Software build by `Novus Wilber` with `Registraduría General de la Nación` data
+""")
+st.write('---')
