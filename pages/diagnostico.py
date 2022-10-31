@@ -13,7 +13,7 @@ st.title('Diagnóstico de Requerimientos de Campaña')
 st.header("Establece tipo de elección e indica datos del candidato")
 st.write("""
 **Credits**
-- App build by `Novus Wilber` with `Yahoo Finance` data
+- Software build by `Novus Wilber` with `Registraduría General de la Nación` data
 """)
 st.write('---')
 
