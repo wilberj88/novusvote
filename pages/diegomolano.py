@@ -17,7 +17,7 @@ st.write("Focaliza el monitoreo de todos tus frentes")
 etapa = st.selectbox("Etapa Electoral",
         ("Pre Campaña", "Campaña", "Día Electoral", "Post Campaña"))
 
-if etapa = "Pre Campaña":
+if etapa is "Pre Campaña":
         st.write("Requieres los monitores de: Firma + Votos...")
 
 
