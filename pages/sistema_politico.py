@@ -10,4 +10,4 @@ st.header("Sistema Inteligente de Gestión Política")
 
 
 
-st.radio('Selecciona el monitor a configurar:', ['Votos Históricos', 'Votos Potenciales', 'Líderes', 'Firmas', 'Testigos', 'Potenciales Votantes', 'Votantes Previos', 'Voluntarios', 'Jurados'])
+st.radio('Selecciona el monitor a configurar:', ['Firmas','Votos Históricos', 'Votantes Previos', 'Votos Potenciales', 'Potenciales Votantes', 'Líderes', 'Testigos', 'Voluntarios', 'Jurados'])
