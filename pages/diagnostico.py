@@ -39,8 +39,8 @@ if territorio and categoria and redsocial and perfil and meta:
     st.header("Requerimientos de Campaña")
     st.write("Votos necesarios de acuerdo con las votaciones históricas")
     st.write("Líderes necesarios")
-        chart_data = pd.DataFrame(np.random.randn(20, 3), columns=["a", "b", "c"])
-        st.area_chart(chart_data)
+    chart_data = pd.DataFrame(np.random.randn(20, 3), columns=["a", "b", "c"])
+    st.area_chart(chart_data)
     st.write("Financiación necesaria")
 
     st.header("Requerimientos de Candidato")
