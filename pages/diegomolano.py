@@ -14,21 +14,17 @@ st.title('Novus Vote 🗳️ - Diego Molano')
 st.header("Centrales de Mando para la Operación Política y Electoral")
 st.write("Focaliza el monitoreo de todos tus frentes")
 
-etapa = st.select_slider(
-    'Selecciona la etapa de campaña a monitorizar:',
-    options=['Diagnóstico', 'Pre Campaña', 'Campaña', 'Día E', 'Post Campaña'])
+etapa = st.radio(
+    "Selecciona la etapa a monitorizar",
+    ('Diagnóstico', 'Pre Campaña', 'Campaña', 'Día E', 'Post Campaña')
 
-if etapa is 'Diagnóstico':
-    st.write('Los monitores que necesitas para ', etapa, 'son los siguientes:')
-    st.header("Radiografía de Posicionamiento")
-    st.header("Radiografía de Reputación")
-    st.header("Radiografía de Votación Histórica")
-
-    
-
-
-
-
+if etapa == 'Diagnóstico':
+    st.write('Necesitas los siguientes monitores:')
+    st.header("Monitor de Posicionamiento")
+    st.header("Monitor de Reputación-Sentimiento")
+    st.header("Monitor de Votación Histórica")
+else:
+    st.write("You didn't select comedy.")
 
 
 
