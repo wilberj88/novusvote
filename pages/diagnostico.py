@@ -32,8 +32,8 @@ with col2:
     perfil = st.text_input('Ingresa el link del perfil', '''
     ''')
     meta = values = st.slider(
-    'Select a range of values',
-    0.0, 100.0, (25.0, 75.0))
+    'Indica el rango meta de votación',
+    0, 1000000, (500000, 600000))
     
 if territorio and categoria and redsocial and perfil and meta:  
     st.header("Requerimientos de Campaña")
