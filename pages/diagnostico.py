@@ -18,7 +18,7 @@ col1, col2 = st.columns(2)
 with col1:
     territorio = st.selectbox(
         "Indica el Territorio",
-        ("Bogotá", "Medellín", "Cali", "Bucaramanga"),
+        ("Bogotá", "Medellín", "Cali", "Bucaramanga", "Barrancabermeja"),
     )
     categoria = st.radio(
         "Indica la categoría de campaña👇 ",
