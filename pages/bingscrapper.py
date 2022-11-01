@@ -9,7 +9,7 @@ st.set_page_config(layout="wide", page_title="Novus Vote - Diagnóstico", page_i
 
 st.title('Novus Vote 🗳️')
 st.header("Diagnóstico de Campaña y Candidato")
-st.write("Análisis de Posicionamiento y Sentimiento")
+st.write("Análisis de Posicionamiento y Sentimiento en Windows")
 
 st.markdown('<h1 style="background-color: gainsboro; padding-left: 10px; padding-bottom: 20px;">Search Engine Scraper</h1>', unsafe_allow_html=True)
 query = st.text_input('', help='Enter the search string and hit Enter/Return')
@@ -69,6 +69,6 @@ if query: #Activates the code below on hitting Enter/Return in the search textbo
 
 st.write("""
 **Credits**
-- Software build by `Novus Wilber` with `Google` data
+- Software build by `Novus Wilber` with `Bing_Microsoft` data
 """)
 st.write('---')
