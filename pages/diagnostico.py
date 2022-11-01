@@ -38,10 +38,11 @@ with col2:
     
 if territorio and categoria and redsocial and perfil and meta:  
     st.header("Requerimientos de Campaña")
-    col1, col2, col3 = st.columns(3)
-    col1.metric("Temperature", "70 °F", "1.2 °F")
-    col2.metric("Wind", "9 mph", "-8%")
-    col3.metric("Humidity", "86%", "4%")
+    col1, col2, col3, col4 = st.columns(4)
+    col1.metric("Inversión", "70 M USD", "7.2 M USD")
+    col2.metric("Líderes", "9 mpl", "-8%")
+    col3.metric("Sentimiento", "86%", "4%")
+    col4.metric("Votos", "50K mpl", "4K")
     st.write("Desagregación de votos por barrios de acuerdo con las votaciones históricas")
     #datos
     df = pd.DataFrame(
