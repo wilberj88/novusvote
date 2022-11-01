@@ -10,4 +10,8 @@ st.header("Sistema Inteligente de Gestión Política")
 
 
 
-st.radio('Selecciona el monitor a configurar:', ['Firmas','Votos Históricos', 'Votantes Previos', 'Votos Potenciales', 'Potenciales Votantes', 'Líderes', 'Testigos', 'Voluntarios', 'Jurados'])
+st.radio('Selecciona el monitor a configurar para tu PRE campaña:', ['Firmas','Votos Históricos', 'Votantes Previos', 'Votos Potenciales', 'Potenciales Votantes'])
+
+st.radio('Selecciona el monitor a configurar para tu campaña:', ['Líderes', 'Testigos', 'Voluntarios', 'Jurados'])
+
+st.radio('Selecciona el monitor a configurar para tu POST campaña:', ['Defensores'])
