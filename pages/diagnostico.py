@@ -32,7 +32,7 @@ with col2:
     perfil = st.text_input('Ingresa el link del perfil', '''
     ''')
 
-if territorio & categoria & redsocial & perfil:  
+if territorio and categoria and redsocial and perfil:  
     st.header("Requerimientos de Campaña")
     chart_data = pd.DataFrame(np.random.randn(20, 3), columns=["a", "b", "c"])
     st.area_chart(chart_data)
