@@ -58,7 +58,7 @@ google_trends = pytrends.get_historical_interest(kw_list,
  frequency=frequency)
 google_trends = google_trends.reset_index()
 google_trends.columns = ["date", "keyword","partial"]
-pd.to_datetime(google_trends[‘date’])
+pd.to_datetime(google_trends["date"])
 google_trends.head()
 # Plot google trends over time
 sns.set(rc={"figure.figsize":(14, 6)})
