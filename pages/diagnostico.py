@@ -33,7 +33,7 @@ with col2:
     ''')
     meta = values = st.slider(
     'Indica el rango meta de votación',
-    0, 1000000, (500000, 600000))
+    0, 10000, (5000, 6000))
     
 if territorio and categoria and redsocial and perfil and meta:  
     st.header("Requerimientos de Campaña")
