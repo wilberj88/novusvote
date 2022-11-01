@@ -33,9 +33,8 @@ with col2:
     )
     perfil = st.text_input('Ingresa el link del perfil', '''
     ''')
-    meta = values = st.slider(
-    'Indica el rango meta de votación',
-    0, 10000, (5000, 6000))
+    otroscandidatos =  st.text_input('Ingresa el link del perfil con el que te quieres comparar', '''
+    ''')
     
 if territorio and categoria and redsocial and perfil and meta:  
     st.header("Requerimientos de Campaña")
