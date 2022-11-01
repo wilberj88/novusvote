@@ -27,7 +27,7 @@ st.header("Diagnóstico de Campaña y Candidato")
 st.write("Análisis de Posicionamiento y Sentimiento en Google")
 
 #SYSTEM
-kw_list = [‘covid’]
+kw_list = ["covid"]
 frequency = ‘daily’ # ie. hourly, weekly, monthly, yearly
 geo = ‘US’
 hl=’en-US’
