@@ -19,7 +19,7 @@ etapa = st.radio(
     ('Diagnóstico', 'Pre Campaña', 'Campaña', 'Día E', 'Post Campaña')
 
 if etapa == 'Diagnóstico'
-    st.write('Necesitas los siguientes monitores:')
+    st.write("Necesitas los siguientes monitores:")
     st.header("Monitor de Posicionamiento")
     st.header("Monitor de Reputación-Sentimiento")
     st.header("Monitor de Votación Histórica")
