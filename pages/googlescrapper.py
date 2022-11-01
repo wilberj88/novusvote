@@ -3,7 +3,21 @@ import pandas as pd
 from bs4 import BeautifulSoup
 import requests as r
 import streamlit as st
+from pandas.tseries.holiday import USFederalHolidayCalendar as calendar
+import numpy as np
+import datetime as dt
+from datetime import date
+from pytrends.request import TrendReq
 from statsmodels.tsa.seasonal import seasonal_decompose
+import seaborn as sns
+import matplotlib.pyplot as plt
+import warnings
+
+# Notebook settings
+warnings.filterwarnings("ignore")
+pd.set_option('display.max_rows', None)
+pytrends = TrendReq(hl='en-US', tz=360)
+# sns.set_theme()
 
 
 # SETTING PAGE CONFIG TO WIDE MODE AND ADDING A TITLE AND FAVICON
