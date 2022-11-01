@@ -27,16 +27,11 @@ with col1:
     )
 
 with col2:
-    redsocial = st.selectbox(
-        "Cuál red del candidato desea analizar?",
-        ("Facebook", "Instagram", "Twitter", "Google"),
-    )
-    perfil = st.text_input('Ingresa el link del perfil', '''
-    ''')
-    otroscandidatos =  st.text_input('Ingresa el link del contrincante a comparar', '''
+    perfil = st.text_input('Ingresa el nombre completo del candidat@', '''
     ''')
     
-if territorio and categoria and redsocial and perfil and otroscandidatos:  
+    
+if territorio and categoria and perfil:  
     st.header("Requerimientos de Campaña")
     col1, col2, col3, col4 = st.columns(4)
     col1.metric("Inversión", "70 M USD", "7.2 M USD")
