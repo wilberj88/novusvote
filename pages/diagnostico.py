@@ -14,24 +14,18 @@ st.title('Novus Vote 🗳️')
 st.header("Diagnóstico de Campaña y Candidato")
 st.write("Diligencia y visualiza tus necesidades")
 
-col1, col2 = st.columns(2)
-
-with col1:
-    territorio = st.selectbox(
-        "Indica el Territorio",
+territorio = st.selectbox("Indica el Territorio",
         ("Bogotá", "Medellín", "Cali", "Bucaramanga", "Barrancabermeja"),
     )
-    categoria = st.radio(
+categoria = st.radio(
         "Indica la categoría de campaña👇 ",
         options=['Gobernación', 'Asamblea Departamental','Alcaldía', 'Concejo', 'Junta de Acción Comunal'],
     )
 
-with col2:
-    perfil = st.text_input('Ingresa el nombre completo del candidat@', '''
+perfil = st.text_input('Ingresa el nombre completo del candidat@', '''
     ''')
-    
-    
-if territorio and categoria and perfil:  
+
+if st.button('Calcular diagnóstico gratuito'):
     st.header("Requerimientos de Campaña")
     col1, col2, col3, col4 = st.columns(4)
     col1.metric("Inversión", "70 M USD", "7.2 M USD")
