@@ -14,11 +14,10 @@ st.title('Novus Vote 🗳️ - Diego Molano')
 st.header("Centrales de Mando para la Operación Política y Electoral")
 st.write("Focaliza el monitoreo de todos tus frentes")
 
-etapa = st.selectbox("Etapa Electoral",
-        ("Pre Campaña", "Campaña", "Día Electoral", "Post Campaña"))
-
-if etapa is "Pre Campaña":
-        st.write("Requieres los monitores de: Firma + Votos...")
+etapa = st.select_slider(
+    'Selecciona la etapa de campaña a monitorizar:',
+    options=['Pre Campaña', 'Campaña', 'Día E', 'Post Campaña'])
+st.write('Los monitores que necesitas para tu etapa ', etapa, 'son los siguientes:')
 
 
 
