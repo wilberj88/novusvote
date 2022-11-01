@@ -28,9 +28,9 @@ st.write("Análisis de Posicionamiento y Sentimiento en Google")
 
 #SYSTEM
 kw_list = ["covid"]
-frequency = ‘daily’ # ie. hourly, weekly, monthly, yearly
-geo = ‘US’
-hl=’en-US’
+frequency = "daily" # ie. hourly, weekly, monthly, yearly
+geo = "US"
+hl = "en-US"
 # Select Start Date
 year_start = 2017
 month_start = 6
