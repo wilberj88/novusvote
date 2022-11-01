@@ -18,7 +18,7 @@ etapa = st.select_slider(
     'Selecciona la etapa de campaña a monitorizar:',
     options=['Diagnóstico', 'Pre Campaña', 'Campaña', 'Día E', 'Post Campaña'])
 
-if etapa = 'Diagnóstico':
+if etapa is 'Diagnóstico':
     st.write('Los monitores que necesitas para ', etapa, 'son los siguientes:')
     st.header("Radiografía de Posicionamiento")
     st.header("Radiografía de Reputación")
