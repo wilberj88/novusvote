@@ -16,7 +16,7 @@ st.write("Focaliza el monitoreo de todos tus frentes")
 
 etapa = st.select_slider(
     'Selecciona la etapa de campaña a monitorizar:',
-    options=['Pre Campaña', 'Campaña', 'Día E', 'Post Campaña'])
+    options=['Diagnóstico', 'Pre Campaña', 'Campaña', 'Día E', 'Post Campaña'])
 st.write('Los monitores que necesitas para tu etapa ', etapa, 'son los siguientes:')
 
 
