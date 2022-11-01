@@ -36,7 +36,7 @@ with col2:
     otroscandidatos =  st.text_input('Ingresa el link del perfil con el que te quieres comparar', '''
     ''')
     
-if territorio and categoria and redsocial and perfil and meta:  
+if territorio and categoria and redsocial and perfil and otroscandidatos:  
     st.header("Requerimientos de Campaña")
     col1, col2, col3, col4 = st.columns(4)
     col1.metric("Inversión", "70 M USD", "7.2 M USD")
