@@ -14,13 +14,8 @@ st.title('Novus Vote 🗳️')
 st.header("Centrales de Mando para la Operación Política y Electoral")
 st.write("Focaliza el monitoreo de todos tus frentes")
 
-col1, col2, col3 = st.columns(3)
-col1.write("Pre")
-col1.write("Durante")
-col1.write("Post")
-
-territorio = st.selectbox("Indica el Territorio",
-        ("Bogotá", "Medellín", "Cali", "Bucaramanga", "Barrancabermeja"),
+territorio = st.selectbox("Etapa Electoral",
+        ("Pre Campaña", "Campaña", "Día Electoral", "Post Campaña"),
     )
 categoria = st.radio(
         "Indica la categoría de campaña👇 ",
