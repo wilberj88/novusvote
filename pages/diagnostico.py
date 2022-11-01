@@ -31,8 +31,11 @@ with col2:
     )
     perfil = st.text_input('Ingresa el link del perfil', '''
     ''')
-
-if territorio and categoria and redsocial and perfil:  
+    meta = values = st.slider(
+    'Select a range of values',
+    0.0, 100.0, (25.0, 75.0))
+    
+if territorio and categoria and redsocial and perfil and meta:  
     st.header("Requerimientos de Campaña")
     chart_data = pd.DataFrame(np.random.randn(20, 3), columns=["a", "b", "c"])
     st.area_chart(chart_data)
