@@ -18,11 +18,11 @@ etapa = st.radio(
     "Selecciona la etapa a monitorizar",
     ('Diagnóstico', 'Pre Campaña', 'Campaña', 'Día E', 'Post Campaña')
 
-if etapa == 'Diagnóstico'
+if etapa == 'Diagnóstico':
     st.write("Necesitas los siguientes monitores:")
-    st.header("Monitor de Posicionamiento")
-    st.header("Monitor de Reputación-Sentimiento")
-    st.header("Monitor de Votación Histórica")
+    #st.header("Monitor de Posicionamiento")
+    #st.header("Monitor de Reputación-Sentimiento")
+    #st.header("Monitor de Votación Histórica")
 else:
     st.write("You didn't select comedy.")
 
