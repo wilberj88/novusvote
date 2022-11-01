@@ -33,7 +33,7 @@ with col2:
     )
     perfil = st.text_input('Ingresa el link del perfil', '''
     ''')
-    otroscandidatos =  st.text_input('Ingresa el link del perfil con el que te quieres comparar', '''
+    otroscandidatos =  st.text_input('Ingresa el link del contrincante a comparar', '''
     ''')
     
 if territorio and categoria and redsocial and perfil and otroscandidatos:  
