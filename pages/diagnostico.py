@@ -23,7 +23,7 @@ with col1:
     )
     categoria = st.radio(
         "Indica la categoría de campaña👇 ",
-        options=['Gobernación', 'Alcaldía', 'Consejo', 'Diputación', 'Edil'],
+        options=['Gobernación', 'Asamblea Departamental','Alcaldía', 'Concejo', 'Junta de Acción Comunal'],
     )
 
 with col2:
