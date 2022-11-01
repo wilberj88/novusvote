@@ -10,22 +10,26 @@ import pydeck as pdk
 # SETTING PAGE CONFIG TO WIDE MODE AND ADDING A TITLE AND FAVICON
 st.set_page_config(layout="wide", page_title="Novus Vote - Diego Molano Aponte", page_icon="🗳️")
 
-st.title('Novus Vote 🗳️')
+st.title('Novus Vote 🗳️ - Diego Molano')
 st.header("Centrales de Mando para la Operación Política y Electoral")
 st.write("Focaliza el monitoreo de todos tus frentes")
 
-territorio = st.selectbox("Etapa Electoral",
-        ("Pre Campaña", "Campaña", "Día Electoral", "Post Campaña"),
-    )
-categoria = st.radio(
-        "Indica la categoría de campaña👇 ",
-        options=['Gobernación', 'Asamblea Departamental','Alcaldía', 'Concejo', 'Junta de Acción Comunal'],
-    )
+etapa = st.selectbox("Etapa Electoral",
+        ("Pre Campaña", "Campaña", "Día Electoral", "Post Campaña"))
 
-perfil = st.text_input('Ingresa el nombre completo del candidat@', '''
-    ''')
+if etapa = "Pre Campaña":
+        st.write("Requieres los monitores de: Firma + Votos...")
 
-if st.button('Calcular diagnóstico gratuito'):
+
+
+
+
+
+
+
+
+
+st.button('Calcular diagnóstico gratuito'):
     st.header("Requerimientos de Campaña")
     col1, col2, col3, col4 = st.columns(4)
     col1.metric("Inversión", "70 M USD", "7.2 M USD")
