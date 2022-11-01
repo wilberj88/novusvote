@@ -10,8 +10,9 @@ import pydeck as pdk
 # SETTING PAGE CONFIG TO WIDE MODE AND ADDING A TITLE AND FAVICON
 st.set_page_config(layout="wide", page_title="Novus Vote - Diagnóstico", page_icon="🗳️")
 
-st.title('Diagnóstico de Campaña y Candidato')
-st.header("Diligencia y visualiza tus necesidades")
+st.title('Novus Vote 🗳️')
+st.header("Diagnóstico de Campaña y Candidato")
+st.write("Diligencia y visualiza tus necesidades")
 
 col1, col2 = st.columns(2)
 
