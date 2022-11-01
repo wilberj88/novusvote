@@ -5,3 +5,4 @@ plotly.express
 selenium
 beautifulsoup4
 pytrends
+seaborn
