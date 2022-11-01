@@ -39,6 +39,10 @@ with col2:
 if territorio and categoria and redsocial and perfil and meta:  
     st.header("Requerimientos de Campaña")
     st.write("Votos necesarios de acuerdo con las votaciones históricas")
+    #datos
+    df = pd.DataFrame(
+    np.random.randn(1000, 2) / [50, 50] + [37.76, -122.4],
+    columns=['lat', 'lon'])
     st.pydeck_chart(pdk.Deck(
     map_style=None,
     initial_view_state=pdk.ViewState(
@@ -65,8 +69,8 @@ if territorio and categoria and redsocial and perfil and meta:
             get_color='[200, 30, 0, 160]',
             get_radius=200,
         ),
-    ],
-))
+        ],
+        ))
     st.write("Líderes necesarios")
     chart_data = pd.DataFrame(np.random.randn(20, 3), columns=["a", "b", "c"])
     st.area_chart(chart_data)
