@@ -40,7 +40,7 @@ col3.metric("Firmas Legalizadas", "87%", "7")
 df = pd.DataFrame(
     np.random.randn(1000, 2) / [50, 50] + [40.3875, -3.7575416667],
     columns=['lat', 'lon'])
-st.write("Desagregación geográfica de Firmas Potenciales, Obtenidas, Tramitadas y Legalizadas", hora_seleccionada, "en la Comunidad de Madrid")
+st.write("Desagregación geográfica de Firmas Potenciales, Obtenidas, Tramitadas y Legalizadas")
 st.write(
     pdk.Deck(map_style="mapbox://styles/mapbox/light-v9",
         initial_view_state={
