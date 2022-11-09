@@ -79,37 +79,11 @@ col1, col2, col3 = st.columns(3)
 col1.metric(label ="Votos Gestionados", value = '150%', delta='17')
 col2.metric("Votos en Gestión", "55%", "13")
 col3.metric("Votos por Gestionar", "25%", "7")
+st.text('Desagregación geográfica de la gestión de votos')
 df = pd.DataFrame(
     np.random.randn(1000, 2) / [50, 50] + [40.3875, -3.7575416667],
     columns=['lat', 'lon'])
-st.write("Desagregación geográfica de Votos Potenciales, Gestionados, En Gestión y Por Gestionar")
-st.write(
-    pdk.Deck(map_style="mapbox://styles/mapbox/light-v9",
-        initial_view_state={
-            "latitude": 40.3875,
-            "longitude": -3.7575416667,
-            "zoom": 12,
-            "pitch": 50},
-        layers=[
-            pdk.Layer(
-                'HexagonLayer',
-                data=df,
-                get_position='[lon, lat]',
-                radius=150,
-                elevation_scale=4,
-                elevation_range=[0, 1000],
-                pickable=True,
-                extruded=True,
-                ),
-             pdk.Layer(
-                'ScatterplotLayer',
-                data=df,
-                get_position='[lon, lat]',
-                get_color='[200, 30, 0, 160]',
-                get_radius=200,
-                ),
-        ],
-        ))
+st.map(df)
 st.markdown('CONCLUSIONES MONITOR 2: VOTOS 🗳️')
 st.text('Falta gestionar el 45% de las votos requeridos para pelear la candidatura con probabilidad de victoria del 85%')
 st.text('Las zonas de mayor ubicación de firmas potenciales son Norte y Este en los barrios X, Y y Z')
