@@ -203,43 +203,33 @@ st.text('Concentrar la comunicación en el TOP3 de perfiles en los barrios X, Y 
 
 #ALARMAS
 st.header("Alarmas de Bajo Cumplimiento de Metas ⚠️")
-
 alarma1, alarma2, alarma3 = st.columns(3)
-alarma1.metric("Productos con mayores defectos", "1/2/18", "-85%prom")
-alarma2.metric("Horarios de menor producción", "16h.13h.18h", "-73%prom")
-alarma3.metric("Inventario de mayor rotación", "8-32-33", "485%prom")
-
-chart_data = pd.DataFrame(np.random.randn(23, 3), columns=["Efectivo", "TarjetaCrédito", "TarjetaDébito"])
-st.area_chart(chart_data)
-    
-st.write('ID TOP 1 Producto de menor facturación', 1)
-st.write('ID TOP 2 Producto de menor facturación', 2)
-st.write('ID TOP 3 Producto de menor facturación', 18)
-
+alarma1.metric("Electores por Alcanzar", "1/2/18", "-85%prom")
+alarma2.metric("Electores por Influir", "16h.13h.18h", "-73%prom")
+alarma3.metric("Electores por Convencer", "8-32-33", "485%prom")
+chart_data = pd.DataFrame(np.random.randn(23, 3), columns=["Alcanzados", "Influenciados", "Convencidos"])
+st.area_chart(chart_data)    
+st.write('ID TOP 1 Perfil de menor Influencia', 1)
+st.write('ID TOP 2 Perfil de menor Convencimiento', 2)
+st.write('ID TOP 3 Perfil de menor Interacción', 18)
 st.markdown('CONCLUSIONES ALARMAS ⚠️:')
-st.text('3 productos (ID=1,2,18) están concentrando la peor facturación de los últimos 130 días')
-st.text('Las horas de menor facturación son en la tarde (16h,13h,18h)')
+st.text('Falta enfocar el alcance en los barrios X, Y y Z en los perfiles A, B y C')
+st.text('Las horas de menor influencia son las 7pm-5am')
 
 
 
 #RECOMENDACIONES
 st.header("Recomendaciones para Aumentar Votos, Influencia y Sentimiento Favorable 🧠")
-
 rec1, rec2, rec3 = st.columns(3)
-rec1.metric("Horario de mayor potencial de crecimiento", "4pm", "85%prom")
-rec2.metric("Productos de mayor potencial de crecimiento", "ID_08", "73%prom")
-rec3.metric("Productos sin tracción requerida para matenerse", "1-2-18", "-45%prom")
-
-st.text('Potenciales zonas de mayor facturación')
-
+rec1.metric("Horario de Mayor Influencia", "4pm", "85%prom")
+rec2.metric("Horario de Mayor Convencimiento", "ID_08", "73%prom")
+rec3.metric("Zonas de Mayor Impacto", "1-2-18", "-45%prom")
+st.text('Potenciales zonas de mayor Influencia y Convencimiento')
 df = pd.DataFrame(
     np.random.randn(1000, 2) / [50, 50] + [40.3875, -3.7575416667],
     columns=['lat', 'lon'])
-
 st.map(df)
-
 st.markdown('CONCLUSIONES RECOMENDACIONES 🧠:')
-st.text('Se puede crecer 117% la facturación si se equlibran las ventas en los horarios de 4pm y 1pm')
-st.text('Se puede aumentar la rentabilidad en 35% si se aumentan las ventas de los productos con ID_007 y ID_004')
-
+st.text('Se puede crecer 117% la votación si se intensifican los mensajes en los horarios de 8am - 1pm')
+st.text('Se puede aumentar la influencia general en 35% si se enfocan en los barrios ID_007 y ID_004')
 st.caption('Todos los análisis son representativos únicamente entre el día/mes/años y el día/mes/año con sus días ☀️ y con sus noches 🌛')
