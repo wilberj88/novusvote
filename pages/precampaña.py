@@ -175,7 +175,7 @@ group_labels = ['Perfil TOP1 afinidad', 'Perfil TOP2 afinidad', 'Perfil TOP3 afi
 fig = ff.create_distplot(hist_data, group_labels, bin_size=[.1, .25, .5])
 # Plot!
 st.plotly_chart(fig, use_container_width=True)
-st.write('Top 3 de mejores productos y horas')
+st.write('Top 3 de POTENCIALES VOTANTES MÁS AFINES')
 st.write(pd.DataFrame({
     'Edades Perfiles Más Afines': [55, 32, 27],
     'Localidades Perfiles Más Afines': [1, 0, 2]}))
