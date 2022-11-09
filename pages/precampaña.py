@@ -82,7 +82,7 @@ col3.metric("Votos por Gestionar", "25%", "7")
 df = pd.DataFrame(
     np.random.randn(1000, 2) / [50, 50] + [40.3875, -3.7575416667],
     columns=['lat', 'lon'])
-st.write("Desagregación geográfica de Votos Potenciales, Gestionados, En Gestión y Por Gestionar", hora_seleccionada, "en la Comunidad de Madrid")
+st.write("Desagregación geográfica de Votos Potenciales, Gestionados, En Gestión y Por Gestionar")
 st.write(
     pdk.Deck(map_style="mapbox://styles/mapbox/light-v9",
         initial_view_state={
