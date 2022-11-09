@@ -228,7 +228,7 @@ st.text('Concentrar la comunicación en el TOP3 de perfiles en los barrios X, Y 
 
 
 #ALARMAS
-st.header("Alarmas de Baja Producción ⚠️")
+st.header("Alarmas de Bajo Cumplimiento de Metas ⚠️")
 
 alarma1, alarma2, alarma3 = st.columns(3)
 alarma1.metric("Productos con mayores defectos", "1/2/18", "-85%prom")
@@ -249,7 +249,7 @@ st.text('Las horas de menor facturación son en la tarde (16h,13h,18h)')
 
 
 #RECOMENDACIONES
-st.header("Recomendaciones para Aumentar Ventas 🧠")
+st.header("Recomendaciones para Aumentar Votos, Influencia y Sentimiento Favorable 🧠")
 
 rec1, rec2, rec3 = st.columns(3)
 rec1.metric("Horario de mayor potencial de crecimiento", "4pm", "85%prom")
