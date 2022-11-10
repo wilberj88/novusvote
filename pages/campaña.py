@@ -13,10 +13,12 @@ import datetime
 st.set_page_config(layout="wide", page_title="Novus Vote 🗳️", page_icon="🗳️")
 page_bg_img = """
 <style>
-[data-testid="stAppViewContainer"] {
-background-color: #f7e6e6;
-opacity: 0.8;
-background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #f7e6e6 10px ), repeating-linear-gradient( #45b7f755, #45b7f7 );}
+[data-testid="stAppViewContainer"] {background-color: #f7e6e6;
+opacity: 0.2;
+background-image:  linear-gradient(135deg, #45b7f7 25%, transparent 25%), linear-gradient(225deg, #45b7f7 25%, transparent 25%), linear-gradient(45deg, #45b7f7 25%, transparent 25%), linear-gradient(315deg, #45b7f7 25%, #f7e6e6 25%);
+background-position:  10px 0, 10px 0, 0 0, 0 0;
+background-size: 10px 10px;
+background-repeat: repeat;}
 </style>
 """
 st.markdown(page_bg_img, unsafe_allow_html=True)
