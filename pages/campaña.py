@@ -24,7 +24,7 @@ background-repeat: no-repeat;
 background-attachment: local;
 }}
 [data-testid="stSidebar"] > div:first-child {{
-background-image: url("https://images.unsplash.com/photo-1501426026826-31c667bdf23d");
+background-image: url("https://unsplash.com/es/fotos/LA1VawaCjjI");
 background-position: center; 
 background-repeat: no-repeat;
 background-attachment: fixed;
