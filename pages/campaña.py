@@ -7,23 +7,46 @@ import altair as alt
 import pydeck as pdk
 import matplotlib.pyplot as plt
 import datetime
+import base64
+
+# SETTING BACKGROUND
+@st.experimental_memo
+def get_img_as_base64(file):
+    with open(file, "rb") as f:
+        data = f.read()
+    return base64.b64encode(data).decode()
+
+img = get_img_as_base64("img1NovusVote.jpg")
+page_bg_img = f"""
+<style>
+[data-testid="stAppViewContainer"] > .main {{
+background-image: url("https://images.unsplash.com/photo-1501426026826-31c667bdf23d");
+background-size: 180%;
+background-position: top left;
+background-repeat: no-repeat;
+background-attachment: local;
+}}
+[data-testid="stSidebar"] > div:first-child {{
+background-image: url("data:image/png;base64,{img}");
+background-position: center; 
+background-repeat: no-repeat;
+background-attachment: fixed;
+}}
+[data-testid="stHeader"] {{
+background: rgba(0,0,0,0);
+}}
+[data-testid="stToolbar"] {{
+right: 2rem;
+}}
+</style>
+"""
+st.markdown(page_bg_img, unsafe_allow_html=True)
+
 
 
 # SETTING PAGE CONFIG TO WIDE MODE AND ADDING A TITLE AND FAVICON
 st.set_page_config(layout="wide", page_title="Novus Vote 🗳️", page_icon="🗳️")
-page_bg_img = """
-<style>
-[data-testid="stAppViewContainer"] {
-background-color: #f7e6e6;
-opacity: 0.2;
-background-image:  linear-gradient(135deg, #45b7f7 25%, transparent 25%), linear-gradient(225deg, #45b7f7 25%, transparent 25%), linear-gradient(45deg, #45b7f7 25%, transparent 25%), linear-gradient(315deg, #45b7f7 25%, #f7e6e6 25%);
-background-position:  10px 0, 10px 0, 0 0, 0 0;
-background-size: 10px 10px;
-background-repeat: repeat;
-}
-</style>
-"""
-st.markdown(page_bg_img, unsafe_allow_html=True)
+
 
 #TITULO
 st.title('Novus Vote 🗳️ - Centrales de Mandos de Campaña')
