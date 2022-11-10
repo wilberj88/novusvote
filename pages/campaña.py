@@ -16,10 +16,7 @@ page_bg_img = """
 [data-testid="stAppViewContainer"] {
 background-color: #f7e6e6;
 opacity: 0.8;
-background-image:  linear-gradient(#f745a3 2px, transparent 2px), linear-gradient(90deg, #f745a3 2px, transparent 2px), linear-gradient(#f745a3 1px, transparent 1px), linear-gradient(90deg, #f745a3 1px, #f7e6e6 1px);
-background-size: 50px 50px, 50px 50px, 10px 10px, 10px 10px;
-background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
-}
+background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #f7e6e6 10px ), repeating-linear-gradient( #45b7f755, #45b7f7 );}
 </style>
 """
 st.markdown(page_bg_img, unsafe_allow_html=True)
