@@ -9,6 +9,10 @@ import matplotlib.pyplot as plt
 import datetime
 import base64
 
+
+# SETTING PAGE CONFIG TO WIDE MODE AND ADDING A TITLE AND FAVICON
+st.set_page_config(layout="wide", page_title="Novus Vote 🗳️", page_icon="🗳️")
+
 # SETTING BACKGROUND
 page_bg_img = f"""
 <style>
@@ -35,10 +39,6 @@ right: 2rem;
 """
 st.markdown(page_bg_img, unsafe_allow_html=True)
 
-
-
-# SETTING PAGE CONFIG TO WIDE MODE AND ADDING A TITLE AND FAVICON
-st.set_page_config(layout="wide", page_title="Novus Vote 🗳️", page_icon="🗳️")
 
 
 #TITULO
