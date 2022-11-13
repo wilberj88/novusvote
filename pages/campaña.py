@@ -50,14 +50,10 @@ st.write("""
 **Nueve (9) Centrales de Mando para:**
 - ⚙️: `Necesidades Territoriales, Sentimientos Digitales, Propuestas, Proyectos, Voluntarios, Líderes, Jurados, Testigos y Financiación`
 """)
-st.write('---')
-st.write('---')
 st.write("""
 **Sistema de Alarmas para:**
 - ⚙️: `Retrasos en Cumplimientos de Metas`
 """)
-st.write('---')
-st.write('---')
 st.write("""
 **Sistema de Recomendación para:**
 - ⚙️:  `Más Votos, Influencia y Sentimientos favorables`
