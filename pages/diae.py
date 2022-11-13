@@ -51,7 +51,7 @@ st.write("""
 - 🚮: `Mesas Electorales`
 - 🚌: `Transporte`
 - 🦐: `Alimentación`
-- 🫂: `Equipo`
+- 🫂: `Equipo: Jurados, Testigos y Defensores`
 """)
 st.write("""
 **Sistema de Alarmas para:**
