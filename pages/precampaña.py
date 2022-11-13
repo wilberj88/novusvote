@@ -13,13 +13,25 @@ import datetime
 st.set_page_config(layout="wide", page_title="Novus Vote 🗳️", page_icon="🗳️")
 
 #TITULO
-st.title('Novus Vote 🗳️ - Centrales de Mandos de Pre Campaña')
+st.title('Novus Vote 🗳️ - Pre Campaña')
 
 #SUBTITULO
+
 st.write('---')
 st.write("""
-**Tecnología Novus Tech**
-- ⚙️: `Centrales de Mandos de Firmas, Votos, Caudal Electoral y Potenciales Votantes` con `Alarmas de Retrasos en Cumplimientos de Metas` y `Recomendaciones para más Votos, Influencia y Sentimientos favorables`
+**Cuatro (4) Centrales de Mando para:**
+- ✍️: `Firmas`
+- 🗳️: `Votos`
+- 🌎: `Caudal Electoral`
+- 🎯: `Potenciales Votantes`
+""")
+st.write("""
+**Sistema de Alarmas para:**
+- ⏰ : `Retrasos en Cumplimientos de Metas`
+""")
+st.write("""
+**Sistema de Recomendación para:**
+- 📈:  `Más Votos, Influencia y Sentimientos favorables`
 """)
 st.write('---')
 
