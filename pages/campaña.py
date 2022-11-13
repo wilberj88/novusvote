@@ -14,30 +14,30 @@ import base64
 st.set_page_config(layout="wide", page_title="Novus Vote 🗳️", page_icon="🗳️")
 
 # SETTING BACKGROUND
-page_bg_img = f"""
-<style>
-[data-testid="stAppViewContainer"] > .main {{
-background-image: url("https://images.unsplash.com/photo-1602906530215-1bf5f4925279?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1527&q=80");
-background-size: 180%;
-background-position: top;
-background-repeat: no-repeat;
-background-attachment: local;
-}}
-[data-testid="stSidebar"] > div:first-child {{
-background-image: url("https://images.unsplash.com/photo-1603032813605-2c91e257e2ae?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dm90b3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
-background-position: left; 
-background-repeat: no-repeat;
-background-attachment: local;
-}}
-[data-testid="stHeader"] {{
-background: rgba(0,0,0,0);
-}}
-[data-testid="stToolbar"] {{
-right: 2rem;
-}}
-</style>
-"""
-st.markdown(page_bg_img, unsafe_allow_html=True)
+#page_bg_img = f"""
+#<style>
+#[data-testid="stAppViewContainer"] > .main {{
+#background-image: url("https://images.unsplash.com/photo-1602906530215-1bf5f4925279?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1527&q=80");
+#background-size: 180%;
+#background-position: top;
+#background-repeat: no-repeat;
+#background-attachment: local;
+#}}
+#[data-testid="stSidebar"] > div:first-child {{
+#background-image: url("https://images.unsplash.com/photo-1603032813605-2c91e257e2ae?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dm90b3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
+#background-position: left; 
+#background-repeat: no-repeat;
+#background-attachment: local;
+#}}
+#[data-testid="stHeader"] {{
+#background: rgba(0,0,0,0);
+#}}
+#[data-testid="stToolbar"] {{
+#right: 2rem;
+#}}
+#</style>
+#"""
+#st.markdown(page_bg_img, unsafe_allow_html=True)
 
 
 
