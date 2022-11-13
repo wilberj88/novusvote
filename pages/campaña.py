@@ -48,10 +48,21 @@ st.title('Novus Vote 🗳️ - Centrales de Mandos de Campaña')
 st.write('---')
 st.write("""
 **Centrales de Mando para:**
-- ⚙️: `Necesidades Territoriales, Sentimientos Digitales, Propuestas, Proyectos, Voluntarios, Líderes, Jurados, Testigos y Financiación` con `Alarmas de Retrasos en Cumplimientos de Metas` y `Recomendaciones para más Votos, Influencia y Sentimientos favorables`
+- ⚙️: `Necesidades Territoriales, Sentimientos Digitales, Propuestas, Proyectos, Voluntarios, Líderes, Jurados, Testigos y Financiación``
 """)
 st.write('---')
-
+st.write('---')
+st.write("""
+**Sistema de Alarmas para:**
+- ⚙️: `Retrasos en Cumplimientos de Metas``
+""")
+st.write('---')
+st.write('---')
+st.write("""
+**Sistema de Recomendación para:**
+- ⚙️:  `Más Votos, Influencia y Sentimientos favorables`
+""")
+st.write('---')
 st.markdown('Versión Ejemplo Borrador - Cotiza tu versión personalizada en www.novusvote.com')
 
 option = st.selectbox(
