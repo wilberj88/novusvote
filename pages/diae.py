@@ -49,10 +49,10 @@ st.write('---')
 st.write("""
 **Cinco (5) Centrales de Mando para:**
 - 🤔: `Paradoja del Votante`
+- 🫂: `Equipo: líderes, Jurados, Testigos y Defensores`
 - 🚮: `Mesas Electorales`
 - 🚌: `Transporte`
 - 🦐: `Alimentación`
-- 🫂: `Equipo: Jurados, Testigos y Defensores`
 """)
 st.write("""
 **Sistema de Alarmas para:**
