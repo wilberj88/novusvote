@@ -47,14 +47,14 @@ st.title('Novus Vote 🗳️ - Centrales de Mandos de Campaña')
 #SUBTITULO
 st.write('---')
 st.write("""
-**Centrales de Mando para:**
-- ⚙️: `Necesidades Territoriales, Sentimientos Digitales, Propuestas, Proyectos, Voluntarios, Líderes, Jurados, Testigos y Financiación``
+**Nueve (9) Centrales de Mando para:**
+- ⚙️: `Necesidades Territoriales, Sentimientos Digitales, Propuestas, Proyectos, Voluntarios, Líderes, Jurados, Testigos y Financiación`
 """)
 st.write('---')
 st.write('---')
 st.write("""
 **Sistema de Alarmas para:**
-- ⚙️: `Retrasos en Cumplimientos de Metas``
+- ⚙️: `Retrasos en Cumplimientos de Metas`
 """)
 st.write('---')
 st.write('---')
