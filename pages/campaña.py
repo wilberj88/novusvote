@@ -42,7 +42,7 @@ st.set_page_config(layout="wide", page_title="Novus Vote 🗳️", page_icon="�
 
 
 #TITULO
-st.title('Novus Vote 🗳️ - Centrales de Mandos de Campaña')
+st.title('Novus Vote 🗳️ - Campaña')
 
 #SUBTITULO
 st.write('---')
