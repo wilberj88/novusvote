@@ -47,7 +47,8 @@ st.title('Novus Vote 🗳️ - Día E')
 #SUBTITULO
 st.write('---')
 st.write("""
-**Cuatro (4) Centrales de Mando para:**
+**Cinco (5) Centrales de Mando para:**
+- 🤔: `Paradoja del Votante`
 - 🚮: `Mesas Electorales`
 - 🚌: `Transporte`
 - 🦐: `Alimentación`
