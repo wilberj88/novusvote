@@ -48,7 +48,7 @@ st.title('Novus Vote 🗳️ - Día E')
 st.write('---')
 st.write("""
 **Cinco (5) Centrales de Mando para:**
-- 🤔: `Paradoja del Votante`
+- 🤔: `Paradoja por Perfiles de Votantes`
 - 🫂: `Equipo: líderes, Jurados, Testigos y Defensores`
 - 🚮: `Mesas Electorales`
 - 🚌: `Transporte`
