@@ -56,8 +56,8 @@ st.write("Desagregación geográfica de Firmas Potenciales, Obtenidas, Tramitada
 st.write(
     pdk.Deck(map_style="mapbox://styles/mapbox/light-v9",
         initial_view_state={
-            "latitude": 40.3875,
-            "longitude": -3.7575416667,
+            "latitude": 4.6453552,
+            "longitude": -74.0619385,
             "zoom": 12,
             "pitch": 50},
         layers=[
