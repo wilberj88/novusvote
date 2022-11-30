@@ -25,7 +25,7 @@ st.markdown(
 )
 
 
-acelerometro = {
+acelerometro1 = {
         "tooltip": {"formatter": "{a} <br/>{b} : {c}%"},
         "series": [
             {
@@ -38,21 +38,51 @@ acelerometro = {
                 },
                 "progress": {"show": "true", "width": 10},
                 "detail": {"valueAnimation": "true", "formatter": "{value}"},
-                "data": [{"value": 30, "name": "Score"}],
+                "data": [{"value": 30, "name": "Firmas"}],
             }
         ],
     }
 
-st_echarts(options=acelerometro)
+st_echarts(options=acelerometro1)
 
-options = {
-    "xAxis": {
-        "type": "category",
-        "data": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
-    },
-    "yAxis": {"type": "value"},
-    "series": [
-        {"data": [820, 932, 901, 934, 1290, 1330, 1320], "type": "line"}
-    ],
-}
-st_echarts(options=options)
+
+acelerometro2 = {
+        "tooltip": {"formatter": "{a} <br/>{b} : {c}%"},
+        "series": [
+            {
+                "name": "Pressure",
+                "type": "gauge",
+                "axisLine": {
+                    "lineStyle": {
+                        "width": 10,
+                    },
+                },
+                "progress": {"show": "true", "width": 10},
+                "detail": {"valueAnimation": "true", "formatter": "{value}"},
+                "data": [{"value": 50, "name": "Votos"}],
+            }
+        ],
+    }
+
+st_echarts(options=acelerometro2)
+
+
+acelerometro3 = {
+        "tooltip": {"formatter": "{a} <br/>{b} : {c}%"},
+        "series": [
+            {
+                "name": "Pressure",
+                "type": "gauge",
+                "axisLine": {
+                    "lineStyle": {
+                        "width": 10,
+                    },
+                },
+                "progress": {"show": "true", "width": 10},
+                "detail": {"valueAnimation": "true", "formatter": "{value}"},
+                "data": [{"value": 80, "name": "Sentimiento"}],
+            }
+        ],
+    }
+
+st_echarts(options=acelerometro3)
