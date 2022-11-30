@@ -355,3 +355,5 @@ ST_HEATMAP_DEMOS = {
         "https://echarts.apache.org/examples/en/editor.html?c=heatmap-cartesian",
     ),
 }
+
+render_heatmap_cartesian()
