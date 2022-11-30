@@ -1,5 +1,5 @@
 import streamlit as st
-from streamlit_echarts import st_echarts
+import st_echarts
 import pandas as pd
 import numpy as np
 
