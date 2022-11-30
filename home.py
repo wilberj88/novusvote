@@ -43,4 +43,4 @@ acelerometro = {
         ],
     }
 
-st_echarts(options=acelerometro, key=0)
+st_echarts(options=acelerometro, key=1)
