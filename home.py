@@ -11,7 +11,21 @@ st.header("Sistemas Inteligentes para Conseguir Votos")
 
 st.write("Bienvenidos al futuro electoral 👋")
 
-options = {
+
+st.markdown(
+  """
+  En esta web encontrarás los módulos que necesita tu campaña:
+  - 📆 _    Sistema Político: control electoral mediante monitor de votaciones, líderes, testigos, voluntarios, jurados y competencia
+  - 🧠 _    Sistema Programático: coyuntura local en necesidades y sentimientos, propuestas y discurso
+  - 📢 _     Sistema Comunicaciones: monitor de noticias, creación y difusión de contenido
+  - 🏢 _    Sistema Administrativo: Tesorería, Logística, Jurídica y Auditoría
+  
+  EMPIEZA TU CAMPAÑA ELECTORAL AHORA 🕰 CON NUESTRO DIAGNÓSTICO GRATUITO
+  """
+)
+
+
+acelerometro = {
         "tooltip": {"formatter": "{a} <br/>{b} : {c}%"},
         "series": [
             {
@@ -29,17 +43,4 @@ options = {
         ],
     }
 
-st_echarts(options=options, width="100%", key=0)
-
-
-st.markdown(
-  """
-  En esta web encontrarás los módulos que necesita tu campaña:
-  - 📆 _    Sistema Político: control electoral mediante monitor de votaciones, líderes, testigos, voluntarios, jurados y competencia
-  - 🧠 _    Sistema Programático: coyuntura local en necesidades y sentimientos, propuestas y discurso
-  - 📢 _     Sistema Comunicaciones: monitor de noticias, creación y difusión de contenido
-  - 🏢 _    Sistema Administrativo: Tesorería, Logística, Jurídica y Auditoría
-  
-  EMPIEZA TU CAMPAÑA ELECTORAL AHORA 🕰 CON NUESTRO DIAGNÓSTICO GRATUITO
-  """
-)
+st_echarts(options=acelerometro, width="100%", key=0)
