@@ -11,21 +11,9 @@ st.header("Sistemas Inteligentes para Conseguir Votos")
 
 st.write("Bienvenidos al futuro electoral 👋")
 
-
-st.markdown(
-  """
-  En esta web encontrarás los módulos que necesita tu campaña:
-  - 📆 _    Sistema Político: control electoral mediante monitor de votaciones, líderes, testigos, voluntarios, jurados y competencia
-  - 🧠 _    Sistema Programático: coyuntura local en necesidades y sentimientos, propuestas y discurso
-  - 📢 _     Sistema Comunicaciones: monitor de noticias, creación y difusión de contenido
-  - 🏢 _    Sistema Administrativo: Tesorería, Logística, Jurídica y Auditoría
-  
-  EMPIEZA TU CAMPAÑA ELECTORAL AHORA 🕰 CON NUESTRO DIAGNÓSTICO GRATUITO
-  """
-)
-
-
-acelerometro1 = {
+col1, col2, col3 = st.columns(3)
+with col1:
+  acelerometro1 = {
         "tooltip": {"formatter": "{a} <br/>{b} : {c}%"},
         "series": [
             {
@@ -43,10 +31,10 @@ acelerometro1 = {
         ],
     }
 
-st_echarts(options=acelerometro1)
+  st_echarts(options=acelerometro1)
 
-
-acelerometro2 = {
+with col2:
+  acelerometro2 = {
         "tooltip": {"formatter": "{a} <br/>{b} : {c}%"},
         "series": [
             {
@@ -64,10 +52,10 @@ acelerometro2 = {
         ],
     }
 
-st_echarts(options=acelerometro2)
+  st_echarts(options=acelerometro2)
 
-
-acelerometro3 = {
+with col3:
+  acelerometro3 = {
         "tooltip": {"formatter": "{a} <br/>{b} : {c}%"},
         "series": [
             {
@@ -84,5 +72,24 @@ acelerometro3 = {
             }
         ],
     }
+  st_echarts(options=acelerometro3)
 
-st_echarts(options=acelerometro3)
+  
+  
+  
+st.markdown(
+  """
+  En esta web encontrarás los módulos que necesita tu campaña:
+  - 📆 _    Sistema Político: control electoral mediante monitor de votaciones, líderes, testigos, voluntarios, jurados y competencia
+  - 🧠 _    Sistema Programático: coyuntura local en necesidades y sentimientos, propuestas y discurso
+  - 📢 _     Sistema Comunicaciones: monitor de noticias, creación y difusión de contenido
+  - 🏢 _    Sistema Administrativo: Tesorería, Logística, Jurídica y Auditoría
+  
+  EMPIEZA TU CAMPAÑA ELECTORAL AHORA 🕰 CON NUESTRO DIAGNÓSTICO GRATUITO
+  """
+)
+
+
+
+
+
