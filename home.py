@@ -1,4 +1,5 @@
 import streamlit as st
+from streamlit_echarts import st_echarts
 import pandas as pd
 import numpy as np
 
@@ -9,6 +10,27 @@ st.title('Novus Vote 🗳️')
 st.header("Sistemas Inteligentes para Conseguir Votos")
 
 st.write("Bienvenidos al futuro electoral 👋")
+
+options = {
+        "tooltip": {"formatter": "{a} <br/>{b} : {c}%"},
+        "series": [
+            {
+                "name": "Pressure",
+                "type": "gauge",
+                "axisLine": {
+                    "lineStyle": {
+                        "width": 10,
+                    },
+                },
+                "progress": {"show": "true", "width": 10},
+                "detail": {"valueAnimation": "true", "formatter": "{value}"},
+                "data": [{"value": value, "name": "Score"}],
+            }
+        ],
+    }
+
+st_echarts(options=options, width="100%", key=0)
+
 
 st.markdown(
   """
