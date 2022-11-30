@@ -24,7 +24,7 @@ options = {
                 },
                 "progress": {"show": "true", "width": 10},
                 "detail": {"valueAnimation": "true", "formatter": "{value}"},
-                "data": [{"value": value, "name": "Score"}],
+                "data": [{"value": 30, "name": "Score"}],
             }
         ],
     }
