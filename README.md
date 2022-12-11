@@ -9,3 +9,6 @@ Construye tu inteligencia electoral con 4 sistemas complementarios:
 
 Gráficos de Nodos
 https://medium.com/@vespinozag/what-is-gephi-meet-this-useful-network-analysis-tool-628a1b42428c
+
+Twitter Sentiment Analysis:
+https://heartbeat.comet.ml/twitter-sentiment-analysis-part-1-6063442c06f3
