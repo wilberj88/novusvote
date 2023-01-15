@@ -10,6 +10,10 @@ Construye tu inteligencia electoral con 4 sistemas complementarios:
 Gráficos de Nodos
 https://medium.com/@vespinozag/what-is-gephi-meet-this-useful-network-analysis-tool-628a1b42428c
 
-Twitter Sentiment Analysis:
+Twitter 
+Crawling data
+https://medium.com/@ubeydkhoiri/how-to-crawl-twitter-data-using-python-2fab4b420a90
+Sentiment Analysis:
 https://heartbeat.comet.ml/twitter-sentiment-analysis-part-1-6063442c06f3
 https://medium.com/@ubeydkhoiri/social-network-analysis-in-twitter-using-python-ac90cbd861e5
+
