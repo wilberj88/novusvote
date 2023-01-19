@@ -9,6 +9,7 @@ Construye tu inteligencia electoral con 4 sistemas complementarios:
 
 Gráficos de Nodos
 https://medium.com/@vespinozag/what-is-gephi-meet-this-useful-network-analysis-tool-628a1b42428c
+https://towardsdatascience.com/build-a-simple-network-graph-app-using-streamlit-e6d65efbae88
 
 Twitter 
 Crawling data
