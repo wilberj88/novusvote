@@ -17,4 +17,5 @@ https://medium.com/@ubeydkhoiri/how-to-crawl-twitter-data-using-python-2fab4b420
 Sentiment Analysis:
 https://heartbeat.comet.ml/twitter-sentiment-analysis-part-1-6063442c06f3
 https://medium.com/@ubeydkhoiri/social-network-analysis-in-twitter-using-python-ac90cbd861e5
+https://pub.towardsai.net/twitter-sentiment-analysis-fifa-world-cup-2022-bba7e4ffc597
 
