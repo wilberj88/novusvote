@@ -38,7 +38,7 @@ with col1:
                 },
                 "progress": {"show": "true", "width": 10},
                 "detail": {"valueAnimation": "true", "formatter": "{value}"},
-                "data": [{"value": 30, "name": "Firmas"}],
+                "data": [{"value": 90, "name": "Firmas"}],
             }
         ],
     }
