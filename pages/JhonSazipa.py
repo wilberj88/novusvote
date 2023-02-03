@@ -80,7 +80,7 @@ with col3:
                 },
                 "progress": {"show": "true", "width": 10},
                 "detail": {"valueAnimation": "true", "formatter": "{value}"},
-                "data": [{"value": 80, "name": "Sentimiento"}],
+                "data": [{"value": 80, "name": "Financiación"}],
             }
         ],
     }
