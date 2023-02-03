@@ -130,7 +130,7 @@ ST_RADAR_DEMOS = {
 render_basic_radar()
  
 
-st.write('Cronograma de Trabajo Optimizado')
+st.write('Cronograma de Trabajo Optimizado Próxima Semana')
 def render_heatmap_cartesian():
     hours = [
         "12a",
