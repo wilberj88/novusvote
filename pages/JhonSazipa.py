@@ -123,110 +123,16 @@ def render_basic_radar():
 
 
 
-
+    
+st.write('Cronograma de Trabajo Optimizado')
 ST_RADAR_DEMOS = {
     "Radar: Basic Radar": (
         render_basic_radar,
         "https://echarts.apache.org/examples/en/editor.html?c=radar",
     ),
 }
-
 render_basic_radar()
-  
-
-st.write('---')
-st.write("""
-**DIAGNÓSTICO:**
-- 👤: `Candidato`
-- 👥: `Contrincantes`
-- 🧓: `ExConcejales`
-""")
-st.write('---')
-st.write("""
-**PRECAMPAÑA:**
-- ✍️: `Firmas`
-- 🗳️: `Votos`
-- 🌎: `Caudal Electoral`
-- 🎯: `Potenciales Votantes`
-""")
-st.write('---')
-st.write("""
-**CAMPAÑA:**
-- 🗺: `Necesidades Territoriales`
-- 💛: `Sentimientos Digitales`
-- 🧭: `Propuestas`
-- 🚧: `Proyectos`
-- 🗣️: `Voluntarios`
-- 🦶: `Líderes`
-- 🧑‍⚖️: `Jurados`
-- 🕵️: `Testigos`
-- 💰: `Financiación`
-""")
-st.write("""
-**SEMANA ELECTORAL:**
-- 🤔: `Paradoja por Perfiles de Votantes`
-- 🫂: `Equipo: líderes, Jurados, Testigos y Defensores`
-- 🚮: `Mesas Electorales`
-- 🚌: `Transporte`
-- 🦐: `Alimentación`
-""")
-st.write('---')
-st.write("""
-**POST CAMPAÑA::**
-- 🗳️: `Votos Logrados, en Disputa y Perdidos`
-- 🧑‍⚖️: `Defensores`
-- 💲: `Reposición Proyectada`
-- 🧭: `De propuestas a políticas`
-- 🚥: `De proyectos a obras`
-""")
-st.write('---')
-st.write("""
-**Sistema de Alarmas para:**
-- ⏰ : `Retrasos en Cumplimientos de Metas`
-""")
-st.write("""
-**Sistema de Recomendación para:**
-- 📈:  `Más Votos, Influencia y Sentimientos favorables`
-""")
-st.write('---')
-st.markdown('Versión Ejemplo Borrador - Cotiza tu versión personalizada en www.novusvote.com')
-
-
-
-
-
-  
-  
-  
-st.markdown(
-  """
-  En esta web encontrarás los módulos que necesita tu campaña:
-  - 📆 _    Sistema Político: control electoral mediante monitor de votaciones, líderes, testigos, voluntarios, jurados y competencia
-  - 🧠 _    Sistema Programático: coyuntura local en necesidades y sentimientos, propuestas y discurso
-  - 📢 _     Sistema Comunicaciones: monitor de noticias, creación y difusión de contenido
-  - 🏢 _    Sistema Administrativo: Tesorería, Logística, Jurídica y Auditoría
-  
-  EMPIEZA TU CAMPAÑA ELECTORAL AHORA 🕰 CON NUESTRO DIAGNÓSTICO GRATUITO
-  """
-)
-
-
-
-b = (
-    Bar()
-    .add_xaxis(["Microsoft", "Amazon", "IBM", "Oracle", "Google", "Alibaba"])
-    .add_yaxis(
-        "2017-2018 Revenue in (billion $)", [21.2, 20.4, 10.3, 6.08, 4, 2.2]
-    )
-    .set_global_opts(
-        title_opts=opts.TitleOpts(
-            title="Top cloud providers 2018", subtitle="2017-2018 Revenue"
-        ),
-        toolbox_opts=opts.ToolboxOpts(),
-    )
-)
-st_pyecharts(b)
-
+ 
 
 
 def render_heatmap_cartesian():
@@ -474,6 +380,100 @@ ST_HEATMAP_DEMOS = {
 }
 
 render_heatmap_cartesian()
+ 
+
+st.write('---')
+st.write("""
+**DIAGNÓSTICO:**
+- 👤: `Candidato`
+- 👥: `Contrincantes`
+- 🧓: `ExConcejales`
+""")
+st.write('---')
+st.write("""
+**PRECAMPAÑA:**
+- ✍️: `Firmas`
+- 🗳️: `Votos`
+- 🌎: `Caudal Electoral`
+- 🎯: `Potenciales Votantes`
+""")
+st.write('---')
+st.write("""
+**CAMPAÑA:**
+- 🗺: `Necesidades Territoriales`
+- 💛: `Sentimientos Digitales`
+- 🧭: `Propuestas`
+- 🚧: `Proyectos`
+- 🗣️: `Voluntarios`
+- 🦶: `Líderes`
+- 🧑‍⚖️: `Jurados`
+- 🕵️: `Testigos`
+- 💰: `Financiación`
+""")
+st.write("""
+**SEMANA ELECTORAL:**
+- 🤔: `Paradoja por Perfiles de Votantes`
+- 🫂: `Equipo: líderes, Jurados, Testigos y Defensores`
+- 🚮: `Mesas Electorales`
+- 🚌: `Transporte`
+- 🦐: `Alimentación`
+""")
+st.write('---')
+st.write("""
+**POST CAMPAÑA::**
+- 🗳️: `Votos Logrados, en Disputa y Perdidos`
+- 🧑‍⚖️: `Defensores`
+- 💲: `Reposición Proyectada`
+- 🧭: `De propuestas a políticas`
+- 🚥: `De proyectos a obras`
+""")
+st.write('---')
+st.write("""
+**Sistema de Alarmas para:**
+- ⏰ : `Retrasos en Cumplimientos de Metas`
+""")
+st.write("""
+**Sistema de Recomendación para:**
+- 📈:  `Más Votos, Influencia y Sentimientos favorables`
+""")
+st.write('---')
+st.markdown('Versión Ejemplo Borrador - Cotiza tu versión personalizada en www.novusvote.com')
+
+
+
+
+
+  
+  
+  
+st.markdown(
+  """
+  En esta web encontrarás los módulos que necesita tu campaña:
+  - 📆 _    Sistema Político: control electoral mediante monitor de votaciones, líderes, testigos, voluntarios, jurados y competencia
+  - 🧠 _    Sistema Programático: coyuntura local en necesidades y sentimientos, propuestas y discurso
+  - 📢 _     Sistema Comunicaciones: monitor de noticias, creación y difusión de contenido
+  - 🏢 _    Sistema Administrativo: Tesorería, Logística, Jurídica y Auditoría
+  
+  EMPIEZA TU CAMPAÑA ELECTORAL AHORA 🕰 CON NUESTRO DIAGNÓSTICO GRATUITO
+  """
+)
+
+
+
+b = (
+    Bar()
+    .add_xaxis(["Microsoft", "Amazon", "IBM", "Oracle", "Google", "Alibaba"])
+    .add_yaxis(
+        "2017-2018 Revenue in (billion $)", [21.2, 20.4, 10.3, 6.08, 4, 2.2]
+    )
+    .set_global_opts(
+        title_opts=opts.TitleOpts(
+            title="Top cloud providers 2018", subtitle="2017-2018 Revenue"
+        ),
+        toolbox_opts=opts.ToolboxOpts(),
+    )
+)
+st_pyecharts(b)
 
 
 
