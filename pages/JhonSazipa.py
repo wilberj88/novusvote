@@ -16,10 +16,19 @@ st.write("Actualización de datos en tiempo real ")
 
 st.write('---')
 st.write("""
+**RESUMEN GENERAL:**
+- 💪: `PreCampaña`
+- 🏃: `Campaña`
+- 🔥: `SemanaE`
+- 💫: `PostCampaña`
+""")
+st.write('---')
+st.write('---')
+st.write("""
 **DIAGNÓSTICO:**
-- ✍️: `Candidato`
-- 🗳️: `Contrincantes`
-- 🌎: `ExConcejales`
+- 👤: `Candidato`
+- 👥: `Contrincantes`
+- 🧓: `ExConcejales`
 """)
 st.write('---')
 st.write("""
