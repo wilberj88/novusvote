@@ -20,65 +20,6 @@ st.write("""
 - 🔥: `SemanaE`
 - 💫: `PostCampaña`
 """)
-st.write('---')
-st.write("""
-**DIAGNÓSTICO:**
-- 👤: `Candidato`
-- 👥: `Contrincantes`
-- 🧓: `ExConcejales`
-""")
-st.write('---')
-st.write("""
-**PRECAMPAÑA:**
-- ✍️: `Firmas`
-- 🗳️: `Votos`
-- 🌎: `Caudal Electoral`
-- 🎯: `Potenciales Votantes`
-""")
-st.write('---')
-st.write("""
-**CAMPAÑA:**
-- 🗺: `Necesidades Territoriales`
-- 💛: `Sentimientos Digitales`
-- 🧭: `Propuestas`
-- 🚧: `Proyectos`
-- 🗣️: `Voluntarios`
-- 🦶: `Líderes`
-- 🧑‍⚖️: `Jurados`
-- 🕵️: `Testigos`
-- 💰: `Financiación`
-""")
-st.write("""
-**SEMANA ELECTORAL:**
-- 🤔: `Paradoja por Perfiles de Votantes`
-- 🫂: `Equipo: líderes, Jurados, Testigos y Defensores`
-- 🚮: `Mesas Electorales`
-- 🚌: `Transporte`
-- 🦐: `Alimentación`
-""")
-st.write('---')
-st.write("""
-**POST CAMPAÑA::**
-- 🗳️: `Votos Logrados, en Disputa y Perdidos`
-- 🧑‍⚖️: `Defensores`
-- 💲: `Reposición Proyectada`
-- 🧭: `De propuestas a políticas`
-- 🚥: `De proyectos a obras`
-""")
-st.write('---')
-st.write("""
-**Sistema de Alarmas para:**
-- ⏰ : `Retrasos en Cumplimientos de Metas`
-""")
-st.write("""
-**Sistema de Recomendación para:**
-- 📈:  `Más Votos, Influencia y Sentimientos favorables`
-""")
-st.write('---')
-st.markdown('Versión Ejemplo Borrador - Cotiza tu versión personalizada en www.novusvote.com')
-
-
-
 
 
 
@@ -144,6 +85,68 @@ with col3:
         ],
     }
   st_echarts(options=acelerometro3)
+
+
+st.write('---')
+st.write("""
+**DIAGNÓSTICO:**
+- 👤: `Candidato`
+- 👥: `Contrincantes`
+- 🧓: `ExConcejales`
+""")
+st.write('---')
+st.write("""
+**PRECAMPAÑA:**
+- ✍️: `Firmas`
+- 🗳️: `Votos`
+- 🌎: `Caudal Electoral`
+- 🎯: `Potenciales Votantes`
+""")
+st.write('---')
+st.write("""
+**CAMPAÑA:**
+- 🗺: `Necesidades Territoriales`
+- 💛: `Sentimientos Digitales`
+- 🧭: `Propuestas`
+- 🚧: `Proyectos`
+- 🗣️: `Voluntarios`
+- 🦶: `Líderes`
+- 🧑‍⚖️: `Jurados`
+- 🕵️: `Testigos`
+- 💰: `Financiación`
+""")
+st.write("""
+**SEMANA ELECTORAL:**
+- 🤔: `Paradoja por Perfiles de Votantes`
+- 🫂: `Equipo: líderes, Jurados, Testigos y Defensores`
+- 🚮: `Mesas Electorales`
+- 🚌: `Transporte`
+- 🦐: `Alimentación`
+""")
+st.write('---')
+st.write("""
+**POST CAMPAÑA::**
+- 🗳️: `Votos Logrados, en Disputa y Perdidos`
+- 🧑‍⚖️: `Defensores`
+- 💲: `Reposición Proyectada`
+- 🧭: `De propuestas a políticas`
+- 🚥: `De proyectos a obras`
+""")
+st.write('---')
+st.write("""
+**Sistema de Alarmas para:**
+- ⏰ : `Retrasos en Cumplimientos de Metas`
+""")
+st.write("""
+**Sistema de Recomendación para:**
+- 📈:  `Más Votos, Influencia y Sentimientos favorables`
+""")
+st.write('---')
+st.markdown('Versión Ejemplo Borrador - Cotiza tu versión personalizada en www.novusvote.com')
+
+
+
+
 
   
   
