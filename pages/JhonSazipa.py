@@ -109,11 +109,11 @@ def render_basic_radar():
                 "data": [
                     {
                         "value": [2000, 3000, 2000, 3500, 15000, 11800],
-                        "name": "Estado Actual de Alumno",
+                        "name": "Candidato A",
                     },
                     {
                         "value": [6500, 16000, 30000, 38000, 52000, 25000],
-                        "name": "Meta de Aprendizaje",
+                        "name": "Candidato B",
                     },
                 ],
             }
