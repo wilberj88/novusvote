@@ -121,10 +121,6 @@ def render_basic_radar():
     }
     st_echarts(option, height="500px")
 
-
-
-    
-st.write('Cronograma de Trabajo Optimizado')
 ST_RADAR_DEMOS = {
     "Radar: Basic Radar": (
         render_basic_radar,
@@ -134,7 +130,7 @@ ST_RADAR_DEMOS = {
 render_basic_radar()
  
 
-
+st.write('Cronograma de Trabajo Optimizado')
 def render_heatmap_cartesian():
     hours = [
         "12a",
