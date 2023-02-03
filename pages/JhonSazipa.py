@@ -440,37 +440,6 @@ st.markdown('Versión Ejemplo Borrador - Cotiza tu versión personalizada en www
 
 
   
-  
-  
-st.markdown(
-  """
-  En esta web encontrarás los módulos que necesita tu campaña:
-  - 📆 _    Sistema Político: control electoral mediante monitor de votaciones, líderes, testigos, voluntarios, jurados y competencia
-  - 🧠 _    Sistema Programático: coyuntura local en necesidades y sentimientos, propuestas y discurso
-  - 📢 _     Sistema Comunicaciones: monitor de noticias, creación y difusión de contenido
-  - 🏢 _    Sistema Administrativo: Tesorería, Logística, Jurídica y Auditoría
-  
-  EMPIEZA TU CAMPAÑA ELECTORAL AHORA 🕰 CON NUESTRO DIAGNÓSTICO GRATUITO
-  """
-)
-
-
-
-b = (
-    Bar()
-    .add_xaxis(["Microsoft", "Amazon", "IBM", "Oracle", "Google", "Alibaba"])
-    .add_yaxis(
-        "2017-2018 Revenue in (billion $)", [21.2, 20.4, 10.3, 6.08, 4, 2.2]
-    )
-    .set_global_opts(
-        title_opts=opts.TitleOpts(
-            title="Top cloud providers 2018", subtitle="2017-2018 Revenue"
-        ),
-        toolbox_opts=opts.ToolboxOpts(),
-    )
-)
-st_pyecharts(b)
-
 
 
 
