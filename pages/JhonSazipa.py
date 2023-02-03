@@ -12,9 +12,7 @@ st.set_page_config(layout="wide", page_title="Novus Vote", page_icon="🗳️")
 
 st.title('Novus Vote 🗳️ - Jhon Sazipa - Concejo Bogotá 2024-2027')
 st.header("CENTRALES DE MONITOREO DE CAMPAÑA")
-st.write("Actualización de datos en tiempo real ")
 
-st.write('---')
 st.write("""
 **RESUMEN GENERAL:**
 - 💪: `PreCampaña`
@@ -22,7 +20,6 @@ st.write("""
 - 🔥: `SemanaE`
 - 💫: `PostCampaña`
 """)
-st.write('---')
 st.write('---')
 st.write("""
 **DIAGNÓSTICO:**
