@@ -14,8 +14,6 @@ st.title('Novus Vote 🗳️ - Jhon Sazipa - Consejo Bogotá 2024-2027')
 st.header("CENTRALES DE MONITOREO DE CAMPAÑA")
 st.write("Actualización de datos en tiempo real ")
 
-
-
 st.write('---')
 st.write("""
 **PRECAMPAÑA:**
@@ -54,6 +52,7 @@ st.write("""
 - 🧭: `De propuestas a políticas`
 - 🚥: `De proyectos a obras`
 """)
+st.write('---')
 st.write("""
 **Sistema de Alarmas para:**
 - ⏰ : `Retrasos en Cumplimientos de Metas`
