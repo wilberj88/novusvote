@@ -112,7 +112,7 @@ def render_basic_radar():
                         "name": "Candidato A",
                     },
                     {
-                        "value": [6500, 16000, 30000, 38000, 52000, 25000],
+                        "value": [3500, 1600, 3000, 1800, 22000, 20000],
                         "name": "Candidato B",
                     },
                 ],
