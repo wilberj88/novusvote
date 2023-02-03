@@ -10,10 +10,10 @@ from streamlit_echarts import st_pyecharts
 # SETTING PAGE CONFIG TO WIDE MODE AND ADDING A TITLE AND FAVICON
 st.set_page_config(layout="wide", page_title="Novus Vote", page_icon="🗳️")
 
-st.title('Novus Vote 🗳️')
-st.header("Jhon Sazipa al Consejo Distrital de Bogotá 2024-2027")
+st.title('Novus Vote 🗳️ - Jhon Sazipa - Consejo Bogotá 2024-2027')
+st.header("CENTRAL DE MONITOREO DE CAMPAÑA")
 
-st.write("CENTRALES DE MONITOREO EN TIEMPO REAL DE PRE-MID-POST CAMPAÑA")
+st.write("Actualización de datos en tiempo real ")
 
 col1, col2, col3 = st.columns(3)
 with col1:
