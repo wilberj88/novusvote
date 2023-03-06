@@ -7,6 +7,7 @@ Construye tu inteligencia electoral con 4 sistemas complementarios:
 
 Streamlit Visualizaciones:
 eCharts: 1) Liquidfill, 2) Gauge Ring
+PyeChart: 1) Graph
 
 Gráficos de Nodos
 https://medium.com/@vespinozag/what-is-gephi-meet-this-useful-network-analysis-tool-628a1b42428c
