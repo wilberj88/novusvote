@@ -52,4 +52,8 @@ st.slider('¿Cuál es la meta de votos?', 0, 300000, key="meta")
 #meta = st.number_input('Ingresa la META DE VOTACIÓN del candidat@', min_value=1000, max_value=100000, value=10000)
 
 
-
+if territorio & categoria & meta:
+        st.write('El ritmo de votos por minuto es de: ', meta/4800)
+        st.write('El ritmo de votos por hora es de: ', meta/8)
+        
+         
