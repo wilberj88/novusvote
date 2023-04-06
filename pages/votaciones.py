@@ -47,7 +47,7 @@ if meta:
         st.write('El ritmo de votos por hora es de: ', meta/8)
         
         
-        st.write("Acelerómetro 👋")
+        st.write("Desempeño requerido 👋")
 
         col1, col2, col3 = st.columns(3)
         with col1:
@@ -64,7 +64,7 @@ if meta:
                         },
                         "progress": {"show": "true", "width": 10},
                         "detail": {"valueAnimation": "true", "formatter": "{value}"},
-                        "data": [{"value": 30, "name": "Firmas"}],
+                        "data": [{"value": 99, "name": "Firmas"}],
                     }
                 ],
             }
@@ -85,7 +85,7 @@ if meta:
                         },
                         "progress": {"show": "true", "width": 10},
                         "detail": {"valueAnimation": "true", "formatter": "{value}"},
-                        "data": [{"value": 50, "name": "Votos"}],
+                        "data": [{"value": 80, "name": "Votos"}],
                     }
                 ],
             }
@@ -106,7 +106,7 @@ if meta:
                         },
                         "progress": {"show": "true", "width": 10},
                         "detail": {"valueAnimation": "true", "formatter": "{value}"},
-                        "data": [{"value": 80, "name": "Sentimiento"}],
+                        "data": [{"value": 66, "name": "Sentimiento"}],
                     }
                 ],
             }
