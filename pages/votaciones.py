@@ -115,14 +115,6 @@ if meta:
                 
         def render_heatmap_cartesian():
             hours = [
-                "12a",
-                "1a",
-                "2a",
-                "3a",
-                "4a",
-                "5a",
-                "6a",
-                "7a",
                 "8a",
                 "9a",
                 "10a",
@@ -132,22 +124,15 @@ if meta:
                 "2p",
                 "3p",
                 "4p",
-                "5p",
-                "6p",
-                "7p",
-                "8p",
-                "9p",
-                "10p",
-                "11p",
             ]
             days = [
-                "Saturday",
-                "Friday",
-                "Thursday",
-                "Wednesday",
-                "Tuesday",
-                "Monday",
-                "Sunday",
+                "Localidad 1",
+                "Localidad 2",
+                "Localidad 3",
+                "Localidad 4",
+                "Localidad 5",
+                "Localidad 6",
+                "Localidad 7",
             ]
 
             data = [
