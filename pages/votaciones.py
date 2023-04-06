@@ -47,7 +47,7 @@ if meta:
         st.write('El ritmo de votos por hora es de: ', meta/8)
         
         
-        st.write("Desempeño requerido 👋")
+        st.write("Desempeño requerido para minimizar riesgo y obtener la meta de votación 🗳️")
 
         col1, col2, col3 = st.columns(3)
         with col1:
