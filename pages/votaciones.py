@@ -46,7 +46,7 @@ categoria = st.radio(
         "Indica la categoría de campaña👇 ",
         options=['Gobernación', 'Asamblea Departamental','Alcaldía', 'Concejo', 'Junta de Acción Comunal'],
     )
-st.slider('¿Cuál es la meta de votos?', 0, 100000, key="consumo")
+st.slider('¿Cuál es la meta de votos?', 0, 300000, key="meta")
 
 
 #meta = st.number_input('Ingresa la META DE VOTACIÓN del candidat@', min_value=1000, max_value=100000, value=10000)
