@@ -121,7 +121,7 @@ if meta:
         )
         if territorio and categoria:
                 st.write('Votos máximos individuales en la circunscripción:', meta*2)        
-                st.write('RECOMENDACIÓN DE RITMO DE VOTACIÓN POR TERRITORIOS')
+                st.write('RECOMENDACIÓN DE RITMO DE VOTACIÓN POR TOP7 LOCALIDADES MÁS POBLADAS')
                 def render_heatmap_cartesian():
                     hours = [
                         "8a",
