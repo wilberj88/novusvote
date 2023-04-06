@@ -45,14 +45,14 @@ if meta:
         st.write('El ritmo de votos por minuto es de: ', meta/4800)
         st.write('El ritmo de votos por hora es de: ', meta/8)
 
-territorio = st.selectbox("Indica el Territorio",
+        territorio = st.selectbox("Indica el Territorio",
         ("Bogotá", "Medellín", "Cali", "Bucaramanga", "Barrancabermeja"),
-    )
-categoria = st.radio(
+        )
+        categoria = st.radio(
         "Indica la categoría de campaña👇 ",
         options=['Gobernación', 'Asamblea Departamental','Alcaldía', 'Concejo', 'Junta de Acción Comunal'],
-    )
-if territorio and categoria and meta:
-        st.write('Votos máximos individuales en la circunscripción:', meta/4800)
+        )
+        if territorio and categoria:
+        st.write('Votos máximos individuales en la circunscripción:', meta*2)
         
          
