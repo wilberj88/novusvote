@@ -36,3 +36,20 @@ st.write("""
 """)
 st.write('---')
 st.markdown('Versión Ejemplo Borrador - Cotiza tu versión personalizada en www.novusvote.com')
+
+
+#CONFIGURACIÓN DEL MANDO
+territorio = st.selectbox("Indica el Territorio",
+        ("Bogotá", "Medellín", "Cali", "Bucaramanga", "Barrancabermeja"),
+    )
+categoria = st.radio(
+        "Indica la categoría de campaña👇 ",
+        options=['Gobernación', 'Asamblea Departamental','Alcaldía', 'Concejo', 'Junta de Acción Comunal'],
+    )
+perfil = st.text_input('Ingresa el nombre completo del candidat@', '''
+    ''')
+meta = st.number_input('Ingresa la META DE VOTACIÓN del candidat@', '''
+    ''')
+
+
+
