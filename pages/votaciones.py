@@ -47,7 +47,7 @@ if meta:
         st.write('El ritmo de votos por hora es de: ', meta/8)
         
         
-        st.write("Desempeño requerido para minimizar riesgo y obtener la meta de votación 🗳️")
+        st.write("ALERTA de desempeño requerido para minimizar riesgo y obtener la meta de votación 🗳️")
 
         col1, col2, col3 = st.columns(3)
         with col1:
@@ -121,7 +121,7 @@ if meta:
         )
         if territorio and categoria:
                 st.write('Votos máximos individuales en la circunscripción:', meta*2)        
-        
+                st.write('RECOMENDACIÓN DE RITMO DE VOTACIÓN POR TERRITORIOS')
                 def render_heatmap_cartesian():
                     hours = [
                         "8a",
