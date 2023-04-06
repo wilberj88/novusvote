@@ -53,6 +53,6 @@ if meta:
         options=['Gobernación', 'Asamblea Departamental','Alcaldía', 'Concejo', 'Junta de Acción Comunal'],
         )
         if territorio and categoria:
-        st.write('Votos máximos individuales en la circunscripción:', meta*2)
+                st.write('Votos máximos individuales en la circunscripción:', meta*2)
         
          
