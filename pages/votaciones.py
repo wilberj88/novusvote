@@ -48,8 +48,7 @@ categoria = st.radio(
     )
 st.slider('¿Cuál es la meta de votos?', 0, 100000, key="consumo")
 
-meta = st.number_input('Ingresa la META DE VOTACIÓN del candidat@', '''
-    ''')
+meta = st.number_input('Ingresa la META DE VOTACIÓN del candidat@', min_value=1000, max_value=100000, value=10000)
 
 
 
