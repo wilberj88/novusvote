@@ -45,6 +45,73 @@ meta = st.slider('¿Cuál es la meta de votos?', 0, 300000)
 if meta:
         st.write('El ritmo de votos por minuto es de: ', meta/4800)
         st.write('El ritmo de votos por hora es de: ', meta/8)
+        
+        
+        st.write("Acelerómetro 👋")
+
+        col1, col2, col3 = st.columns(3)
+        with col1:
+          acelerometro1 = {
+                "tooltip": {"formatter": "{a} <br/>{b} : {c}%"},
+                "series": [
+                    {
+                        "name": "Pressure",
+                        "type": "gauge",
+                        "axisLine": {
+                            "lineStyle": {
+                                "width": 10,
+                            },
+                        },
+                        "progress": {"show": "true", "width": 10},
+                        "detail": {"valueAnimation": "true", "formatter": "{value}"},
+                        "data": [{"value": 30, "name": "Firmas"}],
+                    }
+                ],
+            }
+
+          st_echarts(options=acelerometro1)
+
+        with col2:
+          acelerometro2 = {
+                "tooltip": {"formatter": "{a} <br/>{b} : {c}%"},
+                "series": [
+                    {
+                        "name": "Pressure",
+                        "type": "gauge",
+                        "axisLine": {
+                            "lineStyle": {
+                                "width": 10,
+                            },
+                        },
+                        "progress": {"show": "true", "width": 10},
+                        "detail": {"valueAnimation": "true", "formatter": "{value}"},
+                        "data": [{"value": 50, "name": "Votos"}],
+                    }
+                ],
+            }
+
+          st_echarts(options=acelerometro2)
+
+        with col3:
+          acelerometro3 = {
+                "tooltip": {"formatter": "{a} <br/>{b} : {c}%"},
+                "series": [
+                    {
+                        "name": "Pressure",
+                        "type": "gauge",
+                        "axisLine": {
+                            "lineStyle": {
+                                "width": 10,
+                            },
+                        },
+                        "progress": {"show": "true", "width": 10},
+                        "detail": {"valueAnimation": "true", "formatter": "{value}"},
+                        "data": [{"value": 80, "name": "Sentimiento"}],
+                    }
+                ],
+            }
+          st_echarts(options=acelerometro3)
+
                 
         def render_heatmap_cartesian():
             hours = [
