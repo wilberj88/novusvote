@@ -9,6 +9,8 @@ import pydeck as pdk
 import matplotlib.pyplot as plt
 import datetime
 import base64
+from pyecharts import options as opts
+from pyecharts.charts import Graph
 
 
 # SETTING PAGE CONFIG TO WIDE MODE AND ADDING A TITLE AND FAVICON
