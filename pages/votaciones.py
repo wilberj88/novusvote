@@ -46,29 +46,7 @@ st.markdown('Versión Ejemplo Borrador - Cotiza tu versión personalizada en www
 st.title('¿Cuál es la meta de la campaña electoral?')
 meta = st.slider('¿Cuántos votos necesitas para posecionarte?', 0, 300000)
 #meta = st.number_input('Ingresa la META DE VOTACIÓN del candidat@', min_value=1000, max_value=100000, value=10000)
-if meta:
-        st.title('Alianzas Requeridas')
-        nodes = [
-            {"name": "Consejal 1", "symbolSize": 10},
-            {"name": "Consejal 2", "symbolSize": 20},
-            {"name": "Consejal 3", "symbolSize": 30},
-            {"name": "Consejal 4", "symbolSize": 40},
-            {"name": "Consejal 5", "symbolSize": 50},
-            {"name": "Consejal 6", "symbolSize": 40},
-            {"name": "Consejal 7", "symbolSize": 30},
-            {"name": "Consejal 8", "symbolSize": 20},
-        ]
-        links = []
-        for i in nodes:
-            for j in nodes:
-                links.append({"source": i.get("name"), "target": j.get("name")})
-        c = (
-            Graph()
-            .add("", nodes, links, repulsion=8000)
-            .set_global_opts(title_opts=opts.TitleOpts(title="Grafos"))
-        )
-        st_pyecharts(c)
-        
+if meta:     
         st.title('Votación Requerida por Localidades más Pobladas')
         options = {
             "title": {"text": "Votos x Zonas"},
@@ -147,6 +125,29 @@ if meta:
         )
         st.write('El ritmo de votos requeridos por minuto es de: ', meta/480)
         st.write('El ritmo de votos requeridos por hora es de: ', meta/8)
+        
+        st.title('Alianzas Requeridas')
+        nodes = [
+            {"name": "Consejal 1", "symbolSize": 10},
+            {"name": "Consejal 2", "symbolSize": 20},
+            {"name": "Consejal 3", "symbolSize": 30},
+            {"name": "Consejal 4", "symbolSize": 40},
+            {"name": "Consejal 5", "symbolSize": 50},
+            {"name": "Consejal 6", "symbolSize": 40},
+            {"name": "Consejal 7", "symbolSize": 30},
+            {"name": "Consejal 8", "symbolSize": 20},
+        ]
+        links = []
+        for i in nodes:
+            for j in nodes:
+                links.append({"source": i.get("name"), "target": j.get("name")})
+        c = (
+            Graph()
+            .add("", nodes, links, repulsion=8000)
+            .set_global_opts(title_opts=opts.TitleOpts(title="Grafos"))
+        )
+        st_pyecharts(c)
+        
         st.title('Probabilidad Promedio de Éxito')
         liquidfill_option = {
             "series": [{"type": "liquidFill", "data": [0.6, 0.5, 0.4, 0.3]}]
