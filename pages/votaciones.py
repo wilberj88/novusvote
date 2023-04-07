@@ -124,7 +124,41 @@ if meta:
             options=option, height="400px",
         )
         st.write('El ritmo de votos requeridos por minuto es de: ', meta/480)
-        st.write('El ritmo de votos requeridos por hora es de: ', meta/8)
+        st.write('El ritmo de votos requeridos por hora es de: ', meta/8)        
+
+        st.write('Diagnóstico y Contraste de Competencia Actual y Previa')
+        def render_basic_radar():
+            option = {
+                "title": {"text": "Comparaciones"},
+                "legend": {"data": ["Candidato A", "Candidato B"]},
+                "radar": {
+                    "indicator": [
+                        {"name": "Líderes", "max": 6500},
+                        {"name": "Financiación", "max": 16000},
+                        {"name": "Sentimiento", "max": 30000},
+                        {"name": "Votación Anterior", "max": 38000},
+                        {"name": "Interaciones", "max": 52000},
+                        {"name": "Recordación de Marca", "max": 25000},
+                    ]
+                },
+                "series": [
+                    {
+                        "name": "Aprendizaje Actual Vs Proyectado",
+                        "type": "radar",
+                        "data": [
+                            {
+                                "value": [2000, 10000, 20000, 3500, 15000, 11800],
+                                "name": "Candidato A",
+                            },
+                            {
+                                "value": [3500, 15000, 25000, 10800, 22000, 20000],
+                                "name": "Candidato B",
+                            },
+                        ],
+                    }
+                ],
+            }
+            st_echarts(option, height="500px")
         
         st.title('Alianzas Requeridas')
         nodes = [
