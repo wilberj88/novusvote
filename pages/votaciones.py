@@ -111,6 +111,60 @@ if meta:
         }
         st_echarts(options=options, height="400px") 
         
+        st.write("Desagregación de votos por barrios de acuerdo con las votaciones históricas")
+        #datos
+        df = pd.DataFrame(
+        np.random.randn(1000, 2) / [50, 50] + [37.76, -122.4],
+        columns=['lat', 'lon'])
+        st.pydeck_chart(pdk.Deck(
+        map_style=None,
+        initial_view_state=pdk.ViewState(
+        latitude=37.76,
+        longitude=-122.4,
+        zoom=11,
+        pitch=50,
+        ),
+        layers=[
+        pdk.Layer(
+           'HexagonLayer',
+           data=df,
+           get_position='[lon, lat]',
+           radius=200,
+           elevation_scale=4,
+           elevation_range=[0, 1000],
+           pickable=True,
+           extruded=True,
+        ),
+        pdk.Layer(
+            'ScatterplotLayer',
+            data=df,
+            get_position='[lon, lat]',
+            get_color='[200, 30, 0, 160]',
+            get_radius=200,
+        ),
+        ],
+        ))
+        st.write("Líderes necesarios para votación mínima")
+        chart_data = pd.DataFrame(np.random.randn(20, 3), columns=["a", "b", "c"])
+        st.area_chart(chart_data)
+        st.write("Financiación necesaria")
+        # Add histogram data
+        x1 = np.random.randn(200) - 2
+        x2 = np.random.randn(200)
+        x3 = np.random.randn(200) + 2
+
+        # Group data together
+        hist_data = [x1, x2, x3]
+
+        group_labels = ['Group 1', 'Group 2', 'Group 3']
+
+        # Create distplot with custom bin_size
+        fig = ff.create_distplot(
+            hist_data, group_labels, bin_size=[.1, .25, .5])
+
+        # Plot!
+        st.plotly_chart(fig, use_container_width=True)
+        
         st.title('Ritmo de votación por hora requerido')
         option = {
             "xAxis": {
