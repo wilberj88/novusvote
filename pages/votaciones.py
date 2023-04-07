@@ -390,7 +390,7 @@ if meta:
                             "stack": "总量",
                             "areaStyle": {},
                             "emphasis": {"focus": "series"},
-                            "data": [120, 132, 101, 134, 90, 230, 210],
+                            "data": [meta*0.01, meta*0.02, meta*0.035, meta*0.045, meta*0.05, meta*0.065, meta*0.07],
                         },
                         {
                             "name": "LocalidadTop4",
@@ -398,7 +398,7 @@ if meta:
                             "stack": "总量",
                             "areaStyle": {},
                             "emphasis": {"focus": "series"},
-                            "data": [220, 182, 191, 234, 290, 330, 310],
+                            "data": [meta*0.05, meta*0.06, meta*0.07, meta*0.08, meta*0.09, meta*0.10, meta*0.16],
                         },
                         {
                             "name": "LocalidadTop3",
@@ -406,7 +406,7 @@ if meta:
                             "stack": "总量",
                             "areaStyle": {},
                             "emphasis": {"focus": "series"},
-                            "data": [150, 232, 201, 154, 190, 330, 410],
+                            "data": [meta*0.02, meta*0.04, meta*0.06, meta*0.08, meta*0.1, meta*0.12, meta*0.21],
                         },
                         {
                             "name": "LocalidadTop2",
@@ -414,7 +414,7 @@ if meta:
                             "stack": "总量",
                             "areaStyle": {},
                             "emphasis": {"focus": "series"},
-                            "data": [320, 332, 301, 334, 390, 330, 320],
+                            "data": [meta*0.07, meta*0.08, meta*0.09, meta*0.11, meta*0.13, meta*0.16, meta*0.25],
                         },
                         {
                             "name": "LocalidadTop1",
@@ -423,7 +423,7 @@ if meta:
                             "label": {"show": True, "position": "top"},
                             "areaStyle": {},
                             "emphasis": {"focus": "series"},
-                            "data": [820, 932, 901, 934, 1290, 1330, 1320],
+                            "data": [meta*0.08, meta*0.12, meta*0.15, meta*0.2, meta*0.25, meta*0.28, meta*0.31],
                         },
                     ],
                 }
