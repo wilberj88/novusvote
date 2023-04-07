@@ -192,7 +192,7 @@ if meta:
         st.title('Diagnóstico y Contraste de Competencia Actual y Previa')
         def render_basic_radar():
             option = {
-                "title": {"text": "Comparaciones Previo a Votación 🗳️"},
+                "title": {"text": "Previo Votación 🗳️"},
                 "legend": {"data": ["Candidato A", "Candidato B"]},
                 "radar": {
                     "indicator": [
