@@ -155,7 +155,8 @@ if meta:
         st.title("Líderes necesarios para votación mínima")
         chart_data = pd.DataFrame(np.random.randn(20, 3), columns=["a", "b", "c"])
         st.area_chart(chart_data)
-        st.write("Financiación necesaria")
+        
+        st.title("Financiación necesaria")
         # Add histogram data
         x1 = np.random.randn(200) - 2
         x2 = np.random.randn(200)
