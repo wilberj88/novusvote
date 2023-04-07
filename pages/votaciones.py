@@ -47,6 +47,19 @@ if meta:
         st.write('El ritmo de votos por hora es de: ', meta/8)
         
         
+        option = {
+            "xAxis": {
+                "type": "category",
+                "data": ["9am", "10am", "11am", "12md", "1pm", "2pm", "4pm"],
+            },
+            "yAxis": {"type": "value"},
+            "series": [{"data": [meta*0.1, meta*0.2, meta*0.35, meta*0.5, meta*0.75, meta*0.9, meta], "type": "line"}],
+        }
+        st_echarts(
+            options=option, height="400px",
+        )
+        
+        
         st.write("ALARMA de desempeño requerido para minimizar riesgo y obtener la meta de votación 🗳️")
 
         col1, col2, col3 = st.columns(3)
