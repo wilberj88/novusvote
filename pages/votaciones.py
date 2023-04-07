@@ -367,7 +367,7 @@ if meta:
                 render_heatmap_cartesian()
                 
                 options = {
-                    "title": {"text": "Votación requerida por localidades más densas"},
+                    "title": {"text": "Votos Top5 Localidades"},
                     "tooltip": {
                         "trigger": "axis",
                         "axisPointer": {"type": "cross", "label": {"backgroundColor": "#6a7985"}},
