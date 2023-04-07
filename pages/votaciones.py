@@ -365,6 +365,69 @@ if meta:
                 }
 
                 render_heatmap_cartesian()
+                
+                options = {
+                    "title": {"text": "Votación requerida por localidades más densas"},
+                    "tooltip": {
+                        "trigger": "axis",
+                        "axisPointer": {"type": "cross", "label": {"backgroundColor": "#6a7985"}},
+                    },
+                    "legend": {"data": ["LocalidadTop5", "LocalidadTop4", "LocalidadTop3", "LocalidadTop2", "LocalidadTop1"]},
+                    "toolbox": {"feature": {"saveAsImage": {}}},
+                    "grid": {"left": "3%", "right": "4%", "bottom": "3%", "containLabel": True},
+                    "xAxis": [
+                        {
+                            "type": "category",
+                            "boundaryGap": False,
+                            "data": ["10am", "11am", "12md", "1pm", "2pm", "3pm", "4pm"],
+                        }
+                    ],
+                    "yAxis": [{"type": "value"}],
+                    "series": [
+                        {
+                            "name": "LocalidadTop5",
+                            "type": "line",
+                            "stack": "总量",
+                            "areaStyle": {},
+                            "emphasis": {"focus": "series"},
+                            "data": [120, 132, 101, 134, 90, 230, 210],
+                        },
+                        {
+                            "name": "LocalidadTop4",
+                            "type": "line",
+                            "stack": "总量",
+                            "areaStyle": {},
+                            "emphasis": {"focus": "series"},
+                            "data": [220, 182, 191, 234, 290, 330, 310],
+                        },
+                        {
+                            "name": "LocalidadTop3",
+                            "type": "line",
+                            "stack": "总量",
+                            "areaStyle": {},
+                            "emphasis": {"focus": "series"},
+                            "data": [150, 232, 201, 154, 190, 330, 410],
+                        },
+                        {
+                            "name": "LocalidadTop2",
+                            "type": "line",
+                            "stack": "总量",
+                            "areaStyle": {},
+                            "emphasis": {"focus": "series"},
+                            "data": [320, 332, 301, 334, 390, 330, 320],
+                        },
+                        {
+                            "name": "LocalidadTop1",
+                            "type": "line",
+                            "stack": "总量",
+                            "label": {"show": True, "position": "top"},
+                            "areaStyle": {},
+                            "emphasis": {"focus": "series"},
+                            "data": [820, 932, 901, 934, 1290, 1330, 1320],
+                        },
+                    ],
+                }
+                st_echarts(options=options, height="400px")
 
 
 
