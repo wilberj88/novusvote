@@ -134,10 +134,7 @@ if meta:
         )
         if territorio and categoria:
                 st.write('Votos máximos individuales en la circunscripción:', meta*2) 
-                liquidfill_option = {
-                    "series": [{"type": "liquidFill", "data": [0.6, 0.5, 0.4, 0.3]}]
-                }
-                st_echarts(liquidfill_option)
+             
                 st.write('RECOMENDACIÓN de ritmo de votación por Top7 localidades más densas:')
                 def render_heatmap_cartesian():
                     hours = [
@@ -432,6 +429,12 @@ if meta:
                     ],
                 }
                 st_echarts(options=options, height="400px")
+                
+                st.title('Probabilidad de Éxito')
+                liquidfill_option = {
+                    "series": [{"type": "liquidFill", "data": [0.6, 0.5, 0.4, 0.3]}]
+                }
+                st_echarts(liquidfill_option)
 
 
 
