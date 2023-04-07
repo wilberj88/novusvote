@@ -118,16 +118,16 @@ if meta:
         }
         st_echarts(options=options, height="400px") 
         
-        st.write("Desagregación de votos por barrios de acuerdo con las votaciones históricas")
+        st.title("Desagregación de votos por barrios de acuerdo con las votaciones históricas")
         #datos
         df = pd.DataFrame(
-        np.random.randn(1000, 2) / [50, 50] + [37.76, -122.4],
+        np.random.randn(1000, 2) / [50, 50] + [4.2620, -75.13],
         columns=['lat', 'lon'])
         st.pydeck_chart(pdk.Deck(
         map_style=None,
         initial_view_state=pdk.ViewState(
-        latitude=37.76,
-        longitude=-122.4,
+        latitude=4.26,
+        longitude=-75.13,
         zoom=11,
         pitch=50,
         ),
@@ -151,7 +151,8 @@ if meta:
         ),
         ],
         ))
-        st.write("Líderes necesarios para votación mínima")
+        
+        st.title("Líderes necesarios para votación mínima")
         chart_data = pd.DataFrame(np.random.randn(20, 3), columns=["a", "b", "c"])
         st.area_chart(chart_data)
         st.write("Financiación necesaria")
@@ -249,7 +250,14 @@ if meta:
         )
         st_pyecharts(c)
         
-        st.title('Probabilidad Promedio de Éxito')
+        st.title("Probabilidades de Riesgos Climáticos para la Jornada Electoral 🌧️🗳️🌧️")
+        col1, col2, col3, col4 = st.columns(4)
+        col1.metric("Llovizna", "70%", "40%")
+        col2.metric("Lluvia", "50%", "-82%")
+        col3.metric("Tormenta", "36%", "43%")
+        col4.metric("Diluvio", "7%", "78%")
+        
+        st.title('Probabilidad de Éxito con Financiacion Completa 💰🗳️💰')
         liquidfill_option = {
             "series": [{"type": "liquidFill", "data": [0.6, 0.5, 0.4, 0.3]}]
         }
