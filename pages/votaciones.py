@@ -159,7 +159,13 @@ if meta:
                 ],
             }
             st_echarts(option, height="500px")
-        
+        ST_RADAR_DEMOS = {
+            "Radar: Basic Radar": (
+                render_basic_radar,
+                "https://echarts.apache.org/examples/en/editor.html?c=radar",
+            ),
+        }
+        render_basic_radar()
         st.title('Alianzas Requeridas')
         nodes = [
             {"name": "Consejal 1", "symbolSize": 10},
