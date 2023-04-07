@@ -189,10 +189,10 @@ if meta:
         st.write('El ritmo de votos requeridos por minuto es de: ', meta/480)
         st.write('El ritmo de votos requeridos por hora es de: ', meta/8)        
 
-        st.write('Diagnóstico y Contraste de Competencia Actual y Previa')
+        st.title('Diagnóstico y Contraste de Competencia Actual y Previa')
         def render_basic_radar():
             option = {
-                "title": {"text": "Comparaciones"},
+                "title": {"text": "Comparaciones Previo a Votación 🗳️"},
                 "legend": {"data": ["Candidato A", "Candidato B"]},
                 "radar": {
                     "indicator": [
@@ -263,10 +263,9 @@ if meta:
             "series": [{"type": "liquidFill", "data": [0.6, 0.5, 0.4, 0.3]}]
         }
         st_echarts(liquidfill_option)
-
-        
-        st.write("ALARMA de desempeño requerido para minimizar riesgo y obtener la meta de votación 🗳️")
-
+        st.write('Votos máximos individuales en la circunscripción:', meta*2) 
+    
+        st.title("ALARMAS de desempeño requerido para minimizar riesgo y obtener la meta de votación 🗳️")
         col1, col2, col3 = st.columns(3)
         with col1:
           acelerometro1 = {
@@ -303,7 +302,7 @@ if meta:
                         },
                         "progress": {"show": "true", "width": 10},
                         "detail": {"valueAnimation": "true", "formatter": "{value}"},
-                        "data": [{"value": 80, "name": "Votos"}],
+                        "data": [{"value": 90, "name": "Votos"}],
                     }
                 ],
             }
@@ -331,7 +330,6 @@ if meta:
           st_echarts(options=acelerometro3)
 
        
-        if territorio and categoria:
-                st.write('Votos máximos individuales en la circunscripción:', meta*2) 
+    
              
             
