@@ -367,7 +367,7 @@ if meta:
                 render_heatmap_cartesian()
                 
                 options = {
-                    "title": {"text": "Votos Top5 Localidades"},
+                    "title": {"text": "Votos x Zonas"},
                     "tooltip": {
                         "trigger": "axis",
                         "axisPointer": {"type": "cross", "label": {"backgroundColor": "#6a7985"}},
