@@ -22,14 +22,14 @@ st.title('Novus Vote 🗳️ - Módulo de Votaciones')
 
 
 #CONFIGURACIÓN DEL MANDO
-st.title('¿Cuál es la meta de la campaña electoral?')
-territorio = st.selectbox("Indica el Territorio",
-("Bogotá", "Medellín", "Cali", "Bucaramanga", "Barrancabermeja"),
-)
-categoria = st.radio(
-"Indica la categoría de campaña👇 ",
-options=['Gobernación', 'Asamblea Departamental','Alcaldía', 'Concejo', 'Junta de Acción Comunal'],
-)
+#st.title('¿Cuál es la meta de la campaña electoral?')
+#territorio = st.selectbox("Indica el Territorio",
+#("Bogotá", "Medellín", "Cali", "Bucaramanga", "Barrancabermeja"),
+#)
+#categoria = st.radio(
+#"Indica la categoría de campaña👇 ",
+#options=['Gobernación', 'Asamblea Departamental','Alcaldía', 'Concejo', 'Junta de Acción Comunal'],
+#)
 meta = st.slider('¿Cuántos votos estimas necesitar para posecionarte?', 0, 300000)
 #meta = st.number_input('Ingresa la META DE VOTACIÓN del candidat@', min_value=1000, max_value=100000, value=10000)
 if meta:     
