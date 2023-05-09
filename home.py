@@ -13,24 +13,13 @@ st.set_page_config(layout="wide", page_title="Novus Vote", page_icon="🗳️")
 st.title('Novus Vote 🗳️')
 st.header("Mandos para Campañas Electorales Exitosas")
 
-st.markdown(
-  """
-  Cada etapa de la capaña tiene sus ritmos, sus metas y sus Mandos:
-  - 📆 _    PRE CAMPAÑA: Meta electoral, Requerimientos Territoriales y Competencia Histórica
-  - 🧠 _    CAMPAÑA: Líderes, Necesidades, Tendencias, Contrincantes y Propuestas por Territorios
-  - 📢 _    DÍA ELECTORAL: Líderes, Testigos, Jurados, Defensores y Logística
-  - 🏢 _    POST CAMPAÑA: Votos Logrados-Disputados-Perdidos, Defensores, Reposición proyectada, De Propuestas a Hechos
-  
-  EMPIEZA TU CAMPAÑA ELECTORAL AHORA 🕰 APROVECHA NUESTRO DIAGNÓSTICO GRATUITO
-  """
-)
-st.write('---')
 st.write("""
-**Cuatro (4) Centrales de Mando para las etapas de tu campaña:**
+**Cuatro (4) Centrales para las etapas de tu campaña:**
 - 🗳️: `PRE CAMPAÑA: metas y requisitos`
 - 🧑‍⚖️: `CAMPAÑA: necesidades y soluciones`
 - 💲: `DÍA ELECTORAL: cronograma y monitoreo`
 - 🧭: `POST CAMPAÑA: resultados, mensajes por territorios y próximos pasos`
 """)
 
-meta = st.slider('¿Cuántos votos estimas necesitar para posecionarte?', 0, 100000)
+if st.button('Calcular diagnóstico gratuito'):
+    meta = st.slider('¿Cuántos votos estimas necesitar para posecionarte?', 0, 100000)
