@@ -11,9 +11,11 @@ from streamlit_echarts import st_pyecharts
 st.set_page_config(layout="wide", page_title="Novus Vote", page_icon="🗳️")
 
 st.title('Novus Vote 🗳️')
-st.header("Sistemas Inteligentes para Conseguir Votos")
+st.header("Centrales de Mando para Campañas Electorales Exitosas")
 
-st.write("Bienvenidos al futuro electoral 👋")
+st.write("Cada momento de la campaña tiene sus ritmos, sus metas y sus Centrales de Novus Vote 🗳️")
+
+
 
 col1, col2, col3 = st.columns(3)
 with col1:
