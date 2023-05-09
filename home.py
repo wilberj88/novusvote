@@ -23,8 +23,7 @@ st.write("""
 
 if st.button('Calcular diagnóstico gratuito'):
     meta = st.slider('¿Cuántos votos estimas necesitar para posecionarte?', 0, 100000)
-    
-    if meta:
+   
         if meta:     
             st.title('Votación Requerida por Localidades más Pobladas')
             options = {
