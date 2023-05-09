@@ -21,7 +21,10 @@ st.write("""
 - 🧭: `POST CAMPAÑA: resultados, mensajes por territorios y próximos pasos`
 """)
 
-if st.button('Calcular diagnóstico gratuito'):
+button = st.button('Calcular diagnóstico gratuito')
+
+if button:
+    st.session_state
     st.header("Indícanos tu meta y te diremos todo lo que requieres")
     meta = st.slider('¿Cuántos votos estimas necesitar para posecionarte?', 0, 100000)
     if meta:     
