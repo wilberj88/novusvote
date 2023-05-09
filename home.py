@@ -22,7 +22,7 @@ st.write("""
 """)
 
 meta = st.slider('¿Cuántos votos estimas necesitar para posecionarte?', 0, 100000, key="slider")
-    if meta:     
+if meta:     
     st.title('Votación Requerida por Localidades más Pobladas')
     options = {
         "title": {"text": "Votos x Zonas"},
