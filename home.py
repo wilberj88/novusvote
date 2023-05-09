@@ -24,6 +24,13 @@ st.markdown(
   EMPIEZA TU CAMPAÑA ELECTORAL AHORA 🕰 APROVECHA NUESTRO DIAGNÓSTICO GRATUITO
   """
 )
-
+st.write('---')
+st.write("""
+**Cuatro (4) Centrales de Mando para las etapas de tu campaña:**
+- 🗳️: `PRE CAMPAÑA: metas y requisitos`
+- 🧑‍⚖️: `CAMPAÑA: necesidades y soluciones`
+- 💲: `DÍA ELECTORAL: cronograma y monitoreo`
+- 🧭: `POST CAMPAÑA: resultados, mensajes por territorios y próximos pasos`
+""")
 
 meta = st.slider('¿Cuántos votos estimas necesitar para posecionarte?', 0, 100000)
