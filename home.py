@@ -21,6 +21,14 @@ st.write("""
 - 🧭: `POST CAMPAÑA: resultados, mensajes por territorios y próximos pasos`
 """)
 
+# Initialization
+if 'key' not in st.session_state:
+    st.session_state['key'] = 'value'
+
+# Session State also supports attribute based syntax
+if 'key' not in st.session_state:
+    st.session_state.key = 'value'
+    
 button = st.button('Calcular diagnóstico gratuito')
 
 if button:
