@@ -14,7 +14,7 @@ st.title('Novus Vote 🗳️')
 st.header("Mandos para Campañas Electorales Exitosas")
 
 st.write("""
-**Cuatro (4) Centrales para las etapas de tu campaña:**
+**Uno por cada etapa de tu campaña:**
 - 🗳️: `PRE CAMPAÑA: metas y requisitos`
 - 🧑‍⚖️: `CAMPAÑA: necesidades y soluciones`
 - 💲: `DÍA ELECTORAL: cronograma y monitoreo`
