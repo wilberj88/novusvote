@@ -24,9 +24,8 @@ st.write("""
 button = st.button('Calcular diagnóstico gratuito')
 
 if button:
-    st.session_state
     st.header("Indícanos tu meta y te diremos todo lo que requieres")
-    meta = st.slider('¿Cuántos votos estimas necesitar para posecionarte?', 0, 100000)
+    meta = st.slider('¿Cuántos votos estimas necesitar para posecionarte?', 0, 100000, key="slider")
     if meta:     
         st.title('Votación Requerida por Localidades más Pobladas')
         options = {
