@@ -9,6 +9,10 @@ Construye tu inteligencia electoral con 4 sistemas complementarios:
 3) Sistema Comunicaciones: monitor de noticias, creación y difusión de contenido
 4) Sistema Administrativo: Tesorería, Logística, Jurídica y Auditoría
 
+Campaña Electoral Colombia 2023: 29 de julio
+Pre Campaña Electoral 2023: desde 1 de junio a 28 de julio
+
+
 Streamlit Visualizaciones:
 eCharts: 1) Liquidfill, 2) Gauge Ring
 PyeChart: 1) Graph
