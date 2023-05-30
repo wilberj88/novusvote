@@ -1,14 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Novus Vote</title>
-  
-  <div id="carousel">
-  <img id="carouselImage" src="image1.jpg" alt="Carousel Image"/>
-  <button id="prevButton">Anterior</button>
-  <button id="nextButton">Siguiente</button>
-  </div>
-  
+  <title>Novus Vote</title>  
   <style>
     /* Reset de estilos para el body */
     body {
@@ -67,6 +60,33 @@
       list-style-type: none;
     }
 
+    #carousel {
+      position: relative;
+      width: 500px;
+      height: 300px;
+      margin: 0 auto;
+    }
+
+    #carouselImage {
+      width: 100%;
+      height: 100%;
+    }
+
+    button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(255, 255, 255, 0.7);
+    }
+
+    #prevButton {
+      left: 10px;
+    }
+
+    #nextButton {
+      right: 10px;
+    }
+
     /* Estilos para la sección de contacto */
     #contacto {
       padding: 50px;
@@ -108,6 +128,11 @@
   <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
+  <div id="carousel">
+    <img id="carouselImage" src="image1.jpg" alt="Carousel Image"/>
+    <button id="prevButton">Anterior</button>
+    <button id="nextButton">Siguiente</button>
+  </div>
   <!-- Sección de inicio -->
   <section id="inicio">
     <img src="https://plus.unsplash.com/premium_photo-1663126272118-1df214328644?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=921&q=80" alt="Imagen de cabecera">
@@ -157,5 +182,26 @@
 
   <!-- Puedes agregar más secciones según tus necesidades -->
 
+  <script>
+    var images = ["image1.jpg", "image2.jpg", "image3.jpg", "image4.jpg", "image5.jpg"];
+    var currentImageIndex = 0;
+
+    document.getElementById('prevButton').addEventListener('click', function() {
+      currentImageIndex--;
+      if (currentImageIndex < 0) {
+        currentImageIndex = images.length - 1;
+      }
+      document.getElementById('carouselImage').src = images[currentImageIndex];
+    });
+
+    document.getElementById('nextButton').addEventListener('click', function() {
+      currentImageIndex++;
+      if (currentImageIndex >= images.length) {
+        currentImageIndex = 0;
+      }
+      document.getElementById('carouselImage').src = images[currentImageIndex];
+    });
+  </script>
+  
 </body>
 </html>
