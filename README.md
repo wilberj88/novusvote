@@ -1,5 +1,9 @@
 # novusvote
 
+Centrales de Monitoreo de Etapas de Campaña
+Avatares de Atención en las Etapas de Campaña
+
+
 ELECTION PREDICTION:
 https://medium.com/mlearning-ai/predicting-president-election-by-bootstrapping-in-python-a1bd8fa122cc
 
