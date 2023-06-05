@@ -33,7 +33,7 @@ st.title('Novus Vote 🗳️ - Módulo de Votaciones')
 meta = st.slider('¿Cuántos votos estimas necesitar para posecionarte?', 0, 300000)
 #meta = st.number_input('Ingresa la META DE VOTACIÓN del candidat@', min_value=1000, max_value=100000, value=10000)
 if meta:     
-        st.title('Votación Requerida por Localidades más Pobladas')
+        st.title('Votación Requerida por Top5 Zonas más Pobladas')
         options = {
             "title": {"text": "Votos x Zonas"},
             "tooltip": {
