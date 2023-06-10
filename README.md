@@ -39,4 +39,7 @@ https://abdulmoiz121.medium.com/twitter-sentiment-analysis-using-python-6c2f8cdb
 Alpha Maps for Votes:
 Obama: https://towardsdatascience.com/how-to-make-value-by-alpha-maps-in-python-484722160490
 
+Cloropleth:
+https://artificialcorner.com/insanely-powerful-prompts-for-python-dashboard-creation-79dd937ca85b
+
 Herramientas para contrastar Twitter, Facebook, Instagram: https://www.rivaliq.com/ (seguidores, posts, interacciones, mejores performance...)
