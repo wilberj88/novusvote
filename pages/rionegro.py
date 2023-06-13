@@ -22,12 +22,11 @@ st.title('Rionegro DEMO 1 - Novus Vote 🗳️')
 
 #META
 meta = 35000
-st.title('Meta y Requisitos de Campaña 🗳️')
-st.title("Votos, Financiación, Alianzas y Equipos")
 st.write('Votos mínimos requeridos para aspirar a posesionarse:', meta) 
 
-col1, col2, col3, col4 = st.columns(4)
-col1.metric("Votos", "35000", "-4%")
+st.title("Financiación, Equipos y Zonas")
+
+col1, col2, col3 = st.columns(3)
 col2.metric("Financiación", "2100", "-2%")
 col3.metric("Equipos", "7", "43%")
 col4.metric("Barrios", "25", "78%")
