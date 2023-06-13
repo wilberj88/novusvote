@@ -18,12 +18,47 @@ from pyecharts.charts import Graph
 st.set_page_config(layout="wide", page_title="Rionegro DEMO Novus Vote 🗳️", page_icon="🗳️")
 
 #TITULO
-st.title('Rionegro DEMO 1 - Novus Vote 🗳️')
+st.title('Rionegro - Novus Vote 🗳️ - Borrador 1 para aprobación')
 
 #META
 meta = 35000
 st.write('Votos mínimos requeridos para aspirar a posesionarse:', meta) 
-    
+
+
+st.title("Desagregación de votos en 2019 por mesa de votación, barrios y zonas")
+#datos
+df = pd.DataFrame(
+np.random.randn(1000, 2) / [50, 50] + [6.15333, -75.374166],
+columns=['lat', 'lon'])
+st.pydeck_chart(pdk.Deck(
+map_style=None,
+initial_view_state=pdk.ViewState(
+latitude=6.153333,
+longitude=-75.374166,
+zoom=11,
+pitch=50,
+),
+layers=[
+pdk.Layer(
+   'HexagonLayer',
+   data=df,
+   get_position='[lon, lat]',
+   radius=200,
+   elevation_scale=4,
+   elevation_range=[0, 1000],
+   pickable=True,
+   extruded=True,
+),
+pdk.Layer(
+    'ScatterplotLayer',
+    data=df,
+    get_position='[lon, lat]',
+    get_color='[200, 30, 0, 160]',
+    get_radius=200,
+),
+],
+))
+
 st.title('Votación Requerida por Zonas Geográficas de a 5 barrios por zona')
 options = {
     "title": {"text": "Votos x Zonas"},
@@ -88,39 +123,6 @@ options = {
 }
 st_echarts(options=options, height="400px") 
 
-st.title("Desagregación de votos en 2019 por mesa de votación, barrios y zonas")
-#datos
-df = pd.DataFrame(
-np.random.randn(1000, 2) / [50, 50] + [6.15333, -75.374166],
-columns=['lat', 'lon'])
-st.pydeck_chart(pdk.Deck(
-map_style=None,
-initial_view_state=pdk.ViewState(
-latitude=6.153333,
-longitude=-75.374166,
-zoom=11,
-pitch=50,
-),
-layers=[
-pdk.Layer(
-   'HexagonLayer',
-   data=df,
-   get_position='[lon, lat]',
-   radius=200,
-   elevation_scale=4,
-   elevation_range=[0, 1000],
-   pickable=True,
-   extruded=True,
-),
-pdk.Layer(
-    'ScatterplotLayer',
-    data=df,
-    get_position='[lon, lat]',
-    get_color='[200, 30, 0, 160]',
-    get_radius=200,
-),
-],
-))
 
 
 st.title('Ritmo de votación por hora requerido')
