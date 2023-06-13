@@ -99,7 +99,7 @@ st_echarts(options=options, height="400px")
 st.title("Desagregación de votos en 2019 por 25 barrios")
 #datos
 df = pd.DataFrame(
-np.random.randn(1000, 2) / [50, 50] + [4.2620, -75.13],
+np.random.randn(1000, 2) / [50, 50] + [6.15333, -75.374166],
 columns=['lat', 'lon'])
 st.pydeck_chart(pdk.Deck(
 map_style=None,
