@@ -125,7 +125,12 @@ st_echarts(options=options, height="400px")
 
 
 
-st.title('Ritmo de votación por hora requerido')
+st.title('Ritmo de votación requerido cada hora para ganar Alcaldía Rionegro 2023 ')
+col1, col2, col3 = st.columns(3)
+col1.metric("Por Zona", "875")
+col2.metric("Por Barrio", "175")
+col3.metric("Por Mesa", "72")
+
 option = {
     "xAxis": {
         "type": "category",
