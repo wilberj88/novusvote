@@ -59,7 +59,7 @@ pdk.Layer(
 ],
 ))
 
-st.title('Votación Requerida por Zonas Geográficas de a 5 barrios por zona')
+st.title('Votación Requerida por Zonas Geográficas de a 5 barrios por zona para ganar Alcaldía 2023')
 options = {
     "title": {"text": "Votos x Zonas"},
     "tooltip": {
