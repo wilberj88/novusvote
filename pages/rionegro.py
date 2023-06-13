@@ -27,9 +27,9 @@ st.write('Votos mínimos requeridos para aspirar a posesionarse:', meta)
 st.title("Financiación, Equipos y Zonas")
 
 col1, col2, col3 = st.columns(3)
-col2.metric("Financiación", "2100", "-2%")
-col3.metric("Equipos", "7", "43%")
-col4.metric("Barrios", "25", "78%")
+col1.metric("Financiación", "2100", "-2%")
+col2.metric("Equipos", "7", "43%")
+col3.metric("Barrios", "25", "78%")
 
     
 st.title('Votación Requerida por Zonas Geográficas')
