@@ -23,14 +23,6 @@ st.title('Rionegro DEMO 1 - Novus Vote 🗳️')
 #META
 meta = 35000
 st.write('Votos mínimos requeridos para aspirar a posesionarse:', meta) 
-
-st.title("Financiación, Equipos y Zonas")
-
-col1, col2, col3 = st.columns(3)
-col1.metric("Financiación Millones COP - Voto a 60.000", "2100")
-col2.metric("Equipos a Entrenar", "7")
-col3.metric("Barrios a abordar", "25")
-
     
 st.title('Votación Requerida por Zonas Geográficas de a 5 barrios por zona')
 options = {
@@ -130,27 +122,6 @@ pdk.Layer(
 ],
 ))
 
-st.title("Líderes necesarios para votación mínima")
-chart_data = pd.DataFrame(np.random.randn(20, 3), columns=["a", "b", "c"])
-st.area_chart(chart_data)
-
-st.title("Financiación necesaria")
-# Add histogram data
-x1 = np.random.randn(200) - 2
-x2 = np.random.randn(200)
-x3 = np.random.randn(200) + 2
-
-# Group data together
-hist_data = [x1, x2, x3]
-
-group_labels = ['50% Voluntarios', '75% Voluntarios', '100% Voluntarios']
-
-# Create distplot with custom bin_size
-fig = ff.create_distplot(
-    hist_data, group_labels, bin_size=[.1, .25, .5])
-
-# Plot!
-st.plotly_chart(fig, use_container_width=True)
 
 st.title('Ritmo de votación por hora requerido')
 option = {
@@ -165,7 +136,30 @@ st_echarts(
     options=option, height="400px",
 )
 st.write('El ritmo de votos requeridos por minuto es de: ', meta/480)
-st.write('El ritmo de votos requeridos por hora es de: ', meta/8)        
+st.write('El ritmo de votos requeridos por hora es de: ', meta/8) 
+
+st.title("Líderes necesarios para votación mínima por barrios")
+chart_data = pd.DataFrame(np.random.randn(20, 3), columns=["Testigos", "Jurados", "Defensores"])
+st.area_chart(chart_data)
+
+st.title("Financiación necesaria")
+# Add histogram data
+x1 = np.random.randn(200) - 2
+x2 = np.random.randn(200)
+x3 = np.random.randn(200) + 2
+
+# Group data together
+hist_data = [x1, x2, x3]
+
+group_labels = ['Con 100% Voluntarios', 'Con 75% Voluntarios', 'Con 50% Voluntarios']
+
+# Create distplot with custom bin_size
+fig = ff.create_distplot(
+    hist_data, group_labels, bin_size=[.1, .25, .5])
+
+# Plot!
+st.plotly_chart(fig, use_container_width=True)
+       
 
 st.title('Contraste Votos Zonas entre Alcalde Actual y Top 3 votos Alcaldía 2019')
 def render_basic_radar():
@@ -187,15 +181,15 @@ def render_basic_radar():
                 "type": "radar",
                 "data": [
                     {
-                        "value": [5500, 4789, 8450, 3500, 7500],
+                        "value": [5500, 5789, 8450, 5500, 7500],
                         "name": "Rodrigo Hernandez",
                     },
                     {
-                        "value": [3500, 15000, 25000, 10800, 22000],
+                        "value": [3500, 4500, 2500, 3500, 7000],
                         "name": "Top2.2019",
                     },
                     {
-                        "value": [3500, 15000, 25000, 10800, 22000],
+                        "value": [3000, 1500, 2000, 1800, 3000],
                         "name": "Top3.2019",
                     },
                 ],
@@ -298,6 +292,12 @@ with col3:
   st_echarts(options=acelerometro3)
 
 
+st.title("Financiación, Equipos y Zonas")
+
+col1, col2, col3 = st.columns(3)
+col1.metric("Financiación Millones COP - Voto a 60.000", "2100")
+col2.metric("Equipos a Entrenar", "7")
+col3.metric("Barrios a abordar", "25")
 
 
 
