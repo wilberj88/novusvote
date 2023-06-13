@@ -96,7 +96,7 @@ options = {
 }
 st_echarts(options=options, height="400px") 
 
-st.title("Desagregación de votos en 2019 por 25 barrios")
+st.title("Desagregación de votos en 2019 por mesa de votación, barrios y zonas")
 #datos
 df = pd.DataFrame(
 np.random.randn(1000, 2) / [50, 50] + [6.15333, -75.374166],
