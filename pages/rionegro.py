@@ -32,7 +32,7 @@ col2.metric("Equipos a Entrenar", "7")
 col3.metric("Barrios a abordar", "25")
 
     
-st.title('Votación Requerida por Zonas Geográficas')
+st.title('Votación Requerida por Zonas Geográficas de a 5 barrios por zona')
 options = {
     "title": {"text": "Votos x Zonas"},
     "tooltip": {
