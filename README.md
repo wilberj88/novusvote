@@ -1,6 +1,10 @@
 # novusvote
 
 Centrales de Monitoreo de Etapas de Campaña
+pre campaña: historicos votaciones y retos para ganar
+campaña: perfilamiento y mensajes personalizados
+dia e: logistica, operacion y defensa
+post: propuestas a politicas y obras 
 Avatares de Atención en las Etapas de Campaña
 
 Referentes:
