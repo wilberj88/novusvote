@@ -25,13 +25,11 @@ st.write("_Si no te hacemos ganar, te diremos exactamente dónde y por qué perd
 st.write("Pre Campaña + Campaña + Día Elección + Post Campaña ")
 
 items = [
-    {"id": 1, "content": "2022-10-20", "start": "2022-10-20"},
-    {"id": 2, "content": "2022-10-09", "start": "2022-10-09"},
-    {"id": 3, "content": "2022-10-18", "start": "2022-10-18"},
-    {"id": 4, "content": "2022-10-16", "start": "2022-10-16"},
-    {"id": 5, "content": "2022-10-25", "start": "2022-10-25"},
-    {"id": 6, "content": "2022-10-27", "start": "2022-10-27"},
-]
+    {"id": 1, "PreCampaña": "2023-06-15", "start": "2022-07-29"},
+    {"id": 2, "Campaña": "2022-10-09", "start": "2022-10-09"},
+    {"id": 3, "Día E": "2022-10-18", "start": "2022-10-18"},
+    {"id": 4, "Post Campaña": "2022-10-16", "start": "2022-10-16"},
+    ]
 
 timeline = st_timeline(items, groups=[], options={}, height="300px")
 st.subheader("Selected item")
