@@ -20,7 +20,7 @@ st.set_page_config(layout="wide", page_title="Novus Vote 🗳️ Tecnología Ele
 st.title('Novus Vote 🗳️')
 
 st.header("Tecnología para Campañas Electorales Exitosas")
-wt.write("_Si no te hacemos ganar, te diremos exactamente por qué perdiste_")
+wt.write("Si no te hacemos ganar, te diremos exactamente dónde y por qué perdiste")
 
 st.write("Pre Campaña + Campaña + Día Elección + Post Campaña ")
 
