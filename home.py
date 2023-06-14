@@ -451,3 +451,43 @@ render_heatmap_cartesian()
  
 
 st.write('---')
+
+st.title("Votos requeridos por Grupos Poblacionales")
+options = {
+    "title": {"text": "Votos por Segmentos Poblacionales", "subtext": "Edades", "left": "center"},
+    "tooltip": {"trigger": "item"},
+    "legend": {
+        "orient": "vertical",
+        "left": "left",
+    },
+    "series": [
+        {
+            "name": "访问来源",
+            "type": "pie",
+            "radius": "50%",
+            "data": [
+                {"value": 1048, "name": "+60años"},
+                {"value": 735, "name": "50-60años"},
+                {"value": 580, "name": "40-50años"},
+                {"value": 484, "name": "30-40años"},
+                {"value": 300, "name": "18-30años"},
+            ],
+            "emphasis": {
+                "itemStyle": {
+                    "shadowBlur": 10,
+                    "shadowOffsetX": 0,
+                    "shadowColor": "rgba(0, 0, 0, 0.5)",
+                }
+            },
+        }
+    ],
+}
+st.markdown("Select a legend, see the detail")
+events = {
+    "legendselectchanged": "function(params) { return params.selected }",
+}
+s = st_echarts(
+    options=options, events=events, height="600px", key="render_pie_events"
+)
+if s is not None:
+    st.write(s)
