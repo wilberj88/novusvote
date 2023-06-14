@@ -22,7 +22,7 @@ st.title('Novus Vote 🗳️')
 st.header("Tecnología para Campañas Electorales Exitosas")
 st.write("_Si no te hacemos ganar, te diremos exactamente dónde y por qué perdiste_")
 
-st.write("Pre Campaña + Campaña + Día Elección + Post Campaña ")
+st.write("Son 4 etapas y 4 ritmos distintos: Pre Campaña + Campaña + Día Elección + Post Campaña ")
 
 items = [
     {"id": 1, "content": "2023-06-15", "start": "2023-07-29"},
