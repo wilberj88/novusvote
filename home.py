@@ -26,9 +26,9 @@ st.write("Pre Campaña + Campaña + Día Elección + Post Campaña ")
 
 items = [
     {"id": 1, "content": "2023-06-15", "start": "2023-07-29"},
-#    {"id": 2, "Campaña": "2022-10-09", "start": "2022-10-09"},
-#    {"id": 3, "DíaE": "2022-10-18", "start": "2022-10-18"},
-#    {"id": 4, "POSTCampaña": "2022-10-16", "start": "2022-10-16"},
+    {"id": 2, "content": "2023-10-21", "start": "2023-07-30"},
+    {"id": 3, "content": "2023-11-06", "start": "2023-10-22"},
+    {"id": 4, "POSTCampaña": "2023-11-07", "start": "2024-01-30"},
 ]
 
 #items = [
