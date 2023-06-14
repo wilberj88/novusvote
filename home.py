@@ -462,7 +462,7 @@ options = {
     },
     "series": [
         {
-            "name": "Votos",
+            "name": "Votos para ganar en 2023",
             "type": "pie",
             "radius": "50%",
             "data": [
@@ -482,7 +482,7 @@ options = {
         }
     ],
 }
-st.markdown("Select a legend, see the detail")
+st.markdown("Selecciona y analiza detalles")
 events = {
     "legendselectchanged": "function(params) { return params.selected }",
 }
