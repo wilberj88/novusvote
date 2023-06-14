@@ -114,7 +114,7 @@ st.header("Cronograma de Interacciones por Equipos")
 options = {
     "tooltip": {"trigger": "axis", "axisPointer": {"type": "shadow"}},
     "legend": {
-        "data": ["Líderes", "Mail Ad", "Affiliate Ad", "Video Ad", "Search Engine"]
+        "data": ["Líderes", "Voluntarios", "Testigos", "Defensores", "Logística"]
     },
     "grid": {"left": "3%", "right": "4%", "bottom": "3%", "containLabel": True},
     "xAxis": {"type": "value"},
@@ -132,7 +132,7 @@ options = {
             "data": [320, 302, 301, 334, 390, 330, 320],
         },
         {
-            "name": "Mail Ad",
+            "name": "Voluntarios",
             "type": "bar",
             "stack": "total",
             "label": {"show": True},
@@ -140,7 +140,7 @@ options = {
             "data": [120, 132, 101, 134, 90, 230, 210],
         },
         {
-            "name": "Affiliate Ad",
+            "name": "Testigos",
             "type": "bar",
             "stack": "total",
             "label": {"show": True},
@@ -148,7 +148,7 @@ options = {
             "data": [220, 182, 191, 234, 290, 330, 310],
         },
         {
-            "name": "Video Ad",
+            "name": "Defensores",
             "type": "bar",
             "stack": "total",
             "label": {"show": True},
@@ -156,7 +156,7 @@ options = {
             "data": [150, 212, 201, 154, 190, 330, 410],
         },
         {
-            "name": "Search Engine",
+            "name": "Logística",
             "type": "bar",
             "stack": "total",
             "label": {"show": True},
