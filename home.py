@@ -554,7 +554,7 @@ st.write('---')
 st.title("Conversión de Votantes por Barrio")
     
 option = {
-    "title": {"text": "Eficacia", "subtext": "Porcentaje (%)"},
+    "title": {"text": "Eficacia de la Campaña", "subtext": "Porcentaje Conversión(%)"},
     "tooltip": {"trigger": "item", "formatter": "{a} <br/>{b} : {c}%"},
     "toolbox": {
         "feature": {
@@ -585,7 +585,7 @@ option = {
             ],
         },
         {
-            "name": "实际",
+            "name": "Margen",
             "type": "funnel",
             "left": "10%",
             "width": "80%",
