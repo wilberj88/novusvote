@@ -452,9 +452,9 @@ render_heatmap_cartesian()
 
 st.write('---')
 
-st.title("Votos requeridos por Grupos Poblacionales")
+st.title("Votos requeridos por Segmentos Poblacionales")
 options = {
-    "title": {"text": "Votos por Segmentos Poblacionales", "subtext": "Edades", "left": "center"},
+    "title": {"text": "Votos por Edades", "subtext": "Décadas", "left": "center"},
     "tooltip": {"trigger": "item"},
     "legend": {
         "orient": "vertical",
@@ -462,7 +462,7 @@ options = {
     },
     "series": [
         {
-            "name": "访问来源",
+            "name": "Votos",
             "type": "pie",
             "radius": "50%",
             "data": [
