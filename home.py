@@ -417,3 +417,33 @@ render_heatmap_cartesian()
  
 
 st.write('---')
+st.title("Palabras clave por Barrio")
+data = [
+    {"name": name, "value": value}
+    for name, value in [
+        ("Trabajo", "999"),
+        ("Salud", "888"),
+        ("Educación", "777"),
+        ("Vivienda", "688"),
+        ("Alimentación", "588"),
+        ("Negocios", "516"),
+        ("Carreteras", "515"),
+        ("Puentes", "483"),
+        ("Hospitales", "462"),
+        ("Ciclovías", "449"),
+        ("Talento", "429"),
+        ("Tecnología", "407"),
+        ("Innovación", "406"),
+        ("Seguridad", "406"),
+        ("Crimen", "386"),
+        ("Secuestros", "385"),
+        ("Microtráfico", "375"),
+        ("Deportes", "355"),
+        ("Futbol", "355"),
+        ("Baloncesto", "335"),
+        ("Microfutbol", "324"),
+    ]
+]
+wordcloud_option = {"series": [{"type": "wordCloud", "data": data}]}
+st_echarts(wordcloud_option)
+
