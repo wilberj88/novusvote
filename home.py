@@ -25,6 +25,15 @@ st.write("_Si no te hacemos ganar, te diremos exactamente dónde y por qué perd
 st.write("Pre Campaña + Campaña + Día Elección + Post Campaña ")
 
 items = [
+    {"id": 1, "PRE Campaña": "2022-10-20", "start": "2022-10-20"},
+    {"id": 2, "content": "2022-10-09", "start": "2022-10-09"},
+    {"id": 3, "content": "2022-10-18", "start": "2022-10-18"},
+    {"id": 4, "content": "2022-10-16", "start": "2022-10-16"},
+    {"id": 5, "content": "2022-10-25", "start": "2022-10-25"},
+    {"id": 6, "content": "2022-10-27", "start": "2022-10-27"},
+]
+
+#items = [
     {"id": 1, "PRE Campaña inicia:": "2023-06-15", "PRE Campaña finaliza:": "2023-07-29"},
     {"id": 2, "Campaña inicia:": "2023-07-29", "Campaña finaliza": "2023-10-21"},
     {"id": 3, "Día E inicia:": "2023-10-22", "Día E finalizada:": "2023-11-06"},
