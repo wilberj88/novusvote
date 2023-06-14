@@ -309,10 +309,10 @@ col3.metric("Financiación Millones COP - Voto a 60.000", "2100")
 
 st.title("¿Te gustó este demo de Monitor para Pre Campaña?")
 st.write("Ejecutar tu campaña con estas herramientas será más sencillo, competir sin ellas será imposible")
-
+st.write('---')
 st.write("""
 **Adquiere paquete completo de campaña, día E y post campaña con Novus Vote 🗳️**
-- Software build by `Novus Technologies` with `Love` for Democracy
+- Software build by `Novus Technologies` with `Love 💚` for Democracy
 """)
 st.write('---')
 
