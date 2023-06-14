@@ -73,3 +73,37 @@ timeline = st_timeline(items, groups=groups, options={"selectable": True,
 
 st.subheader("Selected item")
 st.write(timeline)
+
+
+if 'timeline' not in st.session_state:
+    st.session_state['timeline'] = None
+    st.session_state['timeline_items'] = [
+        {"id": 1, "content": "static 1", "start": "2022-10-20"},
+        {"id": 2, "content": "Editable 1", "start": "2022-10-09", "editable": True},
+        {"id": 3, "content": "Editable 2", "start": "2022-10-18", "editable": True},
+        {"id": 4, "content": "static 2", "start": "2022-10-16"},
+        {"id": 5, "content": "static 3", "start": "2022-10-25"},
+        {"id": 6, "content": "static 4", "start": "2022-10-27"},
+    ]
+
+
+def display_return_info(place):
+    with place:
+        with st.container():
+            st.title('Returned value:')
+            st.write(st.session_state['timeline'])
+
+
+def run_code():
+    st.title("Streamlit Timeline")
+    timeline_form = st.form(key='foo')
+    return_vals = st.empty()
+
+    with timeline_form:
+        timeline = st_timeline(st.session_state['timeline_items'], groups=[], options={}, height="300px")
+        if st.form_submit_button('Done'):
+            st.session_state['timeline'] = timeline
+            display_return_info(return_vals)
+
+
+run_code()
