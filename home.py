@@ -551,9 +551,10 @@ if s is not None:
     
     
 st.write('---')
+st.title("Conversión de Votantes por Barrio")
     
 option = {
-    "title": {"text": "漏斗图", "subtext": "纯属虚构"},
+    "title": {"text": "Eficacia", "subtext": "Porcentaje"},
     "tooltip": {"trigger": "item", "formatter": "{a} <br/>{b} : {c}%"},
     "toolbox": {
         "feature": {
@@ -562,7 +563,7 @@ option = {
             "saveAsImage": {},
         }
     },
-    "legend": {"data": ["展现", "点击", "访问", "咨询", "订单"]},
+    "legend": {"data": ["Contactados", "Interesados", "Persuadidos", "Comprometidos", "Votantes"]},
     "series": [
         {
             "name": "预期",
