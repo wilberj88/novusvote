@@ -18,11 +18,11 @@ from pyecharts.charts import Graph
 st.set_page_config(layout="wide", page_title="Rionegro DEMO Novus Vote 🗳️", page_icon="🗳️")
 
 #TITULO
-st.title('Rionegro - Novus Vote 🗳️ - Borrador 1 para aprobación')
+st.title('Rionegro - Novus Vote 🗳️ - Borrador 1 PRE CAMPAÑA para aprobación')
 
 #META
 meta = 35000
-st.write('Votos mínimos requeridos para aspirar a posesionarse:', meta) 
+st.write('Votos mínimos requeridos para aspirar a posesionarse Alcalde de Rionegro:', meta) 
 
 
 st.title("Desagregación de votos en 2019 por mesa de votación, barrios y zonas")
