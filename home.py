@@ -577,11 +577,11 @@ option = {
                 "label": {"position": "inside", "formatter": "{b}预期: {c}%"}
             },
             "data": [
-                {"value": 60, "name": "访问"},
-                {"value": 40, "name": "咨询"},
-                {"value": 20, "name": "订单"},
-                {"value": 80, "name": "点击"},
-                {"value": 100, "name": "展现"},
+                {"value": 60, "name": "Persuadidos"},
+                {"value": 40, "name": "Comprometidos"},
+                {"value": 20, "name": "Votantes"},
+                {"value": 80, "name": "Interesados"},
+                {"value": 100, "name": "Contactados"},
             ],
         },
         {
