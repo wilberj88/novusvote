@@ -570,7 +570,7 @@ option = {
             "type": "funnel",
             "left": "10%",
             "width": "80%",
-            "label": {"formatter": "{b}Contactados"},
+            "label": {"formatter": "{b}%"},
             "labelLine": {"show": False},
             "itemStyle": {"opacity": 0.7},
             "emphasis": {
