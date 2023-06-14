@@ -309,12 +309,13 @@ col3.metric("Financiación Millones COP - Voto a 60.000", "2100")
 st.write('---')
 st.title("¿Te gustó este demo de Monitor para Pre Campaña?")
 st.write("Adquiere paquete completo de campaña, día E y post campaña con Novus Vote 🗳️")
-st.header('_Ejecutar tu campaña con estas herramientas será más sencillo, competir sin ellas será imposible_')
+st.header('_Un adelanto de lo que podemos hacer en tu monitor de Campaña:_')
+st.video("https://youtu.be/7831NGClsrM")
 
 st.write('---')
 st.write("""
 **<<El costo de desentendernos de la política está en ser gobernados por los peores: Sócrates>>**
-- Software build by `Novus Technologies` with `Love 💚` for Democracy
+- Software build by `Novus Technologies` with `Love 💚` for Democracy `NOT PROPAGANDA`
 """)
 
 
