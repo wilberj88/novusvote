@@ -299,12 +299,13 @@ with col3:
   st_echarts(options=acelerometro3)
 
 
-st.title("Financiación, Equipos y Zonas")
+st.title("Barrios, Equipos y Presupuesto")
 
 col1, col2, col3 = st.columns(3)
-col1.metric("Financiación Millones COP - Voto a 60.000", "2100")
+col1.metric("Barrios a abordar", "25")
 col2.metric("Equipos a Entrenar", "7")
-col3.metric("Barrios a abordar", "25")
+col3.metric("Financiación Millones COP - Voto a 60.000", "2100")
 
 
-
+st.title("¿Te gustó este demo de Monitor Pre Campaña? Adquiere paquete completo Novus Vote con Monitores: Campaña + Día Electoral + Post Campaña")
+st.write("Ejecutar tu campaña con estas herramientas será más sencillo, competir sin ellas será imposible")
