@@ -15,7 +15,7 @@ from pyecharts.charts import Graph
 
 
 # SETTING PAGE CONFIG TO WIDE MODE AND ADDING A TITLE AND FAVICON
-st.set_page_config(layout="wide", page_title="Rionegro DEMO Novus Vote 🗳️", page_icon="🗳️")
+st.set_page_config(layout="wide", page_title="Rionegro DEMO PRE CAMPAÑA Novus Vote 🗳️", page_icon="🗳️")
 
 #TITULO
 st.title('Rionegro - Novus Vote 🗳️ - Borrador 1 PRE CAMPAÑA para aprobación')
