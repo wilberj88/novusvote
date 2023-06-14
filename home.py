@@ -554,7 +554,7 @@ st.write('---')
 st.title("Conversión de Votantes por Barrio")
     
 option = {
-    "title": {"text": "Eficacia", "subtext": "Porcentaje"},
+    "title": {"text": "Eficacia", "subtext": "Porcentaje (%)"},
     "tooltip": {"trigger": "item", "formatter": "{a} <br/>{b} : {c}%"},
     "toolbox": {
         "feature": {
@@ -566,11 +566,11 @@ option = {
     "legend": {"data": ["Contactados", "Interesados", "Persuadidos", "Comprometidos", "Votantes"]},
     "series": [
         {
-            "name": "预期",
+            "name": "Contactados",
             "type": "funnel",
             "left": "10%",
             "width": "80%",
-            "label": {"formatter": "{b}预期"},
+            "label": {"formatter": "{b}Contactados"},
             "labelLine": {"show": False},
             "itemStyle": {"opacity": 0.7},
             "emphasis": {
