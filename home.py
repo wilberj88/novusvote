@@ -158,7 +158,7 @@ option = {
             "center": ["50%", "25%"],
             "emphasis": {"focus": "data"},
             "label": {"formatter": "{b}: {@2012} ({d}%)"},
-            "encode": {"itemName": "product", "value": "2012", "tooltip": "2012"},
+            "encode": {"itemName": "product", "value": "2019", "tooltip": "2019"},
         },
     ],
 }
