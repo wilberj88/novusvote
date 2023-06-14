@@ -26,9 +26,9 @@ st.write("Pre Campaña + Campaña + Día Elección + Post Campaña ")
 
 items = [
     {"id": "PRE Campaña", "Inicia": "2023-06-15", "Finaliza": "2022-07-29"},
-    {"id": "PRE Campaña", "Campaña": "2022-10-09", "start": "2022-10-09"},
-    {"id": "PRE Campaña", "Día E": "2022-10-18", "start": "2022-10-18"},
-    {"id": "PRE Campaña", "Post Campaña": "2022-10-16", "start": "2022-10-16"},
+    {"id": "Campaña", "Campaña": "2022-10-09", "start": "2022-10-09"},
+    {"id": "DíaE", "Día E": "2022-10-18", "start": "2022-10-18"},
+    {"id": "POST Campaña", "Post Campaña": "2022-10-16", "start": "2022-10-16"},
     ]
 
 timeline = st_timeline(items, groups=[], options={}, height="300px")
