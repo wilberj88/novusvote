@@ -8,4 +8,4 @@ beautifulsoup4
 pytrends
 seaborn
 streamlit-vis-timeline
-raceplotly
+raceplotly.plots
