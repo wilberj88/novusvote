@@ -18,11 +18,11 @@ st.title('Novus Vote 🗳️ - Día E')
 st.header("24 horas de monitoreo minuto a minuto")
 
 st.title("Cronograma 📆 de trabajo por equipos 👥")
-option = st.selectbox(
+option1 = st.selectbox(
     'Selecciona un barrio',
     ('Barrio1', 'Barrio2', 'Barrio3'))
 
-st.write('Tareas y actores Minuto a minuto del día E en el barrio:', option)
+st.write('Tareas y actores Minuto a minuto del día E en el barrio:', option1)
 items = [
     {"id": 1, "content": "Tanqueo de Vehículos", "start": "2023-10-29T03:00:00", "end": "2023-10-29T04:30:00", "group": "1"},
 
@@ -55,7 +55,7 @@ st.write(timeline)
 st.write('---')
 st.header("Tareas completadas por los equipos")
 
-option = st.selectbox(
+option2 = st.selectbox(
     'Selecciona un barrio',
     ('Barrio1', 'Barrio2', 'Barrio3'))
 
