@@ -305,7 +305,15 @@ col1, col2, col3 = st.columns(3)
 col1.metric("Barrios a abordar", "25")
 col2.metric("Equipos a Entrenar", "7")
 col3.metric("Financiación Millones COP - Voto a 60.000", "2100")
+st.write('---')
+st.title("Mesas Electorales")
+df = pd.DataFrame(
+    np.random.randn(1000, 2) / [50, 50] + [6.15333, -75.374166],
+    columns=['lat', 'lon'])
 
+st.map(df)
+
+st.write('---')
 st.write('---')
 st.title("¿Te gustó este demo de Monitor para Pre Campaña?")
 st.write("")
