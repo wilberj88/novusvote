@@ -13,6 +13,43 @@ import base64
 # SETTING PAGE CONFIG TO WIDE MODE AND ADDING A TITLE AND FAVICON
 st.set_page_config(layout="wide", page_title="Novus Vote 🗳️", page_icon="🗳️")
 
+st.write("""
+🧠 Algoritmo adaptador de propuestas en mensajes personalizados por barrios y perfiles psicológicos
+- 🥺: `Deseos`
+- 🥵: `Miedos`
+- 😭: `Sufrimientos`
+- 🙏: `Esperanzas`
+- 💰: `Necesidades`
+""")
+st.video("https://youtu.be/7831NGClsrM")
+st.header("Asistentes Virtuales para gestionar equipos de campaña 🤖")
+# Create a graphlib graph object
+graph = graphviz.Digraph()
+graph.edge('Bienvenida', 'Introducción')
+graph.edge('Introducción', 'Identificación')
+graph.edge('Identificación', 'Bienvenida')
+graph.edge('Bienvenida', 'Entrenamiento')
+graph.edge('Entrenamiento', 'Teoría')
+graph.edge('Entrenamiento', 'Pruebas')
+graph.edge('Entrenamiento', 'Reporte y Ranking TOTAL')
+graph.edge('Pruebas', 'Examen')
+graph.edge('Examen', 'DíaE')
+graph.edge('DíaE', 'ReporteDíaE')
+graph.edge('DíaE', 'Reporte y Ranking TOTAL')
+graph.edge('ReporteDíaE', 'Reporte y Ranking TOTAL')
+st.graphviz_chart(graph)
+st.write("""
+Todo el proceso de atención, desde la bienvenida hasta el ranking de resultados por equipos
+- 🗣️: `Voluntarios`
+- 🦶: `Líderes`
+- 🧑‍⚖️: `Jurados`
+- 🕵️: `Testigos`
+- 💰: `Ciudadanía`
+- ⚖️: `Defensores`
+- 🚧: `Logística`
+""")
+st.write('---')
+
 # SETTING BACKGROUND
 #page_bg_img = f"""
 #<style>
