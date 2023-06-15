@@ -24,11 +24,11 @@ option = st.selectbox(
 
 st.write('Tareas y actores Minuto a minuto del día E en el barrio:', option)
 items = [
-    {"id": 1, "content": "Tanqueo de Vehículos", "start": "2022-10-17T08:00:00", "end": "2022-10-17T16:00:00", "group": "1"},
+    {"id": 1, "content": "Tanqueo de Vehículos", "start": "2023-10-29T03:00:00", "end": "2023-10-29T04:30:00", "group": "1"},
 
-    {"id": 2, "content": "Recolección de Alimentos", "start": "2022-10-17T11:00:00", "end": "2022-10-17T15:00:00", "group": "2"},
+    {"id": 2, "content": "Recolección de Alimentos", "start": "2023-10-29T04:30:00", "end": "2023-10-29T06:30:00", "group": "2"},
 
-    {"id": 3, "content": "Ruta de recogida testigos electorales", "start": "2022-10-17T10:00:00", "end": "2022-10-17T18:00:00", "group": "3"}
+    {"id": 3, "content": "Ruta de recogida testigos electorales", "start": "2023-10-29T06:00:00", "end": "2023-10-29T07:40:00", "group": "3"}
 ]
 
 groups = [
