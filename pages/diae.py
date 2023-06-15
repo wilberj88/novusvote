@@ -1,4 +1,5 @@
 import streamlit as st
+from streamlit_echarts import st_echarts
 import plotly.express as px
 import pandas as pd
 import numpy as np
