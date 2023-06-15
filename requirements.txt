@@ -8,3 +8,5 @@ beautifulsoup4
 pytrends
 seaborn
 streamlit-vis-timeline
+bar_chart_race
+base64
