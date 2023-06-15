@@ -13,6 +13,11 @@ import base64
 # SETTING PAGE CONFIG TO WIDE MODE AND ADDING A TITLE AND FAVICON
 st.set_page_config(layout="wide", page_title="Novus Vote 🗳️", page_icon="🗳️")
 
+
+#TITULO
+st.title('Novus Vote 🗳️ - Campaña')
+
+
 st.write("""
 🧠 Algoritmo adaptador de propuestas en mensajes personalizados por barrios y perfiles psicológicos
 - 🥺: `Deseos`
@@ -77,9 +82,6 @@ st.write('---')
 #st.markdown(page_bg_img, unsafe_allow_html=True)
 
 
-
-#TITULO
-st.title('Novus Vote 🗳️ - Campaña')
 
 #SUBTITULO
 st.write('---')
