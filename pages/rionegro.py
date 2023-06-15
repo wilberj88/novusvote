@@ -319,6 +319,7 @@ st.write('---')
 st.title("¿Te gustó este demo de Monitor para Pre Campaña?")
 st.write("")
 st.header('_Mira un adelanto de lo que podemos hacer en tu Monitor de Campaña:_')
+st.header("🧠 Algoritmo adaptador de propuestas en mensajes personalizados por barrios y perfiles psicológicos")
 st.video("https://youtu.be/7831NGClsrM")
 st.header("Asistentes Virtuales para gestionar equipos de campaña 🤖")
 # Create a graphlib graph object
