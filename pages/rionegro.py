@@ -10,6 +10,7 @@ import pydeck as pdk
 import matplotlib.pyplot as plt
 import datetime
 import base64
+import graphviz
 from pyecharts import options as opts
 from pyecharts.charts import Graph
 
@@ -319,6 +320,23 @@ st.title("¿Te gustó este demo de Monitor para Pre Campaña?")
 st.write("")
 st.header('_Mira un adelanto de lo que podemos hacer en tu Monitor de Campaña:_')
 st.video("https://youtu.be/7831NGClsrM")
+st.header("Asistentes Virtuales para gestionar equipos de campaña 🤖")
+# Create a graphlib graph object
+graph = graphviz.Digraph()
+graph.edge('Bienvenida', 'Introducción')
+graph.edge('Introducción', 'Identificación')
+graph.edge('Identificación', 'Bienvenida')
+graph.edge('Bienvenida', 'Entrenamiento')
+graph.edge('Entrenamiento', 'Teoría')
+graph.edge('Entrenamiento', 'Pruebas')
+graph.edge('Entrenamiento', 'Reporte y Ranking TOTAL')
+graph.edge('Pruebas', 'Examen')
+graph.edge('Examen', 'DíaE')
+graph.edge('DíaE', 'ReporteDíaE')
+graph.edge('DíaE', 'Reporte y Ranking TOTAL')
+graph.edge('ReporteDíaE', 'Reporte y Ranking TOTAL')
+
+st.graphviz_chart(graph)
 
 st.write('---')
 st.write("""
