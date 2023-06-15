@@ -24,6 +24,25 @@ st.write("_Si no te hacemos ganar, te diremos exactamente dónde y por qué perd
 
 st.write("Son 4 etapas y 4 ritmos distintos: Pre Campaña + Campaña + Día Elección + Post Campaña ")
 
+tab1, tab2, tab3, tab4 = st.tabs(["PreCampaña", "Campaña", "DíaE", "PostCampaña"])
+
+with tab1:
+   st.header("PreCampaña")
+   st.image("https://static.streamlit.io/examples/cat.jpg", width=200)
+
+with tab2:
+   st.header("Campaña")
+   st.image("https://static.streamlit.io/examples/dog.jpg", width=200)
+
+with tab3:
+   st.header("DíaE")
+   st.image("https://static.streamlit.io/examples/owl.jpg", width=200)
+
+with tab4:
+   st.header("PostCampaña")
+   st.image("https://static.streamlit.io/examples/dog.jpg", width=200)
+
+
 items = [
     {"id": 1, "content": "2023-06-15", "start": "2023-07-29"},
     {"id": 2, "content": "2023-10-21", "start": "2023-07-30"},
