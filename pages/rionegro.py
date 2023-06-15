@@ -322,17 +322,6 @@ st.header('_Mira un adelanto de lo que podemos hacer en tu Monitor de Campaña:_
 st.header("🧠 Algoritmo adaptador de propuestas en mensajes personalizados por barrios y perfiles psicológicos")
 st.video("https://youtu.be/7831NGClsrM")
 st.header("Asistentes Virtuales para gestionar equipos de campaña 🤖")
-st.write("""
-**Todo el proceso de atención, desde la bienvenida hasta el ranking de resultados por equipos
-- 🗣️: `Voluntarios`
-- 🦶: `Líderes`
-- 🧑‍⚖️: `Jurados`
-- 🕵️: `Testigos`
-- 💰: `Ciudadanía`
-- ⚖️: `Defensores`
-- 🚧: `Logística`
-""")
-
 # Create a graphlib graph object
 graph = graphviz.Digraph()
 graph.edge('Bienvenida', 'Introducción')
@@ -347,9 +336,18 @@ graph.edge('Examen', 'DíaE')
 graph.edge('DíaE', 'ReporteDíaE')
 graph.edge('DíaE', 'Reporte y Ranking TOTAL')
 graph.edge('ReporteDíaE', 'Reporte y Ranking TOTAL')
-
 st.graphviz_chart(graph)
-
+st.write("""
+**Todo el proceso de atención, desde la bienvenida hasta el ranking de resultados por equipos
+- 🗣️: `Voluntarios`
+- 🦶: `Líderes`
+- 🧑‍⚖️: `Jurados`
+- 🕵️: `Testigos`
+- 💰: `Ciudadanía`
+- ⚖️: `Defensores`
+- 🚧: `Logística`
+""")
+st.write('---')
 st.write("""
 - Software build by `Novus Technologies` with `Love 💚` for Democracy `NOT FOR PROPAGANDA`
 """)
