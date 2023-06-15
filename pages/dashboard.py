@@ -1,26 +1,34 @@
-import streamlit as st
-import pandas as pd
-import numpy as np
-from raceplotly.plots import barplot
-st.header('Single File Upload')
-uploaded_file = st.file_uploader('Upload a file')
+import streamlit
+from streamlit_agraph import agraph, Node, Edge, Config
 
-df = pd.read_csv(uploaded_file)
-st.write(df)
+nodes = []
+edges = []
+nodes.append( Node(id="Spiderman", 
+                   label="Peter Parker", 
+                   size=25, 
+                   shape="circularImage",
+                   image="http://marvel-force-chart.surge.sh/marvel_force_chart_img/top_spiderman.png") 
+            ) # includes **kwargs
+nodes.append( Node(id="Captain_Marvel", 
+                   size=25,
+                   shape="circularImage",
+                   image="http://marvel-force-chart.surge.sh/marvel_force_chart_img/top_captainmarvel.png") 
+            )
+edges.append( Edge(source="Captain_Marvel", 
+                   label="friend_of", 
+                   target="Spiderman", 
+                   # **kwargs
+                   ) 
+            ) 
 
-df.replace('-', np.nan, inplace=True)
-df['Revenue']=df['Revenue'].astype(float)
-df=df.sort_values(by='Year')
+config = Config(width=750,
+                height=950,
+                directed=True, 
+                physics=True, 
+                hierarchical=False,
+                # **kwargs
+                )
 
-#Create bar race animation
-my_raceplot = barplot(df,  item_column='Name', value_column='Revenue', time_column='Year',top_entries=10)
-fig=my_raceplot.plot(item_label = 'Top 10 Companies', value_label = 'Revenue', frame_duration = 200, date_format='%Y',orientation='horizontal')
-
-#Add chart title, format the chart, etc.
-fig.update_layout(
-      title='Top 10 U.S. Companies Based on Revenue (1955-2021)',
-      title_x=0.15,
-      width=800,
-      height=550,
-      paper_bgcolor="lightgray",
-      )
+return_value = agraph(nodes=nodes, 
+                      edges=edges, 
+                      config=config)
