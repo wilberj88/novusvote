@@ -352,7 +352,6 @@ st.graphviz_chart(graph)
 
 st.write('---')
 st.write("""
-**Adquiere paquete completo de Pre Campaña, Campaña, día E y Post Campaña con Novus Vote 🗳️**
 - Software build by `Novus Technologies` with `Love 💚` for Democracy `NOT FOR PROPAGANDA`
 """)
 
