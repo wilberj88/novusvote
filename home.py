@@ -110,6 +110,15 @@ run_code()
 
 
 st.write('---')
+st.title("Mesas Electorales")
+df = pd.DataFrame(
+    np.random.randn(1000, 2) / [50, 50] + [6.15333, -75.374166],
+    columns=['lat', 'lon'])
+
+st.map(df)
+
+st.write('---')
+
 st.title("Población con mayor Participación Electoral")
 option = {
     "legend": {"top": "bottom"},
