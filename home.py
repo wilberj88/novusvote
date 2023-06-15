@@ -13,6 +13,9 @@ import datetime
 import base64
 from pyecharts import options as opts
 from pyecharts.charts import Graph
+import streamlit.components.v1 as components
+import bar_chart_race as bcr
+import base64
 
 
 st.set_page_config(layout="wide", page_title="Novus Vote 🗳️ Tecnología Electoral", page_icon="🗳️")
@@ -669,3 +672,18 @@ option = {
     ],
 }
 st_echarts(option, height="500px")
+
+        
+    
+st.write('---')
+st.title("Actualizaciones de Resultados Electorales")
+df = bcr.load_dataset("covid19_tutorial")
+html_str = bcr.bar_chart_race(df=df).data
+
+start = html_str.find('base64,')+len('base64,')
+end = html_str.find('">')
+
+video = base64.b64decode(html_str[start:end])
+st.video(video)        
+    
+st.write('---')
