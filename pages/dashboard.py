@@ -1,6 +1,8 @@
 import pandas as pd
 import numpy as np
 from raceplotly.plots import barplot
+st.header('Single File Upload')
+uploaded_file = st.file_uploader('Upload a file')
 
 df=pd.read_csv('/fortune500.csv')
 df.replace('-', np.nan, inplace=True)
