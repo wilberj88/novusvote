@@ -10,3 +10,4 @@ seaborn
 streamlit-vis-timeline
 raceplotly
 streamlit_agraph
+graphviz
