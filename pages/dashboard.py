@@ -4,7 +4,9 @@ from raceplotly.plots import barplot
 st.header('Single File Upload')
 uploaded_file = st.file_uploader('Upload a file')
 
-df=pd.read_csv('/fortune500.csv')
+df = pd.read_csv(uploaded_file)
+st.write(df)
+
 df.replace('-', np.nan, inplace=True)
 df['Revenue']=df['Revenue'].astype(float)
 df=df.sort_values(by='Year')
