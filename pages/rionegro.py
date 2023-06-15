@@ -320,7 +320,7 @@ st.title("¿Te gustó este demo de Monitor para Pre Campaña?")
 st.write("")
 st.header('_Mira un adelanto de lo que podemos hacer en tu Monitor de Campaña:_')
 st.write("""
-**🧠 Algoritmo adaptador de propuestas en mensajes personalizados por barrios y perfiles psicológicos
+🧠 Algoritmo adaptador de propuestas en mensajes personalizados por barrios y perfiles psicológicos
 - 🥺: `Deseos`
 - 🥵: `Miedos`
 - 😭: `Sufrimientos`
@@ -345,7 +345,7 @@ graph.edge('DíaE', 'Reporte y Ranking TOTAL')
 graph.edge('ReporteDíaE', 'Reporte y Ranking TOTAL')
 st.graphviz_chart(graph)
 st.write("""
-**Todo el proceso de atención, desde la bienvenida hasta el ranking de resultados por equipos
+Todo el proceso de atención, desde la bienvenida hasta el ranking de resultados por equipos
 - 🗣️: `Voluntarios`
 - 🦶: `Líderes`
 - 🧑‍⚖️: `Jurados`
