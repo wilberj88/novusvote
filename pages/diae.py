@@ -54,6 +54,69 @@ st.write(timeline)
 
 st.write('---')
 st.header("Tareas completadas por los equipos")
+col1, col2, col3 = st.columns(3)
+with col1:
+  acelerometro1 = {
+        "tooltip": {"formatter": "{a} <br/>{b} : {c}%"},
+        "series": [
+            {
+                "name": "Pressure",
+                "type": "gauge",
+                "axisLine": {
+                    "lineStyle": {
+                        "width": 10,
+                    },
+                },
+                "progress": {"show": "true", "width": 10},
+                "detail": {"valueAnimation": "true", "formatter": "{value}"},
+                "data": [{"value": 25, "name": "Líderes"}],
+            }
+        ],
+    }
+
+  st_echarts(options=acelerometro1)
+
+with col2:
+  acelerometro2 = {
+        "tooltip": {"formatter": "{a} <br/>{b} : {c}%"},
+        "series": [
+            {
+                "name": "Pressure",
+                "type": "gauge",
+                "axisLine": {
+                    "lineStyle": {
+                        "width": 10,
+                    },
+                },
+                "progress": {"show": "true", "width": 10},
+                "detail": {"valueAnimation": "true", "formatter": "{value}"},
+                "data": [{"value": 90, "name": "Voluntarios"}],
+            }
+        ],
+    }
+
+  st_echarts(options=acelerometro2)
+
+with col3:
+  acelerometro3 = {
+        "tooltip": {"formatter": "{a} <br/>{b} : {c}%"},
+        "series": [
+            {
+                "name": "Pressure",
+                "type": "gauge",
+                "axisLine": {
+                    "lineStyle": {
+                        "width": 10,
+                    },
+                },
+                "progress": {"show": "true", "width": 10},
+                "detail": {"valueAnimation": "true", "formatter": "{value}"},
+                "data": [{"value": 66, "name": "Testigos"}],
+            }
+        ],
+    }
+  st_echarts(options=acelerometro3)
+
 df = pd.DataFrame(
 np.random.randn(1000, 2) / [50, 50] + [6.15333, -75.374166],
 columns=['lat', 'lon'])
