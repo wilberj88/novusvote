@@ -8,7 +8,7 @@ import pydeck as pdk
 import matplotlib.pyplot as plt
 import datetime
 import base64
-
+from streamlit_timeline import st_timeline
 
 # SETTING PAGE CONFIG TO WIDE MODE AND ADDING A TITLE AND FAVICON
 st.set_page_config(layout="wide", page_title="Novus Vote 🗳️", page_icon="🗳️")
