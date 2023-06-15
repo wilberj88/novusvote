@@ -28,11 +28,11 @@ tab1, tab2, tab3, tab4 = st.tabs(["PreCampaña", "Campaña", "DíaE", "PostCampa
 
 with tab1:
    st.header("PreCampaña")
-   st.image("https://static.streamlit.io/examples/cat.jpg", width=200)
+   st.image("https://media.istockphoto.com/id/1488589178/es/foto/concepto-de-voto-y-democracia-mano-del-hombre-poniendo-la-boleta-en-la-urna-electoral.jpg?s=612x612&w=0&k=20&c=K3Pxpi28NVEqSctL8SeReLVstIuPT6pkJBDkDouLUZ0=", width=200)
 
 with tab2:
    st.header("Campaña")
-   st.image("https://static.streamlit.io/examples/dog.jpg", width=200)
+   st.image("https://images.unsplash.com/photo-1604496464355-a5032e3b47e0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZWxlY3RvcmFsJTIwY2FuZGlkYXRlfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60", width=200)
 
 with tab3:
    st.header("DíaE")
