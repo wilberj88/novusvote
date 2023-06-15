@@ -46,7 +46,11 @@ st.title('Novus Vote 🗳️ - Día E')
 st.header("24 horas de monitoreo minuto a minuto")
 
 st.title("Cronograma 📆 de trabajo por equipos 👥")
+option = st.selectbox(
+    'Selecciona un barrio',
+    ('Barrio1', 'Barrio2', 'Barrio3'))
 
+st.write('Minuto a minuto del día E en el barrio:', option)
 items = [
     {"id": 1, "content": "Early shift", "start": "2022-10-17T08:00:00", "end": "2022-10-17T16:00:00", "group": "1"},
 
