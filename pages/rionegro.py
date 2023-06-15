@@ -332,7 +332,7 @@ st.write("""
 - ⚖️: `Defensores`
 - 🚧: `Logística`
 """)
-st.write("""
+
 # Create a graphlib graph object
 graph = graphviz.Digraph()
 graph.edge('Bienvenida', 'Introducción')
@@ -350,7 +350,6 @@ graph.edge('ReporteDíaE', 'Reporte y Ranking TOTAL')
 
 st.graphviz_chart(graph)
 
-st.write('---')
 st.write("""
 - Software build by `Novus Technologies` with `Love 💚` for Democracy `NOT FOR PROPAGANDA`
 """)
