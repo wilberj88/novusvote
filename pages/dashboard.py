@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 from raceplotly.plots import barplot
 
-df=pd.read_csv(r'\fortune500.csv')
+df=pd.read_csv('\fortune500.csv')
 df.replace('-', np.nan, inplace=True)
 df['Revenue']=df['Revenue'].astype(float)
 df=df.sort_values(by='Year')
