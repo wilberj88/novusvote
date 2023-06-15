@@ -20,6 +20,6 @@ graph.edge('Examen', 'DíaE')
 graph.edge('DíaE', 'ReporteDíaE')
 graph.edge('DíaE', 'Reporte y Ranking TOTAL')
 graph.edge('ReporteDíaE', 'Reporte y Ranking TOTAL')
-graph.edge('Pruebas', 'Reporte y Ranking TOTAL')
+
 
 st.graphviz_chart(graph)
