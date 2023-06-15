@@ -1,4 +1,4 @@
-import streamlit
+import streamlit as st
 from streamlit_agraph import agraph, Node, Edge, Config
 
 st.set_page_config(layout="wide", page_title="Novus Vote 🗳️ Tecnología Electoral", page_icon="🗳️")
