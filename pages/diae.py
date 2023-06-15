@@ -51,12 +51,14 @@ st.subheader("Selected item")
 st.write(timeline)
 
 
-#SUBTITULO
+
 st.write('---')
 st.header("Tareas completadas por los equipos")
+
 option = st.selectbox(
     'Selecciona un barrio',
     ('Barrio1', 'Barrio2', 'Barrio3'))
+
 df = pd.DataFrame(
 np.random.randn(1000, 2) / [50, 50] + [6.15333, -75.374166],
 columns=['lat', 'lon'])
