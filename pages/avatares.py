@@ -8,10 +8,10 @@ st.header("Guiones de Interacción")
 
 # Create a graphlib graph object
 graph = graphviz.Digraph()
-graph.edge('run', 'intr')
+graph.edge('Bienvenida', 'intr')
 graph.edge('intr', 'runbl')
-graph.edge('runbl', 'run')
-graph.edge('run', 'kernel')
+graph.edge('runbl', 'Bienvenida')
+graph.edge('Bienvenida', 'kernel')
 graph.edge('kernel', 'zombie')
 graph.edge('kernel', 'sleep')
 graph.edge('kernel', 'runmem')
