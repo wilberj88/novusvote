@@ -13,34 +13,6 @@ from streamlit_timeline import st_timeline
 # SETTING PAGE CONFIG TO WIDE MODE AND ADDING A TITLE AND FAVICON
 st.set_page_config(layout="wide", page_title="Novus Vote 🗳️", page_icon="🗳️")
 
-# SETTING BACKGROUND
-#page_bg_img = f"""
-#<style>
-#[data-testid="stAppViewContainer"] > .main {{
-#background-image: url("https://images.unsplash.com/photo-1602906530215-1bf5f4925279?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1527&q=80");
-#background-size: 180%;
-#background-position: top;
-#background-repeat: no-repeat;
-#background-attachment: local;
-#}}
-#[data-testid="stSidebar"] > div:first-child {{
-#background-image: url("https://images.unsplash.com/photo-1603032813605-2c91e257e2ae?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dm90b3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
-#background-position: left; 
-#background-repeat: no-repeat;
-#background-attachment: local;
-#}}
-#[data-testid="stHeader"] {{
-#background: rgba(0,0,0,0);
-#}}
-#[data-testid="stToolbar"] {{
-#right: 2rem;
-#}}
-#</style>
-#"""
-#st.markdown(page_bg_img, unsafe_allow_html=True)
-
-
-
 #TITULO
 st.title('Novus Vote 🗳️ - Día E')
 st.header("24 horas de monitoreo minuto a minuto")
@@ -50,13 +22,13 @@ option = st.selectbox(
     'Selecciona un barrio',
     ('Barrio1', 'Barrio2', 'Barrio3'))
 
-st.write('Minuto a minuto del día E en el barrio:', option)
+st.write('Tareas y actores Minuto a minuto del día E en el barrio:', option)
 items = [
-    {"id": 1, "content": "Early shift", "start": "2022-10-17T08:00:00", "end": "2022-10-17T16:00:00", "group": "1"},
+    {"id": 1, "content": "Tanqueo de Vehículos", "start": "2022-10-17T08:00:00", "end": "2022-10-17T16:00:00", "group": "1"},
 
-    {"id": 2, "content": "Early shift", "start": "2022-10-17T11:00:00", "end": "2022-10-17T15:00:00", "group": "2"},
+    {"id": 2, "content": "Recolección de Alimentos", "start": "2022-10-17T11:00:00", "end": "2022-10-17T15:00:00", "group": "2"},
 
-    {"id": 3, "content": "Early shift", "start": "2022-10-17T10:00:00", "end": "2022-10-17T18:00:00", "group": "3"}
+    {"id": 3, "content": "Ruta de recogida testigos electorales", "start": "2022-10-17T10:00:00", "end": "2022-10-17T18:00:00", "group": "3"}
 ]
 
 groups = [
