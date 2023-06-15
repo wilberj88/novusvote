@@ -15,7 +15,6 @@ from pyecharts import options as opts
 from pyecharts.charts import Graph
 import streamlit.components.v1 as components
 import bar_chart_race as bcr
-import base64
 
 
 st.set_page_config(layout="wide", page_title="Novus Vote 🗳️ Tecnología Electoral", page_icon="🗳️")
