@@ -33,9 +33,9 @@ items = [
 ]
 
 groups = [
-    {"id": 1, "content": "Worker 1", "style": "color: black; background-color: #a9a9a98F;"},
-    {"id": 2, "content": "Worker 2", "style": "color: black; background-color: #a9a9a98F;"},
-    {"id": 3, "content": "Worker 3", "style": "color: black; background-color: #a9a9a98F;"}
+    {"id": 1, "content": "Líder 1", "style": "color: black; background-color: #a9a9a98F;"},
+    {"id": 2, "content": "Voluntario 1", "style": "color: black; background-color: #a9a9a98F;"},
+    {"id": 3, "content": "Líder 2", "style": "color: black; background-color: #a9a9a98F;"}
 ]
 
 timeline = st_timeline(items, groups=groups, options={"selectable": True, 
