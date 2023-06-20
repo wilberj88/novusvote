@@ -1,5 +1,11 @@
 # novusvote
 
+Suscripciones para 4 meses de campaña desde la previa hasta el postdíaE.
+Desde 1 millón de pesos mensuales para JAC en municipios pequeños.
+Hasta 15 millones de pesos mensuales para Gobernaciones grandes.
+Paquetes desde 4 hasta 60 millones de pesos.
+
+
 Centrales de Monitoreo de Etapas de Campaña
 pre campaña: historicos votaciones y retos para ganar
 campaña: (bbc mundo video) perfilamiento y mensajes personalizados
