@@ -1,4 +1,4 @@
-import streamlit as st
+.import streamlit as st
 from streamlit_echarts import st_echarts
 from streamlit_echarts import st_pyecharts
 import plotly.express as px
