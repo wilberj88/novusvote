@@ -333,7 +333,7 @@ Perfiles ideológicos:
 - 💜: `Centro`
 - 🧡: `Centro Derecha`
 - 💙: `Derecha`, 
-Perfiles Demográficos
+Perfiles Demográficos:
 - 👦: `18-24 años`
 - 🧒: `25-35 años`
 - 🧑: `36-45 años`
