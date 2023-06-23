@@ -320,19 +320,19 @@ st.title("¿Te gustó este demo de Monitor para Pre Campaña?")
 st.write("")
 st.header('_Mira un adelanto de lo que podemos hacer en tu Monitor de Campaña:_')
 st.write("""
-🧠 Red Neuronal para personalizar mensajes de campaña por Puestos de Votación por: 
-Perfiles psicológicos
+🧠 Red Neuronal para personalizar mensajes de campaña por Puestos de Votación por 
+Perfiles psicológicos: 
 - 🥺: `Deseos`
 - 🥵: `Miedos`
 - 😭: `Sufrimientos`
 - 🙏: `Esperanzas`
-- 💰: `Necesidades`
+- 💰: `Necesidades`, 
 Perfiles ideológicos:
 - 💛: `Izquierda`
 - 💚: `Centro izquierda`
 - 💜: `Centro`
 - 🧡: `Centro Derecha`
-- 💙: `Derecha`
+- 💙: `Derecha`, 
 Perfiles Demográficos
 - 👦: `18-24 años`
 - 🧒: `25-35 años`
