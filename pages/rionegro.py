@@ -129,7 +129,7 @@ st_echarts(options=options, height="400px")
 st.title('Ritmo de votación requerido cada hora para ganar Alcaldía Rionegro 2023 ')
 col1, col2, col3 = st.columns(3)
 col1.metric("Por Zona", "875")
-col2.metric("Por Barrio", "175")
+col2.metric("Por Puesto Electoral", "175")
 col3.metric("Por Mesa", "72")
 
 option = {
@@ -146,7 +146,7 @@ st_echarts(
 st.write('El ritmo de votos requeridos por minuto es de: ', meta/480)
 st.write('El ritmo de votos requeridos por hora es de: ', meta/8) 
 
-st.title("Líderes necesarios para votación mínima por barrios")
+st.title("Líderes necesarios para votación mínima por Puesto de Votación")
 chart_data = pd.DataFrame(np.random.randn(20, 3), columns=["Testigos", "Jurados", "Defensores"])
 st.area_chart(chart_data)
 
@@ -169,7 +169,7 @@ fig = ff.create_distplot(
 st.plotly_chart(fig, use_container_width=True)
        
 
-st.title('Contraste Votos Zonas entre Alcalde Actual y Top 3 votos Alcaldía 2019')
+st.title('Contraste Votos Zonas entre Alcalde Actual y Top 3 votos Alcaldía 2019 Vs 2015')
 def render_basic_radar():
     option = {
         "title": {"text": "Previo Votación 🗳️"},
@@ -300,12 +300,12 @@ with col3:
   st_echarts(options=acelerometro3)
 
 
-st.title("Barrios, Equipos y Presupuesto")
+st.title("Puestos de Votación, Equipos y Presupuesto")
 
 col1, col2, col3 = st.columns(3)
-col1.metric("Barrios a abordar", "25")
+col1.metric("Puestos de Votación", "25")
 col2.metric("Equipos a Entrenar", "7")
-col3.metric("Financiación Millones COP - Voto a 60.000", "2100")
+col3.metric("Presupuesto en Millones COP - Escenario Voto a 60.000", "2100")
 st.write('---')
 st.title("Mesas Electorales")
 df = pd.DataFrame(
@@ -320,12 +320,25 @@ st.title("¿Te gustó este demo de Monitor para Pre Campaña?")
 st.write("")
 st.header('_Mira un adelanto de lo que podemos hacer en tu Monitor de Campaña:_')
 st.write("""
-🧠 Algoritmo adaptador de propuestas en mensajes personalizados por barrios y perfiles psicológicos
+🧠 Red Neuronal para personalizar mensajes de campaña por Puestos de Votación por: 
+Perfiles psicológicos
 - 🥺: `Deseos`
 - 🥵: `Miedos`
 - 😭: `Sufrimientos`
 - 🙏: `Esperanzas`
 - 💰: `Necesidades`
+Perfiles ideológicos:
+- 💛: `Izquierda`
+- 💚: `Centro izquierda`
+- 💜: `Centro`
+- 🧡: `Centro Derecha`
+- 💙: `Derecha`
+Perfiles Demográficos
+- 👦: `18-24 años`
+- 🧒: `25-35 años`
+- 🧑: `36-45 años`
+- 🙎: `45-65 años`
+- 👴: `+65 años`
 """)
 st.video("https://youtu.be/7831NGClsrM")
 st.header("Asistentes Virtuales para gestionar equipos de campaña 🤖")
