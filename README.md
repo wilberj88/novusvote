@@ -34,6 +34,9 @@ Streamlit Visualizaciones:
 eCharts: 1) Liquidfill, 2) Gauge Ring
 PyeChart: 1) Graph
 
+Route Optimizations:
+https://towardsdatascience.com/modern-route-optimization-with-python-fea87d34288b
+
 Gráficos de Nodos
 https://medium.com/@vespinozag/what-is-gephi-meet-this-useful-network-analysis-tool-628a1b42428c
 https://towardsdatascience.com/build-a-simple-network-graph-app-using-streamlit-e6d65efbae88
