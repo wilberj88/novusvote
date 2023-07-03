@@ -83,6 +83,10 @@ ST_RADAR_DEMOS = {
 }
 render_basic_radar()
 
+st.title("Top3 Partidos Políticos a Alcaldía en 2015 y 2019")
+
+st.header('CAMPAÑA - Requisitos')
+
 #META
 meta = 70000
-st.write('Votos mínimos requeridos para aspirar a posesionarse Alcalde de Valledupar:', meta) 
+st.write('Votos mínimos para aspirar a posesionarse Alcalde de Valledupar:', meta) 
