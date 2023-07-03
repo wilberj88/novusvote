@@ -84,6 +84,60 @@ ST_RADAR_DEMOS = {
 render_basic_radar()
 
 st.title("Top3 Partidos Políticos a Alcaldía en 2015 y 2019")
+option = {
+    "legend": {},
+    "tooltip": {"trigger": "axis", "showContent": False},
+    "dataset": {
+        "source": [
+            ["product", "1999", "2004", "2007", "2011", "2015", "2019"],
+            ["Conservador", 56.5, 82.1, 88.7, 70.1, 53.4, 85.1],
+            ["Verde", 51.1, 51.4, 55.1, 53.3, 73.8, 68.7],
+            ["Polo", 40.1, 62.2, 69.5, 36.4, 45.2, 32.5],
+            ["Liberal", 25.2, 37.1, 41.2, 18, 33.9, 49.1],
+        ]
+    },
+    "xAxis": {"type": "category"},
+    "yAxis": {"gridIndex": 0},
+    "grid": {"top": "55%"},
+    "series": [
+        {
+            "type": "line",
+            "smooth": True,
+            "seriesLayoutBy": "row",
+            "emphasis": {"focus": "series"},
+        },
+        {
+            "type": "line",
+            "smooth": True,
+            "seriesLayoutBy": "row",
+            "emphasis": {"focus": "series"},
+        },
+        {
+            "type": "line",
+            "smooth": True,
+            "seriesLayoutBy": "row",
+            "emphasis": {"focus": "series"},
+        },
+        {
+            "type": "line",
+            "smooth": True,
+            "seriesLayoutBy": "row",
+            "emphasis": {"focus": "series"},
+        },
+        {
+            "type": "pie",
+            "id": "pie",
+            "radius": "30%",
+            "center": ["50%", "25%"],
+            "emphasis": {"focus": "data"},
+            "label": {"formatter": "{b}: {@2012} ({d}%)"},
+            "encode": {"itemName": "product", "value": "2019", "tooltip": "2019"},
+        },
+    ],
+}
+st_echarts(option, height="500px", key="echarts")
+st.write('---')
+
 
 st.header('CAMPAÑA - Requisitos')
 
