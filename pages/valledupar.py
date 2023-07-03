@@ -21,15 +21,12 @@ st.set_page_config(layout="wide", page_title="Novus Vote 🗳️ Valledupar PRE 
 #TITULO
 st.title('Novus Vote 🗳️ - Valledupar V.0.6')
 
-#META
-meta = 70000
-st.write('Votos mínimos requeridos para aspirar a posesionarse Alcalde de Valledupar:', meta) 
 
 st.header('PRE CAMPAÑA')
-st.title("Desagregación de votos válidos en 2015 y 2019")
+st.title("Top3 Votos Válidos en 2015 y 2019")
 def render_basic_radar():
     option = {
-        "title": {"text": "Votación por Zonas Alcaldía Valledupar 🗳️"},
+        "title": {"text": "Zonas Alcaldía Valledupar 🗳️"},
         "legend": {"data": ["Ganador 2015", "2do 2015", "3ro 2015", "Ganador 2019", "2do 2019", "3ro 2019"]},
         "radar": {
             "indicator": [
@@ -85,4 +82,7 @@ ST_RADAR_DEMOS = {
     ),
 }
 render_basic_radar()
-st.title("Desagregación de votos válidos en 2019 por candidaturas y zonas")
+
+#META
+meta = 70000
+st.write('Votos mínimos requeridos para aspirar a posesionarse Alcalde de Valledupar:', meta) 
