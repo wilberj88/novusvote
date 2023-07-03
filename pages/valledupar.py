@@ -22,7 +22,7 @@ st.set_page_config(layout="wide", page_title="Novus Vote 🗳️ Valledupar PRE 
 st.title('Novus Vote 🗳️ - Valledupar V.0.6')
 
 
-st.header('PRE CAMPAÑA')
+st.header('PRE CAMPAÑA - Históricos')
 st.title("Top3 Votos Válidos en 2015 y 2019")
 def render_basic_radar():
     option = {
