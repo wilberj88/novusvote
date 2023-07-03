@@ -19,12 +19,13 @@ from pyecharts.charts import Graph
 st.set_page_config(layout="wide", page_title="Novus Vote 🗳️ Valledupar PRE CAMPAÑA", page_icon="🗳️")
 
 #TITULO
-st.title('Novus Vote 🗳️ - Valledupar PRE CAMPAÑA V.0.6')
+st.title('Novus Vote 🗳️ - Valledupar V.0.6')
 
 #META
 meta = 70000
 st.write('Votos mínimos requeridos para aspirar a posesionarse Alcalde de Valledupar:', meta) 
 
+st.head('PRE CAMPAÑA')
 st.title("Desagregación de votos válidos en 2015 por candidaturas y zonas")
 def render_basic_radar():
     option = {
