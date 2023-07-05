@@ -230,10 +230,12 @@ fig = px.scatter(df, x="salary", y="zonas", color="escenario",
                 )
 st.plotly_chart(fig, theme="streamlit")
 st.write('---')
-
+meta = 84558
+st.write('Votos mínimos para aspirar a posesionarse Alcalde de Valledupar:', meta) 
+st.write('Ritmo de votos mínimos por hora para aspirar a posesionarse Alcalde de Valledupar:', meta/8) 
+st.write('Ritmo de votos mínimos por minuto para aspirar a posesionarse Alcalde de Valledupar:', meta/480) 
 
 st.header('CAMPAÑA - Requisitos')
 
 #META
-meta = 84558
-st.write('Votos mínimos para aspirar a posesionarse Alcalde de Valledupar:', meta) 
+
