@@ -24,7 +24,7 @@ st.title('Novus Vote 🗳️ - Alcaldía Valledupar V.0.6')
 
 st.header('PRE CAMPAÑA - Históricos Votos Válidos')
 
-st.header("Resultados E-14 en 2015 por Zonas")
+st.header("2015 Resultados E-14 por Zonas")
 options = {
     "tooltip": {"trigger": "axis", "axisPointer": {"type": "shadow"}},
     "legend": {
@@ -64,8 +64,52 @@ options = {
     ],
 }
 st_echarts(options=options, height="500px")
-          
+
+
+st.header("2019 Resultados E-14 por Zonas")
+options = {
+    "tooltip": {"trigger": "axis", "axisPointer": {"type": "shadow"}},
+    "legend": {
+        "data": ["Ganador_Castro", "2do_Orozco", "3ro_Morales"]
+    },
+    "grid": {"left": "3%", "right": "4%", "bottom": "3%", "containLabel": True},
+    "xAxis": {"type": "value"},
+    "yAxis": {
+        "type": "category",
+        "data": ["Zona 1", "Zona 2", "Zona 3", "Zona 4", "Zona 5", "Zona 6", "Zona 7", "Zona 8", "Zona 9"],
+    },
+    "series": [
+        {
+            "name": "Ganador_Castro",
+            "type": "bar",
+            "stack": "total",
+            "label": {"show": True},
+            "emphasis": {"focus": "series"},
+            "data": [9549, 11314, 10390, 12513, 12728, 4977, 2935, 84, 8905],
+        },
+        {
+            "name": "2do_Orozco",
+            "type": "bar",
+            "stack": "total",
+            "label": {"show": True},
+            "emphasis": {"focus": "series"},
+            "data": [10013, 9513, 9712, 11971, 12824, 5638, 2562, 80, 7957],
+        },
+        {
+            "name": "3ro_Morales",
+            "type": "bar",
+            "stack": "total",
+            "label": {"show": True},
+            "emphasis": {"focus": "series"},
+            "data": [2055, 4196, 4228, 4887, 3776, 678, 1143, 39, 528],
+        },
+    ],
+}
+st_echarts(options=options, height="500px")
 st.write('---')
+
+
+
 st.title("Top3 Votos Válidos en 2015 y 2019")
 def render_basic_radar():
     option = {
