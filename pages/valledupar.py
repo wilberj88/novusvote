@@ -217,11 +217,11 @@ st.write("Rango de votos requeridos para ganar Alcaldía 2023")
 zonas = ["Zona 1", "Zona 2", "Zona 3", "Zona 4", "Zona 5", "Zona 6", "Zona 7", "Zona 8", "Zona 9"]
 n_zonas = len(zonas)
 
-women_salary = [72, 67, 73, 80, 76, 79, 84, 78, 65]
-men_salary = [92, 94, 100, 107, 112, 114, 114, 118, 119]
+women_salary = [11228, 13078, 12404, 15294, 15314, 5719, 3396, 120, 8007]
+men_salary = [13819, 16095, 15267, 18824, 18848, 7038, 4179, 147, 9855]
 
 df = pd.DataFrame(dict(zonas=zonas*2, salary=men_salary + women_salary,
-                       escenario=["Bajo"]*n_zonas + ["Alto"]*n_zonas))
+                       escenario=["Alto"]*n_zonas + ["Bajo"]*n_zonas))
 
 # Use column names of df for the different parameters x, y, color, ...
 fig = px.scatter(df, x="salary", y="zonas", color="escenario",
