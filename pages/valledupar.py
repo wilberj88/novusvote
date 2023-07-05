@@ -235,7 +235,7 @@ meta = 84558
 st.write('Votos mínimos para aspirar a posesionarse Alcalde de Valledupar:', meta) 
 st.write('Ritmo de votos mínimos por hora para aspirar a posesionarse Alcalde de Valledupar:', meta/8) 
 st.write('Ritmo de votos mínimos por minuto para aspirar a posesionarse Alcalde de Valledupar:', meta/480) 
-st.write('Importancia de Zonas por Votos: Zona 5, Zona 4, Zona 2, Zona 3, Zona 1, Zona 9, Zona 6, Zona 7 y Zona 8')
+st.write('Importancia de Zonas por Votos: Zona 5 > Zona 4 > Zona 2 > Zona 3 > Zona 1 > Zona 9 > Zona 6 > Zona 7 > Zona 8')
 
 
 
