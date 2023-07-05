@@ -222,7 +222,7 @@ women_salary = [72, 67, 73, 80, 76, 79, 84, 78, 65]
 men_salary = [92, 94, 100, 107, 112, 114, 114, 118, 119]
 
 df = pd.DataFrame(dict(zonas=zonas*2, salary=men_salary + women_salary,
-                       escenario=["Bajo"]*n_schools + ["Alto"]*n_schools))
+                       escenario=["Bajo"]*n_zonas + ["Alto"]*n_zonas))
 
 # Use column names of df for the different parameters x, y, color, ...
 fig = px.scatter(df, x="salary", y="zonas", color="escenario",
