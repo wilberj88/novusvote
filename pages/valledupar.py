@@ -214,18 +214,18 @@ st_echarts(
 
 
 st.write("Rango de votos requeridos para ganar Alcaldía 2023")
-schools = ["Brown", "NYU", "Notre Dame", "Cornell", "Tufts", "Yale",
+zonas = ["Brown", "NYU", "Notre Dame", "Cornell", "Tufts", "Yale",
            "Dartmouth", "Chicago", "Columbia"]
-n_schools = len(schools)
+n_zonas = len(zonas)
 
 women_salary = [72, 67, 73, 80, 76, 79, 84, 78, 65]
 men_salary = [92, 94, 100, 107, 112, 114, 114, 118, 119]
 
-df = pd.DataFrame(dict(school=schools*2, salary=men_salary + women_salary,
-                       gender=["Bajo"]*n_schools + ["Alto"]*n_schools))
+df = pd.DataFrame(dict(zonas=zonas*2, salary=men_salary + women_salary,
+                       escenario=["Bajo"]*n_schools + ["Alto"]*n_schools))
 
 # Use column names of df for the different parameters x, y, color, ...
-fig = px.scatter(df, x="salary", y="school", color="gender",
+fig = px.scatter(df, x="salary", y="zonas", color="escenario",
                  title="Entre el 39,7% y el 48,5%",
                  labels={"salary":"Votos válidos mínimos para ser Alcalde Valledupar en 2023"} # customize axis label
                 )
