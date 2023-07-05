@@ -19,10 +19,53 @@ from pyecharts.charts import Graph
 st.set_page_config(layout="wide", page_title="Novus Vote 🗳️ Valledupar PRE CAMPAÑA", page_icon="🗳️")
 
 #TITULO
-st.title('Novus Vote 🗳️ - Valledupar V.0.6')
+st.title('Novus Vote 🗳️ - Alcaldía Valledupar V.0.6')
 
 
-st.header('PRE CAMPAÑA - Históricos')
+st.header('PRE CAMPAÑA - Históricos Votos Válidos')
+
+st.header("Resultados E-14 en 2015 por Zonas")
+options = {
+    "tooltip": {"trigger": "axis", "axisPointer": {"type": "shadow"}},
+    "legend": {
+        "data": ["Ganador_Ramirez", "2do_Gonzalez", "3ro_Fernandez"]
+    },
+    "grid": {"left": "3%", "right": "4%", "bottom": "3%", "containLabel": True},
+    "xAxis": {"type": "value"},
+    "yAxis": {
+        "type": "category",
+        "data": ["Zona 1", "Zona 2", "Zona 3", "Zona 4", "Zona 5", "Zona 6", "Zona 7", "Zona 8", "Zona 9"],
+    },
+    "series": [
+        {
+            "name": "Ganador_Ramirez",
+            "type": "bar",
+            "stack": "total",
+            "label": {"show": True},
+            "emphasis": {"focus": "series"},
+            "data": [10898, 12260, 10461, 13667, 11792, 4659, 4364, 152, 5931],
+        },
+        {
+            "name": "2do_Gonzalez",
+            "type": "bar",
+            "stack": "total",
+            "label": {"show": True},
+            "emphasis": {"focus": "series"},
+            "data": [7055, 6004, 5288, 6842, 7077, 4127, 2267, 58, 3337],
+        },
+        {
+            "name": "3ro_Fernandez",
+            "type": "bar",
+            "stack": "total",
+            "label": {"show": True},
+            "emphasis": {"focus": "series"},
+            "data": [2273, 2792, 2419, 2954, 2437, 974, 916, 16, 2863],
+        },
+    ],
+}
+st_echarts(options=options, height="500px")
+          
+st.write('---')
 st.title("Top3 Votos Válidos en 2015 y 2019")
 def render_basic_radar():
     option = {
