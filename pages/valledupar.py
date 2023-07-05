@@ -213,7 +213,7 @@ st_echarts(
 )
 
 
-st.write("Rango de votos requeridos para ganar Alcaldía 2023")
+st.write("Votos requeridos para ganar Alcaldía 2023 en escenario bajo y alto")
 zonas = ["Zona 1", "Zona 2", "Zona 3", "Zona 4", "Zona 5", "Zona 6", "Zona 7", "Zona 8", "Zona 9"]
 n_zonas = len(zonas)
 
