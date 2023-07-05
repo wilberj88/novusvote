@@ -214,8 +214,7 @@ st_echarts(
 
 
 st.write("Rango de votos requeridos para ganar Alcaldía 2023")
-zonas = ["Brown", "NYU", "Notre Dame", "Cornell", "Tufts", "Yale",
-           "Dartmouth", "Chicago", "Columbia"]
+zonas = ["Zona 1", "Zona 2", "Zona 3", "Zona 4", "Zona 5", "Zona 6", "Zona 7", "Zona 8", "Zona 9"]
 n_zonas = len(zonas)
 
 women_salary = [72, 67, 73, 80, 76, 79, 84, 78, 65]
