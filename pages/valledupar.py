@@ -235,5 +235,5 @@ st.write('---')
 st.header('CAMPAÑA - Requisitos')
 
 #META
-meta = 70000
+meta = 84558
 st.write('Votos mínimos para aspirar a posesionarse Alcalde de Valledupar:', meta) 
