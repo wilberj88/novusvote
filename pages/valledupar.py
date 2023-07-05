@@ -175,6 +175,43 @@ st.write('---')
 st.header("Proyecciones 2023")
 
 st.write("Votos válidos proyectados por zonas para 2023")
+option = {
+    "legend": {"top": "bottom"},
+    "toolbox": {
+        "show": True,
+        "feature": {
+            "mark": {"show": True},
+            "dataView": {"show": True, "readOnly": False},
+            "restore": {"show": True},
+            "saveAsImage": {"show": True},
+        },
+    },
+    "series": [
+        {
+            "name": "Proyección Votos Válidos por Zonas 2023",
+            "type": "pie",
+            "radius": [50, 250],
+            "center": ["50%", "50%"],
+            "roseType": "area",
+            "itemStyle": {"borderRadius": 8},
+            "data": [
+                {"value": 28789, "name": "Zona 1"},
+                {"value": 33532, "name": "Zona 2"},
+                {"value": 31805, "name": "Zona 3"},
+                {"value": 39217, "name": "Zona 4"},
+                {"value": 39268, "name": "Zona 5"},
+                {"value": 14663, "name": "Zona 6"},
+                {"value": 8707, "name": "Zona 7"},
+                {"value": 307, "name": "Zona 8"},
+                {"value": 20531, "name": "Zona 9"},
+            ],
+        }
+    ],
+}
+st_echarts(
+    options=option, height="600px",
+)
+
 
 st.write("Rango de votos requeridos para ganar Alcaldía 2023 (39,7 - 48,5%)")
 
