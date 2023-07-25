@@ -67,7 +67,7 @@ st_echarts(options=options, height="500px")
 
 
 st.header("Ponderaciones Poblacionales")
-st.write("Participación de edades por zonas")
+st.write("Participación de edades en votos válidos - filtrando abstencionistas")
 option = {
     "legend": {"top": "bottom"},
     "toolbox": {
