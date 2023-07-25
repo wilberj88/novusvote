@@ -105,12 +105,12 @@ st_echarts(
 )
 
 st.write('---')
-    st.header("Intención de Votos por Zonas")
-    col1, col2, col3, col4 = st.columns(4)
-    col1.metric("Derecha", "50.000€", "40%")
-    col2.metric("Izquierda", "400.000€", "-82%")
-    col3.metric("Centro", "50.000€", "43%")
-    col4.metric("Ambientales", "100.000€", "78%")
+st.header("Intención de Votos por Zonas")
+col1, col2, col3, col4 = st.columns(4)
+col1.metric("Derecha", "50.000€", "40%")
+col2.metric("Izquierda", "400.000€", "-82%")
+col3.metric("Centro", "50.000€", "43%")
+col4.metric("Ambientales", "100.000€", "78%")
 
 st.title("Votación histórica por partidos o ideologías")
 option = {
