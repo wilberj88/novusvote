@@ -105,20 +105,13 @@ st_echarts(
 )
 
 st.write('---')
-st.header("Intención de Votos por Zonas")
-col1, col2, col3, col4 = st.columns(4)
-col1.metric("Derecha", "50.000€", "40%")
-col2.metric("Izquierda", "400.000€", "-82%")
-col3.metric("Centro", "50.000€", "43%")
-col4.metric("Ambientales", "100.000€", "78%")
-
 st.title("Votación histórica por partidos o ideologías")
 option = {
     "legend": {},
     "tooltip": {"trigger": "axis", "showContent": False},
     "dataset": {
         "source": [
-            ["product", "1999", "2004", "2007", "2011", "2015", "2019"],
+            ["product", "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio"],
             ["Conservador", 56.5, 82.1, 88.7, 70.1, 53.4, 85.1],
             ["Verde", 51.1, 51.4, 55.1, 53.3, 73.8, 68.7],
             ["Polo", 40.1, 62.2, 69.5, 36.4, 45.2, 32.5],
@@ -160,9 +153,15 @@ option = {
             "center": ["50%", "25%"],
             "emphasis": {"focus": "data"},
             "label": {"formatter": "{b}: {@2012} ({d}%)"},
-            "encode": {"itemName": "product", "value": "2019", "tooltip": "2019"},
+            "encode": {"itemName": "product", "value": "Junio", "tooltip": "Junio"},
         },
     ],
 }
 st_echarts(option, height="500px", key="echarts")
 st.write('---')
+st.header("Intención de Votos por Zonas")
+col1, col2, col3, col4 = st.columns(4)
+col1.metric("Derecha", "5.1M", "40%")
+col2.metric("Izquierda", "4.7M", "-82%")
+col3.metric("Centro", "3.9M", "43%")
+col4.metric("Ambientales", "2.6M", "78%")
