@@ -13,6 +13,7 @@ import base64
 import graphviz
 from pyecharts import options as opts
 from pyecharts.charts import Graph
+import time
 
 # SETTING PAGE CONFIG TO WIDE MODE AND ADDING A TITLE AND FAVICON
 st.set_page_config(layout="wide", page_title="Novus Vote 🗳️", page_icon="🗳️")
@@ -159,7 +160,9 @@ option = {
 }
 st_echarts(option, height="500px", key="echarts")
 st.write('---')
-st.header("Intención de Votos por Zonas")
+st.header("Intención de Votos a Presidencia")
+current_time = time.ctime()
+st.write("Si las elecciones fuesen hoy a las: ", current_time)
 col1, col2, col3, col4 = st.columns(4)
 col1.metric("Derecha", "5.1M", "40%")
 col2.metric("Izquierda", "4.7M", "-82%")
