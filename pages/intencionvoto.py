@@ -20,7 +20,7 @@ st.set_page_config(layout="wide", page_title="Novus Vote 🗳️", page_icon="�
 
 #TITULO
 st.title('Novus Vote 🗳️ - Modelación Intención de Voto V.0.1')
-st.header("Desde la Escucha Social hasta el Puntaje de Porcentaje de Votación Válida")
+st.header("Desde la Escucha Social hasta la Votación Válida proyectada")
 
 
 st.header("Escucha Social")
