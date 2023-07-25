@@ -34,7 +34,7 @@ options = {
     "xAxis": {"type": "value"},
     "yAxis": {
         "type": "category",
-        "data": ["Red Social 1", "Noticiero 1", "Periódico 3", "Youtubers", "Red Social 5", "Red Social 6", "Red Social 7", "Red Social 8", "Red Social 9"],
+        "data": ["Facebook", "Noticiero Nacional 3", "Periódico 3", "Youtubers", "Instagram", "Noticieros Locales", "TikTok", "Twitter", "Buscadores"],
     },
     "series": [
         {
