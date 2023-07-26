@@ -1,4 +1,7 @@
 # novusvote
+metodologia referente intencion de voto minuto 5 segundo 27:
+Youtube: Gustavo Bolivar oficializa candidatura a la Alcaldia de Bogota. red mas noticias
+
 
 Suscripciones para 4 meses de campaña desde la previa hasta el postdíaE.
 Desde 1 millón de pesos mensuales para JAC en municipios pequeños.
