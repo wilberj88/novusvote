@@ -7,11 +7,9 @@ from streamlit_echarts import st_pyecharts
 # SETTING PAGE CONFIG TO WIDE MODE AND ADDING A TITLE AND FAVICON
 st.set_page_config(layout="wide", page_title="Novus Vote - Diego Molano Aponte", page_icon="🗳️")
 
-st.title('Novus Vote 🗳️ - Diego Molano')
-
 
 # Add a title and intro text
-st.title('Novus Vote 🗳️ Bogotá PreCampaña')
+st.title('Novus Vote 🗳️ Bogotá PreCampaña - Diego Molano')
 st.title('Votación histrórica en Bogotá por localidades')
 st.header('Votos Uribistas al Congreso y Presidencia 2018')
 def render_basic_radar():
