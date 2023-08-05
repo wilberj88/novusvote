@@ -11,7 +11,7 @@ st.set_page_config(layout="wide", page_title="Novus Vote - Diego Molano Aponte",
 
 # Add a title and intro text
 st.title('Novus Vote 🗳️ Bogotá - Diego Molano')
-st.title('Votación histrórica')
+st.title('Votación histórica - Pre Campaña')
 st.header('Votos Uribistas al Congreso y Presidencia 2018')
 def render_basic_radar():
     option = {
@@ -139,7 +139,46 @@ ST_RADAR_DEMOS = {
 }
 render_basic_radar()
 
-
+st.write("2019 Resultados E-24-26 por localidades")
+options = {
+    "tooltip": {"trigger": "axis", "axisPointer": {"type": "shadow"}},
+    "legend": {
+        "data": ["Claudia", "Galán", "Hollman"]
+    },
+    "grid": {"left": "3%", "right": "4%", "bottom": "3%", "containLabel": True},
+    "xAxis": {"type": "value"},
+    "yAxis": {
+        "type": "category",
+        "data": ["Usaquen", "Chapinero", "SantaFe", "SanCristobal", "Usme", "Tunjuelito", "Bosa", "Kennedy", "Fontibon",  "Engativá", "Suba", "BarriosUnidos", "Teusaquillo", "Mártires", "A.Nariño", "PuenteAranda", "Candelaria", "RafaelUribe", "C.Bolivar", "Sumapaz"],
+    },
+    "series": [
+        {
+            "name": "Claudia",
+            "type": "bar",
+            "stack": "total",
+            "label": {"show": True},
+            "emphasis": {"focus": "series"},
+            "data": [75455, 29622, 16263, 52188, 36423, 29931, 77388, 143401, 60180, 136024, 156055, 30938, 40725, 14242, 21539, 47474, 8407, 49404, 66658, 951],
+        },
+        {
+            "name": "Galán",
+            "type": "bar",
+            "stack": "total",
+            "label": {"show": True},
+            "emphasis": {"focus": "series"},
+            "data": [105245, 33490, 12306, 41040, 32772, 25109, 61381, 121279, 55701, 113509, 162459, 31785, 33212, 15315, 18903, 43529, 6710, 40987, 54339, 608],
+        },
+        {
+            "name": "Hollman",
+            "type": "bar",
+            "stack": "total",
+            "label": {"show": True},
+            "emphasis": {"focus": "series"},
+            "data": [13733, 5632, 7843, 30724, 29256, 15229, 46944, 60245, 17245, 40323, 40932, 7684, 8877, 5944, 8912, 16105, 4106, 27113, 45461, 742],
+        },
+    ],
+}
+st_echarts(options=options, height="500px")
 
 
 st.write("""
