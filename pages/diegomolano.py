@@ -9,8 +9,8 @@ st.set_page_config(layout="wide", page_title="Novus Vote - Diego Molano Aponte",
 
 
 # Add a title and intro text
-st.title('Novus Vote 🗳️ Bogotá PreCampaña - Diego Molano')
-st.title('Votación histrórica en Bogotá por localidades')
+st.title('Novus Vote 🗳️ Bogotá - Diego Molano')
+st.title('Votación histrórica')
 st.header('Votos Uribistas al Congreso y Presidencia 2018')
 def render_basic_radar():
     option = {
