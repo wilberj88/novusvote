@@ -201,7 +201,7 @@ st.markdown(hide_default_format, unsafe_allow_html=True)
 st.write('---')
 st.title("Mesas Electorales")
 df = pd.DataFrame(
-    np.random.randn(1000, 2) / [50, 50] + [6.15333, -75.374166],
+    np.random.randn(1000, 2) / [50, 50] + [4.60971, -74.08175],
     columns=['lat', 'lon'])
 
 st.map(df)
