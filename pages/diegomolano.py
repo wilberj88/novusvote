@@ -3,6 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from streamlit_echarts import st_echarts
 from streamlit_echarts import st_pyecharts
+import numpy as np
 
 # SETTING PAGE CONFIG TO WIDE MODE AND ADDING A TITLE AND FAVICON
 st.set_page_config(layout="wide", page_title="Novus Vote - Diego Molano Aponte", page_icon="🗳️")
