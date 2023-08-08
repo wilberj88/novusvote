@@ -32,7 +32,7 @@ st.write('Monitor de Cumplimiento de Tareas por horas, minutos, territorios, lí
 st.header('Mando PostDíaE  V.0.1')
 st.write('Monitor de Resultados con Ranking por niveles de cumplimiento')
 
-df = pd.DataFrame({'A': [1, 2, 3], 'B': [4, 5, 6]})
+df = pd.DataFrame({'Candidatos 2015': ["Echeverry", "DeCote", "HoracioHenao", "JonathanVasquez", "YanethMojica"], 'Votos Válidos 2015': [31418, 21909, 21173, 20785]})
 new_dfs, _ = spreadsheet(df, df_names=['df'])
 new_df = list(new_dfs.values())[0]
 st.write(new_dfs)
