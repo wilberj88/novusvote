@@ -19,7 +19,19 @@ from mitosheet.streamlit.v1 import spreadsheet
 st.set_page_config(layout="wide", page_title="Novus Vote 🗳️ Valledupar PRE CAMPAÑA", page_icon="🗳️")
 
 #TITULO
-st.title('Novus Vote 🗳️ - Alcaldía Barrancabermeja V.0.6')
+st.title('Novus Vote 🗳️ - Alcaldía Barrancabermeja')
+st.header('Mando PRE Campaña  V.0.6')
+st.write('Votaciones históricas, proyecciones 2023 y tareas')
+
+st.header('Mando Campaña  V.0.1')
+st.write('Tareas por Territorios, Líderes, Equipos y Puestos de Votación')
+
+st.header('Mando DíaE  V.0.1')
+st.write('Monitor de Cumplimiento de Tareas por horas, minutos, territorios, líderes, equipos y Puestos de Votación')
+
+st.header('Mando PostDíaE  V.0.1')
+st.write('Monitor de Resultados con Ranking por niveles de cumplimiento')
+
 
 CSV_URL = 'https://raw.githubusercontent.com/plotly/datasets/master/tesla-stock-price.csv'
 new_dfs, code = spreadsheet(CSV_URL)
