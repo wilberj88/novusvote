@@ -24,10 +24,6 @@ st.header('Mando PRE Campaña  V.0.6')
 st.write('Votaciones históricas 2015, 2019, proyecciones 2023 y tareas')
 st.write('Votaciones Alcaldía 2015')
 df = pd.DataFrame({'Candidatos 2015': ["Echeverry", "DeCote", "HoracioHenao", "JonathanVasquez", "YanethMojica"], 'Votos Válidos 2015': [31418, 21909, 21173, 20785, 9145]})
-new_dfs, _ = spreadsheet(df, df_names=['df'])
-new_df = list(new_dfs.values())[0]
-st.write(new_dfs)
-
 st.write('Votaciones Alcaldía 2019')
 df1 = pd.DataFrame({'Candidatos 2019': ["JonathanVasquez", "AlfonsoEljach", "ClaudiaPatricia"], 
                     'Zona1': [4928, 9633, 2005],
@@ -41,9 +37,10 @@ df1 = pd.DataFrame({'Candidatos 2019': ["JonathanVasquez", "AlfonsoEljach", "Cla
                     'Zona99': [3519, 5489, 1004],
                     'TotalCandidato': [33740, 55819, 11869],
                    })
-new_dfs1, _ = spreadsheet(df1, df_names=['df1'])
-new_df1 = list(new_dfs1.values())[0]
-st.write(new_dfs1)
+new_dfs, _ = spreadsheet(df, df1, df_names=['df'], ['df1'])
+new_df = list(new_dfs.values())[0]
+st.write(new_dfs)
+
 
 st.write('Votaciones Gobernanción 2019 en Bca')
 
