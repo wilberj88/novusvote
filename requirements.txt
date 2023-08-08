@@ -11,4 +11,4 @@ streamlit-vis-timeline
 raceplotly
 streamlit_agraph
 graphviz
-mitosheet.streamlit.v1
+mitosheet
