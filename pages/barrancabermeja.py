@@ -23,6 +23,14 @@ st.title('Novus Vote 🗳️ - Alcaldía Barrancabermeja V.0.6')
 
 CSV_URL = 'https://raw.githubusercontent.com/plotly/datasets/master/tesla-stock-price.csv'
 new_dfs, code = spreadsheet(CSV_URL)
+spreadsheet(
+    *args: , 
+    import_folder: Optional[str]=None,
+    df_names: Optional[List[str]]=None,
+    sheet_functions: Optional[List[Callable]]=None, 
+    importers: Optional[List[Callable]]=None, 
+    key=None
+) -> Tuple[Dict[str, pd.DataFrame], str]
 st.write(new_dfs)
 st.code(code)
 
