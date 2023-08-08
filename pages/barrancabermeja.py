@@ -21,7 +21,32 @@ st.set_page_config(layout="wide", page_title="Novus Vote 🗳️ Barrancabermeja
 #TITULO
 st.title('Novus Vote 🗳️ - Alcaldía Barrancabermeja')
 st.header('Mando PRE Campaña  V.0.6')
-st.write('Votaciones históricas, proyecciones 2023 y tareas')
+st.write('Votaciones históricas 2015, 2019, proyecciones 2023 y tareas')
+st.write('Votaciones Alcaldía 2015')
+df = pd.DataFrame({'Candidatos 2015': ["Echeverry", "DeCote", "HoracioHenao", "JonathanVasquez", "YanethMojica"], 'Votos Válidos 2015': [31418, 21909, 21173, 20785, 9145]})
+new_dfs, _ = spreadsheet(df, df_names=['df'])
+new_df = list(new_dfs.values())[0]
+st.write(new_dfs)
+
+st.write('Votaciones Alcaldía 2019')
+df1 = pd.DataFrame({'Candidatos 2019': ["JonathanVasquez", "AlfonsoEljach", "ClaudiaPatricia"], 
+                    'Zona1': [4928, 9633, 2005],
+                    'Zona2': [3980, 7894, 1624],
+                    'Zona3': [5532, 8693, 1973],
+                    'Zona4': [3734, 6883, 1605],
+                    'Zona5': [5246, 8334, 1865],
+                    'Zona6': [3297, 4559, 851],
+                    'Zona7': [3493, 4264, 932],
+                    'Zona98': [11, 70, 10],
+                    'Zona99': [3519, 5489, 1004],
+                    'TotalCandidato': [33740, 55819, 11869],
+                   })
+new_dfs1, _ = spreadsheet(df1, df_names=['df1'])
+new_df1 = list(new_dfs1.values())[0]
+st.write(new_dfs1)
+
+st.write('Votaciones Gobernanción 2019 en Bca')
+
 
 st.header('Mando Campaña  V.0.1')
 st.write('Tareas por Territorios, Líderes, Equipos y Puestos de Votación')
@@ -32,10 +57,7 @@ st.write('Monitor de Cumplimiento de Tareas por horas, minutos, territorios, lí
 st.header('Mando PostDíaE  V.0.1')
 st.write('Monitor de Resultados con Ranking por niveles de cumplimiento')
 
-df = pd.DataFrame({'Candidatos 2015': ["Echeverry", "DeCote", "HoracioHenao", "JonathanVasquez", "YanethMojica"], 'Votos Válidos 2015': [31418, 21909, 21173, 20785, 9145]})
-new_dfs, _ = spreadsheet(df, df_names=['df'])
-new_df = list(new_dfs.values())[0]
-st.write(new_dfs)
+
 
 
 st.title('PRE CAMPAÑA - Históricos 2015, 2019 y Proyecciones 2023')
