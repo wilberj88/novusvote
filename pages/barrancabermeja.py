@@ -39,20 +39,8 @@ new_df = list(new_dfs.values())[0]
 # Note that multiple dataframes can be passed as well
 # and each will appear as a tab in the Mito spreadsheet
 new_dfs, _ = spreadsheet(df1, df2, df_names=['df1', 'df2'])
+st.write(new_dfs)
 
-
-CSV_URL = 'https://raw.githubusercontent.com/plotly/datasets/master/tesla-stock-price.csv'
-new_dfs1, code = spreadsheet(CSV_URL)
-spreadsheet(
-    args: new_dfs1, 
-    import_folder: Optional[str]=None,
-    df_names: Optional[List[str]]=None,
-    sheet_functions: Optional[List[Callable]]=None, 
-    importers: Optional[List[Callable]]=None, 
-    key=None
-) -> Tuple[Dict[str, pd.DataFrame], str]
-st.write(new_dfs1)
-st.code(code)
 
 st.title('PRE CAMPAÑA - Históricos 2015, 2019 y Proyecciones 2023')
 
