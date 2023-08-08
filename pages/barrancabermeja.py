@@ -35,10 +35,6 @@ st.write('Monitor de Resultados con Ranking por niveles de cumplimiento')
 df = pd.DataFrame({'A': [1, 2, 3], 'B': [4, 5, 6]})
 new_dfs, _ = spreadsheet(df, df_names=['df'])
 new_df = list(new_dfs.values())[0]
-
-# Note that multiple dataframes can be passed as well
-# and each will appear as a tab in the Mito spreadsheet
-new_dfs, _ = spreadsheet(df1, df2, df_names=['df1', 'df2'])
 st.write(new_dfs)
 
 
