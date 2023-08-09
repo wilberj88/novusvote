@@ -97,11 +97,57 @@ options = {
     ],
 }
 st_echarts(options=options, height="500px")
-
+st.write('---')
 
 
 st.write('Votaciones Gobernanción 2019 en Bca')
-
+options = {
+    "tooltip": {"trigger": "axis", "axisPointer": {"type": "shadow"}},
+    "legend": {
+        "data": ["Mauricio Aguilar", "Elkin Bueno", "Leonidas Gomez", "Angela Patricia Hernández"]
+    },
+    "grid": {"left": "3%", "right": "4%", "bottom": "3%", "containLabel": True},
+    "xAxis": {"type": "value"},
+    "yAxis": {
+        "type": "category",
+        "data": ["Zona 1", "Zona 2", "Zona 3", "Zona 4", "Zona 5", "Zona 6", "Zona 7", "Zona 98", "Zona 99"],
+    },
+    "series": [
+        {
+            "name": "Mauricio Aguilar",
+            "type": "bar",
+            "stack": "total",
+            "label": {"show": True},
+            "emphasis": {"focus": "series"},
+            "data": [4059, 3187, 4320, 2885, 4013, 2604, 2259, 20, 2694],
+        },
+        {
+            "name": "Elkin Bueno",
+            "type": "bar",
+            "stack": "total",
+            "label": {"show": True},
+            "emphasis": {"focus": "series"},
+            "data": [800, 654, 748, 434, 703, 405, 343, 9, 353],
+        },
+        {
+            "name": "Leonidas Gomez",
+            "type": "bar",
+            "stack": "total",
+            "label": {"show": True},
+            "emphasis": {"focus": "series"},
+            "data": [7507, 6924, 6394, 5808, 6479, 2785, 3003, 26, 3091],
+        },
+        {
+            "name": "Angela Patricia Hernánde",
+            "type": "bar",
+            "stack": "total",
+            "label": {"show": True},
+            "emphasis": {"focus": "series"},
+            "data": [3668, 2748, 3730, 2920, 3565, 2040, 2606, 15, 2902],
+        },
+    ],
+}
+st_echarts(options=options, height="500px")
 
 st.header('Mando Campaña  V.0.1')
 st.write('Tareas por Territorios, Líderes, Equipos y Puestos de Votación')
