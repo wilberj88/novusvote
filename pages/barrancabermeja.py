@@ -58,7 +58,45 @@ st_echarts(
 
 st.write('---')
 st.write('Votaciones Alcaldía 2019')
-
+options = {
+    "tooltip": {"trigger": "axis", "axisPointer": {"type": "shadow"}},
+    "legend": {
+        "data": ["Jonathan Vasquez", "Alfonso Eljach", "Claudia Andrade"]
+    },
+    "grid": {"left": "3%", "right": "4%", "bottom": "3%", "containLabel": True},
+    "xAxis": {"type": "value"},
+    "yAxis": {
+        "type": "category",
+        "data": ["Zona 1", "Zona 2", "Zona 3", "Zona 4", "Zona 5", "Zona 6", "Zona 7", "Zona 98", "Zona 99"],
+    },
+    "series": [
+        {
+            "name": "Jonathan Vasquez",
+            "type": "bar",
+            "stack": "total",
+            "label": {"show": True},
+            "emphasis": {"focus": "series"},
+            "data": [4928, 3980, 5532, 3734, 5246, 3297, 3493, 11, 3519],
+        },
+        {
+            "name": "Alfonso Eljach",
+            "type": "bar",
+            "stack": "total",
+            "label": {"show": True},
+            "emphasis": {"focus": "series"},
+            "data": [9633, 7894, 8693, 6883, 8334, 4559, 4264, 70, 5489],
+        },
+        {
+            "name": "Claudia Andrade",
+            "type": "bar",
+            "stack": "total",
+            "label": {"show": True},
+            "emphasis": {"focus": "series"},
+            "data": [2005, 1624, 1973, 1605, 1865, 851, 932, 10, 1004],
+        },
+    ],
+}
+st_echarts(options=options, height="500px")
 
 
 
