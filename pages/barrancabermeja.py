@@ -37,7 +37,7 @@ df1 = pd.DataFrame({'Candidatos 2019': ["JonathanVasquez", "AlfonsoEljach", "Cla
                     'Zona99': [3519, 5489, 1004],
                     'TotalCandidato': [33740, 55819, 11869],
                    })
-new_dfs, _ = spreadsheet(df, df1, df_names=['df'], ['df1'])
+new_dfs, _ = spreadsheet(df, df1, df_names=(['df'], ['df1']))
 new_df = list(new_dfs.values())[0]
 st.write(new_dfs)
 
