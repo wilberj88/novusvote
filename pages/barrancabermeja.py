@@ -104,7 +104,7 @@ st.write('Votaciones Gobernanción 2019 en Bca')
 options = {
     "tooltip": {"trigger": "axis", "axisPointer": {"type": "shadow"}},
     "legend": {
-        "data": ["Mauricio Aguilar", "Elkin Bueno", "Leonidas Gomez", "Angela Patricia Hernández"]
+        "data": ["Mauricio Aguilar", "Elkin Bueno", "Leonidas Gomez", "Angela Hernández"]
     },
     "grid": {"left": "3%", "right": "4%", "bottom": "3%", "containLabel": True},
     "xAxis": {"type": "value"},
@@ -138,7 +138,7 @@ options = {
             "data": [7507, 6924, 6394, 5808, 6479, 2785, 3003, 26, 3091],
         },
         {
-            "name": "Angela Patricia Hernández",
+            "name": "Angela Hernández",
             "type": "bar",
             "stack": "total",
             "label": {"show": True},
