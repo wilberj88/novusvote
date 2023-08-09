@@ -21,7 +21,7 @@ st.set_page_config(layout="wide", page_title="Novus Vote 🗳️ Barrancabermeja
 #TITULO
 st.title('Novus Vote 🗳️ - Alcaldía Barrancabermeja')
 st.header('Mando PRE Campaña  V.0.6')
-st.write('Votaciones históricas 2015, 2019, proyecciones 2023 y tareas')
+st.write('Históricos y Proyecciones 29 de Octubre de 2023')
 st.write('Votaciones Alcaldía 2015')
 option = {
     "legend": {"top": "bottom"},
