@@ -138,7 +138,7 @@ options = {
             "data": [7507, 6924, 6394, 5808, 6479, 2785, 3003, 26, 3091],
         },
         {
-            "name": "Angela Patricia Hernánde",
+            "name": "Angela Patricia Hernández",
             "type": "bar",
             "stack": "total",
             "label": {"show": True},
