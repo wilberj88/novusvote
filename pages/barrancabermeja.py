@@ -43,11 +43,11 @@ option = {
             "roseType": "area",
             "itemStyle": {"borderRadius": 8},
             "data": [
-                {"value": 31418, "name": "Dario Echeverry"},
-                {"value": 21909, "name": "Liliana De Cote"},
-                {"value": 21173, "name": "Horacio Henao"},
-                {"value": 20785, "name": "Jonathan Vasquez"},
-                {"value": 9145, "name": "Yaneth Mojica"},
+                {"value": 31418, "name": "Dario Echeverry 31K"},
+                {"value": 21909, "name": "Liliana De Cote 21K"},
+                {"value": 21173, "name": "Horacio Henao 21K"},
+                {"value": 20785, "name": "Jonathan Vasquez 20K"},
+                {"value": 9145, "name": "Yaneth Mojica 9K"},
             ],
         }
     ],
@@ -57,7 +57,7 @@ st_echarts(
 )
 
 st.write('---')
-
+st.write('Votaciones Alcaldía 2019')
 
 
 
