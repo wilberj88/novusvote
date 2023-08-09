@@ -23,6 +23,59 @@ st.title('Novus Vote 🗳️ - Alcaldía Barrancabermeja')
 st.header('Mando PRE Campaña  V.0.6')
 st.write('Votaciones históricas 2015, 2019, proyecciones 2023 y tareas')
 st.write('Votaciones Alcaldía 2015')
+option = {
+    "legend": {"top": "bottom"},
+    "toolbox": {
+        "show": True,
+        "feature": {
+            "mark": {"show": True},
+            "dataView": {"show": True, "readOnly": False},
+            "restore": {"show": True},
+            "saveAsImage": {"show": True},
+        },
+    },
+    "series": [
+        {
+            "name": "Candidaturas",
+            "type": "pie",
+            "radius": [50, 250],
+            "center": ["50%", "50%"],
+            "roseType": "area",
+            "itemStyle": {"borderRadius": 8},
+            "data": [
+                {"value": 31418, "name": "Dario Echeverry"},
+                {"value": 21909, "name": "Liliana De Cote"},
+                {"value": 21173, "name": "Horacio Henao"},
+                {"value": 20785, "name": "Jonathan Vasquez"},
+                {"value": 9145, "name": "Yaneth Mojica"},
+            ],
+        }
+    ],
+}
+st_echarts(
+    options=option, height="600px",
+)
+
+st.write('---')
+
+
+
+
+
+st.write('Votaciones Gobernanción 2019 en Bca')
+
+
+st.header('Mando Campaña  V.0.1')
+st.write('Tareas por Territorios, Líderes, Equipos y Puestos de Votación')
+
+st.header('Mando DíaE  V.0.1')
+st.write('Monitor de Cumplimiento de Tareas por horas, minutos, territorios, líderes, equipos y Puestos de Votación')
+
+st.header('Mando PostDíaE  V.0.1')
+st.write('Monitor de Resultados con Ranking por niveles de cumplimiento')
+
+
+
 df = pd.DataFrame({'Candidatos 2015': ["Echeverry", "DeCote", "HoracioHenao", "JonathanVasquez", "YanethMojica"], 'Votos Válidos 2015': [31418, 21909, 21173, 20785, 9145]})
 st.write('Votaciones Alcaldía 2019')
 df1 = pd.DataFrame({'Candidatos 2019': ["JonathanVasquez", "AlfonsoEljach", "ClaudiaPatricia"], 
@@ -42,64 +95,12 @@ new_df = list(new_dfs.values())[0]
 st.write(new_dfs)
 
 
-st.write('Votaciones Gobernanción 2019 en Bca')
-
-
-st.header('Mando Campaña  V.0.1')
-st.write('Tareas por Territorios, Líderes, Equipos y Puestos de Votación')
-
-st.header('Mando DíaE  V.0.1')
-st.write('Monitor de Cumplimiento de Tareas por horas, minutos, territorios, líderes, equipos y Puestos de Votación')
-
-st.header('Mando PostDíaE  V.0.1')
-st.write('Monitor de Resultados con Ranking por niveles de cumplimiento')
-
-
-
 
 st.title('PRE CAMPAÑA - Históricos 2015, 2019 y Proyecciones 2023')
 
 st.header("Históricos")
 st.write("2015 Resultados E-14 por Zonas")
-options = {
-    "tooltip": {"trigger": "axis", "axisPointer": {"type": "shadow"}},
-    "legend": {
-        "data": ["Ganador_Ramirez", "2do_Gonzalez", "3ro_Fernandez"]
-    },
-    "grid": {"left": "3%", "right": "4%", "bottom": "3%", "containLabel": True},
-    "xAxis": {"type": "value"},
-    "yAxis": {
-        "type": "category",
-        "data": ["Zona 1", "Zona 2", "Zona 3", "Zona 4", "Zona 5", "Zona 6", "Zona 7", "Zona 8", "Zona 9"],
-    },
-    "series": [
-        {
-            "name": "Ganador_Ramirez",
-            "type": "bar",
-            "stack": "total",
-            "label": {"show": True},
-            "emphasis": {"focus": "series"},
-            "data": [10898, 12260, 10461, 13667, 11792, 4659, 4364, 152, 5931],
-        },
-        {
-            "name": "2do_Gonzalez",
-            "type": "bar",
-            "stack": "total",
-            "label": {"show": True},
-            "emphasis": {"focus": "series"},
-            "data": [7055, 6004, 5288, 6842, 7077, 4127, 2267, 58, 3337],
-        },
-        {
-            "name": "3ro_Fernandez",
-            "type": "bar",
-            "stack": "total",
-            "label": {"show": True},
-            "emphasis": {"focus": "series"},
-            "data": [2273, 2792, 2419, 2954, 2437, 974, 916, 16, 2863],
-        },
-    ],
-}
-st_echarts(options=options, height="500px")
+
 
 
 st.write("2019 Resultados E-14 por Zonas")
