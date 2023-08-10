@@ -63,3 +63,6 @@ Cloropleth:
 https://artificialcorner.com/insanely-powerful-prompts-for-python-dashboard-creation-79dd937ca85b
 
 Herramientas para contrastar Twitter, Facebook, Instagram: https://www.rivaliq.com/ (seguidores, posts, interacciones, mejores performance...)
+
+Markers en mapas:
+https://medium.com/python-point/a-data-visualization-superhero-python-folium-73fe1a0a0c48
