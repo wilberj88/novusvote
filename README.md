@@ -18,7 +18,8 @@ Avatares de Atención en las Etapas de Campaña
 
 Referentes:
 1) cambridge analytics: perfiles de personalidades, perfiles de necesidades, miedos y emociones.
-2) 2) Resolución CNE 5881 de topes: 1.200 millones Bca Alcaldía y 114 para firmas en Bca.
+2) Resolución CNE 5881 de topes: 1.200 millones Bca Alcaldía y 114 para firmas en Bca.
+3) Formato streamlit web: https://github.com/jrpettus/streamlit-buffett/blob/main/buffett_app.py
 
 ELECTION PREDICTION:
 https://medium.com/mlearning-ai/predicting-president-election-by-bootstrapping-in-python-a1bd8fa122cc
