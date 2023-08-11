@@ -20,10 +20,10 @@ st.set_page_config(layout="wide", page_title="Novus Vote 🗳️ Valledupar PRE 
 #TITULO
 st.title('Novus Vote 🗳️ - Alcaldía Valledupar V.0.6')
 
-st.title('PRE CAMPAÑA - Históricos 2015, 2019 y Proyecciones 2023')
+st.title('PRE CAMPAÑA - Históricos y Proyecciones Octubre de 2023')
 
-st.header("Históricos")
-st.write("2015 Resultados E-14 por Zonas")
+st.header("Votación Alcaldía 2015")
+st.write("Resultados E-14 por Zonas")
 options = {
     "tooltip": {"trigger": "axis", "axisPointer": {"type": "shadow"}},
     "legend": {
@@ -65,7 +65,8 @@ options = {
 st_echarts(options=options, height="500px")
 
 
-st.write("2019 Resultados E-14 por Zonas")
+st.header("Votación Alcaldía 2019")
+st.write("Resultados E-14 por Zonas")
 options = {
     "tooltip": {"trigger": "axis", "axisPointer": {"type": "shadow"}},
     "legend": {
@@ -109,7 +110,8 @@ st_echarts(options=options, height="500px")
 
 
 
-st.title("Combinación Top3 Votos Válidos en 2015 y 2019")
+st.header("Votaciones más altas Alcaldía 2015-2019")
+st.title("Top 3 votación por contienda")
 def render_basic_radar():
     option = {
         "title": {"text": "Zonas Alcaldía Valledupar 🗳️"},
@@ -171,9 +173,9 @@ render_basic_radar()
 
 st.write('---')
 
-st.header("Proyecciones 2023")
+st.header("Proyecciones para ganar en Octubre de 2023")
 
-st.write("Votos válidos proyectados por zonas para 2023")
+st.write("Votos válidos proyectados por zonas")
 option = {
     "legend": {"top": "bottom"},
     "toolbox": {
@@ -194,15 +196,15 @@ option = {
             "roseType": "area",
             "itemStyle": {"borderRadius": 8},
             "data": [
-                {"value": 28789, "name": "Zona 1"},
-                {"value": 33532, "name": "Zona 2"},
-                {"value": 31805, "name": "Zona 3"},
-                {"value": 39217, "name": "Zona 4"},
-                {"value": 39268, "name": "Zona 5"},
-                {"value": 14663, "name": "Zona 6"},
-                {"value": 8707, "name": "Zona 7"},
-                {"value": 307, "name": "Zona 8"},
-                {"value": 20531, "name": "Zona 9"},
+                {"value": 28789, "name": "Zona 1 (13,3%)"},
+                {"value": 33532, "name": "Zona 2 (15,5%)"},
+                {"value": 31805, "name": "Zona 3 (14,7%)"},
+                {"value": 39217, "name": "Zona 4 (18,1%)"},
+                {"value": 39268, "name": "Zona 5 (18,1%)"},
+                {"value": 14663, "name": "Zona 6 (6,8%)"},
+                {"value": 8707, "name": "Zona 7 (4%)"},
+                {"value": 307, "name": "Zona 8 (0,1%)"},
+                {"value": 20531, "name": "Zona 9 (9,5%)"},
             ],
         }
     ],
@@ -212,7 +214,7 @@ st_echarts(
 )
 
 st.write('---')
-st.header("Votos requeridos para ganar Alcaldía 2023 dado rango histórico")
+st.header("Votos requeridos por zonas para ganar Alcaldía 2023")
 zonas = ["Zona 1", "Zona 2", "Zona 3", "Zona 4", "Zona 5", "Zona 6", "Zona 7", "Zona 8", "Zona 9"]
 n_zonas = len(zonas)
 
@@ -230,8 +232,42 @@ fig = px.scatter(df, x="salary", y="zonas", color="escenario",
 st.plotly_chart(fig, theme="streamlit")
 
 st.write('---')
+st.header("Votos requeridos por género para ganar Alcaldía 2023")
+st.write("Participaciones: Femenina: 51,3%; Masculina: 48,7%")
+option = {
+    "legend": {},
+    "tooltip": {"trigger": "axis", "showContent": False},
+    "dataset": {
+        "source": [
+            ["product", "Zona 1", "Zona 2", "Zona 3", "Zona 4", "Zona 5", "Zona 6", "Zona 7", "Zona 8", "Zona 9"],
+            ["Mujer", 5760, 6709, 6363, 7846, 7856, 2934, 1742, 61, 4108],
+            ["Hombre", 5468, 6369, 6041, 7448, 7458, 2785, 1654, 58, 3899],
+        ]
+    },
+    "xAxis": {"type": "category"},
+    "yAxis": {"gridIndex": 0},
+    "grid": {"top": "55%"},
+    "series": [
+        {
+            "type": "line",
+            "smooth": True,
+            "seriesLayoutBy": "row",
+            "emphasis": {"focus": "series"},
+        },
+        {
+            "type": "line",
+            "smooth": True,
+            "seriesLayoutBy": "row",
+            "emphasis": {"focus": "series"},
+        },
+    ],
+}
+st_echarts(option, height="500px", key="echarts")
 
+st.write('---')
+st.header("Votos requeridos por edades para ganar Alcaldía 2023")
 
+st.write('---')
 st.header('Conclusiones PRE CAMPAÑA - Tareas Campaña')
 meta = 84558
 st.write('Votos mínimos para aspirar a posesionarse Alcalde de Valledupar:', meta) 
