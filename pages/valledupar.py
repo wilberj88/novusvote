@@ -68,7 +68,7 @@ options = {
 st_echarts(options=options, height="500px")
 
 # center on Liberty Bell, add marker
-m = folium.Map(location=[10.473583, -73.248639], zoom_start=10)
+m = folium.Map(location=[10.473583, -73.248639], zoom_start=14)
 folium.Marker(
     [10.473583, -73.248639], popup="PV1 COL NAL Loperena", tooltip="PV1 COL NAL Loperena"
 ).add_to(m)
