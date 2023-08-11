@@ -75,7 +75,18 @@ folium.Marker(
 folium.Marker(
     [10.474139, -73.25125], popup="PV2 ESC Bellas Artes", tooltip="PV2 ESC Bellas Artes"
 ).add_to(m)
-
+folium.Marker(
+    [10.478472, -73.245361], popup="PV3 UDES", tooltip="PV3 UDES"
+).add_to(m)
+folium.Marker(
+    [10.468500, -73.247278], popup="PV4 COL Prudencia Daza", tooltip="PV4 COL Prudencia Daza"
+).add_to(m)
+folium.Marker(
+    [10.469667, -73.238056], popup="PV5 COL SantoDomingo", tooltip="PV5 COL SantoDomingo"
+).add_to(m)
+#folium.Marker(
+#    [10.474139, -73.25125], popup="PV6 COL Parroquial El Carmelo", tooltip="PV6 COL Parroquial El Carmelo"
+#).add_to(m)
 # call to render Folium map in Streamlit
 st_data = st_folium(m, width=725)
 
