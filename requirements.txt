@@ -12,3 +12,4 @@ raceplotly
 streamlit_agraph
 graphviz
 mitosheet
+folium
