@@ -230,7 +230,7 @@ st.plotly_chart(fig, theme="streamlit")
 
 st.write('---')
 st.header("Votos requeridos por género para ganar Alcaldía 2023")
-st.write("Participaciones: Femenina: 51,3%; Masculina: 48,7%")
+st.write("Mujeres: 43.378 ; Hombres: 41.180")
 option = {
     "legend": {},
     "tooltip": {"trigger": "axis", "showContent": False},
