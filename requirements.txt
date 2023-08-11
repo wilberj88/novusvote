@@ -13,3 +13,4 @@ streamlit_agraph
 graphviz
 mitosheet
 folium
+streamlit_folium
