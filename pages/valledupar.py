@@ -257,6 +257,15 @@ option = {
             "seriesLayoutBy": "row",
             "emphasis": {"focus": "series"},
         },
+        {
+            "type": "pie",
+            "id": "pie",
+            "radius": "30%",
+            "center": ["50%", "25%"],
+            "emphasis": {"focus": "data"},
+            "label": {"formatter": "{b}: {@2012} ({d}%)"},
+            "encode": {"itemName": "product", "value": "Mujer", "tooltip": "Hombre"},
+        },
     ],
 }
 st_echarts(option, height="500px", key="echarts")
