@@ -13,6 +13,9 @@ import base64
 import graphviz
 from pyecharts import options as opts
 from pyecharts.charts import Graph
+import folium
+from streamlit_folium import st_folium
+
 
 # SETTING PAGE CONFIG TO WIDE MODE AND ADDING A TITLE AND FAVICON
 st.set_page_config(layout="wide", page_title="Novus Vote 🗳️ Valledupar PRE CAMPAÑA", page_icon="🗳️")
@@ -63,6 +66,15 @@ options = {
     ],
 }
 st_echarts(options=options, height="500px")
+
+# center on Liberty Bell, add marker
+m = folium.Map(location=[10.473583, -73.248639], zoom_start=16)
+folium.Marker(
+    [10.473583, -73.248639], popup="PV1 COL NAL Loperena", tooltip="PV1 COL NAL Loperena"
+).add_to(m)
+
+# call to render Folium map in Streamlit
+st_data = st_folium(m, width=725)
 
 
 st.header("Votación Alcaldía 2019")
