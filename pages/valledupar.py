@@ -108,7 +108,7 @@ options = {
 st_echarts(options=options, height="500px")
 
 
-st.title("Top 3 votación por contienda")
+st.title("Top 3 entre 2015 y 2019")
 def render_basic_radar():
     option = {
         "title": {"text": "Zonas Alcaldía Valledupar 🗳️"},
