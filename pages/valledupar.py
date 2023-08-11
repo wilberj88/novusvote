@@ -108,9 +108,6 @@ options = {
 st_echarts(options=options, height="500px")
 
 
-
-
-st.header("Votaciones más altas Alcaldía 2015-2019")
 st.title("Top 3 votación por contienda")
 def render_basic_radar():
     option = {
