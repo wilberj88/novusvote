@@ -264,7 +264,7 @@ option = {
             "center": ["50%", "25%"],
             "emphasis": {"focus": "data"},
             "label": {"formatter": "{b}: {@2012} ({d}%)"},
-            "encode": {"itemName": "product", "value": "Mujer", "tooltip": "Hombre"},
+            "encode": {"itemName": "product", "value": "Zona 9", "tooltip": "Zona 9"},
         },
     ],
 }
