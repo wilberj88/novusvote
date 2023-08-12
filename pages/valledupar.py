@@ -69,7 +69,8 @@ st_echarts(options=options, height="500px")
 
 st.header('Zona 1 - Puestos de Votación 🗳️')
 st.write('Con mapas PyDeck')
-
+data = pd.read_cvs('pages/datos/Votos Válidos procesados Valledupar 2015-2019 - Puro Puestos.csv')
+st.dataframe(data)
 
 st.write('Con mapas Folium')
 # center on Liberty Bell, add marker
