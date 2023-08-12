@@ -68,6 +68,10 @@ options = {
 st_echarts(options=options, height="500px")
 
 st.header('Zona 1 - Puestos de Votación 🗳️')
+st.write('Con mapas PyDeck')
+
+
+st.write('Con mapas Folium')
 # center on Liberty Bell, add marker
 m = folium.Map(location=[10.473583, -73.248639], zoom_start=14)
 folium.Marker(
