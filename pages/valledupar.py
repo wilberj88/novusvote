@@ -210,7 +210,8 @@ render_basic_radar()
 st.write('---')
 
 st.header("Proyecciones para ganar en Octubre de 2023")
-
+st.write('El crecimiento de los votos válidos entre 2015 y 2019 fue en promedio de 18%, siendo la zona 5 la de mayor crecimiento (35%) y la zona 7 la de mayor contracción (-13%)')
+st.write('Asumiendo que se requiere un 39% de los votos para ganar y que el crecimiento promedio desde hace 8 años en los votos válidos es de un 18%, los resultados son: ')
 st.write("Votos válidos proyectados por zonas")
 option = {
     "legend": {"top": "bottom"},
@@ -248,6 +249,7 @@ option = {
 st_echarts(
     options=option, height="600px",
 )
+st.write("De modo que se requerirían 84.000 votos. Ahora bien, si el crecimiento de los votos válidos no fuera del 18% sino del 12%, la votación necesaria sería de 80.000 votos")
 
 st.write('---')
 st.header("Votos requeridos por zonas para ganar Alcaldía 2023")
