@@ -212,6 +212,14 @@ st.write('---')
 st.header("Proyecciones para ganar en Octubre de 2023")
 st.write('El crecimiento de los votos válidos entre 2015 y 2019 fue en promedio de 18%, siendo la zona 5 la de mayor crecimiento (35%) y la zona 7 la de mayor contracción (-13%)')
 st.write('Asumiendo que se requiere un 39% de los votos para ganar y que el crecimiento promedio desde hace 8 años en los votos válidos es de un 18%, los resultados son: ')
+
+votos_validos = pd.DataFrame(
+    {
+        "2015": [153508],
+        "2019": [182437],
+    }
+    
+
 st.write("Votos válidos proyectados por zonas")
 option = {
     "legend": {"top": "bottom"},
@@ -252,7 +260,7 @@ st_echarts(
 st.write("De modo que se requerirían 84.000 votos. Ahora bien, si el crecimiento de los votos válidos no fuera del 18% sino del 12%, la votación necesaria sería de 80.000 votos")
 st.write("Un escenario más competido sería en el que para ganar se requiera el 33% de los votos válidos, para lo cual se requerirían 71.550 votos asumiendo crecimiento promedio de 18,85% de los votos válidos")
 st.write("Pero si los votos válidos no crecen al 18,85% sino al 12% y la participación pa ganar fuese del 33%, los votos mínimos serían de 67429")
-
+st.write("Sin embargo, la migración venezolana permite intuir que el crecimiento de los votos válidos no se desacelerará con fuerza e incluso se puede mantener el ritmo promedio del 18,8%")
 st.write('---')
 st.header("Votos requeridos por zonas para ganar Alcaldía 2023 (18,5% crecimiento votos y 39% participación para victoria)")
 zonas = ["Zona 1", "Zona 2", "Zona 3", "Zona 4", "Zona 5", "Zona 6", "Zona 7", "Zona 8", "Zona 9"]
