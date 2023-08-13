@@ -153,7 +153,7 @@ st.write('---')
 st.header('Máximas votaciones por zonas en BCA en 2019 tanto Alcaldía como Gobernación')
 def render_basic_radar():
     option = {
-        "title": {"text": "🗳️"},
+        "title": {"text": "Frontera en 10.000 votos 🗳️"},
         "legend": {"data": ["Alfonso Eljach", "Jonathan Vasquez", "Leonidas Gómez", "Mauricio Aguilar", "Elkin Bueno", "Ángela Hernández"]},
         "radar": {
             "indicator": [
