@@ -218,7 +218,8 @@ votos_validos = pd.DataFrame(
         "2015": [153508],
         "2019": [182437],
     }
-    
+)
+st.dataframe(votos_validos)
 
 st.write("Votos válidos proyectados por zonas")
 option = {
@@ -323,6 +324,9 @@ st_echarts(option, height="500px", key="echarts")
 
 st.write('---')
 st.header("Votos requeridos por edades para ganar Alcaldía 2023")
+
+st.header("Modelador de escenarios")
+
 
 st.write('---')
 st.header('Conclusiones PRE CAMPAÑA - Tareas Campaña')
