@@ -24,10 +24,11 @@ st.set_page_config(layout="wide", page_title="Novus Vote 🗳️ Valledupar PRE 
 st.title('Novus Vote 🗳️ - Alcaldía Valledupar V.0.6')
 
 st.title('PRE CAMPAÑA - Históricos y Proyecciones Octubre de 2023')
-
-st.header("Votación Alcaldía 2015")
+st.header("Históricos: Datos procesados 🛠️")
 data = pd.read_csv('pages/datos/Votos Válidos procesados Valledupar 2015-2019 - Puro Puestos.csv')
 st.dataframe(data)
+
+st.header("Votación Alcaldía 2015")
 
 st.write("Resultados E-14 por Zonas")
 options = {
