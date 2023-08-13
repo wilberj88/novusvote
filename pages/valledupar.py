@@ -217,6 +217,7 @@ votos_validos = pd.DataFrame(
     {
         "2015": [153508],
         "2019": [182437],
+        "2023": [?],
     }
 )
 st.dataframe(votos_validos)
