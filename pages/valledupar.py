@@ -26,6 +26,9 @@ st.title('Novus Vote 🗳️ - Alcaldía Valledupar V.0.6')
 st.title('PRE CAMPAÑA - Históricos y Proyecciones Octubre de 2023')
 
 st.header("Votación Alcaldía 2015")
+data = pd.read_csv('pages/datos/Votos Válidos procesados Valledupar 2015-2019 - Puro Puestos.csv')
+st.dataframe(data)
+
 st.write("Resultados E-14 por Zonas")
 options = {
     "tooltip": {"trigger": "axis", "axisPointer": {"type": "shadow"}},
@@ -69,15 +72,7 @@ st_echarts(options=options, height="500px")
 
 st.header('Zona 1 - Puestos de Votación 🗳️')
 
-uploaded_files = st.file_uploader("Choose a CSV file", accept_multiple_files=True)
-for uploaded_file in uploaded_files:
-    bytes_data = uploaded_file.read()
-    st.write("filename:", uploaded_file.name)
-    st.write(bytes_data)
-
 st.write('Con mapas PyDeck')
-data = pd.read_csv('pages/datos/Votos Válidos procesados Valledupar 2015-2019 - Puro Puestos.csv')
-st.dataframe(data)
 
 st.write('Con mapas Folium')
 # center on Liberty Bell, add marker
