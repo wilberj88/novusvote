@@ -149,6 +149,70 @@ options = {
 }
 st_echarts(options=options, height="500px")
 
+st.write('---')
+st.header('Máximas votaciones por zonas en BCA en 2019 tanto Alcaldía como Gobernación')
+def render_basic_radar():
+    option = {
+        "title": {"text": "🗳️"},
+        "legend": {"data": ["Alfonso Eljach", "Jonathan Vasquez", "Leonidas Gómez", "Mauricio Aguilar", "Elkin Bueno", "Ángela Hernández"]},
+        "radar": {
+            "indicator": [
+                {"name": "Zona 1", "max": 10000},
+                {"name": "Zona 2", "max": 10000},
+                {"name": "Zona 3", "max": 10000},
+                {"name": "Zona 4", "max": 10000},
+                {"name": "Zona 5", "max": 10000},
+                {"name": "Zona 6", "max": 10000},
+                {"name": "Zona 7", "max": 10000},
+                {"name": "Zona 8", "max": 10000},
+                {"name": "Zona 9", "max": 10000},
+            ]
+        },
+        "series": [
+            {
+                "name": "Votos por Zonas",
+                "type": "radar",
+                "data": [
+                    {
+                        "value": [9633, 7894, 8693, 6883, 8334, 4559, 4264, 70, 5489],
+                        "name": "Alfonso Eljach",
+                    },
+                    {
+                        "value": [4928, 3980, 5532, 3734, 5246, 3297, 3493, 11, 3519],
+                        "name": "Jonathan Vasquez",
+                    },
+                    {
+                        "value": [7507, 6924, 6394, 5808, 6479, 2785, 3003, 26, 3091],
+                        "name": "Leonidas Gómez",
+                    },
+                    {
+                        "value": [4059, 3187, 4320, 2885, 4013, 2604, 2259, 20, 2694],
+                        "name": "Mauricio Aguilar",
+                    },
+                    {
+                        "value": [800, 654, 748, 434, 703, 405, 343, 9, 353],
+                        "name": "Elkin Bueno",
+                    },
+                    {
+                        "value": [3668, 2748, 3730, 2920, 3565, 2040, 2606, 15, 2902],
+                        "name": "Ángela Hernández",
+                    },
+                ],
+            }
+        ],
+    }
+    st_echarts(option, height="500px")
+ST_RADAR_DEMOS = {
+    "Radar: Basic Radar": (
+        render_basic_radar,
+        "https://echarts.apache.org/examples/en/editor.html?c=radar",
+    ),
+}
+render_basic_radar()
+
+st.write('---')
+
+
 st.header('Mando Campaña  V.0.1')
 st.write('Tareas por Territorios, Líderes, Equipos y Puestos de Votación')
 
