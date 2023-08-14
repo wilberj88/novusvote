@@ -180,59 +180,33 @@ st.write('--')
 
 st.header('Zona 1 - Puestos de Votación 🗳️')
 st.write('Con mapas PyDeck')
-
-# Build the map layer:      
-layer = pdk.Layer(type='ColumnLayer',
-                  data=data_pura,
-                  get_position=['Longitud', 'Latitud'],
-                  get_elevation='Votos Válidos 2019',
-                  auto_highlight=True,
-                  elevation_scale=30,
-                  pickable=True,
-                  get_fill_color=[0, 0, 0],
-                  coverage=3)
-
-# Set the view:
-view_state = pdk.ViewState(longitude=-73.25,
-                           latitude=10.4,
-                           zoom=5,
-                           min_zoom=3,
-                           max_zoom=15,
-                           pitch=0,
-                           bearing=0)
-
-# Render the map:
-r = pdk.Deck(layers=[layer], initial_view_state=view_state,
-             map_style=pdk.map_styles.LIGHT)
-r.to_html('us_popl_light.html')
-
 st.pydeck_chart(pdk.Deck(
-map_style=None,
-initial_view_state=pdk.ViewState(
-latitude=10.47,
-longitude=-73.24,
-zoom=12,
-pitch=50,
-),
-layers=[
-pdk.Layer(
-   'HexagonLayer',
-   data = data_pura,
-   get_position='[Longitud, Latitud]',
-   radius = 200,
-   elevation_scale = '[Votos Válidos 2019]',
-   elevation_range = [0, 11000],
-   pickable = True,
-   extruded = True,
-),
-pdk.Layer(
-    'ScatterplotLayer',
-    data = data_pura,
-    get_position='[Longitud, Latitud]',
-    get_color='[200, 30, 0, 160]',
-    get_radius=200,
-),
-],
+    map_style=None,
+    initial_view_state=pdk.ViewState(
+        latitude=10.47,
+        longitude=-73.24,
+        zoom=12,
+        pitch=50,
+    ),
+    layers=[
+    pdk.Layer(
+       'HexagonLayer',
+       data = data_pura,
+       get_position='[Longitud, Latitud]',
+       radius = 200,
+       elevation_scale = '[Votos Válidos 2019]',
+       elevation_range = [0, 11000],
+       pickable = True,
+       extruded = True,
+    ),
+    pdk.Layer(
+        'ScatterplotLayer',
+        data = data_pura,
+        get_position='[Longitud, Latitud]',
+        get_color='[200, 30, 0, 160]',
+        get_radius=200,
+    ),
+  ],
 ))    
 
 
