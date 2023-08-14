@@ -179,8 +179,34 @@ st.write('--')
 st.header('Zona 1 - Puestos de Votación 🗳️')
 st.write('Con mapas PyDeck')
 
-#layer = pydeck.Layer(
-    
+st.pydeck_chart(pdk.Deck(
+map_style=None,
+initial_view_state=pdk.ViewState(
+latitude=10.47,
+longitude=-73.24,
+zoom=11,
+pitch=50,
+),
+layers=[
+pdk.Layer(
+   'HexagonLayer',
+   data = data,
+   get_position='[data[Longitud], data[Latitud]',
+   radius = 200,
+   elevation_scale = 4,
+   elevation_range = [0, 1000],
+   pickable = True,
+   extruded = True,
+),
+pdk.Layer(
+    'ScatterplotLayer',
+    data = data,
+    get_position='[data[Longitud], data[Latitud]',
+    get_color='[200, 30, 0, 160]',
+    get_radius=200,
+),
+],
+))    
 
 
 st.write('Con mapas Folium')
