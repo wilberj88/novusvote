@@ -26,7 +26,8 @@ st.title('Novus Vote 🗳️ - Alcaldía Valledupar 2023')
 st.title('PRE CAMPAÑA - Históricos y Proyecciones a domingo 29 de Octubre de 2023')
 st.header("Históricos: Datos procesados 🛠️")
 data = pd.read_csv('pages/datos/Votos Válidos procesados Valledupar 2015-2019 - Puro Puestos.csv')
-st.dataframe(data)
+data_pura = data.dropna()
+st.dataframe(data_pura)
 
 st.header("Votación Alcaldía 2015")
 
