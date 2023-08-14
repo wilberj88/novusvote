@@ -187,7 +187,7 @@ initial_view_state=pdk.ViewState(
 latitude=10.47,
 longitude=-73.24,
 zoom=12,
-pitch=20,
+pitch=50,
 ),
 layers=[
 pdk.Layer(
