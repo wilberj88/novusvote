@@ -21,9 +21,9 @@ from streamlit_folium import st_folium
 st.set_page_config(layout="wide", page_title="Novus Vote 🗳️ Valledupar PRE CAMPAÑA", page_icon="🗳️")
 
 #TITULO
-st.title('Novus Vote 🗳️ - Alcaldía Valledupar V.0.6')
+st.title('Novus Vote 🗳️ - Alcaldía Valledupar 2023')
 
-st.title('PRE CAMPAÑA - Históricos y Proyecciones Octubre de 2023')
+st.title('PRE CAMPAÑA - Históricos y Proyecciones a domingo 29 de Octubre de 2023')
 st.header("Históricos: Datos procesados 🛠️")
 data = pd.read_csv('pages/datos/Votos Válidos procesados Valledupar 2015-2019 - Puro Puestos.csv')
 st.dataframe(data)
@@ -367,76 +367,3 @@ st.write('Ritmo de votos mínimos por minuto para aspirar a posesionarse Alcalde
 st.write('Importancia de Zonas por Votos: Zona 5 > Zona 4 > Zona 2 > Zona 3 > Zona 1 > Zona 9 > Zona 6 > Zona 7 > Zona 8')
 
 st.write('---')
-st.title("Desagregación de votos en 2019 por mesa de votación, barrios y zonas")
-#datos
-df = pd.DataFrame(
-np.random.randn(1000, 2) / [50, 50] + [10.473583, -73.248639],
-columns=['lat', 'lon'])
-st.pydeck_chart(pdk.Deck(
-map_style=None,
-initial_view_state=pdk.ViewState(
-latitude=10.473583,
-longitude=-73.248639,
-zoom=11,
-pitch=50,
-),
-layers=[
-pdk.Layer(
-   'HexagonLayer',
-   data=df,
-   get_position='[lon, lat]',
-   radius=200,
-   elevation_scale=4,
-   elevation_range=[0, 1000],
-   pickable=True,
-   extruded=True,
-),
-pdk.Layer(
-    'ScatterplotLayer',
-    data=df,
-    get_position='[lon, lat]',
-    get_color='[200, 30, 0, 160]',
-    get_radius=200,
-),
-],
-))
-
-st.write('---')
-
-st.title("Predicción de votos válidos en Alcaldía Valledupar 2023 por puesto de votación y zonas")
-#datos
-df = pd.DataFrame(
-np.random.randn(1000, 2) / [50, 50] + [10.473583, -73.248639],
-columns=['lat', 'lon'])
-st.pydeck_chart(pdk.Deck(
-map_style=None,
-initial_view_state=pdk.ViewState(
-latitude=10.473583,
-longitude=-73.248639,
-zoom=11,
-pitch=50,
-),
-layers=[
-pdk.Layer(
-   'HexagonLayer',
-   data=df,
-   get_position='[lon, lat]',
-   radius=200,
-   elevation_scale=4,
-   elevation_range=[0, 1000],
-   pickable=True,
-   extruded=True,
-),
-pdk.Layer(
-    'ScatterplotLayer',
-    data=df,
-    get_position='[lon, lat]',
-    get_color='[200, 30, 0, 160]',
-    get_radius=200,
-),
-],
-))
-
-
-#META
-
