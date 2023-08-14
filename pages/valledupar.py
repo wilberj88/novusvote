@@ -191,8 +191,8 @@ pitch=50,
 layers=[
 pdk.Layer(
    'HexagonLayer',
-   data = data,
-   get_position='[data[Longitud], data[Latitud]',
+   data = data_pura,
+   get_position='[Longitud, Latitud]',
    radius = 200,
    elevation_scale = 4,
    elevation_range = [0, 1000],
@@ -201,8 +201,8 @@ pdk.Layer(
 ),
 pdk.Layer(
     'ScatterplotLayer',
-    data = data,
-    get_position='[data[Longitud], data[Latitud]',
+    data = data_pura,
+    get_position='[Longitud, Latitud]',
     get_color='[200, 30, 0, 160]',
     get_radius=200,
 ),
