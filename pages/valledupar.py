@@ -186,7 +186,7 @@ map_style=None,
 initial_view_state=pdk.ViewState(
 latitude=10.47,
 longitude=-73.24,
-zoom=11,
+zoom=15,
 pitch=50,
 ),
 layers=[
@@ -196,7 +196,7 @@ pdk.Layer(
    get_position='[Longitud, Latitud]',
    radius = 200,
    elevation_scale = '[Votos Válidos 2019]',
-   elevation_range = [0, 10000],
+   elevation_range = [0, 11000],
    pickable = True,
    extruded = True,
 ),
