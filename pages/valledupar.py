@@ -194,7 +194,7 @@ st.pydeck_chart(pdk.Deck(
        data = data_pura,
        get_position='[Longitud, Latitud]',
        radius = 200,
-       elevation_scale = '[Votos Válidos 2019]',
+       elevation_scale = 4,
        elevation_range = [0, 11000],
        pickable = True,
        extruded = True,
