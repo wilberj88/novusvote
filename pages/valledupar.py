@@ -23,7 +23,7 @@ st.set_page_config(layout="wide", page_title="Novus Vote 🗳️ Valledupar PRE 
 #TITULO
 st.title('Novus Vote 🗳️ - Alcaldía Valledupar 2023')
 
-st.title('PRE CAMPAÑA - Históricos y Proyecciones')
+st.title('PRE CAMPAÑA - Históricos, Proyecciones y Requisitos')
 st.header("Históricos: Datos procesados 🛠️")
 #columnas_to_keep = ["Nombre", "Votos Válidos 2019", "Latitud", "Longitud"]
 data = pd.read_csv('pages/datos/Votos Válidos procesados Valledupar 2015-2019 - Puro Puestos.csv')
