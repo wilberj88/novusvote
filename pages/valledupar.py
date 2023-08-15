@@ -23,7 +23,7 @@ st.set_page_config(layout="wide", page_title="Novus Vote 🗳️ Valledupar PRE 
 #TITULO
 st.title('Novus Vote 🗳️ - Alcaldía Valledupar 2023')
 
-st.title('PRE CAMPAÑA - Históricos y Proyecciones a domingo 29 de Octubre de 2023')
+st.title('PRE CAMPAÑA - Históricos y Proyecciones')
 st.header("Históricos: Datos procesados 🛠️")
 #columnas_to_keep = ["Nombre", "Votos Válidos 2019", "Latitud", "Longitud"]
 data = pd.read_csv('pages/datos/Votos Válidos procesados Valledupar 2015-2019 - Puro Puestos.csv')
@@ -177,50 +177,27 @@ ST_RADAR_DEMOS = {
 render_basic_radar()
 
 st.write('--')
-
-st.header('Zona 1 - Puestos de Votación 🗳️')
-
-zona_1 = pd.DataFrame({
-   'lon':[10.473583, 10.474139, 10.478472, 10.468500, 10.469667, 10.474139],
-   'lat':[-73.248639, -73.25125, -73.245361, -73.247278, -73.238056, -73.25125],
-   'name':['PV1 COL. Nacional Loperena', 'PV2 ESC Bellas Artes', 'PV3 UDES', 'PV4 COL Prudencia Daza', 'PV5 COL SantoDomingo', 'PV6 COL Parroquial El Carmelo'],
-   'value':[7588, 4933,3771, 2735, 5666, 57]
-}, dtype=str)
-
-
-st.write('Con mapas Folium')
-# center on Liberty Bell, add marker
-m = folium.Map(location=[10.4735, -73.2486], zoom_start=13)
-st_data = st_folium(m, width=725)
-for i in range(0,len(zona_1)):
-   folium.Marker(
-      location=[zona_1.iloc[i]['lat'], zona_1.iloc[i]['lon']],
-      popup=zona_1.iloc[i]['name'],
-   ).add_to(m)
-st_data1 = st_folium(m, width=725)
-
-#folium.Marker(
-#    [10.474139, -73.25125], popup="PV2 ESC Bellas Artes", tooltip="PV2 ESC Bellas Artes"
-#).add_to(m)
-#folium.Marker(
-#    [10.478472, -73.245361], popup="PV3 UDES", tooltip="PV3 UDES"
-#).add_to(m)
-#folium.Marker(
-#    [10.468500, -73.247278], popup="PV4 COL Prudencia Daza", tooltip="PV4 COL Prudencia Daza"
-#).add_to(m)
-#folium.Marker(
-#    [10.469667, -73.238056], popup="PV5 COL SantoDomingo", tooltip="PV5 COL SantoDomingo"
-#).add_to(m)
-#folium.Marker(
-#    [10.474139, -73.25125], popup="PV6 COL Parroquial El Carmelo", tooltip="PV6 COL Parroquial El Carmelo"
-#).add_to(m)
-# call to render Folium map in Streamlit
-
-
-
-
+st.header('¿Qué dicen los datos históricos?')
+st.write('1) Porcentaje mínimo para posesionarse Alcalde en Valledupar ha sido el 39%')
+st.write('2) Porcentaje promedio de crecimiento de los votos válidos está en el 18%')
 
 st.write('---')
+st.header("Modelador de escenarios de votación a octubre 2023")
+col1, col2 = st.columns(2)
+
+with col1:
+    votos_validos = st.selectbox(
+        "Selecciona una tasa de crecimiento de los votos",
+        ("10%", "13%", "16%", "19%", "22%"),
+    )
+ 
+
+with col2:
+      porcentaje_ganador = st.radio(
+        "Selecciona la participación mínima para ganar alcaldía",
+        options=['30%', '33%','36%', '39%', '42%'],
+    )
+
 
 st.header("Proyecciones para ganar en Octubre de 2023")
 st.write('El crecimiento de los votos válidos entre 2015 y 2019 fue en promedio de 18%, siendo la zona 5 la de mayor crecimiento (35%) y la zona 7 la de mayor contracción (-13%)')
@@ -339,7 +316,7 @@ st_echarts(option, height="500px", key="echarts")
 st.write('---')
 st.header("Votos requeridos por edades para ganar Alcaldía 2023")
 
-st.header("Modelador de escenarios")
+
 
 
 st.write('---')
@@ -351,3 +328,47 @@ st.write('Ritmo de votos mínimos por minuto para aspirar a posesionarse Alcalde
 st.write('Importancia de Zonas por Votos: Zona 5 > Zona 4 > Zona 2 > Zona 3 > Zona 1 > Zona 9 > Zona 6 > Zona 7 > Zona 8')
 
 st.write('---')
+
+
+st.header('Zona 1 - Puestos de Votación 🗳️')
+
+zona_1 = pd.DataFrame({
+   'lon':[10.473583, 10.474139, 10.478472, 10.468500, 10.469667, 10.474139],
+   'lat':[-73.248639, -73.25125, -73.245361, -73.247278, -73.238056, -73.25125],
+   'name':['PV1 COL. Nacional Loperena', 'PV2 ESC Bellas Artes', 'PV3 UDES', 'PV4 COL Prudencia Daza', 'PV5 COL SantoDomingo', 'PV6 COL Parroquial El Carmelo'],
+   'value':[7588, 4933,3771, 2735, 5666, 57]
+}, dtype=str)
+
+
+st.write('Con mapas Folium')
+# center on Liberty Bell, add marker
+m = folium.Map(location=[10.4735, -73.2486], zoom_start=13)
+st_data = st_folium(m, width=725)
+for i in range(0,len(zona_1)):
+   folium.Marker(
+      location=[zona_1.iloc[i]['lat'], zona_1.iloc[i]['lon']],
+      popup=zona_1.iloc[i]['name'],
+   ).add_to(m)
+st_data1 = st_folium(m, width=725)
+
+#folium.Marker(
+#    [10.474139, -73.25125], popup="PV2 ESC Bellas Artes", tooltip="PV2 ESC Bellas Artes"
+#).add_to(m)
+#folium.Marker(
+#    [10.478472, -73.245361], popup="PV3 UDES", tooltip="PV3 UDES"
+#).add_to(m)
+#folium.Marker(
+#    [10.468500, -73.247278], popup="PV4 COL Prudencia Daza", tooltip="PV4 COL Prudencia Daza"
+#).add_to(m)
+#folium.Marker(
+#    [10.469667, -73.238056], popup="PV5 COL SantoDomingo", tooltip="PV5 COL SantoDomingo"
+#).add_to(m)
+#folium.Marker(
+#    [10.474139, -73.25125], popup="PV6 COL Parroquial El Carmelo", tooltip="PV6 COL Parroquial El Carmelo"
+#).add_to(m)
+# call to render Folium map in Streamlit
+
+
+
+
+
