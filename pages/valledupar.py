@@ -28,8 +28,6 @@ st.header("Históricos: Datos procesados 🛠️")
 #columnas_to_keep = ["Nombre", "Votos Válidos 2019", "Latitud", "Longitud"]
 data = pd.read_csv('pages/datos/Votos Válidos procesados Valledupar 2015-2019 - Puro Puestos.csv')
 data_pura = data.dropna()
-data_pura['Latitud'] = pd.to_numeric(data_pura['Latitud'])
-data_pura['Longitud'] = pd.to_numeric(data_pura['Longitud']) 
 st.dataframe(data_pura)
 
 st.header("Votación Alcaldía 2015")
