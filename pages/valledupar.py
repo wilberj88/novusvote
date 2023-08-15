@@ -192,8 +192,8 @@ st.write('Número de votos válidos necesarios para ganar la Alcaldía con parti
 st.write('Número de votos válidos necesarios para ganar la Alcaldía con participación del 39% de los votos: ', meta2023*0.39)
 
 
-
-st.title('Ritmo de votación por hora requerido')
+st.header("Requisitos para ganar")
+st.write('Ritmo de votación por hora requerido')
 option = {
     "xAxis": {
         "type": "category",
@@ -209,16 +209,8 @@ st.write('El ritmo de votos requeridos por minuto es de: ', meta2023/480)
 st.write('El ritmo de votos requeridos por hora es de: ', meta2023/8)    
 
 
+st.write('Ritmo de votación por zonas requerido')
 
-
-
-st.header("Proyecciones para ganar en Octubre de 2023")
-st.write('El crecimiento de los votos válidos entre 2015 y 2019 fue en promedio de 18%, siendo la zona 5 la de mayor crecimiento (35%) y la zona 7 la de mayor contracción (-13%)')
-st.write('Asumiendo que se requiere un 39% de los votos para ganar y que el crecimiento promedio desde hace 8 años en los votos válidos es de un 18%, los resultados son: ')
-
-
-
-st.write("Votos válidos proyectados por zonas")
 option = {
     "legend": {"top": "bottom"},
     "toolbox": {
@@ -255,29 +247,8 @@ option = {
 st_echarts(
     options=option, height="600px",
 )
-st.write("De modo que se requerirían 84.000 votos. Ahora bien, si el crecimiento de los votos válidos no fuera del 18% sino del 12%, la votación necesaria sería de 80.000 votos")
-st.write("Un escenario más competido sería en el que para ganar se requiera el 33% de los votos válidos, para lo cual se requerirían 71.550 votos asumiendo crecimiento promedio de 18,85% de los votos válidos")
-st.write("Pero si los votos válidos no crecen al 18,85% sino al 12% y la participación pa ganar fuese del 33%, los votos mínimos serían de 67429")
-st.write("Sin embargo, la migración venezolana permite intuir que el crecimiento de los votos válidos no se desacelerará con fuerza e incluso se puede mantener el ritmo promedio del 18,8%")
-st.write('---')
-st.header("Votos requeridos por zonas para ganar Alcaldía 2023 (18,5% crecimiento votos y 39% participación para victoria)")
-zonas = ["Zona 1", "Zona 2", "Zona 3", "Zona 4", "Zona 5", "Zona 6", "Zona 7", "Zona 8", "Zona 9"]
-n_zonas = len(zonas)
 
-women_salary = [11228, 13078, 12404, 15294, 15314, 5719, 3396, 120, 8007]
-men_salary = [13819, 16095, 15267, 18824, 18848, 7038, 4179, 147, 9855]
-
-df = pd.DataFrame(dict(zonas=zonas*2, salary=men_salary + women_salary,
-                       escenario=["Alto"]*n_zonas + ["Bajo"]*n_zonas))
-
-# Use column names of df for the different parameters x, y, color, ...
-fig = px.scatter(df, x="salary", y="zonas", color="escenario",
-                 title="Entre el 39,7% y el 48,5%",
-                 labels={"salary":"Votos válidos mínimos para ser Alcalde Valledupar en 2023"} # customize axis label
-                )
-st.plotly_chart(fig, theme="streamlit")
-
-st.write('---')
+st.write('Ritmo de votación por generos requerido')
 st.header("Votos requeridos por género para ganar Alcaldía 2023")
 st.write("Mujeres: 43.378 ; Hombres: 41.180")
 option = {
@@ -318,6 +289,35 @@ option = {
     ],
 }
 st_echarts(option, height="500px", key="echarts")
+
+st.write('Ritmo de votación por edades requerido')
+
+
+
+st.write("De modo que se requerirían 84.000 votos. Ahora bien, si el crecimiento de los votos válidos no fuera del 18% sino del 12%, la votación necesaria sería de 80.000 votos")
+st.write("Un escenario más competido sería en el que para ganar se requiera el 33% de los votos válidos, para lo cual se requerirían 71.550 votos asumiendo crecimiento promedio de 18,85% de los votos válidos")
+st.write("Pero si los votos válidos no crecen al 18,85% sino al 12% y la participación pa ganar fuese del 33%, los votos mínimos serían de 67429")
+st.write("Sin embargo, la migración venezolana permite intuir que el crecimiento de los votos válidos no se desacelerará con fuerza e incluso se puede mantener el ritmo promedio del 18,8%")
+st.write('---')
+st.header("Votos requeridos por zonas para ganar Alcaldía 2023 (18,5% crecimiento votos y 39% participación para victoria)")
+zonas = ["Zona 1", "Zona 2", "Zona 3", "Zona 4", "Zona 5", "Zona 6", "Zona 7", "Zona 8", "Zona 9"]
+n_zonas = len(zonas)
+
+women_salary = [11228, 13078, 12404, 15294, 15314, 5719, 3396, 120, 8007]
+men_salary = [13819, 16095, 15267, 18824, 18848, 7038, 4179, 147, 9855]
+
+df = pd.DataFrame(dict(zonas=zonas*2, salary=men_salary + women_salary,
+                       escenario=["Alto"]*n_zonas + ["Bajo"]*n_zonas))
+
+# Use column names of df for the different parameters x, y, color, ...
+fig = px.scatter(df, x="salary", y="zonas", color="escenario",
+                 title="Entre el 39,7% y el 48,5%",
+                 labels={"salary":"Votos válidos mínimos para ser Alcalde Valledupar en 2023"} # customize axis label
+                )
+st.plotly_chart(fig, theme="streamlit")
+
+st.write('---')
+
 
 st.write('---')
 st.header("Votos requeridos por edades para ganar Alcaldía 2023")
