@@ -179,55 +179,28 @@ render_basic_radar()
 st.write('--')
 
 st.header('Zona 1 - Puestos de Votación 🗳️')
-st.write('Con mapas PyDeck')
-st.pydeck_chart(pdk.Deck(
-    map_style=None,
-    initial_view_state=pdk.ViewState(
-        latitude=10.47,
-        longitude=-73.24,
-        zoom=12,
-        pitch=50,
-    ),
-    layers=[
-    pdk.Layer(
-       'HexagonLayer',
-       data = data_pura,
-       get_position='[Longitud, Latitud]',
-       radius = 200,
-       elevation_scale = 4,
-       elevation_range = [0, 11000],
-       pickable = True,
-       extruded = True,
-    ),
-    pdk.Layer(
-        'ScatterplotLayer',
-        data = data_pura,
-        get_position='[Longitud, Latitud]',
-        get_color='[200, 30, 0, 160]',
-        get_radius=200,
-    ),
-  ],
-))    
-
 
 st.write('Con mapas Folium')
 # center on Liberty Bell, add marker
-m = folium.Map(location=[10.473583, -73.248639], zoom_start=14)
-folium.Marker(
-    [10.473583, -73.248639], popup="PV1 COL NAL Loperena", tooltip="PV1 COL NAL Loperena"
-).add_to(m)
-folium.Marker(
+m = folium.Map(location=[10.473583, -73.248639], zoom_start=10)
+
+for i in data_pura['ID']:
+    folium.Marker(
+        [data_pura['Latitud'], data_pura['Longitud']], popup=data_pura['Nombre'], tooltip=data_pura['Votos Válidos 2019']
+    ).add_to(m)
+
+#folium.Marker(
     [10.474139, -73.25125], popup="PV2 ESC Bellas Artes", tooltip="PV2 ESC Bellas Artes"
-).add_to(m)
-folium.Marker(
-    [10.478472, -73.245361], popup="PV3 UDES", tooltip="PV3 UDES"
-).add_to(m)
-folium.Marker(
-    [10.468500, -73.247278], popup="PV4 COL Prudencia Daza", tooltip="PV4 COL Prudencia Daza"
-).add_to(m)
-folium.Marker(
-    [10.469667, -73.238056], popup="PV5 COL SantoDomingo", tooltip="PV5 COL SantoDomingo"
-).add_to(m)
+#).add_to(m)
+#folium.Marker(
+#    [10.478472, -73.245361], popup="PV3 UDES", tooltip="PV3 UDES"
+#).add_to(m)
+#folium.Marker(
+#    [10.468500, -73.247278], popup="PV4 COL Prudencia Daza", tooltip="PV4 COL Prudencia Daza"
+#).add_to(m)
+#folium.Marker(
+#    [10.469667, -73.238056], popup="PV5 COL SantoDomingo", tooltip="PV5 COL SantoDomingo"
+#).add_to(m)
 #folium.Marker(
 #    [10.474139, -73.25125], popup="PV6 COL Parroquial El Carmelo", tooltip="PV6 COL Parroquial El Carmelo"
 #).add_to(m)
