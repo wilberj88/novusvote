@@ -186,7 +186,7 @@ m = folium.Map(location=[10.473583, -73.248639], zoom_start=10)
 
 for i in data_pura['ID']:
     folium.Marker(
-        [data_pura['Latitud'], data_pura['Longitud']], popup=data_pura['Nombre'], tooltip=data_pura['Votos Válidos 2019']
+        [pd.to_numeric(data_pura['Latitud']), pd.to_numeric(data_pura['Longitud'])], popup=data_pura['Nombre'], tooltip=data_pura['Votos Válidos 2019']
     ).add_to(m)
 
 #folium.Marker(
