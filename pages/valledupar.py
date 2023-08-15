@@ -176,19 +176,20 @@ ST_RADAR_DEMOS = {
 }
 render_basic_radar()
 
-st.write('--')
 st.header('¿Qué dicen los datos históricos?')
 st.write('1) Porcentaje mínimo para posesionarse Alcalde en Valledupar ha sido el 39%')
 st.write('2) Porcentaje promedio de crecimiento de los votos válidos está en el 18%')
+st.write('3) De las 7 zonas de la ciudad, las 5 primeras arrojan el 80% de la votación, siendo las zonas 4 y 5 las más grandes con 18,1% de participación cada una')
+
 
 st.write('---')
 st.header("Modelador de escenarios de votación a octubre 2023")
 col1, col2 = st.columns(2)
 
 with col1:
-    votos_validos = st.selectbox(
-        "Selecciona una tasa de crecimiento de los votos",
-        ("10%", "13%", "16%", "19%", "22%"),
+    votos_validos = st.radio(
+        "Selecciona una tasa de crecimiento de los votos válidos entre 2019 y 2023",
+         options=[("10%", "13%", "16%", "19%", "22%")],
     )
  
 
