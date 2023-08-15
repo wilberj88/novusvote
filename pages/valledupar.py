@@ -183,51 +183,24 @@ st.write('3) De las 7 zonas de la ciudad, las 5 primeras arrojan el 80% de la vo
 
 
 st.write('---')
-st.header("Modelador de Proyecciones a octubre 2023")
-col1, col2 = st.columns(2)
+st.header("Proyecciones a octubre 2023")
+st.write('Número de votos válidos a la Alcaldía manteniendo crecimiento promedio en los votos:')
+votos_validos = pd.DataFrame(
+    {
+        "Votos 2015": [153508],
+        "Votos 2019": [182437],
+        "Proyección 2023": [215.275],
+    }
+)
+st.bar_chart(votos_validos)
 
-with col1:
-    votos_validos = st.radio(
-        "Selecciona una tasa de crecimiento de los votos válidos entre 2019 y 2023",
-         options=["10%", "13%", "16%", "19%", "22%"],
-    )
- 
-
-with col2:
-      porcentaje_ganador = st.radio(
-        "Selecciona la participación mínima para ganar alcaldía",
-        options=['30%', '33%','36%', '39%', '42%'],
-    )
-
-if st.button('Modelar'):
-    #st.write("Con un crecimiento de los votos de: ", votos_validos)
-    #st.write("Con una participación mínima de los votos para ganar de: ", porcentaje_ganador)
-    votacion_2019 = 182437
-    votacion_2023 = votacion_2019*votos_validos
-    votos_alcalde_2023 = int(votacion_2023*porcentaje_ganador)
-    st.write('La votación proyectada para la alcaldía es: ', votacion_2023)
-    st.write('La cantidad de votos necesarios para hacerse Alcalde sería: ', votos_alcalde_2023)
-    
-    st.header("Requerimientos de Campaña")
-    col1, col2, col3, col4 = st.columns(4)
-    col1.metric("Inversión", "70 M USD", "7.2 M USD")
-    col2.metric("Líderes", "9 mpl", "-8%")
-    col3.metric("Sentimiento", "86%", "4%")
-    col4.metric("Votos", "50K mpl", "4K")
 
 
 st.header("Proyecciones para ganar en Octubre de 2023")
 st.write('El crecimiento de los votos válidos entre 2015 y 2019 fue en promedio de 18%, siendo la zona 5 la de mayor crecimiento (35%) y la zona 7 la de mayor contracción (-13%)')
 st.write('Asumiendo que se requiere un 39% de los votos para ganar y que el crecimiento promedio desde hace 8 años en los votos válidos es de un 18%, los resultados son: ')
 
-votos_validos = pd.DataFrame(
-    {
-        "2015": [153508],
-        "2019": [182437],
-        "2023": ["?"],
-    }
-)
-st.dataframe(votos_validos)
+
 
 st.write("Votos válidos proyectados por zonas")
 option = {
