@@ -190,7 +190,7 @@ for i in data_pura['ID']:
     ).add_to(m)
 
 #folium.Marker(
-    [10.474139, -73.25125], popup="PV2 ESC Bellas Artes", tooltip="PV2 ESC Bellas Artes"
+#    [10.474139, -73.25125], popup="PV2 ESC Bellas Artes", tooltip="PV2 ESC Bellas Artes"
 #).add_to(m)
 #folium.Marker(
 #    [10.478472, -73.245361], popup="PV3 UDES", tooltip="PV3 UDES"
