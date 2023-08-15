@@ -189,7 +189,7 @@ col1, col2 = st.columns(2)
 with col1:
     votos_validos = st.radio(
         "Selecciona una tasa de crecimiento de los votos válidos entre 2019 y 2023",
-         options=[("10%", "13%", "16%", "19%", "22%")],
+         options=["10%", "13%", "16%", "19%", "22%"],
     )
  
 
