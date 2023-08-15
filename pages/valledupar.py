@@ -186,7 +186,7 @@ st.write('---')
 st.header("Proyecciones a octubre 2023")
 meta2023 = 215275
 st.write('Número de votos válidos a la Alcaldía manteniendo crecimiento promedio en los votos: ', meta2023)
-st.write('Número de votos válidos necesarios para ganar la Alcaldía: ', meta2023*0.39)
+st.write('Número de votos válidos necesarios para ganar la Alcaldía con participación del 39% de los votos: ', meta2023*0.39)
 
 st.title('Ritmo de votación por hora requerido')
 option = {
