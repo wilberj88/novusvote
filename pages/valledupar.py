@@ -180,14 +180,24 @@ st.write('--')
 
 st.header('Zona 1 - Puestos de Votación 🗳️')
 
+zona_1 = pd.DataFrame({
+   'lon':[10.473583, 10.474139, 10.478472, 10.468500, 10.469667, 10.474139],
+   'lat':[-73.248639, -73.25125, -73.245361, -73.247278, -73.238056, -73.25125],
+   'name':['PV1 COL. Nacional Loperena', 'PV2 ESC Bellas Artes', 'PV3 UDES', 'PV4 COL Prudencia Daza', 'PV5 COL SantoDomingo', 'PV6 COL Parroquial El Carmelo'],
+   'value':[7588, 4933,3771, 2735, 5666, 57]
+}, dtype=str)
+
+
 st.write('Con mapas Folium')
 # center on Liberty Bell, add marker
-m = folium.Map(location=[10.473583, -73.248639], zoom_start=10)
+m = folium.Map(location=[10.47, -73.24], zoom_start=10)
 
-for i in data_pura['ID']:
-    folium.Marker(
-        [data_pura['Latitud'], data_pura['Longitud']], popup=data_pura['Nombre'], tooltip=data_pura['Votos Válidos 2019']
-    ).add_to(m)
+for i in range(0,len(zona_1)):
+   folium.Marker(
+      location=[zona_1.iloc[i]['lat'], zona_1.iloc[i]['lon']],
+      popup=zona_1.iloc[i]['name'],
+   ).add_to(m)
+st_data = st_folium(m, width=725)
 
 #folium.Marker(
 #    [10.474139, -73.25125], popup="PV2 ESC Bellas Artes", tooltip="PV2 ESC Bellas Artes"
@@ -205,7 +215,7 @@ for i in data_pura['ID']:
 #    [10.474139, -73.25125], popup="PV6 COL Parroquial El Carmelo", tooltip="PV6 COL Parroquial El Carmelo"
 #).add_to(m)
 # call to render Folium map in Streamlit
-st_data = st_folium(m, width=725)
+
 
 
 
