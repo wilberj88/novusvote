@@ -189,7 +189,7 @@ votos_validos = pd.DataFrame(
     {
         "Votos 2015": [153508],
         "Votos 2019": [182437],
-        "Proyección 2023": [215.275],
+        "Proyección 2023": [215275],
     }
 )
 st.bar_chart(votos_validos)
