@@ -200,11 +200,11 @@ with col2:
     )
 
 if st.button('Modelar'):
-    st.write("Con un crecimiento de los votos de: ", votos_validos)
-    st.write("Con una participación mínima de los votos para ganar de: ", porcentaje_ganador)
+    #st.write("Con un crecimiento de los votos de: ", votos_validos)
+    #st.write("Con una participación mínima de los votos para ganar de: ", porcentaje_ganador)
     votacion_2019 = 182437
     votacion_2023 = votacion_2019*votos_validos
-    votos_alcalde_2023 = votacion_2023*porcentaje_ganador
+    votos_alcalde_2023 = int(votacion_2023*porcentaje_ganador)
     st.write('La votación proyectada para la alcaldía es: ', votacion_2023)
     st.write('La cantidad de votos necesarios para hacerse Alcalde sería: ', votos_alcalde_2023)
     
