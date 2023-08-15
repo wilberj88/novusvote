@@ -190,14 +190,14 @@ zona_1 = pd.DataFrame({
 
 st.write('Con mapas Folium')
 # center on Liberty Bell, add marker
-m = folium.Map(location=[10.47, -73.24], zoom_start=10)
-
+m = folium.Map(location=[10.4735, -73.2486], zoom_start=13)
+st_data = st_folium(m, width=725)
 for i in range(0,len(zona_1)):
    folium.Marker(
       location=[zona_1.iloc[i]['lat'], zona_1.iloc[i]['lon']],
       popup=zona_1.iloc[i]['name'],
    ).add_to(m)
-st_data = st_folium(m, width=725)
+st_data1 = st_folium(m, width=725)
 
 #folium.Marker(
 #    [10.474139, -73.25125], popup="PV2 ESC Bellas Artes", tooltip="PV2 ESC Bellas Artes"
