@@ -184,15 +184,26 @@ st.write('3) De las 7 zonas de la ciudad, las 5 primeras arrojan el 80% de la vo
 
 st.write('---')
 st.header("Proyecciones a octubre 2023")
-st.write('Número de votos válidos a la Alcaldía manteniendo crecimiento promedio en los votos:')
-votos_validos = pd.DataFrame(
-    {
-        "Votos 2015": [153508],
-        "Votos 2019": [182437],
-        "Proyección 2023": [215275],
-    }
+meta2023 = 215275
+st.write('Número de votos válidos a la Alcaldía manteniendo crecimiento promedio en los votos: ', meta2023)
+st.write('Número de votos válidos necesarios para ganar la Alcaldía: ', meta2023*0.3)
+
+st.title('Ritmo de votación por hora requerido')
+option = {
+    "xAxis": {
+        "type": "category",
+        "data": ["9am", "10am", "11am", "12md", "1pm", "2pm", "4pm"],
+    },
+    "yAxis": {"type": "value"},
+    "series": [{"data": [meta2023*0.1, meta2023*0.2, meta2023*0.35, meta2023*0.5, meta2023*0.75, meta2023*0.9, meta2023], "type": "line"}],
+}
+st_echarts(
+    options=option, height="400px",
 )
-st.bar_chart(votos_validos)
+st.write('El ritmo de votos requeridos por minuto es de: ', meta2023/480)
+st.write('El ritmo de votos requeridos por hora es de: ', meta2023/8)    
+
+
 
 
 
