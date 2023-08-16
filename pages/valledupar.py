@@ -514,7 +514,7 @@ options = {
                     "stack": "总量",
                     "areaStyle": {},
                     "emphasis": {"focus": "series"},
-                    "data": [meta_50_55*0.1, meta_50_55*0.2, meta_50_55*0.35, meta_50_55*0.45, meta50_55*0.5, meta_50_55*0.75, meta_50_55],
+                    "data": [meta_50_55*0.1, meta_50_55*0.2, meta_50_55*0.35, meta_50_55*0.45, meta_50_55*0.5, meta_50_55*0.75, meta_50_55],
                 },
                   {
                     "name": "55-60años",
