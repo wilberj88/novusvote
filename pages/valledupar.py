@@ -364,7 +364,7 @@ options = {
                 },
             ],
         }
-        st_echarts(options=options, height="400px") 
+st_echarts(options=options, height="400px") 
 
 
 st.write('Ritmo de votación por generos requerido')
