@@ -24,7 +24,7 @@ st.set_page_config(layout="wide", page_title="Novus Vote 🗳️ Valledupar PRE 
 st.title('Novus Vote 🗳️ - Alcaldía Valledupar 2023')
 
 st.title('PRE CAMPAÑA - Históricos, Proyecciones y Requisitos')
-st.header("Históricos: Datos procesados 🛠️")
+st.header("1. Históricos: Datos procesados 🛠️")
 #columnas_to_keep = ["Nombre", "Votos Válidos 2019", "Latitud", "Longitud"]
 data = pd.read_csv('pages/datos/Votos Válidos procesados Valledupar 2015-2019 - Puro Puestos.csv')
 data_pura = data.dropna()
@@ -183,34 +183,8 @@ st.write('3) De las 7 zonas de la ciudad, las 5 primeras arrojan el 80% de la vo
 
 
 st.write('---')
-st.header("Proyecciones a octubre 2023")
+st.header("2. Proyecciones a octubre 2023")
 meta2023 = 215275
-st.write('Número de votos válidos a la Alcaldía manteniendo crecimiento promedio en los votos: ', meta2023)
-st.write('Número de votos válidos necesarios para ganar la Alcaldía con participación del 30% de los votos: ', meta2023*0.3)
-st.write('Número de votos válidos necesarios para ganar la Alcaldía con participación del 33% de los votos: ', meta2023*0.33)
-st.write('Número de votos válidos necesarios para ganar la Alcaldía con participación del 36% de los votos: ', meta2023*0.36)
-st.write('Número de votos válidos necesarios para ganar la Alcaldía con participación del 39% de los votos: ', meta2023*0.39)
-
-
-st.header("Requisitos para ganar")
-st.write('Ritmo de votación por hora requerido')
-option = {
-    "xAxis": {
-        "type": "category",
-        "data": ["9am", "10am", "11am", "12md", "1pm", "2pm", "4pm"],
-    },
-    "yAxis": {"type": "value"},
-    "series": [{"data": [meta2023*0.1, meta2023*0.2, meta2023*0.35, meta2023*0.5, meta2023*0.75, meta2023*0.9, meta2023], "type": "line"}],
-}
-st_echarts(
-    options=option, height="400px",
-)
-st.write('El ritmo de votos requeridos por minuto es de: ', meta2023/480)
-st.write('El ritmo de votos requeridos por hora es de: ', meta2023/8)    
-
-
-st.write('Ritmo de votación por zonas requerido')
-
 option = {
     "legend": {"top": "bottom"},
     "toolbox": {
@@ -231,15 +205,15 @@ option = {
             "roseType": "area",
             "itemStyle": {"borderRadius": 8},
             "data": [
-                {"value": 28789, "name": "Zona 1 (13,3%)"},
-                {"value": 33532, "name": "Zona 2 (15,5%)"},
-                {"value": 31805, "name": "Zona 3 (14,7%)"},
-                {"value": 39217, "name": "Zona 4 (18,1%)"},
-                {"value": 39268, "name": "Zona 5 (18,1%)"},
-                {"value": 14663, "name": "Zona 6 (6,8%)"},
-                {"value": 8707, "name": "Zona 7 (4%)"},
-                {"value": 307, "name": "Zona 8 (0,1%)"},
-                {"value": 20531, "name": "Zona 9 (9,5%)"},
+                {"value": 28789, "name": "Zona 1 28K (13,3%)"},
+                {"value": 33532, "name": "Zona 2 33K (15,5%)"},
+                {"value": 31805, "name": "Zona 3 31K (14,7%)"},
+                {"value": 39217, "name": "Zona 4 39K (18,1%)"},
+                {"value": 39268, "name": "Zona 5 39K (18,1%)"},
+                {"value": 14663, "name": "Zona 6 14K (6,8%)"},
+                {"value": 8707, "name": "Zona 7 8K (4%)"},
+                {"value": 307, "name": "Zona 8 0,3K (0,1%)"},
+                {"value": 20531, "name": "Zona 9 20K (9,5%)"},
             ],
         }
     ],
@@ -247,6 +221,33 @@ option = {
 st_echarts(
     options=option, height="600px",
 )
+st.write('Número de votos válidos a la Alcaldía manteniendo crecimiento promedio en los votos: ', meta2023)
+st.write('Número de votos válidos necesarios para ganar la Alcaldía con participación del 30% de los votos: ', meta2023*0.3)
+st.write('Número de votos válidos necesarios para ganar la Alcaldía con participación del 33% de los votos: ', meta2023*0.33)
+st.write('Número de votos válidos necesarios para ganar la Alcaldía con participación del 36% de los votos: ', meta2023*0.36)
+st.write('Número de votos válidos necesarios para ganar la Alcaldía con participación del 39% de los votos: ', meta2023*0.39)
+
+
+st.header("3. Requisitos para ganar")
+st.write('Ritmo de votación por hora requerido')
+option = {
+    "xAxis": {
+        "type": "category",
+        "data": ["9am", "10am", "11am", "12md", "1pm", "2pm", "4pm"],
+    },
+    "yAxis": {"type": "value"},
+    "series": [{"data": [meta2023*0.1, meta2023*0.2, meta2023*0.35, meta2023*0.5, meta2023*0.75, meta2023*0.9, meta2023], "type": "line"}],
+}
+st_echarts(
+    options=option, height="400px",
+)
+st.write('El ritmo de votos requeridos por minuto es de: ', meta2023/480)
+st.write('El ritmo de votos requeridos por hora es de: ', meta2023/8)    
+
+
+st.write('Ritmo de votación por zonas requerido')
+
+
 
 st.write('Ritmo de votación por generos requerido')
 st.header("Votos requeridos por género para ganar Alcaldía 2023")
