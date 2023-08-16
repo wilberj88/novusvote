@@ -559,7 +559,7 @@ zona_1 = pd.DataFrame({
 }, dtype=str)
 
 
-st.write('Georreferenciación por Puestos de Votación Zona 1 y 2 - Con mapas Folium')
+st.write('Georreferenciación por Puestos de Votación Zona 1, 2, 3 y 4. Pendientes: 5-6-7-8-9')
 # center on Liberty Bell, add marker
 m = folium.Map(location=[10.4735, -73.2486], zoom_start=13)
 #zona1
@@ -596,22 +596,36 @@ folium.Marker(
 ).add_to(m)
 #zona3
 folium.Marker(
-    [10.44578, -73.25128], popup="Z3 PV1 PV13 CON. Milciades Cantillo", tooltip="Z3 PV1 PV13 CON. Milciades Cantillo", color='#3186cc'
+    [10.44578, -73.25128], popup="Z3 PV1 PV13 CON. Milciades Cantillo", tooltip="Z3 PV1 PV13 CON. Milciades Cantillo", color='green'
 ).add_to(m)
 folium.Marker(
-    [10.44950, -73.25075], popup="Z3 PV2 PV14 CON. Alfonso Araujo Cotes", tooltip="Z3 PV2 PV14 CON. Alfonso Araujo Cotes", color='#3186cc'
+    [10.44950, -73.25075], popup="Z3 PV2 PV14 CON. Alfonso Araujo Cotes", tooltip="Z3 PV2 PV14 CON. Alfonso Araujo Cotes", color='green'
 ).add_to(m)
 folium.Marker(
-    [10.45131, -73.25711], popup="Z3 PV3 PV15 INS. TEC. Enrique Pupo", tooltip="Z3 PV3 PV15 INS. TEC. Enrique Pupo", color='#3186cc'
+    [10.45131, -73.25711], popup="Z3 PV3 PV15 INS. TEC. Enrique Pupo", tooltip="Z3 PV3 PV15 INS. TEC. Enrique Pupo", color='green'
 ).add_to(m)
 folium.Marker(
-    [10.45714, -73.25153], popup="Z3 PV4 PV16 I.E. Rafael Valle Meza", tooltip="Z3 PV4 PV16 I.E. Rafael Valle Meza", color='#3186cc'
+    [10.45714, -73.25153], popup="Z3 PV4 PV16 I.E. Rafael Valle Meza", tooltip="Z3 PV4 PV16 I.E. Rafael Valle Meza", color='green'
 ).add_to(m)
 folium.Marker(
-    [10.43650, -73.25356], popup="Z3 PV5 PV17 I.E. Joaquin Ochoa Mestre", tooltip="Z3 PV5 PV17 I.E. Joaquin Ochoa Mestre", color='#3186cc'
+    [10.43650, -73.25356], popup="Z3 PV5 PV17 I.E. Joaquin Ochoa Mestre", tooltip="Z3 PV5 PV17 I.E. Joaquin Ochoa Mestre", color='green'
 ).add_to(m)
 #zona4
-
+folium.Marker(
+    [10.45358, -73.26678], popup="Z4 PV1 PV20 COL Jose Eugenio Martinez 10K", tooltip="Z4 PV1 PV20 COL Jose Eugenio Martinez 10K", color='red'
+).add_to(m)
+folium.Marker(
+    [10.45892, -73.25958], popup="Z4 PV2 PV21 COL Nacionalizado UPAR 8K", tooltip="Z4 PV2 PV21 COL Nacionalizado UPAR 8K", color='red'
+).add_to(m)
+folium.Marker(
+    [10.46157, -73.26789], popup="Z4 PV3 PV22 INS TEC Villa Corelca 4K", tooltip="Z4 PV3 PV22 INS TEC Villa Corelca 4K", color='red'
+).add_to(m)
+folium.Marker(
+    [10.46661, -73.25814], popup="Z4 PV4 PV23 Escuela Mixta No 4 5K", tooltip="Z4 PV4 PV23 Escuela Mixta No 4 5K", color='red'
+).add_to(m)
+folium.Marker(
+    [10.44381, -73.27533], popup="Z4 PV5 PV24 I.E Consuelo Araujo Noguera 6K", tooltip="Z4 PV5 PV24 I.E Consuelo Araujo Noguera 6K", color='red'
+).add_to(m)
 st_data = st_folium(m, width=725)
 
 
