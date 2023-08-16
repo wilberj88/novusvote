@@ -116,7 +116,7 @@ options = {
 st_echarts(options=options, height="500px")
 
 
-st.title("Top 3 entre 2015 y 2019")
+st.header("Top 3 entre 2015 y 2019")
 def render_basic_radar():
     option = {
         "title": {"text": "Zonas Alcaldía Valledupar 🗳️"},
@@ -183,8 +183,10 @@ st.write('3) De las 7 zonas de la ciudad, las 5 primeras arrojan el 80% de la vo
 
 
 st.write('---')
-st.header("2. Proyecciones a octubre 2023")
+st.title("2. Proyecciones a octubre 2023")
 meta2023 = 215275
+st.write('Número de votos válidos a la Alcaldía manteniendo crecimiento promedio en los votos: ', meta2023)
+st.header('Votación por Zonas: el caudal a cautivar')
 option = {
     "legend": {"top": "bottom"},
     "toolbox": {
@@ -221,7 +223,6 @@ option = {
 st_echarts(
     options=option, height="600px",
 )
-st.write('Número de votos válidos a la Alcaldía manteniendo crecimiento promedio en los votos: ', meta2023)
 st.write('Número de votos válidos necesarios para ganar la Alcaldía con participación del 30% de los votos: ', meta2023*0.3)
 st.write('Número de votos válidos necesarios para ganar la Alcaldía con participación del 33% de los votos: ', meta2023*0.33)
 st.write('Número de votos válidos necesarios para ganar la Alcaldía con participación del 36% de los votos: ', meta2023*0.36)
