@@ -23,7 +23,8 @@ st.set_page_config(layout="wide", page_title="Novus Vote 🗳️ Valledupar PRE 
 #TITULO
 st.title('Novus Vote 🗳️ - Alcaldía Valledupar 2023')
 
-st.title('PRE CAMPAÑA - Históricos, Proyecciones y Requisitos')
+st.title('Central de PRE CAMPAÑA')
+st.subheader('_Votación_ :red[Histórica 2015-2019], :yellow[Proyecciones 2023] y :green[Requisitos para Ganar] 🏆')
 st.header("1. Históricos: Datos procesados 🛠️")
 #columnas_to_keep = ["Nombre", "Votos Válidos 2019", "Latitud", "Longitud"]
 data = pd.read_csv('pages/datos/Votos Válidos procesados Valledupar 2015-2019 - Puro Puestos.csv')
@@ -240,7 +241,7 @@ st_echarts(
     options=option, height="400px",
 )
 
-st.header("Votos requeridos por zonas para ganar Alcaldía 2023 (18,5% crecimiento votos y 39% participación para victoria)")
+st.header("Proyección con Escenario Histórico Retador (18,5% crecimiento votos y 39% participación para victoria):")
 zonas = ["Zona 1", "Zona 2", "Zona 3", "Zona 4", "Zona 5", "Zona 6", "Zona 7", "Zona 8", "Zona 9"]
 n_zonas = len(zonas)
 
@@ -278,7 +279,7 @@ meta_zona_8 = 110
 meta_zona_9 = 7338
 st.markdown(
   """
-  🗳️ Meta de votación por los 9 territorios:
+  🗳️ Votación requerida ponderada por zonas:
   - Zona 1: _    10290 🗳️
   - Zona 2: _    11986 🗳️
   - Zona 3: _    11368 🗳️
@@ -389,7 +390,8 @@ st_echarts(options=options, height="400px")
 
 
 st.write('Ritmo de votación por generos requerido')
-st.header("Votos requeridos por género para ganar Alcaldía Valledupar 2023")
+st.header("Votos requeridos por género para ganar Alcaldía Valledupar 2023 en escenario histórico")
+st.subheader("Suponiendo crecimiento electoral del 18% y participación de victoria del 39%")
 st.write("Mujeres: 43.378 ; Hombres: 41.180")
 option = {
     "legend": {},
@@ -438,13 +440,6 @@ st.write('Ritmo de votación por edades requerido')
 st.write('---')
 
 
-st.write('---')
-
-
-st.write('---')
-
-
-st.write('---')
 
 st.write('---')
 
