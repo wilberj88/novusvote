@@ -668,7 +668,7 @@ data = [
         ("Innovación", "406"),
         ("Seguridad", "906"),
         ("Crimen", "386"),
-        ("ServiciosPúblicos", "985"),
+        ("Servicios", "985"),
         ("Microtráfico", "375"),
         ("Deportes", "355"),
         ("Futbol", "355"),
