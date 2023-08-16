@@ -464,6 +464,9 @@ st.write('Georreferenciación por Puestos de Votación Zona 1 - Con mapas Folium
 m = folium.Map(location=[10.4735, -73.2486], zoom_start=13)
 
 folium.Marker(
+    [10.47358, -73.248639], popup="PV1 COL Nacional Loperena", tooltip="PV1 COL Nacional Loperena"
+).add_to(m)
+folium.Marker(
     [10.474139, -73.25125], popup="PV2 ESC Bellas Artes", tooltip="PV2 ESC Bellas Artes"
 ).add_to(m)
 folium.Marker(
@@ -476,7 +479,7 @@ folium.Marker(
     [10.469667, -73.238056], popup="PV5 COL SantoDomingo", tooltip="PV5 COL SantoDomingo"
 ).add_to(m)
 folium.Marker(
-    [10.474139, -73.25125], popup="PV6 COL Parroquial El Carmelo", tooltip="PV6 COL Parroquial El Carmelo"
+    [10.474, -73.251], popup="PV6 COL Parroquial El Carmelo (Nuevo 2023)", tooltip="PV6 COL Parroquial El Carmelo"
 ).add_to(m)
 
 st_data = st_folium(m, width=725)
