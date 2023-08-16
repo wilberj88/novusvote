@@ -602,5 +602,90 @@ st_data = st_folium(m, width=725)
 st.header('2. Equipos por Puestos de Votación 🗳️')
 st.subheader('Territoriales + Género + Edad')
 
+st.title("Palabras clave por Barrio")
+data = [
+    {"name": name, "value": value}
+    for name, value in [
+        ("Trabajo", "999"),
+        ("Salud", "888"),
+        ("Educación", "777"),
+        ("Vivienda", "688"),
+        ("Alimentación", "588"),
+        ("Negocios", "516"),
+        ("Carreteras", "515"),
+        ("Puentes", "483"),
+        ("Hospitales", "462"),
+        ("Ciclovías", "449"),
+        ("Talento", "429"),
+        ("Tecnología", "407"),
+        ("Innovación", "406"),
+        ("Seguridad", "906"),
+        ("Crimen", "386"),
+        ("Secuestros", "985"),
+        ("Microtráfico", "375"),
+        ("Deportes", "355"),
+        ("Futbol", "355"),
+        ("Baloncesto", "335"),
+        ("Microfutbol", "324"),
+    ]
+]
+wordcloud_option = {"series": [{"type": "wordCloud", "data": data}]}
+st_echarts(wordcloud_option)
+st.write('---')
 st.header('3. Tareas para Ganar 🏆')
-st.subheader('Tanquear el Funnel de Conversión Votante')
+st.subheader('Tanquear el Funnel de Conversión Votante por Puesto de Votación')
+
+option = {
+    "title": {"text": "Eficacia de la Campaña", "subtext": "Porcentaje Conversión(%)"},
+    "tooltip": {"trigger": "item", "formatter": "{a} <br/>{b} : {c}%"},
+    "toolbox": {
+        "feature": {
+            "dataView": {"readOnly": False},
+            "restore": {},
+            "saveAsImage": {},
+        }
+    },
+    "legend": {"data": ["Contactados", "Interesados", "Persuadidos", "Comprometidos", "Votantes"]},
+    "series": [
+        {
+            "name": "Contactados",
+            "type": "funnel",
+            "left": "10%",
+            "width": "80%",
+            "label": {"formatter": "{b}%"},
+            "labelLine": {"show": False},
+            "itemStyle": {"opacity": 0.7},
+            "emphasis": {
+                "label": {"position": "inside", "formatter": "{b}预期: {c}%"}
+            },
+            "data": [
+                {"value": 60, "name": "Persuadidos"},
+                {"value": 40, "name": "Comprometidos"},
+                {"value": 20, "name": "Votantes"},
+                {"value": 80, "name": "Interesados"},
+                {"value": 100, "name": "Contactados"},
+            ],
+        },
+        {
+            "name": "Margen",
+            "type": "funnel",
+            "left": "10%",
+            "width": "80%",
+            "maxSize": "80%",
+            "label": {"position": "inside", "formatter": "{c}%", "color": "#fff"},
+            "itemStyle": {"opacity": 0.5, "borderColor": "#fff", "borderWidth": 2},
+            "emphasis": {
+                "label": {"position": "inside", "formatter": "{b}实际: {c}%"}
+            },
+            "data": [
+                {"value": 30, "name": "Persuadidos"},
+                {"value": 10, "name": "Comprometidos"},
+                {"value": 5, "name": "Votantes"},
+                {"value": 50, "name": "Interesados"},
+                {"value": 80, "name": "Contactados"},
+            ],
+            "z": 100,
+        },
+    ],
+}
+st_echarts(option, height="500px")    
