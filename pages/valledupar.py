@@ -433,12 +433,12 @@ option = {
 st_echarts(option, height="500px", key="echarts")
 
 st.write('Ritmo de votación por edades requerido')
-meta_18_25 = meta2023*0,16
-meta_25_30 = meta2023*0,14
-meta_30_35 = meta2023*0,13
-meta_35_40 = meta2023*0,12
-meta_40_45 = meta2023*0,11
-meta_45_50 = meta2023*0,10
+meta_18_25 = meta2023*0.16
+meta_25_30 = meta2023*0.14
+meta_30_35 = meta2023*0.13
+meta_35_40 = meta2023*0.12
+meta_40_45 = meta2023*0.11
+meta_45_50 = meta2023*0.10
 meta_50_55 = meta2023*0.09
 meta_55_60 = meta2023*0.08
 meta_mas_60 = meta2023*0.07
