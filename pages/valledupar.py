@@ -459,10 +459,10 @@ zona_1 = pd.DataFrame({
 }, dtype=str)
 
 
-st.write('Georreferenciación por Puestos de Votación Zona 1 - Con mapas Folium')
+st.write('Georreferenciación por Puestos de Votación Zona 1 y 2 - Con mapas Folium')
 # center on Liberty Bell, add marker
 m = folium.Map(location=[10.4735, -73.2486], zoom_start=13)
-
+#zona1
 folium.Marker(
     [10.47358, -73.248639], popup="PV1 COL Nacional Loperena", tooltip="PV1 COL Nacional Loperena"
 ).add_to(m)
@@ -479,7 +479,20 @@ folium.Marker(
     [10.469667, -73.238056], popup="PV5 COL SantoDomingo", tooltip="PV5 COL SantoDomingo"
 ).add_to(m)
 folium.Marker(
-    [10.474, -73.251], popup="PV6 COL Parroquial El Carmelo (Nuevo 2023)", tooltip="PV6 COL Parroquial El Carmelo"
+    [10.474130, -73.251115], popup="PV6 COL Parroquial El Carmelo (Nuevo 2023)", tooltip="PV6 COL Parroquial El Carmelo"
+).add_to(m)
+#zona2
+folium.Marker(
+    [10.46006, -73.22889], popup="Z2 PV1 PV7 COL Francisco Molina Sanchez", tooltip="Z2 PV1 PV7 COL Francisco Molina Sanchez"
+).add_to(m)
+folium.Marker(
+    [10.46322, -73.23575], popup="Z2 PV2 PV8 I.E. Manuel Germán Cuello", tooltip="Z2 PV1 PV8 I.E. Manuel Germán Cuello"
+).add_to(m)
+folium.Marker(
+    [10.45389, -73.24211], popup="Z2 PV3 PV9 Inst. Educ. Leonidas Acuña", tooltip="Z2 PV3 PV9 Inst. Educ. Leonidas Acuña"
+).add_to(m)
+folium.Marker(
+    [10.45100, -73.23672], popup="Z2 PV4 PV10 UNV. Abierta y a Distancia", tooltip="Z2 PV4 PV10 UNV. Abierta y a Distancia"
 ).add_to(m)
 
 st_data = st_folium(m, width=725)
