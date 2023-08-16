@@ -626,6 +626,22 @@ folium.Marker(
 folium.Marker(
     [10.44381, -73.27533], popup="Z4 PV5 PV24 I.E Consuelo Araujo Noguera 6K", tooltip="Z4 PV5 PV24 I.E Consuelo Araujo Noguera 6K", color='red'
 ).add_to(m)
+#zona5
+folium.Marker(
+    [10.47242, -73.26011], popup="Z5 PV1 PV26 COL. Nacionalizado Alfonso López 7K", tooltip="Z5 PV1 PV26 COL. Nacionalizado Alfonso López 7K", color='red'
+).add_to(m)
+folium.Marker(
+    [10.47242, -73.26011], popup="Z5 PV2 PV27 IE Loperena Garupal 8K", tooltip="Z5 PV2 PV27 IE Loperena Garupal 8K", color='red'
+).add_to(m)
+folium.Marker(
+    [10.47928, -73.27719], popup="Z5 PV3 PV28 IE Técnico La Esperanza 9K", tooltip="Z5 PV3 PV28 IE Técnico La Esperanza 9K", color='red'
+).add_to(m)
+folium.Marker(
+    [10.47842, -73.29089], popup="Z5 PV4 PV29 IE Bello Horizonte 4K", tooltip="Z5 PV4 PV29 IE Bello Horizonte 4K", color='red'
+).add_to(m)
+folium.Marker(
+    [10.48606, -73.28081], popup="Z5 PV5 PV30 COL COMFACESAR 7K", tooltip="Z5 PV5 PV30 COL COMFACESAR 7K", color='red'
+).add_to(m)
 st_data = st_folium(m, width=725)
 
 
@@ -637,7 +653,7 @@ st.title("Palabras clave por Barrio")
 data = [
     {"name": name, "value": value}
     for name, value in [
-        ("Trabajo", "999"),
+        ("TarifaEnergia", "999"),
         ("Salud", "888"),
         ("Educación", "777"),
         ("Vivienda", "688"),
@@ -652,7 +668,7 @@ data = [
         ("Innovación", "406"),
         ("Seguridad", "906"),
         ("Crimen", "386"),
-        ("Secuestros", "985"),
+        ("ServiciosPúblicos", "985"),
         ("Microtráfico", "375"),
         ("Deportes", "355"),
         ("Futbol", "355"),
