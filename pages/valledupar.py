@@ -559,7 +559,7 @@ zona_1 = pd.DataFrame({
 }, dtype=str)
 
 
-st.write('Georreferenciación por Puestos de Votación Zona 1, 2, 3 y 4. Pendientes: 5-6-7-8-9')
+st.write('Georreferenciación por Puestos de Votación Zona 1, 2, 3, 4 y 5. Pendientes: 6-7-8-9')
 # center on Liberty Bell, add marker
 m = folium.Map(location=[10.4735, -73.2486], zoom_start=13)
 #zona1
