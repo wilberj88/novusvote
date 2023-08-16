@@ -549,7 +549,7 @@ st.subheader(':red[Puestos de Votación (PdV)], :blue[Equipos por PdV] y :green[
 st.write('---')
 
 
-st.header('1. Puestos de Votación 🗳️')
+st.header('1. Puestos de Votación 🗺️')
 
 zona_1 = pd.DataFrame({
    'lon':[10.473583, 10.474139, 10.478472, 10.468500, 10.469667, 10.474139],
@@ -599,3 +599,8 @@ st_data = st_folium(m, width=725)
 
 
 
+st.header('2. Equipos por Puestos de Votación 🗳️')
+st.subheader('Territoriales + Género + Edad')
+
+st.header('3. Tareas para Ganar 🏆')
+st.subheader('Tanquear el Funnel de Conversión Votante')
