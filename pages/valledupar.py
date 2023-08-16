@@ -240,19 +240,135 @@ st_echarts(
     options=option, height="400px",
 )
 
-st.header("3. Requisitos para ganar")
-st.write('Ritmo de votación por hora requerido')
-
-st.write('El ritmo de votos requeridos por minuto es de: ', meta2023/480)
-st.write('El ritmo de votos requeridos por hora es de: ', meta2023/8)    
 
 
-st.write('Ritmo de votación por zonas requerido')
-
+st.title("3. Requisitos para ganar al 36% de participación: 77.499 🗳️")
+meta2023 = validos2023*0.36
+st.write('El ritmo de votos requeridos por la campaña por hora es de: ', meta2023/8)  
+st.write('El ritmo de votos requeridos por la campaña por minuto es de: ', meta2023/480)
+meta_zona_1 = 10290
+meta_zona_2 = 11986
+meta_zona_3 = 11368
+meta_zona_4 = 14018
+meta_zona_5 = 14036
+meta_zona_6 = 5241
+meta_zona_7 = 3112
+meta_zona_8 = 110
+meta_zona_9 = 7338
+st.markdown(
+  """
+  🗳️ Meta de votación por los 9 territorios:
+  - Zona 1: _    10290 🗳️
+  - Zona 2: _    11986 🗳️
+  - Zona 3: _    11368 🗳️
+  - Zona 4: _    14018 🗳️
+  - Zona 5: _    14036 🗳️
+  - Zona 6: _    5241 🗳️
+  - Zona 7: _    3112 🗳️
+  - Zona 8: _    110 🗳️
+  - Zona 9: _    7338 🗳️
+  
+  Todo lo anterior con el siguiente ritmo de votación hora a hora 🕰:
+  """
+)
+st.header('Votos requeridos por zonas para ganar Alcaldía Valledupar 2023')
+options = {
+            "title": {"text": "Votos x Zonas"},
+            "tooltip": {
+                "trigger": "axis",
+                "axisPointer": {"type": "cross", "label": {"backgroundColor": "#6a7985"}},
+            },
+            "legend": {"data": ["Zona_9", "Zona_8", "Zona_7", "Zona_6", "Zona_5", "Zona_4", "Zona_3", "Zona_2", "Zona_1"]},
+            "toolbox": {"feature": {"saveAsImage": {}}},
+            "grid": {"left": "3%", "right": "4%", "bottom": "3%", "containLabel": True},
+            "xAxis": [
+                {
+                    "type": "category",
+                    "boundaryGap": False,
+                    "data": ["10am", "11am", "12md", "1pm", "2pm", "3pm", "4pm"],
+                }
+            ],
+            "yAxis": [{"type": "value"}],
+            "series": [
+                {
+                    "name": "Zona_9",
+                    "type": "line",
+                    "stack": "总量",
+                    "areaStyle": {},
+                    "emphasis": {"focus": "series"},
+                    "data": [meta_zona_9*0.1, meta_zona_9*0.2, meta_zona_9*0.35, meta_zona_9*0.45, meta_zona_9*0.5, meta_zona_9*0.75, meta_zona_9],
+                },
+                {
+                    "name": "Zona_8",
+                    "type": "line",
+                    "stack": "总量",
+                    "areaStyle": {},
+                    "emphasis": {"focus": "series"},
+                    "data": [meta_zona_8*0.1, meta_zona_8*0.2, meta_zona_8*0.35, meta_zona_8*0.45, meta_zona_8*0.5, meta_zona_8*0.75, meta_zona_8],
+                },
+                {
+                    "name": "Zona_7",
+                    "type": "line",
+                    "stack": "总量",
+                    "areaStyle": {},
+                    "emphasis": {"focus": "series"},
+                    "data": [meta_zona_7*0.1, meta_zona_7*0.2, meta_zona_7*0.35, meta_zona_7*0.45, meta_zona_7*0.5, meta_zona_7*0.75, meta_zona_7],
+                },
+                  {
+                    "name": "Zona_6",
+                    "type": "line",
+                    "stack": "总量",
+                    "areaStyle": {},
+                    "emphasis": {"focus": "series"},
+                    "data": [meta_zona_6*0.1, meta_zona_6*0.2, meta_zona_6*0.35, meta_zona_6*0.45, meta_zona_6*0.5, meta_zona_6*0.75, meta_zona_6],
+                },
+                 {
+                    "name": "Zona_5",
+                    "type": "line",
+                    "stack": "总量",
+                    "areaStyle": {},
+                    "emphasis": {"focus": "series"},
+                    "data": [meta_zona_5*0.1, meta_zona_5*0.2, meta_zona_5*0.35, meta_zona_5*0.45, meta_zona_5*0.5, meta_zona_5*0.75, meta_zona_5],
+                },
+                  {
+                    "name": "Zona_4",
+                    "type": "line",
+                    "stack": "总量",
+                    "areaStyle": {},
+                    "emphasis": {"focus": "series"},
+                    "data": [meta_zona_4*0.1, meta_zona_4*0.2, meta_zona_4*0.35, meta_zona_4*0.45, meta_zona_4*0.5, meta_zona_4*0.75, meta_zona_4],
+                },
+                  {
+                    "name": "Zona_3",
+                    "type": "line",
+                    "stack": "总量",
+                    "areaStyle": {},
+                    "emphasis": {"focus": "series"},
+                    "data": [meta_zona_3*0.1, meta_zona_3*0.2, meta_zona_3*0.35, meta_zona_3*0.45, meta_zona_3*0.5, meta_zona_3*0.75, meta_zona_3],
+                },
+                  {
+                    "name": "Zona_2",
+                    "type": "line",
+                    "stack": "总量",
+                    "areaStyle": {},
+                    "emphasis": {"focus": "series"},
+                    "data": [meta_zona_2*0.1, meta_zona_2*0.2, meta_zona_2*0.35, meta_zona_2*0.45, meta_zona_2*0.5, meta_zona_2*0.75, meta_zona_2],
+                },
+                  {
+                    "name": "Zona_1",
+                    "type": "line",
+                    "stack": "总量",
+                    "areaStyle": {},
+                    "emphasis": {"focus": "series"},
+                    "data": [meta_zona_1*0.1, meta_zona_1*0.2, meta_zona_1*0.35, meta_zona_1*0.45, meta_zona_1*0.5, meta_zona_1*0.75, meta_zona_1],
+                },
+            ],
+        }
+        st_echarts(options=options, height="400px") 
 
 
 st.write('Ritmo de votación por generos requerido')
-st.header("Votos requeridos por género para ganar Alcaldía 2023")
+st.header("Votos requeridos por género para ganar Alcaldía Valledupar 2023")
 st.write("Mujeres: 43.378 ; Hombres: 41.180")
 option = {
     "legend": {},
