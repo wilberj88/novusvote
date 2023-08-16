@@ -184,8 +184,8 @@ st.write('3) De las 7 zonas de la ciudad, las 5 primeras arrojan el 80% de la vo
 
 st.write('---')
 st.title("2. Proyecciones a octubre 2023")
-meta2023 = 215275
-st.write('Número de votos válidos a la Alcaldía manteniendo crecimiento promedio en los votos: ', meta2023)
+validos2023 = 215275
+st.write('Número de votos válidos a la Alcaldía manteniendo crecimiento promedio en los votos: ', validos2023)
 st.header('Votación por Zonas: el caudal a cautivar')
 option = {
     "legend": {"top": "bottom"},
@@ -223,25 +223,26 @@ option = {
 st_echarts(
     options=option, height="600px",
 )
-st.write('Número de votos válidos necesarios para ganar la Alcaldía con participación del 30% de los votos: ', meta2023*0.3)
-st.write('Número de votos válidos necesarios para ganar la Alcaldía con participación del 33% de los votos: ', meta2023*0.33)
-st.write('Número de votos válidos necesarios para ganar la Alcaldía con participación del 36% de los votos: ', meta2023*0.36)
-st.write('Número de votos válidos necesarios para ganar la Alcaldía con participación del 39% de los votos: ', meta2023*0.39)
-
-
-st.header("3. Requisitos para ganar")
-st.write('Ritmo de votación por hora requerido')
+st.write('Número de votos válidos necesarios para ganar la Alcaldía con participación del 30% de los votos: ', validos2023*0.3)
+st.write('Número de votos válidos necesarios para ganar la Alcaldía con participación del 33% de los votos: ', validos2023*0.33)
+st.write('Número de votos válidos necesarios para ganar la Alcaldía con participación del 36% de los votos: ', validos2023*0.36)
+st.write('Número de votos válidos necesarios para ganar la Alcaldía con participación del 39% de los votos: ', validos2023*0.39)
+st.write('Proyección volumen de votación válida a la alcaldía por horas el domingo 29 de octubre:')
 option = {
     "xAxis": {
         "type": "category",
         "data": ["9am", "10am", "11am", "12md", "1pm", "2pm", "4pm"],
     },
     "yAxis": {"type": "value"},
-    "series": [{"data": [meta2023*0.1, meta2023*0.2, meta2023*0.35, meta2023*0.5, meta2023*0.75, meta2023*0.9, meta2023], "type": "line"}],
+    "series": [{"data": [validos2023*0.1, validos2023*0.2, validos2023*0.35, validos2023*0.5, validos2023*0.75, validos2023*0.9, validos2023], "type": "line"}],
 }
 st_echarts(
     options=option, height="400px",
 )
+
+st.header("3. Requisitos para ganar")
+st.write('Ritmo de votación por hora requerido')
+
 st.write('El ritmo de votos requeridos por minuto es de: ', meta2023/480)
 st.write('El ritmo de votos requeridos por hora es de: ', meta2023/8)    
 
