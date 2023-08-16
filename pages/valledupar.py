@@ -438,13 +438,15 @@ st.write('Ritmo de votación por edades requerido')
 
 
 st.write('---')
+st.title('Central de CAMPAÑA')
+st.subheader(':red[Puestos de Votación (PdV)], :blue[Equipos por PdV] y :green[Tareas para Ganar] 🏆')
 
 
 
 st.write('---')
 
 
-st.header('Zona 1 - Puestos de Votación 🗳️')
+st.header('1. Puestos de Votación 🗳️')
 
 zona_1 = pd.DataFrame({
    'lon':[10.473583, 10.474139, 10.478472, 10.468500, 10.469667, 10.474139],
