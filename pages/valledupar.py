@@ -653,7 +653,7 @@ st.title("Palabras clave por Barrio")
 data = [
     {"name": name, "value": value}
     for name, value in [
-        ("TarifaEnergia", "999"),
+        ("Energia", "999"),
         ("Salud", "888"),
         ("Educación", "777"),
         ("Vivienda", "688"),
