@@ -594,6 +594,23 @@ folium.Marker(
 folium.Marker(
     [10.45100, -73.23672], popup="Z2 PV4 PV10 UNV. Abierta y a Distancia", tooltip="Z2 PV4 PV10 UNV. Abierta y a Distancia"
 ).add_to(m)
+#zona3
+folium.Marker(
+    [10.44578, -73.25128], popup="Z3 PV1 PV13 CON. Milciades Cantillo", tooltip="Z3 PV1 PV13 CON. Milciades Cantillo", color='#3186cc'
+).add_to(m)
+folium.Marker(
+    [10.44950, -73.25075], popup="Z3 PV2 PV14 CON. Alfonso Araujo Cotes", tooltip="Z3 PV2 PV14 CON. Alfonso Araujo Cotes", color='#3186cc'
+).add_to(m)
+folium.Marker(
+    [10.45131, -73.25711], popup="Z3 PV3 PV15 INS. TEC. Enrique Pupo", tooltip="Z3 PV3 PV15 INS. TEC. Enrique Pupo", color='#3186cc'
+).add_to(m)
+folium.Marker(
+    [10.45714, -73.25153], popup="Z3 PV4 PV16 I.E. Rafael Valle Meza", tooltip="Z3 PV4 PV16 I.E. Rafael Valle Meza", color='#3186cc'
+).add_to(m)
+folium.Marker(
+    [10.43650, -73.25356], popup="Z3 PV5 PV17 I.E. Joaquin Ochoa Mestre", tooltip="Z3 PV5 PV17 I.E. Joaquin Ochoa Mestre", color='#3186cc'
+).add_to(m)
+#zona4
 
 st_data = st_folium(m, width=725)
 
