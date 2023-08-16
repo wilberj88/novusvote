@@ -737,6 +737,9 @@ option = {
 }
 st_echarts(option, height="500px")    
 
+current_time = time.ctime()
+st.subheader('Cumplimiento de tareas por equipos con corte a: ', current_time)
+
 
 col1, col2, col3 = st.columns(3)
 with col1:
@@ -753,7 +756,7 @@ with col1:
                 },
                 "progress": {"show": "true", "width": 10},
                 "detail": {"valueAnimation": "true", "formatter": "{value}"},
-                "data": [{"value": 10, "name": "EquipoTerreno"}],
+                "data": [{"value": 10, "name": "Territoriales"}],
             }
         ],
     }
@@ -774,7 +777,7 @@ with col2:
                 },
                 "progress": {"show": "true", "width": 10},
                 "detail": {"valueAnimation": "true", "formatter": "{value}"},
-                "data": [{"value": 15, "name": "EquipoGénero"}],
+                "data": [{"value": 15, "name": "Género"}],
             }
         ],
     }
@@ -795,7 +798,7 @@ with col3:
                 },
                 "progress": {"show": "true", "width": 10},
                 "detail": {"valueAnimation": "true", "formatter": "{value}"},
-                "data": [{"value": 20, "name": "EquipoEdades"}],
+                "data": [{"value": 20, "name": "Edades"}],
             }
         ],
     }
