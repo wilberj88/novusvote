@@ -240,6 +240,27 @@ st_echarts(
     options=option, height="400px",
 )
 
+st.header("Votos requeridos por zonas para ganar Alcaldía 2023 (18,5% crecimiento votos y 39% participación para victoria)")
+zonas = ["Zona 1", "Zona 2", "Zona 3", "Zona 4", "Zona 5", "Zona 6", "Zona 7", "Zona 8", "Zona 9"]
+n_zonas = len(zonas)
+
+women_salary = [11228, 13078, 12404, 15294, 15314, 5719, 3396, 120, 8007]
+men_salary = [13819, 16095, 15267, 18824, 18848, 7038, 4179, 147, 9855]
+
+df = pd.DataFrame(dict(zonas=zonas*2, salary=men_salary + women_salary,
+                       escenario=["Alto"]*n_zonas + ["Bajo"]*n_zonas))
+
+# Use column names of df for the different parameters x, y, color, ...
+fig = px.scatter(df, x="salary", y="zonas", color="escenario",
+                 title="Entre el 39,7% y el 48,5%",
+                 labels={"salary":"Votos válidos mínimos para ser Alcalde Valledupar en 2023"} # customize axis label
+                )
+st.plotly_chart(fig, theme="streamlit")
+
+st.write("De modo que se requerirían 84.000 votos. Ahora bien, si el crecimiento de los votos válidos no fuera del 18% sino del 12%, la votación necesaria sería de 80.000 votos")
+st.write("Un escenario más competido sería en el que para ganar se requiera el 33% de los votos válidos, para lo cual se requerirían 71.550 votos asumiendo crecimiento promedio de 18,85% de los votos válidos")
+st.write("Pero si los votos válidos no crecen al 18,85% sino al 12% y la participación pa ganar fuese del 33%, los votos mínimos serían de 67429")
+st.write("Sin embargo, la migración venezolana permite intuir que el crecimiento de los votos válidos no se desacelerará con fuerza e incluso se puede mantener el ritmo promedio del 18,8%")
 
 
 st.title("3. Requisitos para ganar al 36% de participación: 77.499 🗳️")
@@ -413,44 +434,17 @@ st.write('Ritmo de votación por edades requerido')
 
 
 
-st.write("De modo que se requerirían 84.000 votos. Ahora bien, si el crecimiento de los votos válidos no fuera del 18% sino del 12%, la votación necesaria sería de 80.000 votos")
-st.write("Un escenario más competido sería en el que para ganar se requiera el 33% de los votos válidos, para lo cual se requerirían 71.550 votos asumiendo crecimiento promedio de 18,85% de los votos válidos")
-st.write("Pero si los votos válidos no crecen al 18,85% sino al 12% y la participación pa ganar fuese del 33%, los votos mínimos serían de 67429")
-st.write("Sin embargo, la migración venezolana permite intuir que el crecimiento de los votos válidos no se desacelerará con fuerza e incluso se puede mantener el ritmo promedio del 18,8%")
-st.write('---')
-st.header("Votos requeridos por zonas para ganar Alcaldía 2023 (18,5% crecimiento votos y 39% participación para victoria)")
-zonas = ["Zona 1", "Zona 2", "Zona 3", "Zona 4", "Zona 5", "Zona 6", "Zona 7", "Zona 8", "Zona 9"]
-n_zonas = len(zonas)
-
-women_salary = [11228, 13078, 12404, 15294, 15314, 5719, 3396, 120, 8007]
-men_salary = [13819, 16095, 15267, 18824, 18848, 7038, 4179, 147, 9855]
-
-df = pd.DataFrame(dict(zonas=zonas*2, salary=men_salary + women_salary,
-                       escenario=["Alto"]*n_zonas + ["Bajo"]*n_zonas))
-
-# Use column names of df for the different parameters x, y, color, ...
-fig = px.scatter(df, x="salary", y="zonas", color="escenario",
-                 title="Entre el 39,7% y el 48,5%",
-                 labels={"salary":"Votos válidos mínimos para ser Alcalde Valledupar en 2023"} # customize axis label
-                )
-st.plotly_chart(fig, theme="streamlit")
 
 st.write('---')
 
 
 st.write('---')
-st.header("Votos requeridos por edades para ganar Alcaldía 2023")
-
-
 
 
 st.write('---')
-st.header('Conclusiones PRE CAMPAÑA - Tareas Campaña')
-meta = 84558
-st.write('Votos mínimos para aspirar a posesionarse Alcalde de Valledupar: entre 67.429 con desaceleración del crecimiento y hasta', meta) 
-st.write('Ritmo de votos mínimos por hora para aspirar a posesionarse Alcalde de Valledupar:', meta/8) 
-st.write('Ritmo de votos mínimos por minuto para aspirar a posesionarse Alcalde de Valledupar:', meta/480) 
-st.write('Importancia de Zonas por Votos: Zona 5 > Zona 4 > Zona 2 > Zona 3 > Zona 1 > Zona 9 > Zona 6 > Zona 7 > Zona 8')
+
+
+st.write('---')
 
 st.write('---')
 
