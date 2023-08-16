@@ -433,6 +433,109 @@ option = {
 st_echarts(option, height="500px", key="echarts")
 
 st.write('Ritmo de votación por edades requerido')
+meta_18_25 = meta2023*0,16
+meta_25_30 = meta2023*0,14
+meta_30_35 = meta2023*0,13
+meta_35_40 = meta2023*0,12
+meta_40_45 = meta2023*0,11
+meta_45_50 = meta2023*0,10
+meta_50_55 = meta2023*0,09
+meta_55_60 = meta2023*0,08
+meta_mas_60 = meta2023*0,07
+options = {
+            "title": {"text": "Votos x Zonas"},
+            "tooltip": {
+                "trigger": "axis",
+                "axisPointer": {"type": "cross", "label": {"backgroundColor": "#6a7985"}},
+            },
+            "legend": {"data": ["18-25años", "25-30años", "30-35años", "35-40años", "40-45años", "45-50años", "50-55años", "55-60", "+60años"]},
+            "toolbox": {"feature": {"saveAsImage": {}}},
+            "grid": {"left": "3%", "right": "4%", "bottom": "3%", "containLabel": True},
+            "xAxis": [
+                {
+                    "type": "category",
+                    "boundaryGap": False,
+                    "data": ["10am", "11am", "12md", "1pm", "2pm", "3pm", "4pm"],
+                }
+            ],
+            "yAxis": [{"type": "value"}],
+            "series": [
+                {
+                    "name": "18-25años",
+                    "type": "line",
+                    "stack": "总量",
+                    "areaStyle": {},
+                    "emphasis": {"focus": "series"},
+                    "data": [meta_18_25*0.1, meta_18_25*0.2, meta_18_25*0.35, meta_18_25*0.45, meta_18_25*0.5, meta_18_25*0.75, meta_18_25],
+                },
+                {
+                    "name": "25-30años",
+                    "type": "line",
+                    "stack": "总量",
+                    "areaStyle": {},
+                    "emphasis": {"focus": "series"},
+                    "data": [meta_25_30*0.1, meta_25_30*0.2, meta_25_30*0.35, meta_25_30*0.45, meta_25_30*0.5, meta_25_30*0.75, meta_25_30],
+                },
+                {
+                    "name": "30-35años",
+                    "type": "line",
+                    "stack": "总量",
+                    "areaStyle": {},
+                    "emphasis": {"focus": "series"},
+                    "data": [meta_30_35*0.1, meta_30_35*0.2, meta_30_35*0.35, meta_30_35*0.45, meta_30_35*0.5, meta_30_35*0.75, meta_30_35],
+                },
+                  {
+                    "name": "35-40años",
+                    "type": "line",
+                    "stack": "总量",
+                    "areaStyle": {},
+                    "emphasis": {"focus": "series"},
+                    "data": [meta_35_40*0.1, meta_35_40*0.2, meta_35_40*0.35, meta_35_40*0.45, meta_35_40*0.5, meta_35_40*0.75, meta_35_40],
+                },
+                 {
+                    "name": "40-45años",
+                    "type": "line",
+                    "stack": "总量",
+                    "areaStyle": {},
+                    "emphasis": {"focus": "series"},
+                    "data": [meta_40_45*0.1, meta_40_45*0.2, meta_40_45*0.35, meta_40_45*0.45, meta_40_45*0.5, meta_40_45*0.75, meta_40_45],
+                },
+                  {
+                    "name": "45-50años",
+                    "type": "line",
+                    "stack": "总量",
+                    "areaStyle": {},
+                    "emphasis": {"focus": "series"},
+                    "data": [meta_45_50*0.1, meta_45_50*0.2, meta_45_50*0.35, meta_45_50*0.45, meta_45_50*0.5, meta_45_50*0.75, meta_45_50],
+                },
+                  {
+                    "name": "50-55años",
+                    "type": "line",
+                    "stack": "总量",
+                    "areaStyle": {},
+                    "emphasis": {"focus": "series"},
+                    "data": [meta_50_55*0.1, meta_50_55*0.2, meta_50_55*0.35, meta_50_55*0.45, meta50_55*0.5, meta_50_55*0.75, meta_50_55],
+                },
+                  {
+                    "name": "55-60años",
+                    "type": "line",
+                    "stack": "总量",
+                    "areaStyle": {},
+                    "emphasis": {"focus": "series"},
+                    "data": [meta_55_60*0.1, meta_55_60*0.2, meta_55_60*0.35, meta_55_60*0.45, meta_55_60*0.5, meta_55_60*0.75, meta_55_60],
+                },
+                  {
+                    "name": "+60años",
+                    "type": "line",
+                    "stack": "总量",
+                    "areaStyle": {},
+                    "emphasis": {"focus": "series"},
+                    "data": [meta_mas_60*0.1, meta_mas_60*0.2, meta_mas_60*0.35, meta_mas_60*0.45, meta_mas_60*0.5, meta_mas_60*0.75, meta_mas_60],
+                },
+            ],
+        }
+st_echarts(options=options, height="400px") 
+
 
 
 
