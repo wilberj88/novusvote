@@ -542,14 +542,14 @@ st_echarts(options=options, height="400px")
 
 st.write('---')
 st.title('Central de CAMPAÑA')
-st.subheader(':red[Puestos de Votación (PdV)], :blue[Equipos por PdV] y :green[Tareas para Ganar] 🏆')
+st.subheader(':red[Tareas por Puestos de Votación (PdV)], :blue[Equipos por PdV] y :green[Cumplimiento por Equipos] 🏆')
 
 
 
 st.write('---')
 
 
-st.header('1. Puestos de Votación 🗺️')
+st.header('1. Tareas por Puestos de Votación 🗺️')
 
 zona_1 = pd.DataFrame({
    'lon':[10.473583, 10.474139, 10.478472, 10.468500, 10.469667, 10.474139],
@@ -643,7 +643,27 @@ folium.Marker(
     [10.48606, -73.28081], popup="Z5 PV5 PV30 COL COMFACESAR 7K", tooltip="Z5 PV5 PV30 COL COMFACESAR 7K", color='red'
 ).add_to(m)
 st_data = st_folium(m, width=725)
-
+#zona6
+folium.Marker(
+    [10.48044, -73.24781], popup="Z6 PV1 PV33 COL. Pablo Sexto 5K", tooltip="Z6 PV1 PV33 COL. Pablo Sexto 5K", color='red'
+).add_to(m)
+folium.Marker(
+    [10.48181, -73.25644], popup="Z6 PV2 PV34 CONC.San Joaquin 4K", tooltip="Z6 PV2 PV34 CONC.San Joaquin 4K", color='red'
+).add_to(m)
+folium.Marker(
+    [10.49319, -73.26533], popup="Z6 PV3 PV35 COL. Sagrada Familia 3K", tooltip="Z6 PV3 PV35 COL. Sagrada Familia 3K", color='red'
+).add_to(m)
+#zona7
+folium.Marker(
+    [10.47475, -73.25969], popup="Z7 PV1 PV36 INST. TEC. PEDRO CASTRO MONSALVO 8K", tooltip="Z7 PV1 PV36 INST. TEC. PEDRO CASTRO MONSALVO 8K", color='red'
+).add_to(m)
+#zona8
+folium.Marker(
+    [10.46442, -73.25625], popup="Z8 PV1 PV37 CARCEL JUDICIAL 0.1K", tooltip="Z8 PV1 PV37 CARCEL JUDICIAL 0.1K", color='red'
+).add_to(m)
+folium.Marker(
+    [10.44664, -73.30750], popup="Z8 PV2 PV38 CARCEL TRAMACUA 0.1K", tooltip="Z8 PV2 PV38 CARCEL TRAMACUA 0.1K", color='red'
+).add_to(m)
 
 
 st.header('2. Equipos por Puestos de Votación 🗳️')
