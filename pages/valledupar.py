@@ -642,7 +642,6 @@ folium.Marker(
 folium.Marker(
     [10.48606, -73.28081], popup="Z5 PV5 PV30 COL COMFACESAR 7K", tooltip="Z5 PV5 PV30 COL COMFACESAR 7K", color='red'
 ).add_to(m)
-st_data = st_folium(m, width=725)
 #zona6
 folium.Marker(
     [10.48044, -73.24781], popup="Z6 PV1 PV33 COL. Pablo Sexto 5K", tooltip="Z6 PV1 PV33 COL. Pablo Sexto 5K", color='red'
@@ -664,6 +663,7 @@ folium.Marker(
 folium.Marker(
     [10.44664, -73.30750], popup="Z8 PV2 PV38 CARCEL TRAMACUA 0.1K", tooltip="Z8 PV2 PV38 CARCEL TRAMACUA 0.1K", color='red'
 ).add_to(m)
+st_data = st_folium(m, width=725)
 
 
 st.header('2. Equipos por Puestos de Votación 🗳️')
