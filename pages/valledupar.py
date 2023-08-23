@@ -567,32 +567,32 @@ folium.Marker(
     [10.47358, -73.248639], popup="PV1 COL Nacional Loperena", tooltip="PV1 COL Nacional Loperena", icon=folium.Icon(icon='cloud')
 ).add_to(m)
 folium.Marker(
-    [10.474139, -73.25125], popup="PV2 ESC Bellas Artes", tooltip="PV2 ESC Bellas Artes"
+    [10.474139, -73.25125], popup="PV2 ESC Bellas Artes", tooltip="PV2 ESC Bellas Artes", icon=folium.Icon(icon='cloud')
 ).add_to(m)
 folium.Marker(
-    [10.478472, -73.245361], popup="PV3 UDES", tooltip="PV3 UDES"
+    [10.478472, -73.245361], popup="PV3 UDES", tooltip="PV3 UDES", icon=folium.Icon(icon='cloud')
 ).add_to(m)
 folium.Marker(
-    [10.468500, -73.247278], popup="PV4 COL Prudencia Daza", tooltip="PV4 COL Prudencia Daza"
+    [10.468500, -73.247278], popup="PV4 COL Prudencia Daza", tooltip="PV4 COL Prudencia Daza", icon=folium.Icon(icon='cloud')
 ).add_to(m)
 folium.Marker(
-    [10.469667, -73.238056], popup="PV5 COL SantoDomingo", tooltip="PV5 COL SantoDomingo"
+    [10.469667, -73.238056], popup="PV5 COL SantoDomingo", tooltip="PV5 COL SantoDomingo", icon=folium.Icon(icon='cloud')
 ).add_to(m)
 folium.Marker(
-    [10.474130, -73.251115], popup="PV6 COL Parroquial El Carmelo (Nuevo 2023)", tooltip="PV6 COL Parroquial El Carmelo"
+    [10.474130, -73.251115], popup="PV6 COL Parroquial El Carmelo (Nuevo 2023)", tooltip="PV6 COL Parroquial El Carmelo", icon=folium.Icon(icon='cloud')
 ).add_to(m)
 #zona2
 folium.Marker(
-    [10.46006, -73.22889], popup="Z2 PV1 PV7 COL Francisco Molina Sanchez", tooltip="Z2 PV1 PV7 COL Francisco Molina Sanchez"
+    [10.46006, -73.22889], popup="Z2 PV1 PV7 COL Francisco Molina Sanchez", tooltip="Z2 PV1 PV7 COL Francisco Molina Sanchez", icon=folium.Icon(icon='flag')
 ).add_to(m)
 folium.Marker(
-    [10.46322, -73.23575], popup="Z2 PV2 PV8 I.E. Manuel Germán Cuello", tooltip="Z2 PV1 PV8 I.E. Manuel Germán Cuello"
+    [10.46322, -73.23575], popup="Z2 PV2 PV8 I.E. Manuel Germán Cuello", tooltip="Z2 PV1 PV8 I.E. Manuel Germán Cuello", icon=folium.Icon(icon='flag')
 ).add_to(m)
 folium.Marker(
-    [10.45389, -73.24211], popup="Z2 PV3 PV9 Inst. Educ. Leonidas Acuña", tooltip="Z2 PV3 PV9 Inst. Educ. Leonidas Acuña"
+    [10.45389, -73.24211], popup="Z2 PV3 PV9 Inst. Educ. Leonidas Acuña", tooltip="Z2 PV3 PV9 Inst. Educ. Leonidas Acuña", icon=folium.Icon(icon='flag')
 ).add_to(m)
 folium.Marker(
-    [10.45100, -73.23672], popup="Z2 PV4 PV10 UNV. Abierta y a Distancia", tooltip="Z2 PV4 PV10 UNV. Abierta y a Distancia"
+    [10.45100, -73.23672], popup="Z2 PV4 PV10 UNV. Abierta y a Distancia", tooltip="Z2 PV4 PV10 UNV. Abierta y a Distancia", icon=folium.Icon(icon='flag')
 ).add_to(m)
 #zona3
 folium.Marker(
