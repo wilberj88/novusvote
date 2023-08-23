@@ -564,7 +564,7 @@ st.write('Georreferenciación por Puestos de Votación Zona 1, 2, 3, 4 y 5. Pend
 m = folium.Map(location=[10.4735, -73.2486], zoom_start=13)
 #zona1
 folium.Marker(
-    [10.47358, -73.248639], popup="PV1 COL Nacional Loperena", tooltip="PV1 COL Nacional Loperena"
+    [10.47358, -73.248639], popup="PV1 COL Nacional Loperena", tooltip="PV1 COL Nacional Loperena", icon=folium.Icon(icon='cloud')
 ).add_to(m)
 folium.Marker(
     [10.474139, -73.25125], popup="PV2 ESC Bellas Artes", tooltip="PV2 ESC Bellas Artes"
