@@ -629,19 +629,19 @@ folium.Marker(
 ).add_to(m)
 #zona5
 folium.Marker(
-    [10.47242, -73.26011], popup="Z5 PV1 PV26 COL. Nacionalizado Alfonso López 7K", tooltip="Z5 PV1 PV26 COL. Nacionalizado Alfonso López 7K", color='red'
+    [10.47242, -73.26011], popup="Z5 PV1 PV26 COL. Nacionalizado Alfonso López. 2,6K de 7K", tooltip="Z5 PV1 PV26 COL. Nacionalizado Alfonso López. 2,6K de 7K", icon=folium.Icon(icon='bicycle')
 ).add_to(m)
 folium.Marker(
-    [10.47242, -73.26011], popup="Z5 PV2 PV27 IE Loperena Garupal 8K", tooltip="Z5 PV2 PV27 IE Loperena Garupal 8K", color='red'
+    [10.47242, -73.26011], popup="Z5 PV2 PV27 IE Loperena Garupal. 3,2K de 8K", tooltip="Z5 PV2 PV27 IE Loperena Garupal. 3,2K de 8K", icon=folium.Icon(icon='bicycle')
 ).add_to(m)
 folium.Marker(
-    [10.47928, -73.27719], popup="Z5 PV3 PV28 IE Técnico La Esperanza 9K", tooltip="Z5 PV3 PV28 IE Técnico La Esperanza 9K", color='red'
+    [10.47928, -73.27719], popup="Z5 PV3 PV28 IE Técnico La Esperanza. 3,7K de 9,3K", tooltip="Z5 PV3 PV28 IE Técnico La Esperanza. 3,7K de 9,3K", icon=folium.Icon(icon='bicycle')
 ).add_to(m)
 folium.Marker(
-    [10.47842, -73.29089], popup="Z5 PV4 PV29 IE Bello Horizonte 4K", tooltip="Z5 PV4 PV29 IE Bello Horizonte 4K", color='red'
+    [10.47842, -73.29089], popup="Z5 PV4 PV29 IE Bello Horizonte. 1,5K de 4K", tooltip="Z5 PV4 PV29 IE Bello Horizonte. 1,5K de 4K", icon=folium.Icon(icon='bicycle')
 ).add_to(m)
 folium.Marker(
-    [10.48606, -73.28081], popup="Z5 PV5 PV30 COL COMFACESAR 7K", tooltip="Z5 PV5 PV30 COL COMFACESAR 7K", color='red'
+    [10.48606, -73.28081], popup="Z5 PV5 PV30 COL COMFACESAR. 2,7K de 7K", tooltip="Z5 PV5 PV30 COL COMFACESAR. 2,7K de 7K", icon=folium.Icon(icon='bicycle')
 ).add_to(m)
 #zona6
 folium.Marker(
