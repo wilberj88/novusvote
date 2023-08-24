@@ -584,16 +584,16 @@ folium.Marker(
 ).add_to(m)
 #zona2
 folium.Marker(
-    [10.46006, -73.22889], popup="Z2 PV1 PV7 COL Francisco Molina Sanchez", tooltip="Z2 PV1 PV7 COL Francisco Molina Sanchez", icon=folium.Icon(icon='flag')
+    [10.46006, -73.22889], popup="Z2 PV1 PV7 COL Francisco Molina Sanchez. 4K de 9K", tooltip="Z2 PV1 PV7 COL Francisco Molina Sanchez. 4K de 9K", icon=folium.Icon(icon='flag')
 ).add_to(m)
 folium.Marker(
-    [10.46322, -73.23575], popup="Z2 PV2 PV8 I.E. Manuel Germán Cuello", tooltip="Z2 PV1 PV8 I.E. Manuel Germán Cuello", icon=folium.Icon(icon='flag')
+    [10.46322, -73.23575], popup="Z2 PV2 PV8 I.E. Manuel Germán Cuello. 2K de 4K", tooltip="Z2 PV1 PV8 I.E. Manuel Germán Cuello. 2K de 4K", icon=folium.Icon(icon='flag')
 ).add_to(m)
 folium.Marker(
-    [10.45389, -73.24211], popup="Z2 PV3 PV9 Inst. Educ. Leonidas Acuña", tooltip="Z2 PV3 PV9 Inst. Educ. Leonidas Acuña", icon=folium.Icon(icon='flag')
+    [10.45389, -73.24211], popup="Z2 PV3 PV9 Inst. Educ. Leonidas Acuña. 4K de 8K", tooltip="Z2 PV3 PV9 Inst. Educ. Leonidas Acuña. 4K de 8K", icon=folium.Icon(icon='flag')
 ).add_to(m)
 folium.Marker(
-    [10.45100, -73.23672], popup="Z2 PV4 PV10 UNV. Abierta y a Distancia", tooltip="Z2 PV4 PV10 UNV. Abierta y a Distancia", icon=folium.Icon(icon='flag')
+    [10.45100, -73.23672], popup="Z2 PV4 PV10 UNV. Abierta y a Distancia. 2K de 4,5K", tooltip="Z2 PV4 PV10 UNV. Abierta y a Distancia. 2K de 4,5K", icon=folium.Icon(icon='flag')
 ).add_to(m)
 #zona3
 folium.Marker(
