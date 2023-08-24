@@ -542,14 +542,15 @@ st_echarts(options=options, height="400px")
 
 st.write('---')
 st.title('Central de CAMPAÑA')
-st.subheader(':red[Tareas por Puestos de Votación (PdV)], :blue[Equipos por PdV] y :green[Cumplimiento por Equipos] 🏆')
+st.subheader(':red[Puestos de Votación], :blue[Equipos] y :green[Votos] 🏆')
 
 
 
 st.write('---')
 
 
-st.header('1. Tareas por Puestos de Votación 🗺️')
+st.header('1. Puestos de Votación 🗺️')
+st.subheader('Identificación por: Zona, Puesto de Zona, Puesto Total, Nombre, Meta y Caudal')
 
 zona_1 = pd.DataFrame({
    'lon':[10.473583, 10.474139, 10.478472, 10.468500, 10.469667, 10.474139],
@@ -564,19 +565,19 @@ st.write('Georreferenciación por Puestos de Votación Zona 1, 2, 3, 4, 5, 6, 7 
 m = folium.Map(location=[10.4735, -73.2486], zoom_start=13)
 #zona1
 folium.Marker(
-    [10.47358, -73.248639], popup="PV1 COL Nacional Loperena", tooltip="PV1 COL Nacional Loperena", icon=folium.Icon(icon='cloud')
+    [10.47358, -73.248639], popup="Z1 PV1 PV1 COL Nacional Loperena 3de10K", tooltip="Z1 PV1 PV1 COL Nacional Loperena. 3K de 8K", icon=folium.Icon(icon='cloud')
 ).add_to(m)
 folium.Marker(
-    [10.474139, -73.25125], popup="PV2 ESC Bellas Artes", tooltip="PV2 ESC Bellas Artes", icon=folium.Icon(icon='cloud')
+    [10.474139, -73.25125], popup="Z1 PV2 PV2 ESC Bellas Artes. 2K de 5K", tooltip="Z2 PV2 PV2 ESC Bellas Artes. 2K de 5K", icon=folium.Icon(icon='cloud')
 ).add_to(m)
 folium.Marker(
-    [10.478472, -73.245361], popup="PV3 UDES", tooltip="PV3 UDES", icon=folium.Icon(icon='cloud')
+    [10.478472, -73.245361], popup="Z1 PV3 PV3 UDES. 1,5K de 4K", tooltip="Z1 PV3 PV3 UDES. 1,5K de 4K", icon=folium.Icon(icon='cloud')
 ).add_to(m)
 folium.Marker(
-    [10.468500, -73.247278], popup="PV4 COL Prudencia Daza", tooltip="PV4 COL Prudencia Daza", icon=folium.Icon(icon='cloud')
+    [10.468500, -73.247278], popup="Z1 PV4 PV4 COL Prudencia Daza. 1K de 3K", tooltip="Z1 PV4 PV4 COL Prudencia Daza. 1K de 3K", icon=folium.Icon(icon='cloud')
 ).add_to(m)
 folium.Marker(
-    [10.469667, -73.238056], popup="PV5 COL SantoDomingo", tooltip="PV5 COL SantoDomingo", icon=folium.Icon(icon='cloud')
+    [10.469667, -73.238056], popup="Z1 PV5 PV5 COL SantoDomingo. 2,5K de 6K", tooltip="Z1 PV5 PV5 COL SantoDomingo. 2,5K de 6K", icon=folium.Icon(icon='cloud')
 ).add_to(m)
 folium.Marker(
     [10.474130, -73.251115], popup="PV6 COL Parroquial El Carmelo (Nuevo 2023)", tooltip="PV6 COL Parroquial El Carmelo", icon=folium.Icon(icon='cloud')
