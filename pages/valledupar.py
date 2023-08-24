@@ -613,19 +613,19 @@ folium.Marker(
 ).add_to(m)
 #zona4
 folium.Marker(
-    [10.45358, -73.26678], popup="Z4 PV1 PV20 COL Jose Eugenio Martinez 10K", tooltip="Z4 PV1 PV20 COL Jose Eugenio Martinez 10K", color='red'
+    [10.45358, -73.26678], popup="Z4 PV1 PV20 COL Jose Eugenio Martinez. 5K de 11K", tooltip="Z4 PV1 PV20 COL Jose Eugenio Martinez. 5K de 11K", icon=folium.Icon(icon='info-sign')
 ).add_to(m)
 folium.Marker(
-    [10.45892, -73.25958], popup="Z4 PV2 PV21 COL Nacionalizado UPAR 8K", tooltip="Z4 PV2 PV21 COL Nacionalizado UPAR 8K", color='red'
+    [10.45892, -73.25958], popup="Z4 PV2 PV21 COL Nacionalizado UPAR. 3,5K de 8K", tooltip="Z4 PV2 PV21 COL Nacionalizado UPAR 8K. 3,5K de 8K", icon=folium.Icon(icon='info-sign')
 ).add_to(m)
 folium.Marker(
-    [10.46157, -73.26789], popup="Z4 PV3 PV22 INS TEC Villa Corelca 4K", tooltip="Z4 PV3 PV22 INS TEC Villa Corelca 4K", color='red'
+    [10.46157, -73.26789], popup="Z4 PV3 PV22 INS TEC Villa Corelca. 1,5K de 4K", tooltip="Z4 PV3 PV22 INS TEC Villa Corelca. 1,5K de 4K", icon=folium.Icon(icon='info-sign')
 ).add_to(m)
 folium.Marker(
-    [10.46661, -73.25814], popup="Z4 PV4 PV23 Escuela Mixta No 4 5K", tooltip="Z4 PV4 PV23 Escuela Mixta No 4 5K", color='red'
+    [10.46661, -73.25814], popup="Z4 PV4 PV23 Escuela Mixta No 4. 2K de 5K", tooltip="Z4 PV4 PV23 Escuela Mixta No 4. 2K de 5K", icon=folium.Icon(icon='info-sign')
 ).add_to(m)
 folium.Marker(
-    [10.44381, -73.27533], popup="Z4 PV5 PV24 I.E Consuelo Araujo Noguera 6K", tooltip="Z4 PV5 PV24 I.E Consuelo Araujo Noguera 6K", color='red'
+    [10.44381, -73.27533], popup="Z4 PV5 PV24 I.E Consuelo Araujo Noguera. 2K de 6K", tooltip="Z4 PV5 PV24 I.E Consuelo Araujo Noguera. 2K de 6K", icon=folium.Icon(icon='info-sign')
 ).add_to(m)
 #zona5
 folium.Marker(
