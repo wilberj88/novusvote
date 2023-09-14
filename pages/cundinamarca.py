@@ -30,90 +30,39 @@ st.header("1. Históricos: Datos procesados 🛠️")
 st.subheader("Votación Gobernación 2015")
 
 st.subheader("Votación Gobernación 2019")
-
-st.write("Resultados E-14 por Zonas")
-options = {
-    "tooltip": {"trigger": "axis", "axisPointer": {"type": "shadow"}},
-    "legend": {
-        "data": ["Ganador_Ramirez", "2do_Gonzalez", "3ro_Fernandez"]
-    },
-    "grid": {"left": "3%", "right": "4%", "bottom": "3%", "containLabel": True},
-    "xAxis": {"type": "value"},
-    "yAxis": {
-        "type": "category",
-        "data": ["Zona 1", "Zona 2", "Zona 3", "Zona 4", "Zona 5", "Zona 6", "Zona 7", "Zona 8", "Zona 9"],
+option = {
+    "legend": {"top": "bottom"},
+    "toolbox": {
+        "show": True,
+        "feature": {
+            "mark": {"show": True},
+            "dataView": {"show": True, "readOnly": False},
+            "restore": {"show": True},
+            "saveAsImage": {"show": True},
+        },
     },
     "series": [
         {
-            "name": "Ganador_Ramirez",
-            "type": "bar",
-            "stack": "total",
-            "label": {"show": True},
-            "emphasis": {"focus": "series"},
-            "data": [10898, 12260, 10461, 13667, 11792, 4659, 4364, 152, 5931],
-        },
-        {
-            "name": "2do_Gonzalez",
-            "type": "bar",
-            "stack": "total",
-            "label": {"show": True},
-            "emphasis": {"focus": "series"},
-            "data": [7055, 6004, 5288, 6842, 7077, 4127, 2267, 58, 3337],
-        },
-        {
-            "name": "3ro_Fernandez",
-            "type": "bar",
-            "stack": "total",
-            "label": {"show": True},
-            "emphasis": {"focus": "series"},
-            "data": [2273, 2792, 2419, 2954, 2437, 974, 916, 16, 2863],
-        },
+            "name": "Candidaturas",
+            "type": "pie",
+            "radius": [50, 250],
+            "center": ["50%", "50%"],
+            "roseType": "area",
+            "itemStyle": {"borderRadius": 8},
+            "data": [
+                {"value": 58987, "name": "Ricardo Mestizo Reyes 59K - Coalicioón Alternativa"},
+                {"value": 48465, "name": "Pedro Enrique Caycedo 48K - Partido Col Justa Libres"},
+                {"value": 634470, "name": "Nicolás García Bustos 634K - Coalición Gran Cundinamarca"},
+                {"value": 52702, "name": "Germán Mauricio Escobar Latorre 52K - Partido Colombia Renaciente"},
+                {"value": 99348, "name": "Wilson Antonio Florez Vanegas 99K - Coalición Cund Lider"},
+                {"value": 244269, "name": "Voto en blanco 244K"},
+            ],
+        }
     ],
 }
-st_echarts(options=options, height="500px")
-
-st.header("Votación Alcaldía 2019")
-st.write("Resultados E-14 por Zonas")
-options = {
-    "tooltip": {"trigger": "axis", "axisPointer": {"type": "shadow"}},
-    "legend": {
-        "data": ["Ganador_Castro", "2do_Orozco", "3ro_Morales"]
-    },
-    "grid": {"left": "3%", "right": "4%", "bottom": "3%", "containLabel": True},
-    "xAxis": {"type": "value"},
-    "yAxis": {
-        "type": "category",
-        "data": ["Zona 1", "Zona 2", "Zona 3", "Zona 4", "Zona 5", "Zona 6", "Zona 7", "Zona 8", "Zona 9"],
-    },
-    "series": [
-        {
-            "name": "Ganador_Castro",
-            "type": "bar",
-            "stack": "total",
-            "label": {"show": True},
-            "emphasis": {"focus": "series"},
-            "data": [9549, 11314, 10390, 12513, 12728, 4977, 2935, 84, 8905],
-        },
-        {
-            "name": "2do_Orozco",
-            "type": "bar",
-            "stack": "total",
-            "label": {"show": True},
-            "emphasis": {"focus": "series"},
-            "data": [10013, 9513, 9712, 11971, 12824, 5638, 2562, 80, 7957],
-        },
-        {
-            "name": "3ro_Morales",
-            "type": "bar",
-            "stack": "total",
-            "label": {"show": True},
-            "emphasis": {"focus": "series"},
-            "data": [2055, 4196, 4228, 4887, 3776, 678, 1143, 39, 528],
-        },
-    ],
-}
-st_echarts(options=options, height="500px")
-
+st_echarts(
+    options=option, height="600px",
+)
 
 st.header("Top 3 entre 2015 y 2019")
 def render_basic_radar():
