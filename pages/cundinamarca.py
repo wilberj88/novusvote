@@ -28,6 +28,37 @@ st.subheader(':red[Votación Histórica 2015-2019], :blue[Proyecciones 2023] y :
 st.header("1. Históricos: Datos procesados 🛠️")
 
 st.subheader("Votación Gobernación 2015")
+option1 = {
+    "legend": {"top": "bottom"},
+    "toolbox": {
+        "show": True,
+        "feature": {
+            "mark": {"show": True},
+            "dataView": {"show": True, "readOnly": False},
+            "restore": {"show": True},
+            "saveAsImage": {"show": True},
+        },
+    },
+    "series": [
+        {
+            "name": "Candidaturas",
+            "type": "pie",
+            "radius": [50, 250],
+            "center": ["50%", "50%"],
+            "roseType": "area",
+            "itemStyle": {"borderRadius": 8},
+            "data": [
+                {"value": 545201, "name": "Jorge Emilio Rey 545K Coalición CR.U.Asi.Maiz"},
+                {"value": 360813, "name": "Nacy Patricia Gutierrez 360K Partido Col Justa Libres"},
+                {"value": 25956, "name": "Rafel Antonio Ballen Molina 26K Polo"},
+                {"value": 91100, "name": "Voto en blanco 91K"},
+            ],
+        }
+    ],
+}
+st_echarts(options=option1, height="600px")
+
+
 
 st.subheader("Votación Gobernación 2019")
 option = {
