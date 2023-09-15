@@ -17,12 +17,14 @@ import folium
 from streamlit_folium import st_folium
 import time
 from streamlit_card import card
+from streamlit_extras.app_logo import add_logo
 
 
 # SETTING PAGE CONFIG TO WIDE MODE AND ADDING A TITLE AND FAVICON
 st.set_page_config(layout="wide", page_title="Novus Vote 🗳️ Cundinamarca", page_icon="🗳️")
 
 #TITULO
+add_logo("http://placekitten.com/120/120")
 st.title('Novus Vote 🗳️ - Gobernación Cundinamarca 2023')
 
 st.title('Central de PRE CAMPAÑA')
