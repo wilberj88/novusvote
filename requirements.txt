@@ -15,4 +15,4 @@ mitosheet
 folium
 streamlit_folium
 streamlit_card
-streamlit_extras.app_logo
+streamlit_extras
