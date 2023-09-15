@@ -26,7 +26,7 @@ st.set_page_config(layout="wide", page_title="Novus Vote 🗳️ Cundinamarca", 
 
 # TITULO
 add_logo("https://unsplash.com/es/fotos/T9CXBZLUvic")
-image = Image.open('logonovusvote.jpg')
+image = Image.open('pages/logonovusvote.jpg')
 st.image(image, caption='Novus Tech World')
 st.title('Novus Vote 🗳️ - Gobernación Cundinamarca 2023')
 
