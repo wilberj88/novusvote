@@ -18,6 +18,7 @@ from streamlit_folium import st_folium
 import time
 from streamlit_card import card
 from PIL import Image
+from streamlit_extras.app_logo import add_logo
 
 
 # SETTING PAGE CONFIG TO WIDE MODE AND ADDING A TITLE AND FAVICON
