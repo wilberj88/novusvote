@@ -25,7 +25,7 @@ from streamlit_extras.app_logo import add_logo
 st.set_page_config(layout="wide", page_title="Novus Vote 🗳️ Cundinamarca", page_icon="🗳️")
 
 # TITULO
-add_logo("https://images.app.goo.gl/Apr7qizCdGAj1eoe9")
+add_logo("http://placekitten.com/120/120")
 image = Image.open('pages/logonovusvote.jpg')
 st.image(image, caption='Novus Tech World')
 st.title('Novus Vote 🗳️ - Gobernación Cundinamarca 2023')
