@@ -16,6 +16,8 @@ from pyecharts.charts import Graph
 import folium
 from streamlit_folium import st_folium
 import time
+from streamlit_card import card
+
 
 # SETTING PAGE CONFIG TO WIDE MODE AND ADDING A TITLE AND FAVICON
 st.set_page_config(layout="wide", page_title="Novus Vote 🗳️ Cundinamarca", page_icon="🗳️")
@@ -100,4 +102,10 @@ st.write('---')
 st.header("2. Proyecciones a 29 octubre de 2023")
 proyecciones = ["Habilitados", "Votantes", "Votación Válida", "Abstención", "Votos en Blanco"]
 
+card(
+    title="Habilitados",
+    text="2M",
+    image="http://placekitten.com/300/250",
+    url="https://www.google.com",
+)
 
