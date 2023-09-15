@@ -94,4 +94,10 @@ option = {
 st_echarts(options=option, height="600px")
 
 
+
+st.write('---')
+
 st.header("2. Proyecciones a 29 octubre de 2023")
+proyecciones = ["Habilitados", "Votantes", "Votación Válida", "Abstención", "Votos en Blanco"]
+
+
