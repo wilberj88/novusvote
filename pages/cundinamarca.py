@@ -102,10 +102,25 @@ st.write('---')
 st.header("2. Proyecciones a 29 octubre de 2023")
 proyecciones = ["Habilitados", "Votantes", "Votación Válida", "Abstención", "Votos en Blanco"]
 
-card(
-    title="Habilitados",
-    text="2M",
-    image="http://placekitten.com/300/250",
-    url="https://www.google.com",
-)
-
+col1, col2, col3 = st.columns(3)
+with col1:
+    card(
+        title="Habilitados",
+        text="2M",
+        image="http://placekitten.com/300/250",
+        url="https://www.google.com",
+    )
+with col2:
+    card(
+        title="Abstención",
+        text="2M",
+        image="http://placekitten.com/300/250",
+        url="https://www.google.com",
+    )
+with col3:
+    card(
+        title="Votos Válidos",
+        text="2M",
+        image="http://placekitten.com/300/250",
+        url="https://www.google.com",
+    )
