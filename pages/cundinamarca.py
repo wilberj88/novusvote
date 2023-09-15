@@ -92,3 +92,6 @@ option = {
     ],
 }
 st_echarts(options=option, height="600px")
+
+
+st.header("2. Proyecciones a 29 octubre de 2023")
