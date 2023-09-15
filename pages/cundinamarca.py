@@ -24,7 +24,7 @@ from streamlit_extras.app_logo import add_logo
 # SETTING PAGE CONFIG TO WIDE MODE AND ADDING A TITLE AND FAVICON
 st.set_page_config(layout="wide", page_title="Novus Vote 🗳️ Cundinamarca", page_icon="🗳️")
 
-#TITULO
+# TITULO
 add_logo("https://unsplash.com/es/fotos/T9CXBZLUvic")
 image = Image.open('logonovusvote.jpg')
 st.image(image, caption='Novus Tech World')
