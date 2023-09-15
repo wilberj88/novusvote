@@ -24,6 +24,7 @@ from PIL import Image
 st.set_page_config(layout="wide", page_title="Novus Vote 🗳️ Cundinamarca", page_icon="🗳️")
 
 #TITULO
+add_logo("https://drive.google.com/file/d/1FijC1kciMbJ_PRoWZ-iqFbKhCir7Oj7B/view?usp=drive_link")
 image = Image.open('logonovusvote.jpg')
 st.image(image, caption='Novus Tech World')
 st.title('Novus Vote 🗳️ - Gobernación Cundinamarca 2023')
