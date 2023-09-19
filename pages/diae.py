@@ -228,7 +228,7 @@ with col7:
         "tooltip": {"trigger": "axis", "showContent": False},
         "dataset": {
             "source": [
-                ["product", "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio"],
+                ["product", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"],
                 ["Conservador", 56.5, 82.1, 88.7, 70.1, 53.4, 85.1],
                 ["Verde", 51.1, 51.4, 55.1, 53.3, 73.8, 68.7],
                 ["Polo", 40.1, 62.2, 69.5, 36.4, 45.2, 32.5],
