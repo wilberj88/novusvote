@@ -257,11 +257,7 @@ with col7:
     }
     st_echarts(option, height="500px", key="echarts")
 
-colored_header(
-    label="Top 3 Zonas de Mayores Votos en 2023",
-    description="Por hora y tipo",
-    color_name="violet-70",
-)
+
 
 # center on Liberty Bell, add marker
 m = folium.Map(location=[10.4735, -73.2486], zoom_start=13)
@@ -378,11 +374,7 @@ with colB:
 with colC:
     st_data = st_folium(l, width=300)
 
-colored_header(
-    label="Alarmas Financieras 2023",
-    description="Por intensidad y categoría",
-    color_name="violet-70",
-)
+
 
 col1, col2, col3 = st.columns(3)
 with col1:
