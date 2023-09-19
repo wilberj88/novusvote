@@ -43,19 +43,22 @@ colored_header(
     color_name="violet-70",
 )
 current_time = time.ctime()
-st.write("Siendo AHORA y HOY a las: ", current_time)
+st.write("MONITOREO MINUTO A MINUTO: Siendo HOY y AHORA las: ", current_time)
 
-my_grid = grid(4, vertical_align="bottom")
+my_grid = grid(4,3 vertical_align="bottom")
 # Row 1:
-my_grid.selectbox("Tareas por líderes", ["Territorio", "Género", "Edades", "Testigos"])
-my_grid.button("Activar Mensajes Equipos", use_container_width=True)
-my_grid.button("Activar Mensajes Electorado Personalizado", use_container_width=True)
-# Row 2:
+my_grid.selectbox("Indica una Zona", ["Territorio", "Género", "Edades", "Testigos"])
+my_grid.selectbox("Indica una Edad", ["18a 25 años", "25-45 años", "45-60 años", "+60años"])
+my_grid.selectbox("Indica un Género", ["Mujer", "Hombre", "LGBTQI+"])
 
+# Row 2:
+my_grid.button("Activar Mensajes Equipos", use_container_width=True)
+my_grid.button("Activar Mensajes Electorado General", use_container_width=True)
+my_grid.button("Activar Mensajes Electorado Personalizado", use_container_width=True)
 
 
 options = {
-            "title": {"text": "Votos x Zonas y Horas"},
+            "title": {"text": "Votos Requeridos"},
             "tooltip": {
                 "trigger": "axis",
                 "axisPointer": {"type": "cross", "label": {"backgroundColor": "#6a7985"}},
