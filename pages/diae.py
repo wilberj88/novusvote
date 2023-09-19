@@ -41,17 +41,16 @@ colored_header(
     description="29 de Octubre de 2023",
     color_name="violet-70",
 )
+current_time = time.ctime()
+st.write("Siendo AHORA y HOY a las: ", current_time)
 
-my_grid = grid(3, 4, vertical_align="bottom")
+my_grid = grid(4, vertical_align="bottom")
 # Row 1:
 my_grid.selectbox("Tareas por líderes", ["Territorio", "Género", "Edades", "Testigos"])
-my_grid.button("Activar tareas líderes", use_container_width=True)
-my_grid.button("Activar Mensajes Automáticos", use_container_width=True)
-# Row 3:
-my_grid.button("Email", use_container_width=True)
-my_grid.button("Telefonía", use_container_width=True)
-my_grid.button("Facebook e IG", use_container_width=True)
-my_grid.button("Google & Youtube", use_container_width=True)
+my_grid.button("Activar Mensajes Equipos", use_container_width=True)
+my_grid.button("Activar Mensajes Electorado Personalizado", use_container_width=True)
+# Row 2:
+
 
 
 options = {
@@ -148,6 +147,12 @@ options = {
         }
 st_echarts(options=options, height="400px") 
 
+
+my_grid1 = grid1(4, vertical_align="bottom")
+my_grid1.button("Email", use_container_width=True)
+my_grid1.button("Telefonía", use_container_width=True)
+my_grid1.button("Facebook e IG", use_container_width=True)
+my_grid1.button("Google & Youtube", use_container_width=True)
 
 col1, col2, col3, col4 = st.columns(4)
 col1.metric("Correos", "300000", "14%")
