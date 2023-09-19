@@ -21,7 +21,7 @@ import time
 st.set_page_config(layout="wide", page_title="Novus Vote 🗳️", page_icon="🗳️")
 
 #TITULO
-st.title('Novus Vote 🗳️')
+st.title('Mando Día E 🗳️ Novus Vote')
 
 validos2023 = 900000
 meta2023 = validos2023*0.36
@@ -38,12 +38,12 @@ meta_zona_9 = 7338
 
 
 colored_header(
-    label="Mando Día E - Candidatura a ____",
+    label="Operación Día E - Candidatura a ____",
     description="29 de Octubre de 2023",
     color_name="violet-70",
 )
 current_time = time.ctime()
-st.write("MONITOREO MINUTO A MINUTO: Siendo HOY y AHORA las: ", current_time)
+st.write("Siendo HOY y AHORA las: ", current_time)
 
 my_grid = grid(3, 3, vertical_align="bottom")
 # Row 1:
@@ -399,6 +399,12 @@ with colC:
 
 
 
+colored_header(
+    label="Alarmas Día E - Candidatura a ____",
+    description="29 de Octubre de 2023",
+    color_name="violet-70",
+)
+
 col1, col2, col3 = st.columns(3)
 with col1:
   acelerometro1 = {
@@ -461,3 +467,10 @@ with col3:
         ],
     }
   st_echarts(options=acelerometro3)
+
+
+colored_header(
+    label="Recomendaciones Día E - Candidatura a ____",
+    description="29 de Octubre de 2023",
+    color_name="violet-70",
+)
