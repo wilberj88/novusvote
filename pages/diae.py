@@ -37,24 +37,20 @@ meta_zona_9 = 7338
 
 
 colored_header(
-    label="Mando Día E",
+    label="Mando Día E - Candidatura a ____",
     description="29 de Octubre de 2023",
     color_name="violet-70",
 )
 
-colA, colB = st.columns(2)
-with colA:
-    st.write('El ritmo de votos requeridos por la campaña por hora es de: ', meta2023/8)  
-with colB:
-    st.write('El ritmo de votos requeridos por la campaña por minuto es de: ', meta2023/480)
 
+st.header("Canales de Comunicación con Electorado")
 col1, col2, col3, col4 = st.columns(4)
 col1.metric("Correos", "300000", "14%")
 col2.metric("Celulares", "4500000", "-18%")
 col3.metric("ID_Meta", "1000000", "13%")
 col4.metric("ID_Google", "950000", "18%")
 
-st.header('Votos requeridos por zonas para ganar Gobernación Cundinamarca 2023')
+st.header('Votos requeridos por zonas para ganar ______ 2023')
 options = {
             "title": {"text": "Votos x Zonas"},
             "tooltip": {
