@@ -45,7 +45,7 @@ colored_header(
 
 
 options = {
-            "title": {"text": "Votos x Zonas"},
+            "title": {"text": "Votos x Zonas y Horas"},
             "tooltip": {
                 "trigger": "axis",
                 "axisPointer": {"type": "cross", "label": {"backgroundColor": "#6a7985"}},
