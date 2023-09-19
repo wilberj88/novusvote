@@ -27,6 +27,118 @@ colored_header(
     color_name="violet-70",
 )
 
+colA, colB = st.columns(2)
+with colA:
+    st.write('El ritmo de votos requeridos por la campaña por hora es de: ', meta2023/8)  
+with colB:
+    st.write('El ritmo de votos requeridos por la campaña por minuto es de: ', meta2023/480)
+
+validos2023 = 900000
+meta2023 = validos2023*0.36
+
+meta_zona_1 = 10290
+meta_zona_2 = 11986
+meta_zona_3 = 11368
+meta_zona_4 = 14018
+meta_zona_5 = 14036
+meta_zona_6 = 5241
+meta_zona_7 = 3112
+meta_zona_8 = 110
+meta_zona_9 = 7338
+st.header('Votos requeridos por zonas para ganar Gobernación Cundinamarca 2023')
+options = {
+            "title": {"text": "Votos x Zonas"},
+            "tooltip": {
+                "trigger": "axis",
+                "axisPointer": {"type": "cross", "label": {"backgroundColor": "#6a7985"}},
+            },
+            "legend": {"data": ["Zona_9", "Zona_8", "Zona_7", "Zona_6", "Zona_5", "Zona_4", "Zona_3", "Zona_2", "Zona_1"]},
+            "toolbox": {"feature": {"saveAsImage": {}}},
+            "grid": {"left": "3%", "right": "4%", "bottom": "3%", "containLabel": True},
+            "xAxis": [
+                {
+                    "type": "category",
+                    "boundaryGap": False,
+                    "data": ["10am", "11am", "12md", "1pm", "2pm", "3pm", "4pm"],
+                }
+            ],
+            "yAxis": [{"type": "value"}],
+            "series": [
+                {
+                    "name": "Zona_9",
+                    "type": "line",
+                    "stack": "总量",
+                    "areaStyle": {},
+                    "emphasis": {"focus": "series"},
+                    "data": [meta_zona_9*0.1, meta_zona_9*0.2, meta_zona_9*0.35, meta_zona_9*0.45, meta_zona_9*0.5, meta_zona_9*0.75, meta_zona_9],
+                },
+                {
+                    "name": "Zona_8",
+                    "type": "line",
+                    "stack": "总量",
+                    "areaStyle": {},
+                    "emphasis": {"focus": "series"},
+                    "data": [meta_zona_8*0.1, meta_zona_8*0.2, meta_zona_8*0.35, meta_zona_8*0.45, meta_zona_8*0.5, meta_zona_8*0.75, meta_zona_8],
+                },
+                {
+                    "name": "Zona_7",
+                    "type": "line",
+                    "stack": "总量",
+                    "areaStyle": {},
+                    "emphasis": {"focus": "series"},
+                    "data": [meta_zona_7*0.1, meta_zona_7*0.2, meta_zona_7*0.35, meta_zona_7*0.45, meta_zona_7*0.5, meta_zona_7*0.75, meta_zona_7],
+                },
+                  {
+                    "name": "Zona_6",
+                    "type": "line",
+                    "stack": "总量",
+                    "areaStyle": {},
+                    "emphasis": {"focus": "series"},
+                    "data": [meta_zona_6*0.1, meta_zona_6*0.2, meta_zona_6*0.35, meta_zona_6*0.45, meta_zona_6*0.5, meta_zona_6*0.75, meta_zona_6],
+                },
+                 {
+                    "name": "Zona_5",
+                    "type": "line",
+                    "stack": "总量",
+                    "areaStyle": {},
+                    "emphasis": {"focus": "series"},
+                    "data": [meta_zona_5*0.1, meta_zona_5*0.2, meta_zona_5*0.35, meta_zona_5*0.45, meta_zona_5*0.5, meta_zona_5*0.75, meta_zona_5],
+                },
+                  {
+                    "name": "Zona_4",
+                    "type": "line",
+                    "stack": "总量",
+                    "areaStyle": {},
+                    "emphasis": {"focus": "series"},
+                    "data": [meta_zona_4*0.1, meta_zona_4*0.2, meta_zona_4*0.35, meta_zona_4*0.45, meta_zona_4*0.5, meta_zona_4*0.75, meta_zona_4],
+                },
+                  {
+                    "name": "Zona_3",
+                    "type": "line",
+                    "stack": "总量",
+                    "areaStyle": {},
+                    "emphasis": {"focus": "series"},
+                    "data": [meta_zona_3*0.1, meta_zona_3*0.2, meta_zona_3*0.35, meta_zona_3*0.45, meta_zona_3*0.5, meta_zona_3*0.75, meta_zona_3],
+                },
+                  {
+                    "name": "Zona_2",
+                    "type": "line",
+                    "stack": "总量",
+                    "areaStyle": {},
+                    "emphasis": {"focus": "series"},
+                    "data": [meta_zona_2*0.1, meta_zona_2*0.2, meta_zona_2*0.35, meta_zona_2*0.45, meta_zona_2*0.5, meta_zona_2*0.75, meta_zona_2],
+                },
+                  {
+                    "name": "Zona_1",
+                    "type": "line",
+                    "stack": "总量",
+                    "areaStyle": {},
+                    "emphasis": {"focus": "series"},
+                    "data": [meta_zona_1*0.1, meta_zona_1*0.2, meta_zona_1*0.35, meta_zona_1*0.45, meta_zona_1*0.5, meta_zona_1*0.75, meta_zona_1],
+                },
+            ],
+        }
+st_echarts(options=options, height="400px") 
 
 
 col6, col7 = st.columns(2)
@@ -139,52 +251,26 @@ with col7:
         ],
     }
     st_echarts(option, height="500px", key="echarts")
-st.markdown('CONCLUSIONES MONITOR 4: POTENCIALES VOTANTES 🗳️')
-st.text('La radiografía del TOP3 de perfiles de votantes más afines al CANDIDATO es: adultos mayores de 50 años, emprendedores mayores de 30 años y jóvenes estudiantes entre 20 y 25 años')
-st.text('Concentrar la comunicación en el TOP3 de perfiles en los barrios X, Y y Z puede llevar las probabilidades de victoria por encima del 85%')
 
-#ALARMA 1: CUMPLIMIENTOS DE METAS PARA FIRMAS Y VOTOS
-#ALARMA 2: CUMPLIMIENTOS DE METAS PARA INFLUENCIA
-#ALARMA 3: CUMPLIMIENTOS DE METAS PARA SENTIMIENTO FAVORABLE
-
-#RECOMENDACIONES 1: PARA MÁS VOTOS
-#RECOMENDACIONES 2: PARA MÁS INFLUENCIA
-#RECOMENDACIONES 3: PARA MÁS SENTIMIENTO FAVORABLE
-
-
-
-
-
-
-#ALARMAS
-st.header("Alarmas de Bajo Cumplimiento de Metas ⚠️")
-alarma1, alarma2, alarma3 = st.columns(3)
-alarma1.metric("Electores por Alcanzar", "1/2/18", "-85%prom")
-alarma2.metric("Electores por Influir", "16h.13h.18h", "-73%prom")
-alarma3.metric("Electores por Convencer", "8-32-33", "485%prom")
-chart_data = pd.DataFrame(np.random.randn(23, 3), columns=["Alcanzados", "Influenciados", "Convencidos"])
-st.area_chart(chart_data)    
-st.write('ID TOP 1 Perfil de menor Influencia', 1)
-st.write('ID TOP 2 Perfil de menor Convencimiento', 2)
-st.write('ID TOP 3 Perfil de menor Interacción', 18)
-st.markdown('CONCLUSIONES ALARMAS ⚠️:')
-st.text('Falta enfocar el alcance en los barrios X, Y y Z en los perfiles A, B y C')
-st.text('Las horas de menor influencia son las 7pm-5am')
-
-
-
-#RECOMENDACIONES
-st.header("Recomendaciones para Aumentar Votos, Influencia y Sentimiento Favorable 🧠")
-rec1, rec2, rec3 = st.columns(3)
-rec1.metric("Horario de Mayor Influencia", "4pm", "85%prom")
-rec2.metric("Horario de Mayor Convencimiento", "ID_08", "73%prom")
-rec3.metric("Zonas de Mayor Impacto", "1-2-18", "-45%prom")
-st.text('Potenciales zonas de mayor Influencia y Convencimiento')
-df = pd.DataFrame(
-    np.random.randn(1000, 2) / [50, 50] + [40.3875, -3.7575416667],
-    columns=['lat', 'lon'])
-st.map(df)
-st.markdown('CONCLUSIONES RECOMENDACIONES 🧠:')
-st.text('Se puede crecer 117% la votación si se intensifican los mensajes en los horarios de 8am - 1pm')
-st.text('Se puede aumentar la influencia general en 35% si se enfocan en los barrios ID_007 y ID_004')
-st.caption('Todos los análisis son representativos únicamente entre el día/mes/años y el día/mes/año con sus días ☀️ y con sus noches 🌛')
+col1, col2, col3 = st.columns(3)
+with col1:
+    card(
+        title="Habilitados",
+        text="2M",
+        image="http://placekitten.com/300/250",
+        url="https://www.google.com",
+    )
+with col2:
+    card(
+        title="Abstención",
+        text="2M",
+        image="http://placekitten.com/300/250",
+        url="https://www.google.com",
+    )
+with col3:
+    card(
+        title="Votos Válidos",
+        text="2M",
+        image="http://placekitten.com/300/250",
+        url="https://www.google.com",
+    )
