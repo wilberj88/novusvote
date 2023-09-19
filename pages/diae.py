@@ -20,6 +20,19 @@ st.set_page_config(layout="wide", page_title="Novus Vote 🗳️", page_icon="�
 #TITULO
 st.title('Novus Vote 🗳️')
 
+validos2023 = 900000
+meta2023 = validos2023*0.36
+
+meta_zona_1 = 10290
+meta_zona_2 = 11986
+meta_zona_3 = 11368
+meta_zona_4 = 14018
+meta_zona_5 = 14036
+meta_zona_6 = 5241
+meta_zona_7 = 3112
+meta_zona_8 = 110
+meta_zona_9 = 7338
+
 
 colored_header(
     label="Mando Día E - 29/Oct/2023",
@@ -33,18 +46,7 @@ with colA:
 with colB:
     st.write('El ritmo de votos requeridos por la campaña por minuto es de: ', meta2023/480)
 
-validos2023 = 900000
-meta2023 = validos2023*0.36
 
-meta_zona_1 = 10290
-meta_zona_2 = 11986
-meta_zona_3 = 11368
-meta_zona_4 = 14018
-meta_zona_5 = 14036
-meta_zona_6 = 5241
-meta_zona_7 = 3112
-meta_zona_8 = 110
-meta_zona_9 = 7338
 st.header('Votos requeridos por zonas para ganar Gobernación Cundinamarca 2023')
 options = {
             "title": {"text": "Votos x Zonas"},
