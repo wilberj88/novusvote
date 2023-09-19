@@ -475,3 +475,8 @@ colored_header(
     description="29 de Octubre de 2023",
     color_name="violet-70",
 )
+
+col1, col2, col3 = st.columns(3)
+col1 = st.checkbox('Territoriales')
+col2 = st.checkbox('Generacionales')
+col3 = st.checkbox('Orientación Sexual')
