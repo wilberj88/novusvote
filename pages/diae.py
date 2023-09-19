@@ -37,8 +37,8 @@ meta_zona_9 = 7338
 
 
 colored_header(
-    label="Mando Día E - 29/Oct/2023",
-    description="Desagrega por tipos de votantes",
+    label="Mando Día E",
+    description="29 de Octubre de 2023",
     color_name="violet-70",
 )
 
