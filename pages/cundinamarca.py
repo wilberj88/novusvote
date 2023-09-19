@@ -397,3 +397,8 @@ st_echarts(options=options, height="400px")
 
 st.write('---')
 st.title('Central de CAMPAÑA')
+col1, col2, col3, col4 = st.columns(4)
+col1.metric("Correos", "300000", "14%")
+col2.metric("Celulares", "4500000", "-18%")
+col3.metric("ID_Meta", "1000000", "13%")
+col4.metric("ID_Google", "950000", "18%")
