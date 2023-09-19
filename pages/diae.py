@@ -139,14 +139,13 @@ options = {
 st_echarts(options=options, height="400px") 
 
 
-st.header('Votos requeridos por zonas para ganar ______ 2023')
-
-st.header("Canales de Comunicación con Electorado")
 col1, col2, col3, col4 = st.columns(4)
 col1.metric("Correos", "300000", "14%")
 col2.metric("Celulares", "4500000", "-18%")
 col3.metric("ID_Meta", "1000000", "13%")
 col4.metric("ID_Google", "950000", "18%")
+
+
 col6, col7 = st.columns(2)
 with col6:
     option = {
