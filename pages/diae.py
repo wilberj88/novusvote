@@ -45,7 +45,7 @@ colored_header(
 current_time = time.ctime()
 st.write("MONITOREO MINUTO A MINUTO: Siendo HOY y AHORA las: ", current_time)
 
-my_grid = grid(4, 3, vertical_align="bottom")
+my_grid = grid(3, 3, vertical_align="bottom")
 # Row 1:
 my_grid.selectbox("Indica una Zona", ["Territorio", "Género", "Edades", "Testigos"])
 my_grid.selectbox("Indica una Edad", ["18a 25 años", "25-45 años", "45-60 años", "+60años"])
