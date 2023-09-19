@@ -129,3 +129,284 @@ with col3:
         image="http://placekitten.com/300/250",
         url="https://www.google.com",
     )
+
+
+st.header("3. Requisitos para ganar")
+validos2023 = 900000
+meta2023 = validos2023*0.36
+st.write('El ritmo de votos requeridos por la campaña por hora es de: ', meta2023/8)  
+st.write('El ritmo de votos requeridos por la campaña por minuto es de: ', meta2023/480)
+meta_zona_1 = 10290
+meta_zona_2 = 11986
+meta_zona_3 = 11368
+meta_zona_4 = 14018
+meta_zona_5 = 14036
+meta_zona_6 = 5241
+meta_zona_7 = 3112
+meta_zona_8 = 110
+meta_zona_9 = 7338
+st.markdown(
+  """
+  🗳️ Votación requerida ponderada por zonas:
+  - Zona 1: _    10290 🗳️
+  - Zona 2: _    11986 🗳️
+  - Zona 3: _    11368 🗳️
+  - Zona 4: _    14018 🗳️
+  - Zona 5: _    14036 🗳️
+  - Zona 6: _    5241 🗳️
+  - Zona 7: _    3112 🗳️
+  - Zona 8: _    110 🗳️
+  - Zona 9: _    7338 🗳️
+  
+  Todo lo anterior con el siguiente ritmo de votación hora a hora 🕰:
+  """
+)
+st.header('Votos requeridos por zonas para ganar Alcaldía Valledupar 2023')
+options = {
+            "title": {"text": "Votos x Zonas"},
+            "tooltip": {
+                "trigger": "axis",
+                "axisPointer": {"type": "cross", "label": {"backgroundColor": "#6a7985"}},
+            },
+            "legend": {"data": ["Zona_9", "Zona_8", "Zona_7", "Zona_6", "Zona_5", "Zona_4", "Zona_3", "Zona_2", "Zona_1"]},
+            "toolbox": {"feature": {"saveAsImage": {}}},
+            "grid": {"left": "3%", "right": "4%", "bottom": "3%", "containLabel": True},
+            "xAxis": [
+                {
+                    "type": "category",
+                    "boundaryGap": False,
+                    "data": ["10am", "11am", "12md", "1pm", "2pm", "3pm", "4pm"],
+                }
+            ],
+            "yAxis": [{"type": "value"}],
+            "series": [
+                {
+                    "name": "Zona_9",
+                    "type": "line",
+                    "stack": "总量",
+                    "areaStyle": {},
+                    "emphasis": {"focus": "series"},
+                    "data": [meta_zona_9*0.1, meta_zona_9*0.2, meta_zona_9*0.35, meta_zona_9*0.45, meta_zona_9*0.5, meta_zona_9*0.75, meta_zona_9],
+                },
+                {
+                    "name": "Zona_8",
+                    "type": "line",
+                    "stack": "总量",
+                    "areaStyle": {},
+                    "emphasis": {"focus": "series"},
+                    "data": [meta_zona_8*0.1, meta_zona_8*0.2, meta_zona_8*0.35, meta_zona_8*0.45, meta_zona_8*0.5, meta_zona_8*0.75, meta_zona_8],
+                },
+                {
+                    "name": "Zona_7",
+                    "type": "line",
+                    "stack": "总量",
+                    "areaStyle": {},
+                    "emphasis": {"focus": "series"},
+                    "data": [meta_zona_7*0.1, meta_zona_7*0.2, meta_zona_7*0.35, meta_zona_7*0.45, meta_zona_7*0.5, meta_zona_7*0.75, meta_zona_7],
+                },
+                  {
+                    "name": "Zona_6",
+                    "type": "line",
+                    "stack": "总量",
+                    "areaStyle": {},
+                    "emphasis": {"focus": "series"},
+                    "data": [meta_zona_6*0.1, meta_zona_6*0.2, meta_zona_6*0.35, meta_zona_6*0.45, meta_zona_6*0.5, meta_zona_6*0.75, meta_zona_6],
+                },
+                 {
+                    "name": "Zona_5",
+                    "type": "line",
+                    "stack": "总量",
+                    "areaStyle": {},
+                    "emphasis": {"focus": "series"},
+                    "data": [meta_zona_5*0.1, meta_zona_5*0.2, meta_zona_5*0.35, meta_zona_5*0.45, meta_zona_5*0.5, meta_zona_5*0.75, meta_zona_5],
+                },
+                  {
+                    "name": "Zona_4",
+                    "type": "line",
+                    "stack": "总量",
+                    "areaStyle": {},
+                    "emphasis": {"focus": "series"},
+                    "data": [meta_zona_4*0.1, meta_zona_4*0.2, meta_zona_4*0.35, meta_zona_4*0.45, meta_zona_4*0.5, meta_zona_4*0.75, meta_zona_4],
+                },
+                  {
+                    "name": "Zona_3",
+                    "type": "line",
+                    "stack": "总量",
+                    "areaStyle": {},
+                    "emphasis": {"focus": "series"},
+                    "data": [meta_zona_3*0.1, meta_zona_3*0.2, meta_zona_3*0.35, meta_zona_3*0.45, meta_zona_3*0.5, meta_zona_3*0.75, meta_zona_3],
+                },
+                  {
+                    "name": "Zona_2",
+                    "type": "line",
+                    "stack": "总量",
+                    "areaStyle": {},
+                    "emphasis": {"focus": "series"},
+                    "data": [meta_zona_2*0.1, meta_zona_2*0.2, meta_zona_2*0.35, meta_zona_2*0.45, meta_zona_2*0.5, meta_zona_2*0.75, meta_zona_2],
+                },
+                  {
+                    "name": "Zona_1",
+                    "type": "line",
+                    "stack": "总量",
+                    "areaStyle": {},
+                    "emphasis": {"focus": "series"},
+                    "data": [meta_zona_1*0.1, meta_zona_1*0.2, meta_zona_1*0.35, meta_zona_1*0.45, meta_zona_1*0.5, meta_zona_1*0.75, meta_zona_1],
+                },
+            ],
+        }
+st_echarts(options=options, height="400px") 
+
+
+st.write('Ritmo de votación por generos requerido')
+st.header("Votos requeridos por género para ganar Alcaldía Valledupar 2023 en escenario histórico")
+st.subheader("Suponiendo crecimiento electoral del 18% y participación de victoria del 39%")
+st.write("Mujeres: 43.378 ; Hombres: 41.180")
+option = {
+    "legend": {},
+    "tooltip": {"trigger": "axis", "showContent": False},
+    "dataset": {
+        "source": [
+            ["product", "Zona 1", "Zona 2", "Zona 3", "Zona 4", "Zona 5", "Zona 6", "Zona 7", "Zona 8", "Zona 9"],
+            ["Mujer", 5760, 6709, 6363, 7846, 7856, 2934, 1742, 61, 4108],
+            ["Hombre", 5468, 6369, 6041, 7448, 7458, 2785, 1654, 58, 3899],
+        ]
+    },
+    "xAxis": {"type": "category"},
+    "yAxis": {"gridIndex": 0},
+    "grid": {"top": "55%"},
+    "series": [
+        {
+            "type": "line",
+            "smooth": True,
+            "seriesLayoutBy": "row",
+            "emphasis": {"focus": "series"},
+        },
+        {
+            "type": "line",
+            "smooth": True,
+            "seriesLayoutBy": "row",
+            "emphasis": {"focus": "series"},
+        },
+        {
+            "type": "pie",
+            "id": "pie",
+            "radius": "30%",
+            "center": ["50%", "25%"],
+            "emphasis": {"focus": "data"},
+            "label": {"formatter": "{b}: {@2012} ({d}%)"},
+            "encode": {"itemName": "product", "value": "Zona 9", "tooltip": "Zona 9"},
+        },
+    ],
+}
+st_echarts(option, height="500px", key="echarts")
+
+st.write('Ritmo de votación por edades requerido')
+meta_18_25 = meta2023*0.16
+meta_25_30 = meta2023*0.14
+meta_30_35 = meta2023*0.13
+meta_35_40 = meta2023*0.12
+meta_40_45 = meta2023*0.11
+meta_45_50 = meta2023*0.10
+meta_50_55 = meta2023*0.09
+meta_55_60 = meta2023*0.08
+meta_mas_60 = meta2023*0.07
+options = {
+            "title": {"text": "Votos x Zonas"},
+            "tooltip": {
+                "trigger": "axis",
+                "axisPointer": {"type": "cross", "label": {"backgroundColor": "#6a7985"}},
+            },
+            "legend": {"data": ["18-25años", "25-30años", "30-35años", "35-40años", "40-45años", "45-50años", "50-55años", "55-60", "+60años"]},
+            "toolbox": {"feature": {"saveAsImage": {}}},
+            "grid": {"left": "3%", "right": "4%", "bottom": "3%", "containLabel": True},
+            "xAxis": [
+                {
+                    "type": "category",
+                    "boundaryGap": False,
+                    "data": ["10am", "11am", "12md", "1pm", "2pm", "3pm", "4pm"],
+                }
+            ],
+            "yAxis": [{"type": "value"}],
+            "series": [
+                {
+                    "name": "18-25años",
+                    "type": "line",
+                    "stack": "总量",
+                    "areaStyle": {},
+                    "emphasis": {"focus": "series"},
+                    "data": [meta_18_25*0.1, meta_18_25*0.2, meta_18_25*0.35, meta_18_25*0.45, meta_18_25*0.5, meta_18_25*0.75, meta_18_25],
+                },
+                {
+                    "name": "25-30años",
+                    "type": "line",
+                    "stack": "总量",
+                    "areaStyle": {},
+                    "emphasis": {"focus": "series"},
+                    "data": [meta_25_30*0.1, meta_25_30*0.2, meta_25_30*0.35, meta_25_30*0.45, meta_25_30*0.5, meta_25_30*0.75, meta_25_30],
+                },
+                {
+                    "name": "30-35años",
+                    "type": "line",
+                    "stack": "总量",
+                    "areaStyle": {},
+                    "emphasis": {"focus": "series"},
+                    "data": [meta_30_35*0.1, meta_30_35*0.2, meta_30_35*0.35, meta_30_35*0.45, meta_30_35*0.5, meta_30_35*0.75, meta_30_35],
+                },
+                  {
+                    "name": "35-40años",
+                    "type": "line",
+                    "stack": "总量",
+                    "areaStyle": {},
+                    "emphasis": {"focus": "series"},
+                    "data": [meta_35_40*0.1, meta_35_40*0.2, meta_35_40*0.35, meta_35_40*0.45, meta_35_40*0.5, meta_35_40*0.75, meta_35_40],
+                },
+                 {
+                    "name": "40-45años",
+                    "type": "line",
+                    "stack": "总量",
+                    "areaStyle": {},
+                    "emphasis": {"focus": "series"},
+                    "data": [meta_40_45*0.1, meta_40_45*0.2, meta_40_45*0.35, meta_40_45*0.45, meta_40_45*0.5, meta_40_45*0.75, meta_40_45],
+                },
+                  {
+                    "name": "45-50años",
+                    "type": "line",
+                    "stack": "总量",
+                    "areaStyle": {},
+                    "emphasis": {"focus": "series"},
+                    "data": [meta_45_50*0.1, meta_45_50*0.2, meta_45_50*0.35, meta_45_50*0.45, meta_45_50*0.5, meta_45_50*0.75, meta_45_50],
+                },
+                  {
+                    "name": "50-55años",
+                    "type": "line",
+                    "stack": "总量",
+                    "areaStyle": {},
+                    "emphasis": {"focus": "series"},
+                    "data": [meta_50_55*0.1, meta_50_55*0.2, meta_50_55*0.35, meta_50_55*0.45, meta_50_55*0.5, meta_50_55*0.75, meta_50_55],
+                },
+                  {
+                    "name": "55-60años",
+                    "type": "line",
+                    "stack": "总量",
+                    "areaStyle": {},
+                    "emphasis": {"focus": "series"},
+                    "data": [meta_55_60*0.1, meta_55_60*0.2, meta_55_60*0.35, meta_55_60*0.45, meta_55_60*0.5, meta_55_60*0.75, meta_55_60],
+                },
+                  {
+                    "name": "+60años",
+                    "type": "line",
+                    "stack": "总量",
+                    "areaStyle": {},
+                    "emphasis": {"focus": "series"},
+                    "data": [meta_mas_60*0.1, meta_mas_60*0.2, meta_mas_60*0.35, meta_mas_60*0.45, meta_mas_60*0.5, meta_mas_60*0.75, meta_mas_60],
+                },
+            ],
+        }
+st_echarts(options=options, height="400px") 
+
+
+
+
+
+st.write('---')
+st.title('Central de CAMPAÑA')
