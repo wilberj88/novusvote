@@ -42,6 +42,16 @@ colored_header(
     color_name="violet-70",
 )
 
+my_grid = grid(3, 4, vertical_align="bottom")
+# Row 1:
+my_grid.selectbox("Tareas por líderes", ["Territorio", "Género", "Edades", "Testigos"])
+my_grid.button("Activar tareas líderes", use_container_width=True)
+my_grid.button("Activar Mensajes Automáticos", use_container_width=True)
+# Row 3:
+my_grid.button("Email", use_container_width=True)
+my_grid.button("Telefonía", use_container_width=True)
+my_grid.button("Facebook e IG", use_container_width=True)
+my_grid.button("Google & Youtube", use_container_width=True)
 
 
 options = {
