@@ -149,7 +149,7 @@ options = {
 st_echarts(options=options, height="400px") 
 
 
-my_grid1 = grid1(4, vertical_align="bottom")
+my_grid1 = grid(4, vertical_align="bottom")
 my_grid1.button("Email", use_container_width=True)
 my_grid1.button("Telefonía", use_container_width=True)
 my_grid1.button("Facebook e IG", use_container_width=True)
