@@ -276,6 +276,10 @@ with col7:
     }
     st_echarts(option, height="500px", key="echarts")
 
+my_grid2 = grid(3, vertical_align="bottom")
+my_grid2.button("Actualizar Ubicación Líderes", use_container_width=True)
+my_grid2.button("Actualizar Ubicación Voluntarios", use_container_width=True)
+my_grid2.button("Actualizar Ubicación Testigos", use_container_width=True)
 
 
 # center on Liberty Bell, add marker
