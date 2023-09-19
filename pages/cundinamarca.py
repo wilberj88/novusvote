@@ -402,3 +402,67 @@ col1.metric("Correos", "300000", "14%")
 col2.metric("Celulares", "4500000", "-18%")
 col3.metric("ID_Meta", "1000000", "13%")
 col4.metric("ID_Google", "950000", "18%")
+
+option = {
+    "title": {"text": "Eficacia de la Campaña", "subtext": "Porcentaje Conversión(%)"},
+    "tooltip": {"trigger": "item", "formatter": "{a} <br/>{b} : {c}%"},
+    "toolbox": {
+        "feature": {
+            "dataView": {"readOnly": False},
+            "restore": {},
+            "saveAsImage": {},
+        }
+    },
+    "legend": {"data": ["Contactados", "Interesados", "Persuadidos", "Comprometidos", "Votantes"]},
+    "series": [
+        {
+            "name": "Contactados",
+            "type": "funnel",
+            "left": "10%",
+            "width": "80%",
+            "label": {"formatter": "{b}%"},
+            "labelLine": {"show": False},
+            "itemStyle": {"opacity": 0.7},
+            "emphasis": {
+                "label": {"position": "inside", "formatter": "{b}预期: {c}%"}
+            },
+            "data": [
+                {"value": 60, "name": "Persuadidos"},
+                {"value": 40, "name": "Comprometidos"},
+                {"value": 20, "name": "Votantes"},
+                {"value": 80, "name": "Interesados"},
+                {"value": 100, "name": "Contactados"},
+            ],
+        },
+        {
+            "name": "Margen",
+            "type": "funnel",
+            "left": "10%",
+            "width": "80%",
+            "maxSize": "80%",
+            "label": {"position": "inside", "formatter": "{c}%", "color": "#fff"},
+            "itemStyle": {"opacity": 0.5, "borderColor": "#fff", "borderWidth": 2},
+            "emphasis": {
+                "label": {"position": "inside", "formatter": "{b}实际: {c}%"}
+            },
+            "data": [
+                {"value": 30, "name": "Persuadidos"},
+                {"value": 10, "name": "Comprometidos"},
+                {"value": 5, "name": "Votantes"},
+                {"value": 50, "name": "Interesados"},
+                {"value": 80, "name": "Contactados"},
+            ],
+            "z": 100,
+        },
+    ],
+}
+st_echarts(option, height="500px")    
+
+
+current_time = time.ctime()
+st.write("A día de hoy a las: ", current_time)
+col1, col2, col3, col4 = st.columns(4)
+col1.metric("Derecha", "5.1M", "14%")
+col2.metric("Izquierda", "4.7M", "-18%")
+col3.metric("Centro", "3.9M", "13%")
+col4.metric("Ambientales", "2.6M", "18%")
