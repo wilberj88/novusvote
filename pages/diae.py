@@ -46,6 +46,11 @@ with colA:
 with colB:
     st.write('El ritmo de votos requeridos por la campaña por minuto es de: ', meta2023/480)
 
+col1, col2, col3, col4 = st.columns(4)
+col1.metric("Correos", "300000", "14%")
+col2.metric("Celulares", "4500000", "-18%")
+col3.metric("ID_Meta", "1000000", "13%")
+col4.metric("ID_Google", "950000", "18%")
 
 st.header('Votos requeridos por zonas para ganar Gobernación Cundinamarca 2023')
 options = {
