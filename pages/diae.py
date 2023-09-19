@@ -391,11 +391,11 @@ folium.Marker(
 
 colA, colB, colC = st.columns(3)
 with colA:
-    st_data = st_folium(m, width=300)
+    st_data = st_folium(m, width=400)
 with colB:
-    st_data = st_folium(n, width=300)
+    st_data = st_folium(n, width=400)
 with colC:
-    st_data = st_folium(l, width=300)
+    st_data = st_folium(l, width=400)
 
 
 
