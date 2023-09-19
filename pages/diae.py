@@ -22,6 +22,7 @@ st.set_page_config(layout="wide", page_title="Novus Vote 🗳️", page_icon="�
 
 #TITULO
 st.title('Mando Día E 🗳️ Novus Vote')
+st.header('Candidatura ____')
 
 validos2023 = 900000
 meta2023 = validos2023*0.36
@@ -38,7 +39,7 @@ meta_zona_9 = 7338
 
 
 colored_header(
-    label="Operación Día E - Candidatura a ____",
+    label="Operación Día E",
     description="29 de Octubre de 2023",
     color_name="violet-70",
 )
@@ -400,7 +401,7 @@ with colC:
 
 
 colored_header(
-    label="Alarmas Día E - Candidatura a ____",
+    label="Alarmas Día E",
     description="29 de Octubre de 2023",
     color_name="violet-70",
 )
@@ -470,7 +471,7 @@ with col3:
 
 
 colored_header(
-    label="Recomendaciones Día E - Candidatura a ____",
+    label="Recomendaciones Día E",
     description="29 de Octubre de 2023",
     color_name="violet-70",
 )
