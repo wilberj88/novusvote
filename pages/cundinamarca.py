@@ -136,6 +136,7 @@ validos2023 = 900000
 meta2023 = validos2023*0.36
 st.write('El ritmo de votos requeridos por la campaña por hora es de: ', meta2023/8)  
 st.write('El ritmo de votos requeridos por la campaña por minuto es de: ', meta2023/480)
+
 meta_zona_1 = 10290
 meta_zona_2 = 11986
 meta_zona_3 = 11368
@@ -145,23 +146,9 @@ meta_zona_6 = 5241
 meta_zona_7 = 3112
 meta_zona_8 = 110
 meta_zona_9 = 7338
-st.markdown(
-  """
-  🗳️ Votación requerida ponderada por zonas:
-  - Zona 1: _    10290 🗳️
-  - Zona 2: _    11986 🗳️
-  - Zona 3: _    11368 🗳️
-  - Zona 4: _    14018 🗳️
-  - Zona 5: _    14036 🗳️
-  - Zona 6: _    5241 🗳️
-  - Zona 7: _    3112 🗳️
-  - Zona 8: _    110 🗳️
-  - Zona 9: _    7338 🗳️
-  
-  Todo lo anterior con el siguiente ritmo de votación hora a hora 🕰:
-  """
-)
-st.header('Votos requeridos por zonas para ganar Alcaldía Valledupar 2023')
+
+
+st.header('Votos requeridos por zonas para ganar Gobernación Cundinamarca 2023')
 options = {
             "title": {"text": "Votos x Zonas"},
             "tooltip": {
