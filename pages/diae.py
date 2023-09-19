@@ -47,7 +47,7 @@ st.write("Siendo HOY y AHORA las: ", current_time)
 
 my_grid = grid(3, 3, vertical_align="bottom")
 # Row 1:
-my_grid.selectbox("Indica una Zona", ["Territorio", "Género", "Edades", "Testigos"])
+my_grid.selectbox("Indica una Zona", ["Zona 1", "Zona 2", "Zona 3", "Zona 4"])
 my_grid.selectbox("Indica una Edad", ["18a 25 años", "25-45 años", "45-60 años", "+60años"])
 my_grid.selectbox("Indica un Género", ["Mujer", "Hombre", "LGBTQI+"])
 
