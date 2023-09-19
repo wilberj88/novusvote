@@ -476,7 +476,7 @@ colored_header(
     color_name="violet-70",
 )
 
-col1, col2, col3 = st.columns(3)
-col1 = st.checkbox('Territoriales')
-col2 = st.checkbox('Generacionales')
-col3 = st.checkbox('Orientación Sexual')
+colx, coly, colz = st.columns(3)
+colx = st.checkbox('Territoriales')
+coly = st.checkbox('Generacionales')
+colz = st.checkbox('Orientación Sexual')
