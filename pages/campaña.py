@@ -16,6 +16,9 @@ from pyecharts.charts import Graph
 import folium
 from streamlit_folium import st_folium
 import time
+from streamlit_card import card
+from streamlit_extras.grid import grid
+from streamlit_extras.colored_header import colored_header
 
 # SETTING PAGE CONFIG TO WIDE MODE AND ADDING A TITLE AND FAVICON
 st.set_page_config(layout="wide", page_title="Novus Vote 🗳️ CAMPAÑA", page_icon="🗳️")
@@ -28,6 +31,19 @@ st.header('1. Puestos de Votación 🗺️')
 data = pd.read_csv('pages/datos/Votos Válidos procesados Valledupar 2015-2019 - Puro Puestos.csv')
 data_pura = data.dropna()
 st.dataframe(data_pura)
+
+my_grid1 = grid(4, vertical_align="bottom")
+my_grid1.button("Email", use_container_width=True)
+my_grid1.button("Telefonía", use_container_width=True)
+my_grid1.button("Facebook e IG", use_container_width=True)
+my_grid1.button("Google & Youtube", use_container_width=True)
+
+col1, col2, col3, col4 = st.columns(4)
+col1.metric("Correos", "300000", "14%")
+col2.metric("Celulares", "4500000", "-18%")
+col3.metric("ID_Meta", "1000000", "13%")
+col4.metric("ID_Google", "950000", "18%")
+
 
 st.subheader('Identificación por: Zona, Puesto de Zona, Puesto Total, Nombre, Meta y Caudal')
 
