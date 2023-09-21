@@ -21,9 +21,9 @@ import time
 st.set_page_config(layout="wide", page_title="Novus Vote 🗳️ Valledupar PRE CAMPAÑA", page_icon="🗳️")
 
 #TITULO
-st.title('Novus Vote 🗳️ - Alcaldía Valledupar 2023')
+st.title('Novus Vote 🗳️ - PRECAMPAÑA')
 
-st.title('Central de PRE CAMPAÑA')
+st.title('Mando de PRE CAMPAÑA')
 st.subheader(':red[Votación Histórica 2015-2019], :blue[Proyecciones 2023] y :green[Requisitos para Ganar] 🏆')
 st.header("1. Históricos: Datos procesados 🛠️")
 
