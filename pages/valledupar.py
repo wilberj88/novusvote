@@ -439,7 +439,7 @@ folium.Marker(
 st_data = st_folium(m, width=725)
 
 
-st.write(---)
+st.write('---')
 st.title('DíaE')
 st.subheader(':blue[Ritmo de Votación HORA A HORA por Zonas, Géneros y Edades] 🔎⏰🏆')
 
