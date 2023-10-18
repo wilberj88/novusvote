@@ -32,12 +32,12 @@ data = pd.read_csv('pages/datos/Votos Válidos procesados Valledupar 2015-2019 
 data_pura = data.dropna()
 
 with st.expander("Ver explicación de los datos usados:"):
-    st.write('FUENTES DE LOS DATOS')
+    st.subheader('Fuentes de los datos')
     st.write('Votos y abstención: Formularios E-14 de la Registraduría General de la Nación.')
     st.write('Ubicación: Latitudes y Longitudes de Google Maps')     
     st.write('Demografía: DANE')
     st.write('Predicciones: Novus Vote')
-    st.subheader('Datos procesados y depurados:')
+    st.subheader('Datos depurados')
     st.dataframe(data_pura)
 
 st.header("Votación Alcaldía 2015")
