@@ -36,6 +36,8 @@ with st.expander("Ver explicación de los datos usados:"):
     st.write('Votos y abstención: Formularios E-14 de la Registraduría General de la Nación.')
     st.write('Ubicación: Latitudes y Longitudes de Google Maps')     
     st.write('Demografía: DANE')
+    st.write('Predicciones: Novus Vote')
+    st.subheader('Datos procesados y depurados:')
     st.dataframe(data_pura)
 
 st.header("Votación Alcaldía 2015")
