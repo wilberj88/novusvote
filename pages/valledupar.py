@@ -26,7 +26,7 @@ st.set_page_config(layout="wide", page_title="Novus Vote 🗳️ Valledupar PRE 
 #TITULO
 st.title('Novus Vote 🗳️ - Alcaldía Valledupar 2023')
 
-st.title('Central de PRE CAMPAÑA')
+st.title('PRE CAMPAÑA + CAMPAÑA + DíaE')
 
 st.subheader(':red[Votación Histórica 2015-2019], :blue[Proyecciones 2023] y :green[Requisitos para Ganar] 🏆')
 st.header("1. Históricos: Datos procesados 🛠️")
@@ -690,116 +690,4 @@ options = {
 st_echarts(options=options, height="400px") 
 
 
-
-st.header('Post Día E')
-col6, col7 = st.columns(2)
-with col6:
-    option = {
-        "title": {"text": "Eficacia de la Campaña", "subtext": "Porcentaje Conversión(%)"},
-        "tooltip": {"trigger": "item", "formatter": "{a} <br/>{b} : {c}%"},
-        "toolbox": {
-            "feature": {
-                "dataView": {"readOnly": False},
-                "restore": {},
-                "saveAsImage": {},
-            }
-        },
-        "legend": {"data": ["Contactados", "Interesados", "Persuadidos", "Comprometidos", "Votantes"]},
-        "series": [
-            {
-                "name": "Contactados",
-                "type": "funnel",
-                "left": "10%",
-                "width": "80%",
-                "label": {"formatter": "{b}%"},
-                "labelLine": {"show": False},
-                "itemStyle": {"opacity": 0.7},
-                "emphasis": {
-                    "label": {"position": "inside", "formatter": "{b}预期: {c}%"}
-                },
-                "data": [
-                    {"value": 60, "name": "Persuadidos"},
-                    {"value": 40, "name": "Comprometidos"},
-                    {"value": 20, "name": "Votantes"},
-                    {"value": 80, "name": "Interesados"},
-                    {"value": 100, "name": "Contactados"},
-                ],
-            },
-            {
-                "name": "Margen",
-                "type": "funnel",
-                "left": "10%",
-                "width": "80%",
-                "maxSize": "80%",
-                "label": {"position": "inside", "formatter": "{c}%", "color": "#fff"},
-                "itemStyle": {"opacity": 0.5, "borderColor": "#fff", "borderWidth": 2},
-                "emphasis": {
-                    "label": {"position": "inside", "formatter": "{b}实际: {c}%"}
-                },
-                "data": [
-                    {"value": 30, "name": "Persuadidos"},
-                    {"value": 10, "name": "Comprometidos"},
-                    {"value": 5, "name": "Votantes"},
-                    {"value": 50, "name": "Interesados"},
-                    {"value": 80, "name": "Contactados"},
-                ],
-                "z": 100,
-            },
-        ],
-    }
-    st_echarts(option, height="500px")    
-
-with col7:
-    option = {
-        "legend": {},
-        "tooltip": {"trigger": "axis", "showContent": False},
-        "dataset": {
-            "source": [
-                ["product", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"],
-                ["Correos", 56.5, 82.1, 88.7, 70.1, 53.4, 85.1],
-                ["Facebook & IG", 51.1, 51.4, 55.1, 53.3, 73.8, 68.7],
-                ["Google & Youtube", 40.1, 62.2, 69.5, 36.4, 45.2, 32.5],
-                ["Celular", 25.2, 37.1, 41.2, 18, 33.9, 49.1],
-            ]
-        },
-        "xAxis": {"type": "category"},
-        "yAxis": {"gridIndex": 0},
-        "grid": {"top": "55%"},
-        "series": [
-            {
-                "type": "line",
-                "smooth": True,
-                "seriesLayoutBy": "row",
-                "emphasis": {"focus": "series"},
-            },
-            {
-                "type": "line",
-                "smooth": True,
-                "seriesLayoutBy": "row",
-                "emphasis": {"focus": "series"},
-            },
-            {
-                "type": "line",
-                "smooth": True,
-                "seriesLayoutBy": "row",
-                "emphasis": {"focus": "series"},
-            },
-            {
-                "type": "line",
-                "smooth": True,
-                "seriesLayoutBy": "row",
-                "emphasis": {"focus": "series"},
-            },
-            {
-                "type": "pie",
-                "id": "pie",
-                "radius": "30%",
-                "center": ["50%", "25%"],
-                "emphasis": {"focus": "data"},
-                "label": {"formatter": "{b}: {@2012} ({d}%)"},
-                "encode": {"itemName": "product", "value": "Lunes", "tooltip": "Lunes"},
-            },
-        ],
-    }
-    st_echarts(option, height="500px", key="echarts")
 
