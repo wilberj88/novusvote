@@ -28,15 +28,17 @@ st.title('Novus Vote 🗳️ - Alcaldía Valledupar 2023')
 st.write('---')
 
 st.title('PRE CAMPAÑA')
-st.subheader(':red[Votación Histórica 2015-2019], :blue[Proyecciones 2023] y :green[Requisitos para Ganar] 🏆')
+st.subheader(':red[Votación Histórica 2015-2019, Proyecciones 2023 y Requisitos para Ganar] 🎯')
 
 st.title('CAMPAÑA')
-st.subheader(':blue[Puestos de Votación] y :red[Votos Requiridos para Ganar por Puesto]')
+st.subheader(':blue[Puestos de Votación y Votos Requiridos en cada uno para Ganar]💪')
 
 st.title('DíaE')
-st.subheader(':blue[Votación por Zonas], :green[Votación por Géneros] y :red[Votación por Edades]')
+st.subheader(':blue[Ritmo de Votación HORA A HORA por Zonas, Géneros y Edades] 🔎⏰🏆')
 
 st.write('---')
+st.title('PRE CAMPAÑA')
+st.subheader(':red[Votación Histórica 2015-2019, Proyecciones 2023 y Requisitos para Ganar] 🎯')
 st.header("1. Históricos: Datos procesados 🛠️")
 #columnas_to_keep = ["Nombre", "Votos Válidos 2019", "Latitud", "Longitud"]
 data = pd.read_csv('pages/datos/Votos Válidos procesados Valledupar 2015-2019 - Puro Puestos.csv')
@@ -318,15 +320,8 @@ st.markdown(
 
 
 st.write('---')
-st.title('Central de CAMPAÑA')
-st.subheader(':red[Puestos de Votación], :blue[Equipos] y :green[Votos] 🏆')
-
-
-
-st.write('---')
-
-
-st.header('1. Puestos de Votación 🗺️')
+st.title('CAMPAÑA')
+st.subheader(':blue[Puestos de Votación y Votos Requiridos en cada uno para Ganar]💪')
 st.subheader('Identificación por: Zona, Puesto de Zona, Puesto Total, Nombre, Meta y Caudal')
 
 zona_1 = pd.DataFrame({
@@ -444,7 +439,9 @@ folium.Marker(
 st_data = st_folium(m, width=725)
 
 
-
+st.write(---)
+st.title('DíaE')
+st.subheader(':blue[Ritmo de Votación HORA A HORA por Zonas, Géneros y Edades] 🔎⏰🏆')
 
 colored_header(
     label="Operación Día E",
