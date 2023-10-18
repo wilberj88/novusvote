@@ -16,6 +16,9 @@ from pyecharts.charts import Graph
 import folium
 from streamlit_folium import st_folium
 import time
+from streamlit_card import card
+from streamlit_extras.grid import grid
+from streamlit_extras.colored_header import colored_header
 
 # SETTING PAGE CONFIG TO WIDE MODE AND ADDING A TITLE AND FAVICON
 st.set_page_config(layout="wide", page_title="Novus Vote 🗳️ Valledupar PRE CAMPAÑA", page_icon="🗳️")
