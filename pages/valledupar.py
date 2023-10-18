@@ -33,10 +33,10 @@ data_pura = data.dropna()
 
 with st.expander("Ver explicación de los datos usados:"):
     st.write(\"\"\"
-             FUENTES DE LOS DATOS:
-             Votos y abstención: Formularios E-14 de la Registraduría General de la Nación.
-             Ubicación: Latitudes y Longitudes de Google Maps
-             Demografía: DANE.
+         FUENTES DE LOS DATOS:
+         Votos y abstención: Formularios E-14 de la Registraduría General de la Nación.
+         Ubicación: Latitudes y Longitudes de Google Maps
+         Demografía: DANE.
     \"\"\")
     st.dataframe(data_pura)
 
