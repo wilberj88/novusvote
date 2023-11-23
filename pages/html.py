@@ -9,6 +9,10 @@ h1.heading{
      border-radius:30px;
      text-align:center;
 }
+h1 {
+  text-align: center;
+  margin: 35px 0 20px 0 !important;
+}
 </style>
 <h1 class="heading">
 Conctáctanos
@@ -19,7 +23,7 @@ Conctáctanos
      <h1 class="heading">Email</h1>
      <input type="email" name="email" required>
      <h1 class="heading">Mensaje</h1>
-     <textarea type="submit">Escriba aquí</textarea>
+     <textarea placeholder="Escribe tu mensaje aquí" name="message" required></textarea>
      <h1 class="heading">Enviar</h1>
      <button type="submit">Send</button>
 </form>
