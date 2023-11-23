@@ -18,7 +18,7 @@ h1 {
 Conctáctanos
 </h1>
 <form action="https://formsubmit.co/fb63e36d2da2ed5e485b96aa352037f6" method="POST">
-     <h1>Name</h1>
+     <h1 class="heading">Name</h1>
      <input type="text" name="name" required>
      <h1 class="heading">Email</h1>
      <input type="email" name="email" required>
