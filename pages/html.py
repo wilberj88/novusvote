@@ -23,7 +23,7 @@ Conctáctanos
      <h1 class="heading">Email</h1>
      <input type="email" name="email" required>
      <h1 class="heading">Mensaje</h1>
-     <textarea placeholder="Escribe tu mensaje aquí" name="message" required></textarea>
+     <textarea placeholder="Escribe..." name="message" required></textarea>
      <h1 class="heading">Enviar</h1>
      <button type="submit">Send</button>
 </form>
