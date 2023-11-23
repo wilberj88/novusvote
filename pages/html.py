@@ -18,6 +18,8 @@ Conctáctanos
      <input type="text" name="name" required>
      <h1 class="heading">Email</h1>
      <input type="email" name="email" required>
+     <h1 class="heading">Mensaje</h1>
+     <textarea type="submit">Escriba aquí</textarea>
      <h1 class="heading">Enviar</h1>
      <button type="submit">Send</button>
 </form>
