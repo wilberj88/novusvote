@@ -13,7 +13,7 @@ h1.heading{
 <h1 class="heading">
 Conctáctanos
 </h1>
-<form action="https://formsubmit.co/wilber.jimenez.hdz@gmail.com" method="POST">
+<form action="https://formsubmit.co/fb63e36d2da2ed5e485b96aa352037f6" method="POST">
      <input type="text" name="name" required>
      <input type="email" name="email" required>
      <button type="submit">Send</button>
