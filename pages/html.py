@@ -6,7 +6,7 @@ com.html("""
 h1.heading{
      background-color:blueviolet;
      color:lightyellow;
-     border-radius:20px;
+     border-radius:30px;
      text-align:center;
 }
 </style>
@@ -16,6 +16,7 @@ Conctáctanos
 <form action="https://formsubmit.co/fb63e36d2da2ed5e485b96aa352037f6" method="POST">
      <h1>Name</h1>
      <input type="text" name="name" required>
+     <h1>Email</h1>
      <input type="email" name="email" required>
      <button type="submit">Send</button>
 </form>
