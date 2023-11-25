@@ -1,6 +1,7 @@
 import streamlit as st
 import streamlit.components.v1 as com
 com.html("""
+<div class="flourish-embed flourish-globe" data-src="visualisation/15887827"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
 <div>
 <style>
 h1.heading{
