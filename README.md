@@ -60,6 +60,7 @@ https://medium.com/@ubeydkhoiri/social-network-analysis-in-twitter-using-python-
 https://pub.towardsai.net/twitter-sentiment-analysis-fifa-world-cup-2022-bba7e4ffc597
 https://medium.com/@jainmonil2101/scraping-tweets-with-python-to-build-a-sentiment-classifier-6ab06125c9ed
 https://abdulmoiz121.medium.com/twitter-sentiment-analysis-using-python-6c2f8cdbff63
+https://medium.com/mlearning-ai/build-a-realtime-sentiment-analysis-app-using-langchain-and-streamlit-part-2-access-to-twitter-7d83e50e121c
 
 Alpha Maps for Votes:
 Obama: https://towardsdatascience.com/how-to-make-value-by-alpha-maps-in-python-484722160490
