@@ -1,4 +1,6 @@
 # novusvote
+LLM Example: https://medium.com/@syrom_85473/a-crewai-use-case-for-local-politics-drafting-a-municipal-election-program-with-exasearch-d9f218340dbb
+
 metodologia referente intencion de voto minuto 5 segundo 27:
 Youtube: Gustavo Bolivar oficializa candidatura a la Alcaldia de Bogota. red mas noticias
 iso 20252 de 2012: investigacion de mercados sociales y de opinion
