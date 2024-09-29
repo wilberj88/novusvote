@@ -59,9 +59,9 @@ edges.append( Edge(source="Lider_2",
                    ) 
             ) 
 
-edges.append( Edge(source="Lider_4", 
-                   label="friend_of", 
-                   target="Lider_1", 
+edges.append( Edge(source="Lider_3", 
+                   label="boss_of", 
+                   target="Lider_4", 
                    # **kwargs
                    ) 
             )
