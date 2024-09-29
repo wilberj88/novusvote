@@ -46,6 +46,26 @@ edges.append( Edge(source="Captain_Marvel",
                    # **kwargs
                    ) 
             ) 
+edges.append( Edge(source="Lider_1", 
+                   label="boss_of", 
+                   target="Lider_2", 
+                   # **kwargs
+                   ) 
+            ) 
+edges.append( Edge(source="Lider_2", 
+                   label="boss_of", 
+                   target="Lider_3", 
+                   # **kwargs
+                   ) 
+            ) 
+
+edges.append( Edge(source="Lider_4", 
+                   label="friend_of", 
+                   target="Lider_1", 
+                   # **kwargs
+                   ) 
+            )
+
 
 config = Config(width=750,
                 height=950,
